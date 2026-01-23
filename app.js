@@ -527,48 +527,65 @@ function renderTVGrid() {
   });
 }
 
-// Render quick score badges for TV card
+// Render quick score badges for TV card - shows all use cases, highlights when good
 function renderQuickScores(tv) {
   if (!tv.useCaseScores) return '';
 
   const scores = tv.useCaseScores;
   const badges = [];
 
-  // Show gaming score if good (8.0+)
-  if (scores.gamingScore && scores.gamingScore >= 8.0) {
-    const { stars } = getUseCaseStars(scores.gamingScore);
-    badges.push(`<span class="quick-score gaming" title="Great for gaming">🎮 ${stars}</span>`);
+  // Helper to create badge with highlight for good scores
+  const makeBadge = (score, icon, label, tooltip) => {
+    if (score == null) return null;
+    const { stars } = getUseCaseStars(score);
+    const isGood = score >= 8.0;
+    const highlightClass = isGood ? 'highlighted' : '';
+    return `<span class="quick-score ${highlightClass}" title="${tooltip}"><span class="use-icon">${icon}</span><span class="use-label">${label}</span> ${stars}</span>`;
+  };
+
+  // Movies
+  if (scores.movieScore != null) {
+    badges.push(makeBadge(scores.movieScore, '🎬', 'Movies', 'How well this TV handles movies - contrast, color accuracy, and motion for film content'));
   }
 
-  // Show movie score if good
-  if (scores.movieScore && scores.movieScore >= 8.0) {
-    const { stars } = getUseCaseStars(scores.movieScore);
-    badges.push(`<span class="quick-score movies" title="Great for movies">🎬 ${stars}</span>`);
-  } else if (scores.tvShowScore && scores.tvShowScore >= 8.0) {
-    const { stars } = getUseCaseStars(scores.tvShowScore);
-    badges.push(`<span class="quick-score movies" title="Great for TV shows">📺 ${stars}</span>`);
+  // Sports
+  if (scores.sportsScore != null) {
+    badges.push(makeBadge(scores.sportsScore, '⚽', 'Sports', 'How well this TV handles sports - motion clarity, brightness, and wide viewing angles for game day'));
   }
 
-  // Show sports score if good
-  if (scores.sportsScore && scores.sportsScore >= 8.0) {
-    const { stars } = getUseCaseStars(scores.sportsScore);
-    badges.push(`<span class="quick-score sports" title="Great for sports">⚽ ${stars}</span>`);
+  // Gaming
+  if (scores.gamingScore != null) {
+    badges.push(makeBadge(scores.gamingScore, '🎮', 'Gaming', 'How well this TV handles gaming - input lag, response time, and VRR support'));
   }
 
-  // Show PC Monitor score if good
-  if (scores.pcMonitorScore && scores.pcMonitorScore >= 8.0) {
-    const { stars } = getUseCaseStars(scores.pcMonitorScore);
-    badges.push(`<span class="quick-score pc" title="Great as PC monitor">💻 ${stars}</span>`);
+  // Bright Room
+  if (scores.brightRoomScore != null) {
+    badges.push(makeBadge(scores.brightRoomScore, '☀️', 'Bright Room', 'How well this TV performs in bright rooms - reflection handling and peak brightness'));
   }
 
-  if (badges.length === 0) return '';
+  // Filter out nulls
+  const validBadges = badges.filter(b => b);
+  if (validBadges.length === 0) return '';
 
-  return `<div class="tv-card-quick-scores">${badges.join('')}</div>`;
+  return `<div class="tv-card-quick-scores">${validBadges.join('')}</div>`;
 }
 
 // Check if TV is too large for accurate projection
 function isSuperBigTV(tv) {
   return tv.size >= 100;
+}
+
+// Get tooltip text for grade explanation
+function getGradeTooltip(grade) {
+  const tooltips = {
+    'A': 'Great Deal - This TV is priced 25%+ below our projected fair value. Exceptional value that rarely comes around.',
+    'B': 'Good Deal - This TV is priced 10-25% below our projected fair value. Solid value worth considering.',
+    'C': 'Fair Price - This TV is priced within 10% of our projected fair value. You are paying about what it is worth.',
+    'D': 'Overpriced - This TV is priced 10-25% above our projected fair value. Consider waiting for a sale.',
+    'F': 'Very Overpriced - This TV is priced 25%+ above our projected fair value. You are paying a significant premium.',
+    '?': 'Limited Data - We do not have enough market data for TVs this size to make accurate price projections.'
+  };
+  return tooltips[grade] || 'Deal grade based on comparing sale price to our projected fair value.';
 }
 
 // Convert RTINGS score to quality tier (2-5 scale, no 1-star ratings)
@@ -579,11 +596,11 @@ function getQualityTier(rtingsScore) {
   return { tier: 2, label: 'Average' };
 }
 
-// Render quality stars
+// Render quality stars with label
 function renderQualityStars(rtingsScore) {
   const { tier, label } = getQualityTier(rtingsScore);
   const stars = '★'.repeat(tier) + '☆'.repeat(5 - tier);
-  return `<span class="quality-rating" title="${label} quality">${stars}</span>`;
+  return `<span class="quality-rating" title="${label} - Overall picture quality rating based on professional reviews"><span class="quality-label">Overall Quality</span> ${stars}</span>`;
 }
 
 // Convert use case score to stars (for gaming, sports, etc.)
@@ -624,12 +641,14 @@ function renderTVCard(tv) {
          <span class="projected-value">${TVDataUtils.formatPrice(tv.fairValue)}</span>
        </div>`;
 
+  // Grade tooltip explanation
+  const gradeTooltip = getGradeTooltip(verdict.text);
+
   return `
     <article class="tv-card" data-tv-id="${tv.id}">
       <div class="tv-card-image">
         <img src="${tv.image}" alt="${tv.fullName}" loading="lazy"
              onerror="this.src='https://via.placeholder.com/400x250?text=TV+Image'">
-        <span class="deal-badge ${verdict.class}"><span class="grade">${verdict.text}</span><span class="grade-subtitle">${verdict.subtitle}</span></span>
         <span class="panel-badge">${tv.panelType}</span>
       </div>
       <div class="tv-card-content">
@@ -643,19 +662,26 @@ function renderTVCard(tv) {
           <span class="tv-card-spec">${tv.specs?.refreshRate || '60Hz'}</span>
         </div>
         ${renderQuickScores(tv)}
-        ${tv.description ? `<p class="tv-card-description">${tv.description}</p>` : ''}
         <div class="tv-card-pricing">
-          <div class="tv-card-price-row">
-            <div class="price-labeled">
-              <span class="price-label">Sale Price</span>
-              <span class="tv-card-price">${TVDataUtils.formatPrice(bestPrice.currentPrice)}</span>
+          <div class="tv-card-price-grade-row">
+            <div class="price-section">
+              <div class="price-labeled">
+                <span class="price-label">Sale Price</span>
+                <span class="tv-card-price">${TVDataUtils.formatPrice(bestPrice.currentPrice)}</span>
+              </div>
+              ${bestPrice.retailPrice > bestPrice.currentPrice
+                ? `<div class="price-labeled msrp">
+                    <span class="price-label">MSRP</span>
+                    <span class="tv-card-retail">${TVDataUtils.formatPrice(bestPrice.retailPrice)}</span>
+                  </div>`
+                : ''}
             </div>
-            ${bestPrice.retailPrice > bestPrice.currentPrice
-              ? `<div class="price-labeled msrp">
-                  <span class="price-label">MSRP</span>
-                  <span class="tv-card-retail">${TVDataUtils.formatPrice(bestPrice.retailPrice)}</span>
-                </div>`
-              : ''}
+            <div class="grade-section">
+              <span class="deal-badge ${verdict.class}" title="${gradeTooltip}">
+                <span class="grade">${verdict.text}</span>
+                <span class="grade-subtitle">${verdict.subtitle}</span>
+              </span>
+            </div>
           </div>
           <div class="tv-card-retailer">at ${retailer?.name || 'Unknown'}</div>
           <div class="tv-card-deal-row">

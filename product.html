@@ -137,6 +137,16 @@
       border-radius: var(--radius-lg);
       padding: 1.5rem;
     }
+    .price-grade-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+    .price-main-group {
+      display: flex;
+      align-items: baseline;
+    }
     .price-main {
       font-size: 2.5rem;
       font-weight: 700;
@@ -500,6 +510,19 @@
       return tooltips[panelType] || 'Display technology affects picture quality, contrast, and brightness.';
     }
 
+    // Get grade tooltip for deal grades
+    function getGradeTooltip(grade) {
+      const tooltips = {
+        'A': 'Great Deal - This TV is priced 25%+ below our projected fair value based on specs, brand, and historical pricing patterns.',
+        'B': 'Good Deal - This TV is priced 10-25% below our projected fair value. A solid purchase.',
+        'C': 'Fair Price - This TV is priced within 10% of our projected fair value. Not a steal, but not overpriced.',
+        'D': 'Overpriced - This TV is priced 10-25% above our projected fair value. Consider waiting for a sale.',
+        'F': 'Very Overpriced - This TV is priced 25%+ above our projected fair value. We recommend waiting for a better deal.',
+        '?': 'Limited Data - We do not have enough market data for TVs this size to calculate an accurate projected value.'
+      };
+      return tooltips[grade] || 'Deal grade based on comparing sale price to our projected fair value.';
+    }
+
     // Get educational tooltip for smart platforms
     function getSmartPlatformTooltip(platform) {
       const tooltips = {
@@ -811,17 +834,19 @@
               <span class="badge badge-panel">${tv.panelType}</span>
               <span class="badge badge-size">${tv.size}" Screen</span>
               <span class="badge badge-quality">${getQualityTier(tv.rtingsScore).stars} ${getQualityTier(tv.rtingsScore).label}</span>
-              <span class="deal-badge ${verdict.class}"><span class="grade">${verdict.text}</span><span class="grade-subtitle">${verdict.subtitle}</span></span>
             </div>
 
             ${renderRelatedSizes(tv)}
 
             <div class="price-section">
-              <div>
-                <span class="price-main">${TVDataUtils.formatPrice(bestPrice?.currentPrice || 0)}</span>
-                ${bestPrice?.retailPrice > bestPrice?.currentPrice
-                  ? `<span class="price-retail">${TVDataUtils.formatPrice(bestPrice.retailPrice)}</span>`
-                  : ''}
+              <div class="price-grade-row">
+                <div class="price-main-group">
+                  <span class="price-main">${TVDataUtils.formatPrice(bestPrice?.currentPrice || 0)}</span>
+                  ${bestPrice?.retailPrice > bestPrice?.currentPrice
+                    ? `<span class="price-retail">${TVDataUtils.formatPrice(bestPrice.retailPrice)}</span>`
+                    : ''}
+                </div>
+                <span class="deal-badge ${verdict.class}" title="${getGradeTooltip(verdict.text)}"><span class="grade">${verdict.text}</span><span class="grade-subtitle">${verdict.subtitle}</span></span>
               </div>
               <div class="price-meta">
                 at ${retailer?.name || 'Unknown'} • ${bestPrice?.inStock ? 'In Stock' : 'Out of Stock'}
