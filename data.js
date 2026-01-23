@@ -4,13 +4,13 @@
  * Designed to support multiple retailers and price history tracking.
  * Each TV has a unique ID and can have prices from multiple sources.
  *
- * Generated: 2026-01-22 21:35:06
+ * Generated: 2026-01-22 22:48:46
  * Total TVs: 98
  */
 
 const TV_DATA = {
   // Metadata
-  lastUpdated: "2026-01-22T21:35:06Z",
+  lastUpdated: "2026-01-22T22:48:46Z",
 
   // Retailer definitions (easily extensible)
   retailers: {
@@ -77,6 +77,11 @@ const TV_DATA = {
             "movieScore": 8.3,
             "brightRoomScore": 6.9
       },
+      specs: {
+            "refreshRate": "120Hz",
+            "hdr": "Dolby Vision",
+            "smartPlatform": "webOS"
+      },
       description: "This LG punches above its weight, delivering perfect blacks and infinite contrast. It's cinema-quality at home.",
       performanceSpecs: {
             "peakBrightness": 1950,
@@ -130,6 +135,11 @@ const TV_DATA = {
             "movieScore": 8.3,
             "brightRoomScore": 6.9
       },
+      specs: {
+            "refreshRate": "120Hz",
+            "hdr": "Dolby Vision",
+            "smartPlatform": "webOS"
+      },
       description: "High-end performance from LG, delivering true blacks that make content pop. It's cinema-quality at home.",
       performanceSpecs: {
             "peakBrightness": 1950,
@@ -179,6 +189,11 @@ const TV_DATA = {
       ],
       useCaseScores: {
             "sportsScore": 8.5
+      },
+      specs: {
+            "refreshRate": "120Hz",
+            "hdr": "Dolby Vision",
+            "smartPlatform": "webOS"
       },
       description: "This LG punches above its weight, delivering true blacks that make content pop. It's keeps up with fast action. Ideal for apartments or secondary rooms. One of the newest models available.",
       performanceSpecs: {
@@ -230,6 +245,11 @@ const TV_DATA = {
       useCaseScores: {
             "sportsScore": 8.5
       },
+      specs: {
+            "refreshRate": "120Hz",
+            "hdr": "Dolby Vision",
+            "smartPlatform": "webOS"
+      },
       description: "High-end performance from LG, delivering exceptional contrast with no blooming. It's sports look incredibly smooth. One of the newest models available.",
       performanceSpecs: {
             "peakBrightness": 1950,
@@ -279,6 +299,11 @@ const TV_DATA = {
       ],
       useCaseScores: {
             "sportsScore": 8.5
+      },
+      specs: {
+            "refreshRate": "120Hz",
+            "hdr": "Dolby Vision",
+            "smartPlatform": "webOS"
       },
       description: "LG delivers serious quality here, delivering true blacks that make content pop. It's keeps up with fast action. One of the newest models available.",
       performanceSpecs: {
@@ -380,6 +405,11 @@ const TV_DATA = {
       useCaseScores: {
             "sportsScore": 8.5
       },
+      specs: {
+            "refreshRate": "120Hz",
+            "hdr": "Dolby Vision",
+            "smartPlatform": "webOS"
+      },
       description: "LG delivers serious quality here, delivering exceptional contrast with no blooming. It's sports look incredibly smooth. One of the newest models available.",
       performanceSpecs: {
             "peakBrightness": 1950,
@@ -432,6 +462,11 @@ const TV_DATA = {
             "mixedUsageScore": 8.3,
             "movieScore": 8.5,
             "brightRoomScore": 6.9
+      },
+      specs: {
+            "refreshRate": "120Hz",
+            "hdr": "Dolby Vision",
+            "smartPlatform": "webOS"
       },
       description: "LG delivers serious quality here, delivering perfect blacks and infinite contrast. It's cinema-quality at home.",
       performanceSpecs: {
@@ -486,6 +521,11 @@ const TV_DATA = {
             "movieScore": 8.5,
             "brightRoomScore": 6.9
       },
+      specs: {
+            "refreshRate": "120Hz",
+            "hdr": "Dolby Vision",
+            "smartPlatform": "webOS"
+      },
       description: "LG delivers serious quality here, delivering pixel-level dimming for stunning dark scenes. It's perfect for film enthusiasts.",
       performanceSpecs: {
             "peakBrightness": 1950,
@@ -538,6 +578,11 @@ const TV_DATA = {
             "mixedUsageScore": 8.3,
             "movieScore": 8.5,
             "brightRoomScore": 6.9
+      },
+      specs: {
+            "refreshRate": "120Hz",
+            "hdr": "Dolby Vision",
+            "smartPlatform": "webOS"
       },
       description: "A premium choice from LG, delivering exceptional contrast with no blooming. It's cinema-quality at home. Go big for that theater feel.",
       performanceSpecs: {
@@ -592,6 +637,11 @@ const TV_DATA = {
             "movieScore": 8.8,
             "brightRoomScore": 7.7
       },
+      specs: {
+            "refreshRate": "120Hz",
+            "hdr": "Dolby Vision, HDR10",
+            "smartPlatform": "webOS"
+      },
       description: "The crown jewel of LG's TV range, delivering true blacks that make content pop. It's cinema-quality at home, and sports look incredibly smooth. Compact but capable. One of the newest models available.",
       performanceSpecs: {
             "peakBrightness": 1950,
@@ -645,6 +695,11 @@ const TV_DATA = {
             "movieScore": 8.8,
             "brightRoomScore": 7.7
       },
+      specs: {
+            "refreshRate": "120Hz",
+            "hdr": "Dolby Vision, HDR10",
+            "smartPlatform": "webOS"
+      },
       description: "The crown jewel of LG's TV range, delivering true blacks that make content pop. It's made for movie night, and sports look incredibly smooth. Compact but capable. One of the newest models available.",
       performanceSpecs: {
             "peakBrightness": 1950,
@@ -697,6 +752,11 @@ const TV_DATA = {
             "mixedUsageScore": 8.6,
             "movieScore": 8.8,
             "brightRoomScore": 7.7
+      },
+      specs: {
+            "refreshRate": "120Hz",
+            "hdr": "Dolby Vision",
+            "smartPlatform": "webOS"
       },
       description: "LG's best has arrived, delivering pixel-level dimming for stunning dark scenes. It's made for movie night, and sports look incredibly smooth. One of the newest models available.",
       performanceSpecs: {
@@ -804,6 +864,11 @@ const TV_DATA = {
             "movieScore": 8.8,
             "brightRoomScore": 7.7
       },
+      specs: {
+            "refreshRate": "120Hz",
+            "hdr": "Dolby Vision",
+            "smartPlatform": "webOS"
+      },
       description: "LG's best has arrived, delivering pixel-level dimming for stunning dark scenes. It's made for movie night, and keeps up with fast action. One of the newest models available.",
       performanceSpecs: {
             "peakBrightness": 1950,
@@ -856,6 +921,11 @@ const TV_DATA = {
             "mixedUsageScore": 8.6,
             "movieScore": 8.8,
             "brightRoomScore": 7.7
+      },
+      specs: {
+            "refreshRate": "120Hz",
+            "hdr": "Dolby Vision",
+            "smartPlatform": "webOS"
       },
       description: "The crown jewel of LG's TV range, delivering exceptional contrast with no blooming. It's a cinephile's delight, and ideal for game day. One of the newest models available.",
       performanceSpecs: {
@@ -963,6 +1033,11 @@ const TV_DATA = {
             "movieScore": 8.7,
             "brightRoomScore": 7.7
       },
+      specs: {
+            "refreshRate": "120Hz",
+            "hdr": "Dolby Vision",
+            "smartPlatform": "webOS"
+      },
       description: "This is LG's flagship offering, delivering exceptional contrast with no blooming. It's made for movie night, and sports look incredibly smooth. Perfect for bedrooms or smaller spaces.",
       performanceSpecs: {
             "peakBrightness": 1950,
@@ -1015,6 +1090,11 @@ const TV_DATA = {
             "mixedUsageScore": 8.6,
             "movieScore": 8.7,
             "brightRoomScore": 7.7
+      },
+      specs: {
+            "refreshRate": "120Hz",
+            "hdr": "Dolby Vision",
+            "smartPlatform": "webOS"
       },
       description: "At the top of LG's lineup, delivering exceptional contrast with no blooming. It's cinema-quality at home, and ideal for game day.",
       performanceSpecs: {
@@ -1069,6 +1149,11 @@ const TV_DATA = {
             "movieScore": 8.7,
             "brightRoomScore": 7.7
       },
+      specs: {
+            "refreshRate": "120Hz",
+            "hdr": "Dolby Vision",
+            "smartPlatform": "webOS"
+      },
       description: "At the top of LG's lineup, delivering exceptional contrast with no blooming. It's a cinephile's delight, and handles motion like a champ.",
       performanceSpecs: {
             "peakBrightness": 1950,
@@ -1121,6 +1206,11 @@ const TV_DATA = {
             "mixedUsageScore": 9.0,
             "movieScore": 9.0,
             "brightRoomScore": 8.7
+      },
+      specs: {
+            "refreshRate": "120Hz",
+            "hdr": "Dolby Vision",
+            "smartPlatform": "webOS"
       },
       description: "The crown jewel of LG's TV range, delivering pixel-level dimming for stunning dark scenes. It's made for movie night, and ideal for game day. One of the newest models available.",
       performanceSpecs: {
@@ -1175,6 +1265,11 @@ const TV_DATA = {
             "movieScore": 9.0,
             "brightRoomScore": 8.7
       },
+      specs: {
+            "refreshRate": "120Hz",
+            "hdr": "Dolby Vision",
+            "smartPlatform": "webOS"
+      },
       description: "LG's best has arrived, delivering pixel-level dimming for stunning dark scenes. It's perfect for film enthusiasts, and sports look incredibly smooth. One of the newest models available.",
       performanceSpecs: {
             "peakBrightness": 1950,
@@ -1227,6 +1322,11 @@ const TV_DATA = {
             "mixedUsageScore": 9.0,
             "movieScore": 9.0,
             "brightRoomScore": 8.7
+      },
+      specs: {
+            "refreshRate": "120Hz",
+            "hdr": "Dolby Vision",
+            "smartPlatform": "webOS"
       },
       description: "This is LG's flagship offering, delivering exceptional contrast with no blooming. It's made for movie night, and sports look incredibly smooth. Go big for that theater feel. One of the newest models available.",
       performanceSpecs: {
@@ -1281,6 +1381,11 @@ const TV_DATA = {
             "movieScore": 9.0,
             "brightRoomScore": 8.7
       },
+      specs: {
+            "refreshRate": "120Hz",
+            "hdr": "Dolby Vision",
+            "smartPlatform": "webOS"
+      },
       description: "LG's best has arrived, delivering perfect blacks and infinite contrast. It's cinema-quality at home, and ideal for game day. Go big for that theater feel. One of the newest models available.",
       performanceSpecs: {
             "peakBrightness": 1950,
@@ -1334,6 +1439,11 @@ const TV_DATA = {
             "movieScore": 9.0,
             "brightRoomScore": 8.7
       },
+      specs: {
+            "refreshRate": "120Hz",
+            "hdr": "Dolby Vision",
+            "smartPlatform": "webOS"
+      },
       description: "LG's best has arrived, delivering true blacks that make content pop. It's perfect for film enthusiasts, and keeps up with fast action. A true home theater centerpiece. One of the newest models available.",
       performanceSpecs: {
             "peakBrightness": 1950,
@@ -1383,6 +1493,10 @@ const TV_DATA = {
       ],
       useCaseScores: {
             "sportsScore": 5.6
+      },
+      specs: {
+            "refreshRate": "60Hz",
+            "smartPlatform": "Tizen"
       },
       description: "Samsung's budget-friendly option with bright, vivid quantum dot colors. Compact but capable.",
       performanceSpecs: {
@@ -1484,6 +1598,10 @@ const TV_DATA = {
       useCaseScores: {
             "sportsScore": 5.6
       },
+      specs: {
+            "refreshRate": "60Hz",
+            "smartPlatform": "Tizen"
+      },
       description: "Great value from Samsung with solid all-around picture quality.",
       performanceSpecs: {
             "peakBrightness": 1950,
@@ -1584,6 +1702,10 @@ const TV_DATA = {
       useCaseScores: {
             "sportsScore": 5.6
       },
+      specs: {
+            "refreshRate": "60Hz",
+            "smartPlatform": "Tizen"
+      },
       description: "Great value from Samsung with rich colors that hold up in daylight. Big-screen immersion for dedicated spaces.",
       performanceSpecs: {
             "peakBrightness": 1950,
@@ -1633,6 +1755,10 @@ const TV_DATA = {
       ],
       useCaseScores: {
             "sportsScore": 6.8
+      },
+      specs: {
+            "refreshRate": "120Hz",
+            "smartPlatform": "Tizen"
       },
       description: "The sensible choice from Samsung with excellent brightness for any room.",
       performanceSpecs: {
@@ -1684,6 +1810,10 @@ const TV_DATA = {
       useCaseScores: {
             "sportsScore": 6.8
       },
+      specs: {
+            "refreshRate": "120Hz",
+            "smartPlatform": "Tizen"
+      },
       description: "Samsung's sweet spot for value with solid all-around picture quality.",
       performanceSpecs: {
             "peakBrightness": 1950,
@@ -1733,6 +1863,10 @@ const TV_DATA = {
       ],
       useCaseScores: {
             "sportsScore": 7.2
+      },
+      specs: {
+            "refreshRate": "120Hz",
+            "smartPlatform": "Tizen"
       },
       description: "The sensible choice from Samsung with bright, vivid quantum dot colors.",
       performanceSpecs: {
@@ -1784,6 +1918,10 @@ const TV_DATA = {
       useCaseScores: {
             "sportsScore": 7.2
       },
+      specs: {
+            "refreshRate": "120Hz",
+            "smartPlatform": "Tizen"
+      },
       description: "Balanced performance from Samsung with rich colors that hold up in daylight.",
       performanceSpecs: {
             "peakBrightness": 1950,
@@ -1833,6 +1971,10 @@ const TV_DATA = {
       ],
       useCaseScores: {
             "sportsScore": 7.2
+      },
+      specs: {
+            "refreshRate": "120Hz",
+            "smartPlatform": "Tizen"
       },
       description: "A solid mid-range option from Samsung with bright, vivid quantum dot colors.",
       performanceSpecs: {
@@ -1884,6 +2026,10 @@ const TV_DATA = {
       useCaseScores: {
             "sportsScore": 7.2
       },
+      specs: {
+            "refreshRate": "120Hz",
+            "smartPlatform": "Tizen"
+      },
       description: "Samsung's sweet spot for value with rich colors that hold up in daylight. Big-screen immersion for dedicated spaces.",
       performanceSpecs: {
             "peakBrightness": 1950,
@@ -1933,6 +2079,10 @@ const TV_DATA = {
       ],
       useCaseScores: {
             "sportsScore": 7.1
+      },
+      specs: {
+            "refreshRate": "120Hz",
+            "smartPlatform": "Tizen"
       },
       description: "Balanced performance from Samsung with excellent brightness for any room. One of the newest models available.",
       performanceSpecs: {
@@ -1984,6 +2134,10 @@ const TV_DATA = {
       useCaseScores: {
             "sportsScore": 7.1
       },
+      specs: {
+            "refreshRate": "120Hz",
+            "smartPlatform": "Tizen"
+      },
       description: "The sensible choice from Samsung with excellent brightness for any room. One of the newest models available.",
       performanceSpecs: {
             "peakBrightness": 1950,
@@ -2033,6 +2187,10 @@ const TV_DATA = {
       ],
       useCaseScores: {
             "sportsScore": 7.1
+      },
+      specs: {
+            "refreshRate": "120Hz",
+            "smartPlatform": "Tizen"
       },
       description: "Samsung's sweet spot for value with bright, vivid quantum dot colors. Go big for that theater feel. One of the newest models available.",
       performanceSpecs: {
@@ -2134,6 +2292,10 @@ const TV_DATA = {
       useCaseScores: {
             "sportsScore": 7.1
       },
+      specs: {
+            "refreshRate": "120Hz",
+            "smartPlatform": "Tizen"
+      },
       description: "Samsung's sweet spot for value with rich colors that hold up in daylight. When bigger is definitely better. One of the newest models available.",
       performanceSpecs: {
             "peakBrightness": 1950,
@@ -2186,6 +2348,10 @@ const TV_DATA = {
             "mixedUsageScore": 7.5,
             "movieScore": 7.5,
             "brightRoomScore": 7.9
+      },
+      specs: {
+            "refreshRate": "120Hz",
+            "smartPlatform": "Tizen"
       },
       description: "This Samsung punches above its weight, delivering excellent brightness with precise backlight control. A versatile performer across different content types.",
       performanceSpecs: {
@@ -2240,6 +2406,10 @@ const TV_DATA = {
             "movieScore": 7.5,
             "brightRoomScore": 7.9
       },
+      specs: {
+            "refreshRate": "120Hz",
+            "smartPlatform": "Tizen"
+      },
       description: "A premium choice from Samsung, delivering HDR performance that rivals OLED. A versatile performer across different content types. Makes a statement in larger rooms.",
       performanceSpecs: {
             "peakBrightness": 1950,
@@ -2292,6 +2462,10 @@ const TV_DATA = {
             "mixedUsageScore": 8.1,
             "movieScore": 8.2,
             "brightRoomScore": 8.5
+      },
+      specs: {
+            "refreshRate": "120Hz",
+            "smartPlatform": "Tizen"
       },
       description: "The crown jewel of Samsung's TV range, delivering HDR performance that rivals OLED. It's fights glare like a pro, and sports look incredibly smooth.",
       performanceSpecs: {
@@ -2346,6 +2520,10 @@ const TV_DATA = {
             "movieScore": 8.2,
             "brightRoomScore": 8.5
       },
+      specs: {
+            "refreshRate": "120Hz",
+            "smartPlatform": "Tizen"
+      },
       description: "At the top of Samsung's lineup, delivering excellent brightness with precise backlight control. It's fights glare like a pro, and sports look incredibly smooth.",
       performanceSpecs: {
             "peakBrightness": 1950,
@@ -2398,6 +2576,10 @@ const TV_DATA = {
             "mixedUsageScore": 8.1,
             "movieScore": 8.2,
             "brightRoomScore": 8.5
+      },
+      specs: {
+            "refreshRate": "120Hz",
+            "smartPlatform": "Tizen"
       },
       description: "The crown jewel of Samsung's TV range, delivering impressive local dimming with thousands of zones. It's stays visible in bright conditions, and keeps up with fast action. Big-screen immersion for dedicated spaces.",
       performanceSpecs: {
@@ -2452,6 +2634,10 @@ const TV_DATA = {
             "movieScore": 8.0,
             "brightRoomScore": 6.8
       },
+      specs: {
+            "refreshRate": "120Hz",
+            "smartPlatform": "Tizen"
+      },
       description: "A premium choice from Samsung, delivering exceptional contrast with no blooming. It's a cinephile's delight.",
       performanceSpecs: {
             "peakBrightness": 1950,
@@ -2504,6 +2690,10 @@ const TV_DATA = {
             "mixedUsageScore": 7.8,
             "movieScore": 8.0,
             "brightRoomScore": 6.8
+      },
+      specs: {
+            "refreshRate": "120Hz",
+            "smartPlatform": "Tizen"
       },
       description: "High-end performance from Samsung, delivering pixel-level dimming for stunning dark scenes. It's made for movie night.",
       performanceSpecs: {
@@ -2558,6 +2748,10 @@ const TV_DATA = {
             "movieScore": 8.7,
             "brightRoomScore": 7.2
       },
+      specs: {
+            "refreshRate": "120Hz",
+            "smartPlatform": "Tizen"
+      },
       description: "Samsung's best has arrived, delivering vibrant, punchy colors alongside infinite contrast. It's perfect for film enthusiasts. Compact but capable.",
       performanceSpecs: {
             "peakBrightness": 1950,
@@ -2610,6 +2804,10 @@ const TV_DATA = {
             "mixedUsageScore": 8.5,
             "movieScore": 8.7,
             "brightRoomScore": 7.2
+      },
+      specs: {
+            "refreshRate": "120Hz",
+            "smartPlatform": "Tizen"
       },
       description: "This is Samsung's flagship offering, delivering stunning quantum dot colors with perfect OLED blacks. It's cinema-quality at home.",
       performanceSpecs: {
@@ -2664,6 +2862,10 @@ const TV_DATA = {
             "movieScore": 8.7,
             "brightRoomScore": 7.2
       },
+      specs: {
+            "refreshRate": "120Hz",
+            "smartPlatform": "Tizen"
+      },
       description: "At the top of Samsung's lineup, delivering exceptional color volume with true black levels. It's cinema-quality at home. Big-screen immersion for dedicated spaces.",
       performanceSpecs: {
             "peakBrightness": 1950,
@@ -2716,6 +2918,10 @@ const TV_DATA = {
             "mixedUsageScore": 8.5,
             "movieScore": 8.7,
             "brightRoomScore": 7.2
+      },
+      specs: {
+            "refreshRate": "120Hz",
+            "smartPlatform": "Tizen"
       },
       description: "The crown jewel of Samsung's TV range, delivering stunning quantum dot colors with perfect OLED blacks. It's a cinephile's delight.",
       performanceSpecs: {
@@ -2770,6 +2976,11 @@ const TV_DATA = {
             "movieScore": 8.8,
             "brightRoomScore": 7.6
       },
+      specs: {
+            "refreshRate": "120Hz",
+            "hdr": "HDR10",
+            "smartPlatform": "Tizen"
+      },
       description: "At the top of Samsung's lineup, delivering vibrant, punchy colors alongside infinite contrast. It's cinema-quality at home, and handles motion like a champ. Compact but capable. One of the newest models available.",
       performanceSpecs: {
             "peakBrightness": 1950,
@@ -2822,6 +3033,11 @@ const TV_DATA = {
             "mixedUsageScore": 8.6,
             "movieScore": 8.8,
             "brightRoomScore": 7.6
+      },
+      specs: {
+            "refreshRate": "120Hz",
+            "hdr": "HDR10",
+            "smartPlatform": "Tizen"
       },
       description: "The crown jewel of Samsung's TV range, delivering stunning quantum dot colors with perfect OLED blacks. It's made for movie night, and sports look incredibly smooth. Ideal for apartments or secondary rooms. One of the newest models available.",
       performanceSpecs: {
@@ -2876,6 +3092,11 @@ const TV_DATA = {
             "movieScore": 8.8,
             "brightRoomScore": 7.6
       },
+      specs: {
+            "refreshRate": "120Hz",
+            "hdr": "HDR10",
+            "smartPlatform": "Tizen"
+      },
       description: "The crown jewel of Samsung's TV range, delivering exceptional color volume with true black levels. It's cinema-quality at home, and handles motion like a champ. One of the newest models available.",
       performanceSpecs: {
             "peakBrightness": 1950,
@@ -2928,6 +3149,11 @@ const TV_DATA = {
             "mixedUsageScore": 8.6,
             "movieScore": 8.8,
             "brightRoomScore": 7.6
+      },
+      specs: {
+            "refreshRate": "120Hz",
+            "hdr": "HDR10",
+            "smartPlatform": "Tizen"
       },
       description: "The crown jewel of Samsung's TV range, delivering vibrant, punchy colors alongside infinite contrast. It's a cinephile's delight, and keeps up with fast action. One of the newest models available.",
       performanceSpecs: {
@@ -2982,6 +3208,11 @@ const TV_DATA = {
             "movieScore": 8.8,
             "brightRoomScore": 7.6
       },
+      specs: {
+            "refreshRate": "120Hz",
+            "hdr": "HDR10",
+            "smartPlatform": "Tizen"
+      },
       description: "At the top of Samsung's lineup, delivering exceptional color volume with true black levels. It's cinema-quality at home, and keeps up with fast action. Makes a statement in larger rooms. One of the newest models available.",
       performanceSpecs: {
             "peakBrightness": 1950,
@@ -3034,6 +3265,11 @@ const TV_DATA = {
             "mixedUsageScore": 8.6,
             "movieScore": 8.8,
             "brightRoomScore": 7.6
+      },
+      specs: {
+            "refreshRate": "120Hz",
+            "hdr": "HDR10",
+            "smartPlatform": "Tizen"
       },
       description: "The crown jewel of Samsung's TV range, delivering vibrant, punchy colors alongside infinite contrast. It's perfect for film enthusiasts, and keeps up with fast action. Big-screen immersion for dedicated spaces. One of the newest models available.",
       performanceSpecs: {
@@ -3088,6 +3324,11 @@ const TV_DATA = {
             "movieScore": 9.0,
             "brightRoomScore": 8.8
       },
+      specs: {
+            "refreshRate": "120Hz",
+            "hdr": "HDR10",
+            "smartPlatform": "Tizen"
+      },
       description: "The crown jewel of Samsung's TV range, delivering stunning quantum dot colors with perfect OLED blacks. It's made for movie night, and sports look incredibly smooth. One of the newest models available.",
       performanceSpecs: {
             "peakBrightness": 1950,
@@ -3140,6 +3381,11 @@ const TV_DATA = {
             "mixedUsageScore": 8.9,
             "movieScore": 9.0,
             "brightRoomScore": 8.8
+      },
+      specs: {
+            "refreshRate": "120Hz",
+            "hdr": "HDR10",
+            "smartPlatform": "Tizen"
       },
       description: "Samsung's best has arrived, delivering exceptional color volume with true black levels. It's perfect for film enthusiasts, and sports look incredibly smooth. One of the newest models available.",
       performanceSpecs: {
@@ -3194,6 +3440,11 @@ const TV_DATA = {
             "movieScore": 9.0,
             "brightRoomScore": 8.8
       },
+      specs: {
+            "refreshRate": "120Hz",
+            "hdr": "HDR10",
+            "smartPlatform": "Tizen"
+      },
       description: "Samsung's best has arrived, delivering exceptional color volume with true black levels. It's a cinephile's delight, and sports look incredibly smooth. Big-screen immersion for dedicated spaces. One of the newest models available.",
       performanceSpecs: {
             "peakBrightness": 1950,
@@ -3247,6 +3498,11 @@ const TV_DATA = {
             "movieScore": 9.0,
             "brightRoomScore": 8.8
       },
+      specs: {
+            "refreshRate": "120Hz",
+            "hdr": "HDR10",
+            "smartPlatform": "Tizen"
+      },
       description: "At the top of Samsung's lineup, delivering stunning quantum dot colors with perfect OLED blacks. It's a cinephile's delight, and keeps up with fast action. Makes a statement in larger rooms. One of the newest models available.",
       performanceSpecs: {
             "peakBrightness": 1950,
@@ -3296,6 +3552,10 @@ const TV_DATA = {
       ],
       useCaseScores: {
             "sportsScore": 8.8
+      },
+      specs: {
+            "refreshRate": "120Hz",
+            "smartPlatform": "Google TV"
       },
       description: "High-end performance from Sony, delivering the best of both worlds: quantum dot brightness and OLED contrast. It's handles motion like a champ.",
       performanceSpecs: {
@@ -3350,6 +3610,10 @@ const TV_DATA = {
             "movieScore": 8.2,
             "brightRoomScore": 7.0
       },
+      specs: {
+            "refreshRate": "120Hz",
+            "smartPlatform": "Google TV"
+      },
       description: "A premium choice from Sony, delivering exceptional contrast with no blooming. It's cinema-quality at home.",
       performanceSpecs: {
             "peakBrightness": 1950,
@@ -3402,6 +3666,10 @@ const TV_DATA = {
             "mixedUsageScore": 7.9,
             "movieScore": 8.2,
             "brightRoomScore": 7.0
+      },
+      specs: {
+            "refreshRate": "120Hz",
+            "smartPlatform": "Google TV"
       },
       description: "This Sony punches above its weight, delivering exceptional contrast with no blooming. It's a cinephile's delight.",
       performanceSpecs: {
@@ -3456,6 +3724,10 @@ const TV_DATA = {
             "movieScore": 8.2,
             "brightRoomScore": 7.0
       },
+      specs: {
+            "refreshRate": "120Hz",
+            "smartPlatform": "Google TV"
+      },
       description: "Sony delivers serious quality here, delivering perfect blacks and infinite contrast. It's a cinephile's delight.",
       performanceSpecs: {
             "peakBrightness": 1950,
@@ -3505,6 +3777,10 @@ const TV_DATA = {
       ],
       useCaseScores: {
             "sportsScore": 8.7
+      },
+      specs: {
+            "refreshRate": "120Hz",
+            "smartPlatform": "Google TV"
       },
       description: "This is Sony's flagship offering, delivering exceptional contrast with no blooming. It's ideal for game day. One of the newest models available.",
       performanceSpecs: {
@@ -3556,6 +3832,10 @@ const TV_DATA = {
       useCaseScores: {
             "sportsScore": 8.7
       },
+      specs: {
+            "refreshRate": "120Hz",
+            "smartPlatform": "Google TV"
+      },
       description: "At the top of Sony's lineup, delivering pixel-level dimming for stunning dark scenes. It's sports look incredibly smooth. One of the newest models available.",
       performanceSpecs: {
             "peakBrightness": 1950,
@@ -3605,6 +3885,10 @@ const TV_DATA = {
       ],
       useCaseScores: {
             "sportsScore": 7.7
+      },
+      specs: {
+            "refreshRate": "120Hz",
+            "smartPlatform": "Google TV"
       },
       description: "The crown jewel of Sony's TV range, delivering impressive local dimming with thousands of zones. A versatile performer across different content types.",
       performanceSpecs: {
@@ -3656,6 +3940,10 @@ const TV_DATA = {
       useCaseScores: {
             "sportsScore": 7.7
       },
+      specs: {
+            "refreshRate": "120Hz",
+            "smartPlatform": "Google TV"
+      },
       description: "Sony's best has arrived, delivering HDR performance that rivals OLED. A versatile performer across different content types.",
       performanceSpecs: {
             "peakBrightness": 1950,
@@ -3705,6 +3993,10 @@ const TV_DATA = {
       ],
       useCaseScores: {
             "sportsScore": 7.7
+      },
+      specs: {
+            "refreshRate": "120Hz",
+            "smartPlatform": "Google TV"
       },
       description: "This is Sony's flagship offering, delivering punchy highlights with deep blacks. A versatile performer across different content types. Go big for that theater feel.",
       performanceSpecs: {
@@ -3756,6 +4048,10 @@ const TV_DATA = {
       useCaseScores: {
             "sportsScore": 7.2
       },
+      specs: {
+            "refreshRate": "120Hz",
+            "smartPlatform": "Google TV"
+      },
       description: "This Sony punches above its weight, delivering reliable performance at a great value. A versatile performer across different content types.",
       performanceSpecs: {
             "peakBrightness": 1950,
@@ -3805,6 +4101,10 @@ const TV_DATA = {
       ],
       useCaseScores: {
             "sportsScore": 7.2
+      },
+      specs: {
+            "refreshRate": "120Hz",
+            "smartPlatform": "Google TV"
       },
       description: "A premium choice from Sony, delivering good basics for casual viewers. A versatile performer across different content types.",
       performanceSpecs: {
@@ -3856,6 +4156,10 @@ const TV_DATA = {
       useCaseScores: {
             "sportsScore": 7.2
       },
+      specs: {
+            "refreshRate": "120Hz",
+            "smartPlatform": "Google TV"
+      },
       description: "Sony delivers serious quality here, delivering straightforward functionality without the premium price. A versatile performer across different content types.",
       performanceSpecs: {
             "peakBrightness": 1950,
@@ -3906,6 +4210,10 @@ const TV_DATA = {
       useCaseScores: {
             "sportsScore": 7.2
       },
+      specs: {
+            "refreshRate": "120Hz",
+            "smartPlatform": "Google TV"
+      },
       description: "This Sony punches above its weight, delivering dependable picture quality for everyday viewing. A versatile performer across different content types.",
       performanceSpecs: {
             "peakBrightness": 1950,
@@ -3955,6 +4263,10 @@ const TV_DATA = {
       ],
       useCaseScores: {
             "sportsScore": 7.2
+      },
+      specs: {
+            "refreshRate": "120Hz",
+            "smartPlatform": "Google TV"
       },
       description: "A premium choice from Sony, delivering reliable performance at a great value. A versatile performer across different content types. For those who want maximum impact.",
       performanceSpecs: {
@@ -4012,6 +4324,11 @@ const TV_DATA = {
             "mixedUsageScore": 7.9,
             "pcMonitorScore": 8.3
       },
+      specs: {
+            "refreshRate": "120Hz",
+            "hdr": "Dolby Vision, HDR10",
+            "smartPlatform": "Google TV"
+      },
       description: "A premium choice from TCL, delivering rich colors that hold up in daylight. It's a gamer's dream with low input lag, and cinema-quality at home.",
       performanceSpecs: {
             "dimmingZones": 200,
@@ -4068,6 +4385,11 @@ const TV_DATA = {
             "hdrGamingScore": 8.5,
             "mixedUsageScore": 7.9,
             "pcMonitorScore": 8.3
+      },
+      specs: {
+            "refreshRate": "120Hz",
+            "hdr": "Dolby Vision, HDR10",
+            "smartPlatform": "Google TV"
       },
       description: "This TCL punches above its weight, delivering excellent brightness for any room. It's built for serious gamers, and made for movie night.",
       performanceSpecs: {
@@ -4170,6 +4492,11 @@ const TV_DATA = {
       useCaseScores: {
             "sportsScore": 6.5
       },
+      specs: {
+            "refreshRate": "60Hz",
+            "hdr": "HDR10",
+            "smartPlatform": "Google TV"
+      },
       description: "A solid mid-range option from TCL with punchy highlights with deep blacks. One of the newest models available.",
       performanceSpecs: {
             "peakBrightness": 1950,
@@ -4219,6 +4546,11 @@ const TV_DATA = {
       ],
       useCaseScores: {
             "sportsScore": 6.5
+      },
+      specs: {
+            "refreshRate": "60Hz",
+            "hdr": "HDR10",
+            "smartPlatform": "Google TV"
       },
       description: "The sensible choice from TCL with HDR performance that rivals OLED. One of the newest models available.",
       performanceSpecs: {
@@ -4270,6 +4602,11 @@ const TV_DATA = {
       useCaseScores: {
             "sportsScore": 6.5
       },
+      specs: {
+            "refreshRate": "60Hz",
+            "hdr": "HDR10",
+            "smartPlatform": "Google TV"
+      },
       description: "Balanced performance from TCL with punchy highlights with deep blacks. Makes a statement in larger rooms. One of the newest models available.",
       performanceSpecs: {
             "peakBrightness": 1950,
@@ -4320,6 +4657,11 @@ const TV_DATA = {
       useCaseScores: {
             "sportsScore": 6.5
       },
+      specs: {
+            "refreshRate": "60Hz",
+            "hdr": "HDR10",
+            "smartPlatform": "Google TV"
+      },
       description: "A solid mid-range option from TCL with impressive local dimming with thousands of zones. Makes a statement in larger rooms. One of the newest models available.",
       performanceSpecs: {
             "peakBrightness": 1950,
@@ -4369,6 +4711,11 @@ const TV_DATA = {
       ],
       useCaseScores: {
             "sportsScore": 7.8
+      },
+      specs: {
+            "refreshRate": "144Hz",
+            "hdr": "HDR10",
+            "smartPlatform": "Google TV"
       },
       description: "TCL's best has arrived, delivering impressive local dimming with thousands of zones. A versatile performer across different content types. One of the newest models available.",
       performanceSpecs: {
@@ -4472,6 +4819,11 @@ const TV_DATA = {
       useCaseScores: {
             "sportsScore": 7.8
       },
+      specs: {
+            "refreshRate": "144Hz",
+            "hdr": "HDR10",
+            "smartPlatform": "Google TV"
+      },
       description: "The crown jewel of TCL's TV range, delivering excellent brightness with precise backlight control. A versatile performer across different content types. Makes a statement in larger rooms. One of the newest models available.",
       performanceSpecs: {
             "dimmingZones": 2500,
@@ -4522,6 +4874,11 @@ const TV_DATA = {
       ],
       useCaseScores: {
             "sportsScore": 7.8
+      },
+      specs: {
+            "refreshRate": "144Hz",
+            "hdr": "HDR10",
+            "smartPlatform": "Google TV"
       },
       description: "The crown jewel of TCL's TV range, delivering excellent brightness with precise backlight control. A versatile performer across different content types. Go big for that theater feel. One of the newest models available.",
       performanceSpecs: {
@@ -4574,6 +4931,11 @@ const TV_DATA = {
       useCaseScores: {
             "sportsScore": 7.8
       },
+      specs: {
+            "refreshRate": "144Hz",
+            "hdr": "HDR10",
+            "smartPlatform": "Google TV"
+      },
       description: "The crown jewel of TCL's TV range, delivering excellent brightness with precise backlight control. A versatile performer across different content types. A true home theater centerpiece. One of the newest models available.",
       performanceSpecs: {
             "dimmingZones": 2500,
@@ -4624,6 +4986,11 @@ const TV_DATA = {
       ],
       useCaseScores: {
             "sportsScore": 7.8
+      },
+      specs: {
+            "refreshRate": "144Hz",
+            "hdr": "HDR10",
+            "smartPlatform": "Google TV"
       },
       description: "The crown jewel of TCL's TV range, delivering HDR performance that rivals OLED. A versatile performer across different content types. A true home theater centerpiece. One of the newest models available.",
       performanceSpecs: {
@@ -4682,6 +5049,11 @@ const TV_DATA = {
             "mixedUsageScore": 8.4,
             "pcMonitorScore": 8.7
       },
+      specs: {
+            "refreshRate": "144Hz",
+            "hdr": "HDR10",
+            "smartPlatform": "Google TV"
+      },
       description: "The crown jewel of TCL's TV range, delivering excellent brightness with precise backlight control. It's made for movie night, and a gamer's dream with low input lag.",
       performanceSpecs: {
             "dimmingZones": 2300,
@@ -4738,6 +5110,11 @@ const TV_DATA = {
             "hdrGamingScore": 9.0,
             "mixedUsageScore": 8.4,
             "pcMonitorScore": 8.7
+      },
+      specs: {
+            "refreshRate": "144Hz",
+            "hdr": "HDR10",
+            "smartPlatform": "Google TV"
       },
       description: "The crown jewel of TCL's TV range, delivering impressive local dimming with thousands of zones. It's cinema-quality at home, and gaming performance that won't disappoint.",
       performanceSpecs: {
@@ -4796,6 +5173,11 @@ const TV_DATA = {
             "mixedUsageScore": 8.4,
             "pcMonitorScore": 8.7
       },
+      specs: {
+            "refreshRate": "144Hz",
+            "hdr": "HDR10",
+            "smartPlatform": "Google TV"
+      },
       description: "The crown jewel of TCL's TV range, delivering impressive local dimming with thousands of zones. It's a cinephile's delight, and built for serious gamers. Big-screen immersion for dedicated spaces.",
       performanceSpecs: {
             "dimmingZones": 2300,
@@ -4852,6 +5234,11 @@ const TV_DATA = {
             "hdrGamingScore": 9.0,
             "mixedUsageScore": 8.4,
             "pcMonitorScore": 8.7
+      },
+      specs: {
+            "refreshRate": "144Hz",
+            "hdr": "HDR10",
+            "smartPlatform": "Google TV"
       },
       description: "This is TCL's flagship offering, delivering impressive local dimming with thousands of zones. It's a cinephile's delight, and optimized for responsive gaming. When bigger is definitely better.",
       performanceSpecs: {
@@ -4961,6 +5348,11 @@ const TV_DATA = {
       useCaseScores: {
             "sportsScore": 8.4
       },
+      specs: {
+            "refreshRate": "144Hz",
+            "hdr": "HDR10",
+            "smartPlatform": "Google TV"
+      },
       description: "The crown jewel of TCL's TV range, delivering punchy highlights with deep blacks. It's keeps up with fast action. One of the newest models available.",
       performanceSpecs: {
             "peakBrightness": 1950,
@@ -5011,6 +5403,11 @@ const TV_DATA = {
       useCaseScores: {
             "sportsScore": 8.4
       },
+      specs: {
+            "refreshRate": "144Hz",
+            "hdr": "HDR10",
+            "smartPlatform": "Google TV"
+      },
       description: "TCL's best has arrived, delivering excellent brightness with precise backlight control. It's ideal for game day. Big-screen immersion for dedicated spaces. One of the newest models available.",
       performanceSpecs: {
             "peakBrightness": 1950,
@@ -5060,6 +5457,11 @@ const TV_DATA = {
       ],
       useCaseScores: {
             "sportsScore": 8.4
+      },
+      specs: {
+            "refreshRate": "144Hz",
+            "hdr": "HDR10",
+            "smartPlatform": "Google TV"
       },
       description: "TCL's best has arrived, delivering excellent brightness with precise backlight control. It's handles motion like a champ. One of the newest models available.",
       performanceSpecs: {
