@@ -4,13 +4,13 @@
  * Designed to support multiple retailers and price history tracking.
  * Each TV has a unique ID and can have prices from multiple sources.
  *
- * Generated: 2026-01-23 01:25:57
+ * Generated: 2026-01-23 01:37:42
  * Total TVs: 98
  */
 
 const TV_DATA = {
   // Metadata
-  lastUpdated: "2026-01-23T01:25:57Z",
+  lastUpdated: "2026-01-23T01:37:42Z",
 
   // Retailer definitions (easily extensible)
   retailers: {
@@ -84,6 +84,16 @@ const TV_DATA = {
                   "inStock": true,
                   "lastChecked": "2026-01-22T20:29:48Z",
                   "originalUrl": "https://www.bestbuy.com/site/6578057.p"
+            },
+            {
+                  "retailerId": "amazon",
+                  "retailerName": "Amazon",
+                  "currentPrice": 989.99,
+                  "retailPrice": 989.99,
+                  "url": "https://www.amazon.com/dp/B0CVRTFKFC?tag=tvschool-20",
+                  "asin": "B0CVRTFKFC",
+                  "inStock": true,
+                  "lastChecked": "2026-01-23T01:36:15Z"
             }
       ],
       priceHistory: [
@@ -143,6 +153,16 @@ const TV_DATA = {
                   "inStock": true,
                   "lastChecked": "2026-01-22T18:48:36Z",
                   "originalUrl": "https://www.bestbuy.com/site/6578055.p"
+            },
+            {
+                  "retailerId": "amazon",
+                  "retailerName": "Amazon",
+                  "currentPrice": 1296.99,
+                  "retailPrice": 1296.99,
+                  "url": "https://www.amazon.com/dp/B0CVS2FXF3?tag=tvschool-20",
+                  "asin": "B0CVS2FXF3",
+                  "inStock": true,
+                  "lastChecked": "2026-01-23T01:36:15Z"
             }
       ],
       priceHistory: [
@@ -258,6 +278,16 @@ const TV_DATA = {
                   "inStock": true,
                   "lastChecked": "2026-01-22T20:30:14Z",
                   "originalUrl": "https://www.bestbuy.com/site/6635751.p"
+            },
+            {
+                  "retailerId": "amazon",
+                  "retailerName": "Amazon",
+                  "currentPrice": 1099.99,
+                  "retailPrice": 1099.99,
+                  "url": "https://www.amazon.com/dp/B0FFWV7M3Z?tag=tvschool-20",
+                  "asin": "B0FFWV7M3Z",
+                  "inStock": true,
+                  "lastChecked": "2026-01-23T01:36:15Z"
             }
       ],
       priceHistory: [
@@ -314,6 +344,16 @@ const TV_DATA = {
                   "inStock": true,
                   "lastChecked": "2026-01-22T20:30:13Z",
                   "originalUrl": "https://www.bestbuy.com/site/6633087.p"
+            },
+            {
+                  "retailerId": "amazon",
+                  "retailerName": "Amazon",
+                  "currentPrice": 1299.99,
+                  "retailPrice": 1299.99,
+                  "url": "https://www.amazon.com/dp/B0FFWW5BZZ?tag=tvschool-20",
+                  "asin": "B0FFWW5BZZ",
+                  "inStock": true,
+                  "lastChecked": "2026-01-23T01:36:15Z"
             }
       ],
       priceHistory: [
@@ -370,6 +410,16 @@ const TV_DATA = {
                   "inStock": true,
                   "lastChecked": "2026-01-22T20:30:12Z",
                   "originalUrl": "https://www.bestbuy.com/site/6621813.p"
+            },
+            {
+                  "retailerId": "amazon",
+                  "retailerName": "Amazon",
+                  "currentPrice": 1799.99,
+                  "retailPrice": 1799.99,
+                  "url": "https://www.amazon.com/dp/B0FFX1QDQ9?tag=tvschool-20",
+                  "asin": "B0FFX1QDQ9",
+                  "inStock": true,
+                  "lastChecked": "2026-01-23T01:36:15Z"
             }
       ],
       priceHistory: [
@@ -482,6 +532,16 @@ const TV_DATA = {
                   "inStock": true,
                   "lastChecked": "2026-01-22T20:29:47Z",
                   "originalUrl": "https://www.bestbuy.com/site/6578042.p"
+            },
+            {
+                  "retailerId": "amazon",
+                  "retailerName": "Amazon",
+                  "currentPrice": 1296.99,
+                  "retailPrice": 1296.99,
+                  "url": "https://www.amazon.com/dp/B0CVRDHT4N?tag=tvschool-20",
+                  "asin": "B0CVRDHT4N",
+                  "inStock": true,
+                  "lastChecked": "2026-01-23T01:36:15Z"
             }
       ],
       priceHistory: [
@@ -496,11 +556,6 @@ const TV_DATA = {
             "mixedUsageScore": 8.3,
             "movieScore": 8.5,
             "brightRoomScore": 6.9
-      },
-      specs: {
-            "refreshRate": "120Hz",
-            "hdr": "Dolby Vision",
-            "smartPlatform": "webOS"
       },
       description: "The LG C4 is LG's most popular OLED, the sweet spot of price and performance. It sits above the B4 and below the G4 in LG's lineup. It features OLED technology where each pixel produces its own light, enabling perfect blacks and infinite contrast. It excels at movies. The 65-inch size is the most popular choice, ideal for average living rooms with 6-8 feet of viewing distance.",
       performanceSpecs: {
@@ -541,6 +596,16 @@ const TV_DATA = {
                   "inStock": true,
                   "lastChecked": "2026-01-22T18:48:30Z",
                   "originalUrl": "https://www.bestbuy.com/site/6578044.p"
+            },
+            {
+                  "retailerId": "amazon",
+                  "retailerName": "Amazon",
+                  "currentPrice": 1596.99,
+                  "retailPrice": 1596.99,
+                  "url": "https://www.amazon.com/dp/B0CVRDNLVX?tag=tvschool-20",
+                  "asin": "B0CVRDNLVX",
+                  "inStock": true,
+                  "lastChecked": "2026-01-23T01:36:15Z"
             }
       ],
       priceHistory: [
@@ -600,6 +665,16 @@ const TV_DATA = {
                   "inStock": true,
                   "lastChecked": "2026-01-22T20:29:47Z",
                   "originalUrl": "https://www.bestbuy.com/site/6578043.p"
+            },
+            {
+                  "retailerId": "amazon",
+                  "retailerName": "Amazon",
+                  "currentPrice": 2496.99,
+                  "retailPrice": 2496.99,
+                  "url": "https://www.amazon.com/dp/B0CVRDC4XW?tag=tvschool-20",
+                  "asin": "B0CVRDC4XW",
+                  "inStock": true,
+                  "lastChecked": "2026-01-23T01:36:15Z"
             }
       ],
       priceHistory: [
@@ -673,11 +748,6 @@ const TV_DATA = {
             "mixedUsageScore": 8.6,
             "movieScore": 8.8,
             "brightRoomScore": 7.7
-      },
-      specs: {
-            "refreshRate": "120Hz",
-            "hdr": "Dolby Vision, HDR10",
-            "smartPlatform": "webOS"
       },
       description: "The LG C5 is LG's most popular OLED for 2025, the sweet spot of price and performance. It sits above the B5 and below the G5 in LG's lineup. It features OLED technology where each pixel produces its own light, enabling perfect blacks and infinite contrast. It excels at movies. The compact 42-inch screen is perfect for bedrooms, offices, kitchens, or as a secondary TV.",
       performanceSpecs: {
@@ -777,6 +847,16 @@ const TV_DATA = {
                   "inStock": true,
                   "lastChecked": "2026-01-22T20:30:10Z",
                   "originalUrl": "https://www.bestbuy.com/site/6621828.p"
+            },
+            {
+                  "retailerId": "amazon",
+                  "retailerName": "Amazon",
+                  "currentPrice": 1299.99,
+                  "retailPrice": 1299.99,
+                  "url": "https://www.amazon.com/dp/B0FFWZ4DRN?tag=tvschool-20",
+                  "asin": "B0FFWZ4DRN",
+                  "inStock": true,
+                  "lastChecked": "2026-01-23T01:36:15Z"
             }
       ],
       priceHistory: [
@@ -836,6 +916,16 @@ const TV_DATA = {
                   "inStock": true,
                   "lastChecked": "2026-01-22T18:51:15Z",
                   "originalUrl": "https://www.bestbuy.com/site/6621824.p"
+            },
+            {
+                  "retailerId": "amazon",
+                  "retailerName": "Amazon",
+                  "currentPrice": 1599.99,
+                  "retailPrice": 1599.99,
+                  "url": "https://www.amazon.com/dp/B0FFWQGLQH?tag=tvschool-20",
+                  "asin": "B0FFWQGLQH",
+                  "inStock": true,
+                  "lastChecked": "2026-01-23T01:36:15Z"
             }
       ],
       priceHistory: [
@@ -850,11 +940,6 @@ const TV_DATA = {
             "mixedUsageScore": 8.6,
             "movieScore": 8.8,
             "brightRoomScore": 7.7
-      },
-      specs: {
-            "refreshRate": "120Hz",
-            "hdr": "Dolby Vision",
-            "smartPlatform": "webOS"
       },
       description: "The LG C5 is LG's most popular OLED for 2025, the sweet spot of price and performance. It sits above the B5 and below the G5 in LG's lineup. It features OLED technology where each pixel produces its own light, enabling perfect blacks and infinite contrast. It excels at movies. The 65-inch size is the most popular choice, ideal for average living rooms with 6-8 feet of viewing distance.",
       performanceSpecs: {
@@ -895,6 +980,16 @@ const TV_DATA = {
                   "inStock": true,
                   "lastChecked": "2026-01-22T20:30:10Z",
                   "originalUrl": "https://www.bestbuy.com/site/6621825.p"
+            },
+            {
+                  "retailerId": "amazon",
+                  "retailerName": "Amazon",
+                  "currentPrice": 2099.99,
+                  "retailPrice": 2099.99,
+                  "url": "https://www.amazon.com/dp/B0FFX31HMG?tag=tvschool-20",
+                  "asin": "B0FFX31HMG",
+                  "inStock": true,
+                  "lastChecked": "2026-01-23T01:36:15Z"
             }
       ],
       priceHistory: [
@@ -909,6 +1004,11 @@ const TV_DATA = {
             "mixedUsageScore": 8.6,
             "movieScore": 8.8,
             "brightRoomScore": 7.7
+      },
+      specs: {
+            "refreshRate": "120Hz",
+            "hdr": "Dolby Vision",
+            "smartPlatform": "webOS"
       },
       description: "The LG C5 is LG's most popular OLED for 2025, the sweet spot of price and performance. It sits above the B5 and below the G5 in LG's lineup. It features OLED technology where each pixel produces its own light, enabling perfect blacks and infinite contrast. It excels at movies. At 77 inches, this fits well in larger living rooms where you sit 7-10 feet from the screen.",
       performanceSpecs: {
@@ -1023,6 +1123,11 @@ const TV_DATA = {
             "movieScore": 8.7,
             "brightRoomScore": 7.7
       },
+      specs: {
+            "refreshRate": "120Hz",
+            "hdr": "Dolby Vision, HDR10",
+            "smartPlatform": "webOS"
+      },
       description: "The LG G4 is LG's flagship Gallery OLED, designed to mount flush against the wall. It sits above the C4. It features OLED technology where each pixel produces its own light, enabling perfect blacks and infinite contrast. It excels at movies. The compact 42-inch screen is perfect for bedrooms, offices, kitchens, or as a secondary TV.",
       performanceSpecs: {
             "peakBrightness": 1950,
@@ -1121,6 +1226,16 @@ const TV_DATA = {
                   "inStock": false,
                   "lastChecked": "2026-01-22T20:29:45Z",
                   "originalUrl": "https://www.bestbuy.com/site/6578150.p"
+            },
+            {
+                  "retailerId": "amazon",
+                  "retailerName": "Amazon",
+                  "currentPrice": 2296.99,
+                  "retailPrice": 2296.99,
+                  "url": "https://www.amazon.com/dp/B0CVRWSB8D?tag=tvschool-20",
+                  "asin": "B0CVRWSB8D",
+                  "inStock": true,
+                  "lastChecked": "2026-01-23T01:36:15Z"
             }
       ],
       priceHistory: [
@@ -1180,6 +1295,16 @@ const TV_DATA = {
                   "inStock": true,
                   "lastChecked": "2026-01-22T20:29:45Z",
                   "originalUrl": "https://www.bestbuy.com/site/6578047.p"
+            },
+            {
+                  "retailerId": "amazon",
+                  "retailerName": "Amazon",
+                  "currentPrice": 2996.99,
+                  "retailPrice": 2996.99,
+                  "url": "https://www.amazon.com/dp/B0CVRVL22H?tag=tvschool-20",
+                  "asin": "B0CVRVL22H",
+                  "inStock": true,
+                  "lastChecked": "2026-01-23T01:36:15Z"
             }
       ],
       priceHistory: [
@@ -1254,6 +1379,11 @@ const TV_DATA = {
             "movieScore": 9.0,
             "brightRoomScore": 8.7
       },
+      specs: {
+            "refreshRate": "120Hz",
+            "hdr": "Dolby Vision",
+            "smartPlatform": "webOS"
+      },
       description: "The LG G5 is LG's flagship Gallery OLED for 2025, designed to mount flush against the wall. It sits above the C5. It features OLED technology where each pixel produces its own light, enabling perfect blacks and infinite contrast. It excels at movies and sports. At 55 inches, this works great in bedrooms, apartments, or living rooms with closer seating (5-7 feet).",
       performanceSpecs: {
             "peakBrightness": 1950,
@@ -1293,6 +1423,16 @@ const TV_DATA = {
                   "inStock": true,
                   "lastChecked": "2026-01-22T20:30:06Z",
                   "originalUrl": "https://www.bestbuy.com/site/6621810.p"
+            },
+            {
+                  "retailerId": "amazon",
+                  "retailerName": "Amazon",
+                  "currentPrice": 2599.99,
+                  "retailPrice": 2599.99,
+                  "url": "https://www.amazon.com/dp/B0FFWY1WZR?tag=tvschool-20",
+                  "asin": "B0FFWY1WZR",
+                  "inStock": true,
+                  "lastChecked": "2026-01-23T01:36:15Z"
             }
       ],
       priceHistory: [
@@ -1352,6 +1492,16 @@ const TV_DATA = {
                   "inStock": true,
                   "lastChecked": "2026-01-22T20:30:07Z",
                   "originalUrl": "https://www.bestbuy.com/site/6621819.p"
+            },
+            {
+                  "retailerId": "amazon",
+                  "retailerName": "Amazon",
+                  "currentPrice": 3299.99,
+                  "retailPrice": 3299.99,
+                  "url": "https://www.amazon.com/dp/B0FFWZCHJN?tag=tvschool-20",
+                  "asin": "B0FFWZCHJN",
+                  "inStock": true,
+                  "lastChecked": "2026-01-23T01:36:15Z"
             }
       ],
       priceHistory: [
@@ -1596,6 +1746,10 @@ const TV_DATA = {
       useCaseScores: {
             "sportsScore": 5.6
       },
+      specs: {
+            "refreshRate": "60Hz",
+            "smartPlatform": "Tizen"
+      },
       description: "The Samsung Q60D is Samsung's entry-level QLED, their most affordable quantum dot TV. It sits below the flagship Q70D. It uses QLED technology (Quantum Dot LED) for enhanced color volume and brightness compared to standard LED. The compact 50-inch screen is perfect for bedrooms, offices, kitchens, or as a secondary TV.",
       performanceSpecs: {
             "peakBrightness": 1950,
@@ -1756,10 +1910,6 @@ const TV_DATA = {
       ],
       useCaseScores: {
             "sportsScore": 5.6
-      },
-      specs: {
-            "refreshRate": "60Hz",
-            "smartPlatform": "Tizen"
       },
       description: "The Samsung Q60D is Samsung's entry-level QLED, their most affordable quantum dot TV. It sits below the flagship Q70D. It uses QLED technology (Quantum Dot LED) for enhanced color volume and brightness compared to standard LED. The 85-inch screen is designed for large living rooms or home theaters with seating 8-12 feet away.",
       performanceSpecs: {
@@ -2032,6 +2182,10 @@ const TV_DATA = {
       useCaseScores: {
             "sportsScore": 7.2
       },
+      specs: {
+            "refreshRate": "120Hz",
+            "smartPlatform": "Tizen"
+      },
       description: "The Samsung Q80D is Samsung's premium QLED without Mini LED, great brightness and color. It sits above the Q70D and below the QN85D in Samsung's lineup. It uses QLED technology (Quantum Dot LED) for enhanced color volume and brightness compared to standard LED. The 74-inch size is the most popular choice, ideal for average living rooms with 6-8 feet of viewing distance.",
       performanceSpecs: {
             "peakBrightness": 1950,
@@ -2082,10 +2236,6 @@ const TV_DATA = {
       ],
       useCaseScores: {
             "sportsScore": 7.2
-      },
-      specs: {
-            "refreshRate": "120Hz",
-            "smartPlatform": "Tizen"
       },
       description: "The Samsung Q80D is Samsung's premium QLED without Mini LED, great brightness and color. It sits above the Q70D and below the QN85D in Samsung's lineup. It uses QLED technology (Quantum Dot LED) for enhanced color volume and brightness compared to standard LED. At 84 inches, this fits well in larger living rooms where you sit 7-10 feet from the screen.",
       performanceSpecs: {
@@ -2358,6 +2508,10 @@ const TV_DATA = {
       useCaseScores: {
             "sportsScore": 7.1
       },
+      specs: {
+            "refreshRate": "120Hz",
+            "smartPlatform": "Tizen"
+      },
       description: "The Samsung QN80F is Samsung's Neo QLED for 2025 with Mini LED backlighting. It sits above the Q80D and below the QN90D in Samsung's lineup. It uses QLED technology (Quantum Dot LED) for enhanced color volume and brightness compared to standard LED. At 100 inches, this is a home theater centerpiece—best for dedicated media rooms or very large living spaces with seating 10+ feet away.",
       performanceSpecs: {
             "peakBrightness": 1950,
@@ -2397,6 +2551,16 @@ const TV_DATA = {
                   "inStock": true,
                   "lastChecked": "2026-01-22T20:29:39Z",
                   "originalUrl": "https://www.bestbuy.com/site/6576434.p"
+            },
+            {
+                  "retailerId": "amazon",
+                  "retailerName": "Amazon",
+                  "currentPrice": 1497.99,
+                  "retailPrice": 1497.99,
+                  "url": "https://www.amazon.com/dp/B0CV9NJQV5?tag=tvschool-20",
+                  "asin": "B0CV9NJQV5",
+                  "inStock": true,
+                  "lastChecked": "2026-01-23T01:36:15Z"
             }
       ],
       priceHistory: [
@@ -2455,6 +2619,16 @@ const TV_DATA = {
                   "inStock": true,
                   "lastChecked": "2026-01-22T20:29:38Z",
                   "originalUrl": "https://www.bestbuy.com/site/6576433.p"
+            },
+            {
+                  "retailerId": "amazon",
+                  "retailerName": "Amazon",
+                  "currentPrice": 1997.99,
+                  "retailPrice": 1997.99,
+                  "url": "https://www.amazon.com/dp/B0CV9P2YP4?tag=tvschool-20",
+                  "asin": "B0CV9P2YP4",
+                  "inStock": true,
+                  "lastChecked": "2026-01-23T01:36:15Z"
             }
       ],
       priceHistory: [
@@ -2513,6 +2687,16 @@ const TV_DATA = {
                   "inStock": false,
                   "lastChecked": "2026-01-22T20:29:37Z",
                   "originalUrl": "https://www.bestbuy.com/site/6611509.p"
+            },
+            {
+                  "retailerId": "amazon",
+                  "retailerName": "Amazon",
+                  "currentPrice": 1297.99,
+                  "retailPrice": 1297.99,
+                  "url": "https://www.amazon.com/dp/B0CV9KPNN1?tag=tvschool-20",
+                  "asin": "B0CV9KPNN1",
+                  "inStock": true,
+                  "lastChecked": "2026-01-23T01:36:15Z"
             }
       ],
       priceHistory: [
@@ -2586,6 +2770,10 @@ const TV_DATA = {
             "movieScore": 8.2,
             "brightRoomScore": 8.5
       },
+      specs: {
+            "refreshRate": "120Hz",
+            "smartPlatform": "Tizen"
+      },
       description: "The Samsung QN90D is Samsung's flagship Neo QLED (Mini LED), their brightest TV. It sits above the QN85D. It uses Mini LED backlighting with thousands of tiny LEDs for better contrast than standard LED TVs. It excels at bright rooms. The 74-inch size is the most popular choice, ideal for average living rooms with 6-8 feet of viewing distance.",
       performanceSpecs: {
             "peakBrightness": 1950,
@@ -2625,6 +2813,16 @@ const TV_DATA = {
                   "inStock": true,
                   "lastChecked": "2026-01-22T20:29:37Z",
                   "originalUrl": "https://www.bestbuy.com/site/6576424.p"
+            },
+            {
+                  "retailerId": "amazon",
+                  "retailerName": "Amazon",
+                  "currentPrice": 2497.99,
+                  "retailPrice": 2497.99,
+                  "url": "https://www.amazon.com/dp/B0CV9L75NR?tag=tvschool-20",
+                  "asin": "B0CV9L75NR",
+                  "inStock": true,
+                  "lastChecked": "2026-01-23T01:36:15Z"
             }
       ],
       priceHistory: [
@@ -2683,6 +2881,16 @@ const TV_DATA = {
                   "inStock": true,
                   "lastChecked": "2026-01-22T20:29:36Z",
                   "originalUrl": "https://www.bestbuy.com/site/6578061.p"
+            },
+            {
+                  "retailerId": "amazon",
+                  "retailerName": "Amazon",
+                  "currentPrice": 997.99,
+                  "retailPrice": 997.99,
+                  "url": "https://www.amazon.com/dp/B0CVS6C892?tag=tvschool-20",
+                  "asin": "B0CVS6C892",
+                  "inStock": true,
+                  "lastChecked": "2026-01-23T01:36:15Z"
             }
       ],
       priceHistory: [
@@ -2741,6 +2949,16 @@ const TV_DATA = {
                   "inStock": true,
                   "lastChecked": "2026-01-22T18:47:45Z",
                   "originalUrl": "https://www.bestbuy.com/site/6578059.p"
+            },
+            {
+                  "retailerId": "amazon",
+                  "retailerName": "Amazon",
+                  "currentPrice": 1297.99,
+                  "retailPrice": 1297.99,
+                  "url": "https://www.amazon.com/dp/B0CVSB5YS4?tag=tvschool-20",
+                  "asin": "B0CVSB5YS4",
+                  "inStock": true,
+                  "lastChecked": "2026-01-23T01:36:15Z"
             }
       ],
       priceHistory: [
@@ -2755,6 +2973,10 @@ const TV_DATA = {
             "mixedUsageScore": 7.8,
             "movieScore": 8.0,
             "brightRoomScore": 6.8
+      },
+      specs: {
+            "refreshRate": "120Hz",
+            "smartPlatform": "Tizen"
       },
       description: "The Samsung S85D is Samsung's entry-level OLED, bringing self-emitting pixels to a more accessible price. It sits below the flagship S90D. It features OLED technology where each pixel produces its own light, enabling perfect blacks and infinite contrast. At 64 inches, this works great in bedrooms, apartments, or living rooms with closer seating (5-7 feet).",
       performanceSpecs: {
@@ -2853,6 +3075,16 @@ const TV_DATA = {
                   "inStock": true,
                   "lastChecked": "2026-01-22T20:29:34Z",
                   "originalUrl": "https://www.bestbuy.com/site/6576598.p"
+            },
+            {
+                  "retailerId": "amazon",
+                  "retailerName": "Amazon",
+                  "currentPrice": 1397.99,
+                  "retailPrice": 1397.99,
+                  "url": "https://www.amazon.com/dp/B0CVS6PDZ3?tag=tvschool-20",
+                  "asin": "B0CVS6PDZ3",
+                  "inStock": true,
+                  "lastChecked": "2026-01-23T01:36:15Z"
             }
       ],
       priceHistory: [
@@ -2911,6 +3143,16 @@ const TV_DATA = {
                   "inStock": true,
                   "lastChecked": "2026-01-22T20:29:35Z",
                   "originalUrl": "https://www.bestbuy.com/site/6578065.p"
+            },
+            {
+                  "retailerId": "amazon",
+                  "retailerName": "Amazon",
+                  "currentPrice": 1997.99,
+                  "retailPrice": 1997.99,
+                  "url": "https://www.amazon.com/dp/B0CVS38Q4M?tag=tvschool-20",
+                  "asin": "B0CVS38Q4M",
+                  "inStock": true,
+                  "lastChecked": "2026-01-23T01:36:15Z"
             }
       ],
       priceHistory: [
@@ -2925,10 +3167,6 @@ const TV_DATA = {
             "mixedUsageScore": 8.5,
             "movieScore": 8.7,
             "brightRoomScore": 7.2
-      },
-      specs: {
-            "refreshRate": "120Hz",
-            "smartPlatform": "Tizen"
       },
       description: "The Samsung S90D is Samsung's mid-range QD-OLED, offering flagship-level picture at a lower price. It sits above the S85D and below the S95D in Samsung's lineup. It uses Quantum Dot OLED technology—combining the perfect blacks of OLED with enhanced color brightness from quantum dots. It excels at movies. At 77 inches, this fits well in larger living rooms where you sit 7-10 feet from the screen.",
       performanceSpecs: {
@@ -3145,6 +3383,16 @@ const TV_DATA = {
                   "inStock": true,
                   "lastChecked": "2026-01-22T20:30:04Z",
                   "originalUrl": "https://www.bestbuy.com/site/6613501.p"
+            },
+            {
+                  "retailerId": "amazon",
+                  "retailerName": "Amazon",
+                  "currentPrice": 1297.99,
+                  "retailPrice": 1297.99,
+                  "url": "https://www.amazon.com/dp/B0DXN15HF7?tag=tvschool-20",
+                  "asin": "B0DXN15HF7",
+                  "inStock": true,
+                  "lastChecked": "2026-01-23T01:36:15Z"
             }
       ],
       priceHistory: [
@@ -3159,11 +3407,6 @@ const TV_DATA = {
             "mixedUsageScore": 8.6,
             "movieScore": 8.8,
             "brightRoomScore": 7.6
-      },
-      specs: {
-            "refreshRate": "120Hz",
-            "hdr": "HDR10",
-            "smartPlatform": "Tizen"
       },
       description: "The Samsung S90F is Samsung's mid-range QD-OLED for 2025, offering flagship-level picture at a lower price. It sits above the S85D and below the S95F in Samsung's lineup. It uses Quantum Dot OLED technology—combining the perfect blacks of OLED with enhanced color brightness from quantum dots. It excels at movies. At 55 inches, this works great in bedrooms, apartments, or living rooms with closer seating (5-7 feet).",
       performanceSpecs: {
@@ -3204,6 +3447,16 @@ const TV_DATA = {
                   "inStock": true,
                   "lastChecked": "2026-01-22T18:49:57Z",
                   "originalUrl": "https://www.bestbuy.com/site/6613491.p"
+            },
+            {
+                  "retailerId": "amazon",
+                  "retailerName": "Amazon",
+                  "currentPrice": 1497.99,
+                  "retailPrice": 1497.99,
+                  "url": "https://www.amazon.com/dp/B0DXN1QR8S?tag=tvschool-20",
+                  "asin": "B0DXN1QR8S",
+                  "inStock": true,
+                  "lastChecked": "2026-01-23T01:36:15Z"
             }
       ],
       priceHistory: [
@@ -3263,6 +3516,16 @@ const TV_DATA = {
                   "inStock": true,
                   "lastChecked": "2026-01-22T20:30:01Z",
                   "originalUrl": "https://www.bestbuy.com/site/6613462.p"
+            },
+            {
+                  "retailerId": "amazon",
+                  "retailerName": "Amazon",
+                  "currentPrice": 1997.99,
+                  "retailPrice": 1997.99,
+                  "url": "https://www.amazon.com/dp/B0DXN1QNFW?tag=tvschool-20",
+                  "asin": "B0DXN1QNFW",
+                  "inStock": true,
+                  "lastChecked": "2026-01-23T01:36:15Z"
             }
       ],
       priceHistory: [
@@ -3381,6 +3644,16 @@ const TV_DATA = {
                   "inStock": true,
                   "lastChecked": "2026-01-22T20:29:59Z",
                   "originalUrl": "https://www.bestbuy.com/site/6613500.p"
+            },
+            {
+                  "retailerId": "amazon",
+                  "retailerName": "Amazon",
+                  "currentPrice": 1897.99,
+                  "retailPrice": 1897.99,
+                  "url": "https://www.amazon.com/dp/B0DXN13FLV?tag=tvschool-20",
+                  "asin": "B0DXN13FLV",
+                  "inStock": true,
+                  "lastChecked": "2026-01-23T01:36:15Z"
             }
       ],
       priceHistory: [
@@ -3440,6 +3713,16 @@ const TV_DATA = {
                   "inStock": true,
                   "lastChecked": "2026-01-22T20:29:59Z",
                   "originalUrl": "https://www.bestbuy.com/site/6613492.p"
+            },
+            {
+                  "retailerId": "amazon",
+                  "retailerName": "Amazon",
+                  "currentPrice": 2297.99,
+                  "retailPrice": 2297.99,
+                  "url": "https://www.amazon.com/dp/B0DXN1CKSB?tag=tvschool-20",
+                  "asin": "B0DXN1CKSB",
+                  "inStock": true,
+                  "lastChecked": "2026-01-23T01:36:15Z"
             }
       ],
       priceHistory: [
@@ -3499,6 +3782,16 @@ const TV_DATA = {
                   "inStock": true,
                   "lastChecked": "2026-01-22T20:29:58Z",
                   "originalUrl": "https://www.bestbuy.com/site/6613459.p"
+            },
+            {
+                  "retailerId": "amazon",
+                  "retailerName": "Amazon",
+                  "currentPrice": 2997.99,
+                  "retailPrice": 2997.99,
+                  "url": "https://www.amazon.com/dp/B0DXN26FH9?tag=tvschool-20",
+                  "asin": "B0DXN26FH9",
+                  "inStock": true,
+                  "lastChecked": "2026-01-23T01:36:15Z"
             }
       ],
       priceHistory: [
@@ -3617,6 +3910,16 @@ const TV_DATA = {
                   "inStock": true,
                   "lastChecked": "2026-01-22T20:29:49Z",
                   "originalUrl": "https://www.bestbuy.com/site/6553380.p"
+            },
+            {
+                  "retailerId": "amazon",
+                  "retailerName": "Amazon",
+                  "currentPrice": 2998.0,
+                  "retailPrice": 2998.0,
+                  "url": "https://www.amazon.com/dp/B0C73HM5X3?tag=tvschool-20",
+                  "asin": "B0C73HM5X3",
+                  "inStock": true,
+                  "lastChecked": "2026-01-23T01:36:15Z"
             }
       ],
       priceHistory: [
@@ -3672,6 +3975,16 @@ const TV_DATA = {
                   "inStock": true,
                   "lastChecked": "2026-01-22T20:29:49Z",
                   "originalUrl": "https://www.bestbuy.com/site/6578569.p"
+            },
+            {
+                  "retailerId": "amazon",
+                  "retailerName": "Amazon",
+                  "currentPrice": 1198.0,
+                  "retailPrice": 1198.0,
+                  "url": "https://www.amazon.com/dp/B0CVQ87Q2H?tag=tvschool-20",
+                  "asin": "B0CVQ87Q2H",
+                  "inStock": true,
+                  "lastChecked": "2026-01-23T01:36:15Z"
             }
       ],
       priceHistory: [
@@ -3730,6 +4043,16 @@ const TV_DATA = {
                   "inStock": true,
                   "lastChecked": "2026-01-22T20:29:50Z",
                   "originalUrl": "https://www.bestbuy.com/site/6578577.p"
+            },
+            {
+                  "retailerId": "amazon",
+                  "retailerName": "Amazon",
+                  "currentPrice": 1498.0,
+                  "retailPrice": 1498.0,
+                  "url": "https://www.amazon.com/dp/B0CVQ6YLH7?tag=tvschool-20",
+                  "asin": "B0CVQ6YLH7",
+                  "inStock": true,
+                  "lastChecked": "2026-01-23T01:36:15Z"
             }
       ],
       priceHistory: [
@@ -3788,6 +4111,16 @@ const TV_DATA = {
                   "inStock": true,
                   "lastChecked": "2026-01-22T20:29:50Z",
                   "originalUrl": "https://www.bestbuy.com/site/6578574.p"
+            },
+            {
+                  "retailerId": "amazon",
+                  "retailerName": "Amazon",
+                  "currentPrice": 1998.0,
+                  "retailPrice": 1998.0,
+                  "url": "https://www.amazon.com/dp/B0CVQ7BKZP?tag=tvschool-20",
+                  "asin": "B0CVQ7BKZP",
+                  "inStock": true,
+                  "lastChecked": "2026-01-23T01:36:15Z"
             }
       ],
       priceHistory: [
@@ -3802,10 +4135,6 @@ const TV_DATA = {
             "mixedUsageScore": 7.9,
             "movieScore": 8.2,
             "brightRoomScore": 7.0
-      },
-      specs: {
-            "refreshRate": "120Hz",
-            "smartPlatform": "Google TV"
       },
       description: "The Sony Bravia 8 is Sony's mid-range OLED, excellent picture with Sony's processing. It sits above the X90L and below the Bravia 9 in Sony's lineup. It features OLED technology where each pixel produces its own light, enabling perfect blacks and infinite contrast. At 77 inches, this fits well in larger living rooms where you sit 7-10 feet from the screen.",
       performanceSpecs: {
@@ -3858,6 +4187,10 @@ const TV_DATA = {
       useCaseScores: {
             "sportsScore": 8.7
       },
+      specs: {
+            "refreshRate": "120Hz",
+            "smartPlatform": "Google TV"
+      },
       description: "The Sony Bravia 8 II is Sony's updated mid-range OLED for 2025. It sits above the X90L and below the Bravia 9 in Sony's lineup. It features OLED technology where each pixel produces its own light, enabling perfect blacks and infinite contrast. It excels at sports. At 55 inches, this works great in bedrooms, apartments, or living rooms with closer seating (5-7 feet).",
       performanceSpecs: {
             "peakBrightness": 1950,
@@ -3909,10 +4242,6 @@ const TV_DATA = {
       useCaseScores: {
             "sportsScore": 8.7
       },
-      specs: {
-            "refreshRate": "120Hz",
-            "smartPlatform": "Google TV"
-      },
       description: "The Sony Bravia 8 II is Sony's updated mid-range OLED for 2025. It sits above the X90L and below the Bravia 9 in Sony's lineup. It features OLED technology where each pixel produces its own light, enabling perfect blacks and infinite contrast. It excels at sports. At 64 inches, this works great in bedrooms, apartments, or living rooms with closer seating (5-7 feet).",
       performanceSpecs: {
             "peakBrightness": 1950,
@@ -3952,6 +4281,16 @@ const TV_DATA = {
                   "inStock": true,
                   "lastChecked": "2026-01-22T18:49:04Z",
                   "originalUrl": "https://www.bestbuy.com/site/6578568.p"
+            },
+            {
+                  "retailerId": "amazon",
+                  "retailerName": "Amazon",
+                  "currentPrice": 1998.0,
+                  "retailPrice": 1998.0,
+                  "url": "https://www.amazon.com/dp/B0CVQ8LBZJ?tag=tvschool-20",
+                  "asin": "B0CVQ8LBZJ",
+                  "inStock": true,
+                  "lastChecked": "2026-01-23T01:36:15Z"
             }
       ],
       priceHistory: [
@@ -4007,6 +4346,16 @@ const TV_DATA = {
                   "inStock": true,
                   "lastChecked": "2026-01-22T20:29:51Z",
                   "originalUrl": "https://www.bestbuy.com/site/6578575.p"
+            },
+            {
+                  "retailerId": "amazon",
+                  "retailerName": "Amazon",
+                  "currentPrice": 2498.0,
+                  "retailPrice": 2498.0,
+                  "url": "https://www.amazon.com/dp/B0CVQ7J5RV?tag=tvschool-20",
+                  "asin": "B0CVQ7J5RV",
+                  "inStock": true,
+                  "lastChecked": "2026-01-23T01:36:15Z"
             }
       ],
       priceHistory: [
@@ -4073,6 +4422,10 @@ const TV_DATA = {
       ],
       useCaseScores: {
             "sportsScore": 7.7
+      },
+      specs: {
+            "refreshRate": "120Hz",
+            "smartPlatform": "Google TV"
       },
       description: "The Sony Bravia 9 is Sony's flagship Mini LED for 2025, combining brightness with Sony's legendary processing. It sits above the Bravia 8. It uses Mini LED backlighting with thousands of tiny LEDs for better contrast than standard LED TVs. The 85-inch screen is designed for large living rooms or home theaters with seating 8-12 feet away.",
       performanceSpecs: {
@@ -4235,10 +4588,6 @@ const TV_DATA = {
       useCaseScores: {
             "sportsScore": 7.2
       },
-      specs: {
-            "refreshRate": "120Hz",
-            "smartPlatform": "Google TV"
-      },
       description: "The Sony X90L is Sony's Full Array LED, great value with premium Sony processing. It sits below the flagship Bravia 8. It uses LED backlighting, a proven technology offering good value. The 74-inch size is the most popular choice, ideal for average living rooms with 6-8 feet of viewing distance.",
       performanceSpecs: {
             "peakBrightness": 1950,
@@ -4344,10 +4693,6 @@ const TV_DATA = {
       ],
       useCaseScores: {
             "sportsScore": 7.2
-      },
-      specs: {
-            "refreshRate": "120Hz",
-            "smartPlatform": "Google TV"
       },
       description: "The Sony X90L is Sony's Full Array LED, great value with premium Sony processing. It sits below the flagship Bravia 8. It uses LED backlighting, a proven technology offering good value. At 98 inches, this is a home theater centerpiece—best for dedicated media rooms or very large living spaces with seating 10+ feet away.",
       performanceSpecs: {
@@ -4526,6 +4871,11 @@ const TV_DATA = {
       useCaseScores: {
             "sportsScore": 6.5
       },
+      specs: {
+            "refreshRate": "60Hz",
+            "hdr": "HDR10",
+            "smartPlatform": "Google TV"
+      },
       description: "The TCL QM5K is TCL's entry-level Mini LED for 2025, offering premium features at a budget price. It sits below the flagship QM7K. It uses Mini LED backlighting with thousands of tiny LEDs for better contrast than standard LED TVs. The compact 50-inch screen is perfect for bedrooms, offices, kitchens, or as a secondary TV.",
       performanceSpecs: {
             "peakBrightness": 1950,
@@ -4688,11 +5038,6 @@ const TV_DATA = {
       ],
       useCaseScores: {
             "sportsScore": 6.5
-      },
-      specs: {
-            "refreshRate": "60Hz",
-            "hdr": "HDR10",
-            "smartPlatform": "Google TV"
       },
       description: "The TCL QM5K is TCL's entry-level Mini LED for 2025, offering premium features at a budget price. It sits below the flagship QM7K. It uses Mini LED backlighting with thousands of tiny LEDs for better contrast than standard LED TVs. The 74-inch size is the most popular choice, ideal for average living rooms with 6-8 feet of viewing distance.",
       performanceSpecs: {
@@ -4915,11 +5260,6 @@ const TV_DATA = {
       useCaseScores: {
             "sportsScore": 7.8
       },
-      specs: {
-            "refreshRate": "144Hz",
-            "hdr": "HDR10",
-            "smartPlatform": "Google TV"
-      },
       description: "The TCL QM7K sits in the middle of TCL's 2025 Mini LED lineup. It sits above the QM5K and below the QM8K in TCL's lineup. It uses Mini LED backlighting with over 2,500 local dimming zones for precise contrast control and excellent HDR performance. The 74-inch size is the most popular choice, ideal for average living rooms with 6-8 feet of viewing distance.",
       performanceSpecs: {
             "dimmingZones": 2500,
@@ -5131,6 +5471,16 @@ const TV_DATA = {
                   "inStock": true,
                   "lastChecked": "2026-01-22T20:29:56Z",
                   "originalUrl": "https://www.bestbuy.com/site/6625842.p"
+            },
+            {
+                  "retailerId": "amazon",
+                  "retailerName": "Amazon",
+                  "currentPrice": 797.99,
+                  "retailPrice": 797.99,
+                  "url": "https://www.amazon.com/dp/B0CZ51B3W6?tag=tvschool-20",
+                  "asin": "B0CZ51B3W6",
+                  "inStock": true,
+                  "lastChecked": "2026-01-23T01:36:15Z"
             }
       ],
       priceHistory: [
@@ -5194,6 +5544,16 @@ const TV_DATA = {
                   "inStock": true,
                   "lastChecked": "2026-01-22T20:29:56Z",
                   "originalUrl": "https://www.bestbuy.com/site/6625839.p"
+            },
+            {
+                  "retailerId": "amazon",
+                  "retailerName": "Amazon",
+                  "currentPrice": 997.99,
+                  "retailPrice": 997.99,
+                  "url": "https://www.amazon.com/dp/B0CZ4ZJT4M?tag=tvschool-20",
+                  "asin": "B0CZ4ZJT4M",
+                  "inStock": true,
+                  "lastChecked": "2026-01-23T01:36:15Z"
             }
       ],
       priceHistory: [
@@ -5257,6 +5617,16 @@ const TV_DATA = {
                   "inStock": true,
                   "lastChecked": "2026-01-22T20:29:57Z",
                   "originalUrl": "https://www.bestbuy.com/site/6625843.p"
+            },
+            {
+                  "retailerId": "amazon",
+                  "retailerName": "Amazon",
+                  "currentPrice": 1297.99,
+                  "retailPrice": 1297.99,
+                  "url": "https://www.amazon.com/dp/B0CZ51SFHP?tag=tvschool-20",
+                  "asin": "B0CZ51SFHP",
+                  "inStock": true,
+                  "lastChecked": "2026-01-23T01:36:15Z"
             }
       ],
       priceHistory: [
@@ -5320,6 +5690,16 @@ const TV_DATA = {
                   "inStock": true,
                   "lastChecked": "2026-01-22T18:49:17Z",
                   "originalUrl": "https://www.bestbuy.com/site/6625840.p"
+            },
+            {
+                  "retailerId": "amazon",
+                  "retailerName": "Amazon",
+                  "currentPrice": 1997.99,
+                  "retailPrice": 1997.99,
+                  "url": "https://www.amazon.com/dp/B0CZ4YJJTK?tag=tvschool-20",
+                  "asin": "B0CZ4YJJTK",
+                  "inStock": true,
+                  "lastChecked": "2026-01-23T01:36:15Z"
             }
       ],
       priceHistory: [
@@ -5337,11 +5717,6 @@ const TV_DATA = {
             "hdrGamingScore": 9.0,
             "mixedUsageScore": 8.4,
             "pcMonitorScore": 8.7
-      },
-      specs: {
-            "refreshRate": "144Hz",
-            "hdr": "HDR10",
-            "smartPlatform": "Google TV"
       },
       description: "The TCL QM8 is TCL's flagship Mini LED. It sits above the QM7. It uses Mini LED backlighting with over 2,300 local dimming zones for precise contrast control and excellent HDR performance. It excels at movies and HDR gaming. At 98 inches, this is a home theater centerpiece—best for dedicated media rooms or very large living spaces with seating 10+ feet away.",
       performanceSpecs: {
