@@ -575,7 +575,7 @@ function isSuperBigTV(tv) {
 function getQualityTier(rtingsScore) {
   if (rtingsScore >= 8.5) return { tier: 5, label: 'Excellent' };
   if (rtingsScore >= 8.0) return { tier: 4, label: 'Very Good' };
-  if (rtingsScore >= 7.0) return { tier: 3, label: 'Good' };
+  if (rtingsScore >= 6.5) return { tier: 3, label: 'Good' };
   return { tier: 2, label: 'Average' };
 }
 
@@ -590,7 +590,7 @@ function renderQualityStars(rtingsScore) {
 function getUseCaseStars(score) {
   if (score >= 8.6) return { stars: '★★★★★', tier: 5 };
   if (score >= 8.0) return { stars: '★★★★☆', tier: 4 };
-  if (score >= 7.0) return { stars: '★★★☆☆', tier: 3 };
+  if (score >= 6.5) return { stars: '★★★☆☆', tier: 3 };
   return { stars: '★★☆☆☆', tier: 2 };
 }
 
