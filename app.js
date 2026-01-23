@@ -15,7 +15,8 @@ const AppState = {
     minDealScore: -Infinity,
     minPrice: 0,
     maxPrice: Infinity,
-    useCases: [] // Active use-case filters: 'gaming', 'movies', 'sports', 'tvshows', 'pc'
+    useCases: [], // Active use-case filters: 'gaming', 'movies', 'sports', 'tvshows', 'pc'
+    minRefreshRate: 0 // Minimum refresh rate in Hz (0 = all)
   },
   sortBy: 'dealScore'
 };
@@ -78,7 +79,7 @@ function renderDealOfDay() {
   const writeup = generateDealWriteup(bestDeal, dealScore, bestPrice);
 
   container.innerHTML = `
-    <div class="deal-of-day-card">
+    <a href="product.html?id=${bestDeal.id}" class="deal-of-day-card deal-of-day-link">
       <div class="deal-of-day-badge">Deal of the Day</div>
       <div class="deal-of-day-content">
         <div class="deal-of-day-header">
@@ -95,9 +96,9 @@ function renderDealOfDay() {
       <div class="deal-of-day-cta">
         <div class="deal-of-day-price">${TVDataUtils.formatPrice(bestPrice.currentPrice)}</div>
         <div class="deal-of-day-savings">${savingsPct}% below <span class="projected-tooltip">projected<span class="tooltip-content">Our projected price is calculated based on screen size, panel technology (OLED, Mini LED, etc.), and RTINGS review scores.</span></span></div>
-        <a href="${bestPrice.url}" target="_blank" class="deal-of-day-btn">View at ${retailer?.name || 'Retailer'}</a>
+        <span class="deal-of-day-btn">View Details →</span>
       </div>
-    </div>
+    </a>
   `;
 }
 
@@ -236,6 +237,12 @@ function initializeFilters() {
     gradeSlider.addEventListener('input', handleGradeChange);
   }
 
+  // Refresh rate slider
+  const refreshSlider = document.getElementById('refresh-slider');
+  if (refreshSlider) {
+    refreshSlider.addEventListener('input', handleRefreshRateChange);
+  }
+
   // Price range inputs
   const minPriceInput = document.getElementById('min-price');
   const maxPriceInput = document.getElementById('max-price');
@@ -342,6 +349,25 @@ function handleGradeChange(e) {
   applyFilters();
 }
 
+// Handle refresh rate slider change
+function handleRefreshRateChange(e) {
+  const value = parseInt(e.target.value);
+
+  // Map slider position to minimum refresh rate
+  // 0: All (0Hz), 1: 120Hz+, 2: 144Hz+
+  const refreshThresholds = [0, 120, 144];
+  const refreshLabels = ['All Refresh Rates', '120Hz or Higher', '144Hz Only'];
+
+  AppState.filters.minRefreshRate = refreshThresholds[value];
+
+  const label = document.getElementById('refresh-value');
+  if (label) {
+    label.textContent = refreshLabels[value];
+  }
+
+  applyFilters();
+}
+
 // Handle price range change
 function handlePriceChange() {
   const minInput = document.getElementById('min-price');
@@ -370,7 +396,8 @@ function clearFilters() {
     minDealScore: -Infinity,
     minPrice: 0,
     maxPrice: Infinity,
-    useCases: []
+    useCases: [],
+    minRefreshRate: 0
   };
 
   // Reset UI
@@ -396,6 +423,12 @@ function clearFilters() {
 
   const gradeLabel = document.getElementById('grade-value');
   if (gradeLabel) gradeLabel.textContent = 'All Grades';
+
+  const refreshSlider = document.getElementById('refresh-slider');
+  if (refreshSlider) refreshSlider.value = 0;
+
+  const refreshLabel = document.getElementById('refresh-value');
+  if (refreshLabel) refreshLabel.textContent = 'All Refresh Rates';
 
   const minPriceInput = document.getElementById('min-price');
   const maxPriceInput = document.getElementById('max-price');
@@ -446,6 +479,15 @@ function applyFilters() {
     return price >= AppState.filters.minPrice &&
            price <= (AppState.filters.maxPrice || Infinity);
   });
+
+  // Refresh rate filter
+  if (AppState.filters.minRefreshRate > 0) {
+    filtered = filtered.filter(tv => {
+      const refreshStr = tv.specs?.refreshRate || '60Hz';
+      const refreshNum = parseInt(refreshStr.replace('Hz', '')) || 60;
+      return refreshNum >= AppState.filters.minRefreshRate;
+    });
+  }
 
   // Use-case filters (8.0+ threshold)
   const MIN_USE_CASE_SCORE = 8.0;
@@ -500,6 +542,20 @@ function applyFilters() {
 }
 
 // Render TV grid
+// Render buying guide promo card
+function renderGuidePromoCard() {
+  return `
+    <a href="guides/index.html" class="tv-card guide-promo-card">
+      <div class="guide-promo-content">
+        <div class="guide-promo-icon">📚</div>
+        <h3 class="guide-promo-title">Need Help Choosing?</h3>
+        <p class="guide-promo-text">Check out our buying guides for expert advice on gaming TVs, OLED vs Mini LED, picking the right size, and more.</p>
+        <span class="guide-promo-link">View Buying Guides →</span>
+      </div>
+    </a>
+  `;
+}
+
 function renderTVGrid() {
   const grid = document.getElementById('tv-grid');
   if (!grid) return;
@@ -515,13 +571,17 @@ function renderTVGrid() {
     return;
   }
 
-  grid.innerHTML = AppState.filteredTvs.map(tv => renderTVCard(tv)).join('');
+  // Insert guide promo card after position 5
+  const cards = AppState.filteredTvs.map(tv => renderTVCard(tv));
+  if (cards.length >= 5) {
+    cards.splice(5, 0, renderGuidePromoCard());
+  }
+  grid.innerHTML = cards.join('');
 
-  // Add click handlers for cards
-  document.querySelectorAll('.tv-card').forEach(card => {
+  // Add click handlers for TV cards (not promo cards)
+  document.querySelectorAll('.tv-card[data-tv-id]').forEach(card => {
     card.addEventListener('click', () => {
       const tvId = card.dataset.tvId;
-      // Navigate to product page (placeholder)
       window.location.href = `product.html?id=${tvId}`;
     });
   });
@@ -578,14 +638,14 @@ function isSuperBigTV(tv) {
 // Get tooltip text for grade explanation
 function getGradeTooltip(grade) {
   const tooltips = {
-    'A': 'Great Deal - This TV is priced 25%+ below our projected fair value. Exceptional value that rarely comes around.',
-    'B': 'Good Deal - This TV is priced 10-25% below our projected fair value. Solid value worth considering.',
-    'C': 'Fair Price - This TV is priced within 10% of our projected fair value. You are paying about what it is worth.',
-    'D': 'Overpriced - This TV is priced 10-25% above our projected fair value. Consider waiting for a sale.',
-    'F': 'Very Overpriced - This TV is priced 25%+ above our projected fair value. You are paying a significant premium.',
+    'A': 'Great Deal - This TV is priced 25%+ below our predicted value. Exceptional value that rarely comes around.',
+    'B': 'Good Deal - This TV is priced 10-25% below our predicted value. Solid value worth considering.',
+    'C': 'Fair Price - This TV is priced within 10% of our predicted value. You are paying about what it is worth.',
+    'D': 'Not Recommended - This TV is priced 10-25% above our predicted value. Consider waiting for a sale.',
+    'F': 'Not Recommended - This TV is priced 25%+ above our predicted value. You are paying a significant premium.',
     '?': 'Limited Data - We do not have enough market data for TVs this size to make accurate price projections.'
   };
-  return tooltips[grade] || 'Deal grade based on comparing sale price to our projected fair value.';
+  return tooltips[grade] || 'Deal grade based on comparing sale price to our predicted value.';
 }
 
 // Convert RTINGS score to quality tier (2-5 scale, no 1-star ratings)

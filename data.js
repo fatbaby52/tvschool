@@ -4,13 +4,13 @@
  * Designed to support multiple retailers and price history tracking.
  * Each TV has a unique ID and can have prices from multiple sources.
  *
- * Generated: 2026-01-22 23:28:53
+ * Generated: 2026-01-23 01:25:57
  * Total TVs: 98
  */
 
 const TV_DATA = {
   // Metadata
-  lastUpdated: "2026-01-22T23:28:53Z",
+  lastUpdated: "2026-01-23T01:25:57Z",
 
   // Retailer definitions (easily extensible)
   retailers: {
@@ -18,22 +18,43 @@ const TV_DATA = {
       id: "bestbuy",
       name: "Best Buy",
       logo: "https://upload.wikimedia.org/wikipedia/commons/f/f5/Best_Buy_Logo.svg",
-      affiliateTemplate: "https://www.bestbuy.com/site/{sku}?ref=deal-central",
       color: "#0046be"
     },
     amazon: {
       id: "amazon",
       name: "Amazon",
       logo: "https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg",
-      affiliateTemplate: "https://www.amazon.com/dp/{asin}?tag=dealcentral-20",
       color: "#ff9900"
+    },
+    walmart: {
+      id: "walmart",
+      name: "Walmart",
+      logo: "https://upload.wikimedia.org/wikipedia/commons/c/ca/Walmart_logo.svg",
+      color: "#0071dc"
     },
     costco: {
       id: "costco",
       name: "Costco",
       logo: "https://upload.wikimedia.org/wikipedia/commons/5/59/Costco_Wholesale_logo_2010-10-26.svg",
-      affiliateTemplate: "https://www.costco.com/product/{sku}?ref=deal-central",
       color: "#e31837"
+    },
+    target: {
+      id: "target",
+      name: "Target",
+      logo: "https://upload.wikimedia.org/wikipedia/commons/9/9a/Target_logo.svg",
+      color: "#cc0000"
+    },
+    macys: {
+      id: "macys",
+      name: "Macy's",
+      logo: "",
+      color: "#e21a2c"
+    },
+    hsn: {
+      id: "hsn",
+      name: "HSN",
+      logo: "",
+      color: "#00a3e0"
     }
   },
 
@@ -58,10 +79,11 @@ const TV_DATA = {
                   "retailerId": "bestbuy",
                   "currentPrice": 989.99,
                   "retailPrice": 1099.99,
-                  "url": "https://www.bestbuy.com/site/6578057.p",
+                  "url": "https://sovrn.co?key=8385bed416f9d04124c9e2a38846b0fb&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F6578057.p",
                   "sku": "6578057",
                   "inStock": true,
-                  "lastChecked": "2026-01-22T20:29:48Z"
+                  "lastChecked": "2026-01-22T20:29:48Z",
+                  "originalUrl": "https://www.bestbuy.com/site/6578057.p"
             }
       ],
       priceHistory: [
@@ -116,10 +138,11 @@ const TV_DATA = {
                   "retailerId": "bestbuy",
                   "currentPrice": 1529.99,
                   "retailPrice": 1599.99,
-                  "url": "https://www.bestbuy.com/site/6578055.p",
+                  "url": "https://sovrn.co?key=8385bed416f9d04124c9e2a38846b0fb&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F6578055.p",
                   "sku": "6578055",
                   "inStock": true,
-                  "lastChecked": "2026-01-22T18:48:36Z"
+                  "lastChecked": "2026-01-22T18:48:36Z",
+                  "originalUrl": "https://www.bestbuy.com/site/6578055.p"
             }
       ],
       priceHistory: [
@@ -174,10 +197,11 @@ const TV_DATA = {
                   "retailerId": "bestbuy",
                   "currentPrice": 599.99,
                   "retailPrice": 1299.99,
-                  "url": "https://www.bestbuy.com/site/6635292.p",
+                  "url": "https://sovrn.co?key=8385bed416f9d04124c9e2a38846b0fb&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F6635292.p",
                   "sku": "6635292",
                   "inStock": true,
-                  "lastChecked": "2026-01-22T20:30:14Z"
+                  "lastChecked": "2026-01-22T20:30:14Z",
+                  "originalUrl": "https://www.bestbuy.com/site/6635292.p"
             }
       ],
       priceHistory: [
@@ -229,10 +253,11 @@ const TV_DATA = {
                   "retailerId": "bestbuy",
                   "currentPrice": 899.99,
                   "retailPrice": 1499.99,
-                  "url": "https://www.bestbuy.com/site/6635751.p",
+                  "url": "https://sovrn.co?key=8385bed416f9d04124c9e2a38846b0fb&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F6635751.p",
                   "sku": "6635751",
                   "inStock": true,
-                  "lastChecked": "2026-01-22T20:30:14Z"
+                  "lastChecked": "2026-01-22T20:30:14Z",
+                  "originalUrl": "https://www.bestbuy.com/site/6635751.p"
             }
       ],
       priceHistory: [
@@ -244,6 +269,11 @@ const TV_DATA = {
       ],
       useCaseScores: {
             "sportsScore": 8.5
+      },
+      specs: {
+            "refreshRate": "120Hz",
+            "hdr": "Dolby Vision",
+            "smartPlatform": "webOS"
       },
       description: "The LG B5 is LG's entry-level OLED for 2025, making OLED technology more accessible. It sits below the flagship C5. It features OLED technology where each pixel produces its own light, enabling perfect blacks and infinite contrast. It excels at sports. At 55 inches, this works great in bedrooms, apartments, or living rooms with closer seating (5-7 feet).",
       performanceSpecs: {
@@ -279,10 +309,11 @@ const TV_DATA = {
                   "retailerId": "bestbuy",
                   "currentPrice": 986.99,
                   "retailPrice": 1999.99,
-                  "url": "https://www.bestbuy.com/site/6633087.p",
+                  "url": "https://sovrn.co?key=8385bed416f9d04124c9e2a38846b0fb&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F6633087.p",
                   "sku": "6633087",
                   "inStock": true,
-                  "lastChecked": "2026-01-22T20:30:13Z"
+                  "lastChecked": "2026-01-22T20:30:13Z",
+                  "originalUrl": "https://www.bestbuy.com/site/6633087.p"
             }
       ],
       priceHistory: [
@@ -334,10 +365,11 @@ const TV_DATA = {
                   "retailerId": "bestbuy",
                   "currentPrice": 1499.99,
                   "retailPrice": 2999.99,
-                  "url": "https://www.bestbuy.com/site/6621813.p",
+                  "url": "https://sovrn.co?key=8385bed416f9d04124c9e2a38846b0fb&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F6621813.p",
                   "sku": "6621813",
                   "inStock": true,
-                  "lastChecked": "2026-01-22T20:30:12Z"
+                  "lastChecked": "2026-01-22T20:30:12Z",
+                  "originalUrl": "https://www.bestbuy.com/site/6621813.p"
             }
       ],
       priceHistory: [
@@ -349,6 +381,11 @@ const TV_DATA = {
       ],
       useCaseScores: {
             "sportsScore": 8.5
+      },
+      specs: {
+            "refreshRate": "120Hz",
+            "hdr": "Dolby Vision",
+            "smartPlatform": "webOS"
       },
       description: "The LG B5 is LG's entry-level OLED for 2025, making OLED technology more accessible. It sits below the flagship C5. It features OLED technology where each pixel produces its own light, enabling perfect blacks and infinite contrast. It excels at sports. At 77 inches, this fits well in larger living rooms where you sit 7-10 feet from the screen.",
       performanceSpecs: {
@@ -384,10 +421,11 @@ const TV_DATA = {
                   "retailerId": "bestbuy",
                   "currentPrice": 4499.99,
                   "retailPrice": 4499.99,
-                  "url": "https://www.bestbuy.com/site/6621823.p",
+                  "url": "https://sovrn.co?key=8385bed416f9d04124c9e2a38846b0fb&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F6621823.p",
                   "sku": "6621823",
                   "inStock": true,
-                  "lastChecked": "2026-01-22T20:30:12Z"
+                  "lastChecked": "2026-01-22T20:30:12Z",
+                  "originalUrl": "https://www.bestbuy.com/site/6621823.p"
             }
       ],
       priceHistory: [
@@ -439,10 +477,11 @@ const TV_DATA = {
                   "retailerId": "bestbuy",
                   "currentPrice": 1274.99,
                   "retailPrice": 1499.99,
-                  "url": "https://www.bestbuy.com/site/6578042.p",
+                  "url": "https://sovrn.co?key=8385bed416f9d04124c9e2a38846b0fb&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F6578042.p",
                   "sku": "6578042",
                   "inStock": true,
-                  "lastChecked": "2026-01-22T20:29:47Z"
+                  "lastChecked": "2026-01-22T20:29:47Z",
+                  "originalUrl": "https://www.bestbuy.com/site/6578042.p"
             }
       ],
       priceHistory: [
@@ -497,10 +536,11 @@ const TV_DATA = {
                   "retailerId": "bestbuy",
                   "currentPrice": 1975.99,
                   "retailPrice": 2499.99,
-                  "url": "https://www.bestbuy.com/site/6578044.p",
+                  "url": "https://sovrn.co?key=8385bed416f9d04124c9e2a38846b0fb&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F6578044.p",
                   "sku": "6578044",
                   "inStock": true,
-                  "lastChecked": "2026-01-22T18:48:30Z"
+                  "lastChecked": "2026-01-22T18:48:30Z",
+                  "originalUrl": "https://www.bestbuy.com/site/6578044.p"
             }
       ],
       priceHistory: [
@@ -555,10 +595,11 @@ const TV_DATA = {
                   "retailerId": "bestbuy",
                   "currentPrice": 2999.99,
                   "retailPrice": 3499.99,
-                  "url": "https://www.bestbuy.com/site/6578043.p",
+                  "url": "https://sovrn.co?key=8385bed416f9d04124c9e2a38846b0fb&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F6578043.p",
                   "sku": "6578043",
                   "inStock": true,
-                  "lastChecked": "2026-01-22T20:29:47Z"
+                  "lastChecked": "2026-01-22T20:29:47Z",
+                  "originalUrl": "https://www.bestbuy.com/site/6578043.p"
             }
       ],
       priceHistory: [
@@ -613,10 +654,11 @@ const TV_DATA = {
                   "retailerId": "bestbuy",
                   "currentPrice": 899.99,
                   "retailPrice": 1399.99,
-                  "url": "https://www.bestbuy.com/site/6621833.p",
+                  "url": "https://sovrn.co?key=8385bed416f9d04124c9e2a38846b0fb&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F6621833.p",
                   "sku": "6621833",
                   "inStock": true,
-                  "lastChecked": "2026-01-22T20:30:11Z"
+                  "lastChecked": "2026-01-22T20:30:11Z",
+                  "originalUrl": "https://www.bestbuy.com/site/6621833.p"
             }
       ],
       priceHistory: [
@@ -671,10 +713,11 @@ const TV_DATA = {
                   "retailerId": "bestbuy",
                   "currentPrice": 999.99,
                   "retailPrice": 1599.99,
-                  "url": "https://www.bestbuy.com/site/6621817.p",
+                  "url": "https://sovrn.co?key=8385bed416f9d04124c9e2a38846b0fb&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F6621817.p",
                   "sku": "6621817",
                   "inStock": true,
-                  "lastChecked": "2026-01-22T20:30:09Z"
+                  "lastChecked": "2026-01-22T20:30:09Z",
+                  "originalUrl": "https://www.bestbuy.com/site/6621817.p"
             }
       ],
       priceHistory: [
@@ -729,10 +772,11 @@ const TV_DATA = {
                   "retailerId": "bestbuy",
                   "currentPrice": 1199.99,
                   "retailPrice": 1999.99,
-                  "url": "https://www.bestbuy.com/site/6621828.p",
+                  "url": "https://sovrn.co?key=8385bed416f9d04124c9e2a38846b0fb&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F6621828.p",
                   "sku": "6621828",
                   "inStock": true,
-                  "lastChecked": "2026-01-22T20:30:10Z"
+                  "lastChecked": "2026-01-22T20:30:10Z",
+                  "originalUrl": "https://www.bestbuy.com/site/6621828.p"
             }
       ],
       priceHistory: [
@@ -787,10 +831,11 @@ const TV_DATA = {
                   "retailerId": "bestbuy",
                   "currentPrice": 1399.99,
                   "retailPrice": 2699.99,
-                  "url": "https://www.bestbuy.com/site/6621824.p",
+                  "url": "https://sovrn.co?key=8385bed416f9d04124c9e2a38846b0fb&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F6621824.p",
                   "sku": "6621824",
                   "inStock": true,
-                  "lastChecked": "2026-01-22T18:51:15Z"
+                  "lastChecked": "2026-01-22T18:51:15Z",
+                  "originalUrl": "https://www.bestbuy.com/site/6621824.p"
             }
       ],
       priceHistory: [
@@ -845,10 +890,11 @@ const TV_DATA = {
                   "retailerId": "bestbuy",
                   "currentPrice": 1999.99,
                   "retailPrice": 3699.99,
-                  "url": "https://www.bestbuy.com/site/6621825.p",
+                  "url": "https://sovrn.co?key=8385bed416f9d04124c9e2a38846b0fb&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F6621825.p",
                   "sku": "6621825",
                   "inStock": true,
-                  "lastChecked": "2026-01-22T20:30:10Z"
+                  "lastChecked": "2026-01-22T20:30:10Z",
+                  "originalUrl": "https://www.bestbuy.com/site/6621825.p"
             }
       ],
       priceHistory: [
@@ -863,11 +909,6 @@ const TV_DATA = {
             "mixedUsageScore": 8.6,
             "movieScore": 8.8,
             "brightRoomScore": 7.7
-      },
-      specs: {
-            "refreshRate": "120Hz",
-            "hdr": "Dolby Vision",
-            "smartPlatform": "webOS"
       },
       description: "The LG C5 is LG's most popular OLED for 2025, the sweet spot of price and performance. It sits above the B5 and below the G5 in LG's lineup. It features OLED technology where each pixel produces its own light, enabling perfect blacks and infinite contrast. It excels at movies. At 77 inches, this fits well in larger living rooms where you sit 7-10 feet from the screen.",
       performanceSpecs: {
@@ -903,10 +944,11 @@ const TV_DATA = {
                   "retailerId": "bestbuy",
                   "currentPrice": 3299.99,
                   "retailPrice": 5399.99,
-                  "url": "https://www.bestbuy.com/site/6621822.p",
+                  "url": "https://sovrn.co?key=8385bed416f9d04124c9e2a38846b0fb&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F6621822.p",
                   "sku": "6621822",
                   "inStock": true,
-                  "lastChecked": "2026-01-22T20:30:09Z"
+                  "lastChecked": "2026-01-22T20:30:09Z",
+                  "originalUrl": "https://www.bestbuy.com/site/6621822.p"
             }
       ],
       priceHistory: [
@@ -961,10 +1003,11 @@ const TV_DATA = {
                   "retailerId": "bestbuy",
                   "currentPrice": 899.99,
                   "retailPrice": 1399.99,
-                  "url": "https://www.bestbuy.com/site/6621833.p",
+                  "url": "https://sovrn.co?key=8385bed416f9d04124c9e2a38846b0fb&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F6621833.p",
                   "sku": "6621833",
                   "inStock": true,
-                  "lastChecked": "2026-01-22T20:29:46Z"
+                  "lastChecked": "2026-01-22T20:29:46Z",
+                  "originalUrl": "https://www.bestbuy.com/site/6621833.p"
             }
       ],
       priceHistory: [
@@ -979,11 +1022,6 @@ const TV_DATA = {
             "mixedUsageScore": 8.6,
             "movieScore": 8.7,
             "brightRoomScore": 7.7
-      },
-      specs: {
-            "refreshRate": "120Hz",
-            "hdr": "Dolby Vision, HDR10",
-            "smartPlatform": "webOS"
       },
       description: "The LG G4 is LG's flagship Gallery OLED, designed to mount flush against the wall. It sits above the C4. It features OLED technology where each pixel produces its own light, enabling perfect blacks and infinite contrast. It excels at movies. The compact 42-inch screen is perfect for bedrooms, offices, kitchens, or as a secondary TV.",
       performanceSpecs: {
@@ -1019,10 +1057,11 @@ const TV_DATA = {
                   "retailerId": "bestbuy",
                   "currentPrice": 599.99,
                   "retailPrice": 1299.99,
-                  "url": "https://www.bestbuy.com/site/6635292.p",
+                  "url": "https://sovrn.co?key=8385bed416f9d04124c9e2a38846b0fb&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F6635292.p",
                   "sku": "6635292",
                   "inStock": true,
-                  "lastChecked": "2026-01-22T18:48:24Z"
+                  "lastChecked": "2026-01-22T18:48:24Z",
+                  "originalUrl": "https://www.bestbuy.com/site/6635292.p"
             }
       ],
       priceHistory: [
@@ -1077,10 +1116,11 @@ const TV_DATA = {
                   "retailerId": "bestbuy",
                   "currentPrice": 2279.99,
                   "retailPrice": 2399.99,
-                  "url": "https://www.bestbuy.com/site/6578150.p",
+                  "url": "https://sovrn.co?key=8385bed416f9d04124c9e2a38846b0fb&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F6578150.p",
                   "sku": "6578150",
                   "inStock": false,
-                  "lastChecked": "2026-01-22T20:29:45Z"
+                  "lastChecked": "2026-01-22T20:29:45Z",
+                  "originalUrl": "https://www.bestbuy.com/site/6578150.p"
             }
       ],
       priceHistory: [
@@ -1135,10 +1175,11 @@ const TV_DATA = {
                   "retailerId": "bestbuy",
                   "currentPrice": 2804.99,
                   "retailPrice": 3299.99,
-                  "url": "https://www.bestbuy.com/site/6578047.p",
+                  "url": "https://sovrn.co?key=8385bed416f9d04124c9e2a38846b0fb&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F6578047.p",
                   "sku": "6578047",
                   "inStock": true,
-                  "lastChecked": "2026-01-22T20:29:45Z"
+                  "lastChecked": "2026-01-22T20:29:45Z",
+                  "originalUrl": "https://www.bestbuy.com/site/6578047.p"
             }
       ],
       priceHistory: [
@@ -1193,10 +1234,11 @@ const TV_DATA = {
                   "retailerId": "bestbuy",
                   "currentPrice": 899.99,
                   "retailPrice": 1499.99,
-                  "url": "https://www.bestbuy.com/site/6635751.p",
+                  "url": "https://sovrn.co?key=8385bed416f9d04124c9e2a38846b0fb&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F6635751.p",
                   "sku": "6635751",
                   "inStock": true,
-                  "lastChecked": "2026-01-22T20:30:08Z"
+                  "lastChecked": "2026-01-22T20:30:08Z",
+                  "originalUrl": "https://www.bestbuy.com/site/6635751.p"
             }
       ],
       priceHistory: [
@@ -1211,11 +1253,6 @@ const TV_DATA = {
             "mixedUsageScore": 9.0,
             "movieScore": 9.0,
             "brightRoomScore": 8.7
-      },
-      specs: {
-            "refreshRate": "120Hz",
-            "hdr": "Dolby Vision",
-            "smartPlatform": "webOS"
       },
       description: "The LG G5 is LG's flagship Gallery OLED for 2025, designed to mount flush against the wall. It sits above the C5. It features OLED technology where each pixel produces its own light, enabling perfect blacks and infinite contrast. It excels at movies and sports. At 55 inches, this works great in bedrooms, apartments, or living rooms with closer seating (5-7 feet).",
       performanceSpecs: {
@@ -1251,10 +1288,11 @@ const TV_DATA = {
                   "retailerId": "bestbuy",
                   "currentPrice": 2299.99,
                   "retailPrice": 3399.99,
-                  "url": "https://www.bestbuy.com/site/6621810.p",
+                  "url": "https://sovrn.co?key=8385bed416f9d04124c9e2a38846b0fb&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F6621810.p",
                   "sku": "6621810",
                   "inStock": true,
-                  "lastChecked": "2026-01-22T20:30:06Z"
+                  "lastChecked": "2026-01-22T20:30:06Z",
+                  "originalUrl": "https://www.bestbuy.com/site/6621810.p"
             }
       ],
       priceHistory: [
@@ -1309,10 +1347,11 @@ const TV_DATA = {
                   "retailerId": "bestbuy",
                   "currentPrice": 3499.99,
                   "retailPrice": 4499.99,
-                  "url": "https://www.bestbuy.com/site/6621819.p",
+                  "url": "https://sovrn.co?key=8385bed416f9d04124c9e2a38846b0fb&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F6621819.p",
                   "sku": "6621819",
                   "inStock": true,
-                  "lastChecked": "2026-01-22T20:30:07Z"
+                  "lastChecked": "2026-01-22T20:30:07Z",
+                  "originalUrl": "https://www.bestbuy.com/site/6621819.p"
             }
       ],
       priceHistory: [
@@ -1367,10 +1406,11 @@ const TV_DATA = {
                   "retailerId": "bestbuy",
                   "currentPrice": 4999.99,
                   "retailPrice": 6499.99,
-                  "url": "https://www.bestbuy.com/site/6621830.p",
+                  "url": "https://sovrn.co?key=8385bed416f9d04124c9e2a38846b0fb&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F6621830.p",
                   "sku": "6621830",
                   "inStock": true,
-                  "lastChecked": "2026-01-22T20:30:08Z"
+                  "lastChecked": "2026-01-22T20:30:08Z",
+                  "originalUrl": "https://www.bestbuy.com/site/6621830.p"
             }
       ],
       priceHistory: [
@@ -1425,10 +1465,11 @@ const TV_DATA = {
                   "retailerId": "bestbuy",
                   "currentPrice": 22996.99,
                   "retailPrice": 24999.99,
-                  "url": "https://www.bestbuy.com/site/6621820.p",
+                  "url": "https://sovrn.co?key=8385bed416f9d04124c9e2a38846b0fb&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F6621820.p",
                   "sku": "6621820",
                   "inStock": true,
-                  "lastChecked": "2026-01-22T20:30:07Z"
+                  "lastChecked": "2026-01-22T20:30:07Z",
+                  "originalUrl": "https://www.bestbuy.com/site/6621820.p"
             }
       ],
       priceHistory: [
@@ -1443,6 +1484,11 @@ const TV_DATA = {
             "mixedUsageScore": 9.0,
             "movieScore": 9.0,
             "brightRoomScore": 8.7
+      },
+      specs: {
+            "refreshRate": "120Hz",
+            "hdr": "Dolby Vision",
+            "smartPlatform": "webOS"
       },
       description: "The LG G5 is LG's flagship Gallery OLED for 2025, designed to mount flush against the wall. It sits above the C5. It features OLED technology where each pixel produces its own light, enabling perfect blacks and infinite contrast. It excels at movies and sports. The 97-inch screen is designed for large living rooms or home theaters with seating 8-12 feet away.",
       performanceSpecs: {
@@ -1478,10 +1524,11 @@ const TV_DATA = {
                   "retailerId": "bestbuy",
                   "currentPrice": 549.99,
                   "retailPrice": 549.99,
-                  "url": "https://www.bestbuy.com/site/6611507.p",
+                  "url": "https://sovrn.co?key=8385bed416f9d04124c9e2a38846b0fb&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F6611507.p",
                   "sku": "6611507",
                   "inStock": false,
-                  "lastChecked": "2026-01-22T20:29:44Z"
+                  "lastChecked": "2026-01-22T20:29:44Z",
+                  "originalUrl": "https://www.bestbuy.com/site/6611507.p"
             }
       ],
       priceHistory: [
@@ -1532,10 +1579,11 @@ const TV_DATA = {
                   "retailerId": "bestbuy",
                   "currentPrice": 649.99,
                   "retailPrice": 649.99,
-                  "url": "https://www.bestbuy.com/site/6611508.p",
+                  "url": "https://sovrn.co?key=8385bed416f9d04124c9e2a38846b0fb&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F6611508.p",
                   "sku": "6611508",
                   "inStock": true,
-                  "lastChecked": "2026-01-22T18:48:18Z"
+                  "lastChecked": "2026-01-22T18:48:18Z",
+                  "originalUrl": "https://www.bestbuy.com/site/6611508.p"
             }
       ],
       priceHistory: [
@@ -1547,10 +1595,6 @@ const TV_DATA = {
       ],
       useCaseScores: {
             "sportsScore": 5.6
-      },
-      specs: {
-            "refreshRate": "60Hz",
-            "smartPlatform": "Tizen"
       },
       description: "The Samsung Q60D is Samsung's entry-level QLED, their most affordable quantum dot TV. It sits below the flagship Q70D. It uses QLED technology (Quantum Dot LED) for enhanced color volume and brightness compared to standard LED. The compact 50-inch screen is perfect for bedrooms, offices, kitchens, or as a secondary TV.",
       performanceSpecs: {
@@ -1586,10 +1630,11 @@ const TV_DATA = {
                   "retailerId": "bestbuy",
                   "currentPrice": 999.99,
                   "retailPrice": 999.99,
-                  "url": "https://www.bestbuy.com/site/6611505.p",
+                  "url": "https://sovrn.co?key=8385bed416f9d04124c9e2a38846b0fb&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F6611505.p",
                   "sku": "6611505",
                   "inStock": false,
-                  "lastChecked": "2026-01-22T20:29:44Z"
+                  "lastChecked": "2026-01-22T20:29:44Z",
+                  "originalUrl": "https://www.bestbuy.com/site/6611505.p"
             }
       ],
       priceHistory: [
@@ -1640,10 +1685,11 @@ const TV_DATA = {
                   "retailerId": "bestbuy",
                   "currentPrice": 999.99,
                   "retailPrice": 999.99,
-                  "url": "https://www.bestbuy.com/site/6575029.p",
+                  "url": "https://sovrn.co?key=8385bed416f9d04124c9e2a38846b0fb&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F6575029.p",
                   "sku": "6575029",
                   "inStock": true,
-                  "lastChecked": "2026-01-22T18:48:18Z"
+                  "lastChecked": "2026-01-22T18:48:18Z",
+                  "originalUrl": "https://www.bestbuy.com/site/6575029.p"
             }
       ],
       priceHistory: [
@@ -1655,6 +1701,10 @@ const TV_DATA = {
       ],
       useCaseScores: {
             "sportsScore": 5.6
+      },
+      specs: {
+            "refreshRate": "60Hz",
+            "smartPlatform": "Tizen"
       },
       description: "The Samsung Q60D is Samsung's entry-level QLED, their most affordable quantum dot TV. It sits below the flagship Q70D. It uses QLED technology (Quantum Dot LED) for enhanced color volume and brightness compared to standard LED. At 75 inches, this fits well in larger living rooms where you sit 7-10 feet from the screen.",
       performanceSpecs: {
@@ -1690,10 +1740,11 @@ const TV_DATA = {
                   "retailerId": "bestbuy",
                   "currentPrice": 1299.99,
                   "retailPrice": 1299.99,
-                  "url": "https://www.bestbuy.com/site/6575099.p",
+                  "url": "https://sovrn.co?key=8385bed416f9d04124c9e2a38846b0fb&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F6575099.p",
                   "sku": "6575099",
                   "inStock": true,
-                  "lastChecked": "2026-01-22T20:29:43Z"
+                  "lastChecked": "2026-01-22T20:29:43Z",
+                  "originalUrl": "https://www.bestbuy.com/site/6575099.p"
             }
       ],
       priceHistory: [
@@ -1744,10 +1795,11 @@ const TV_DATA = {
                   "retailerId": "bestbuy",
                   "currentPrice": 799.99,
                   "retailPrice": 999.99,
-                  "url": "https://www.bestbuy.com/site/6576592.p",
+                  "url": "https://sovrn.co?key=8385bed416f9d04124c9e2a38846b0fb&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F6576592.p",
                   "sku": "6576592",
                   "inStock": true,
-                  "lastChecked": "2026-01-22T20:29:42Z"
+                  "lastChecked": "2026-01-22T20:29:42Z",
+                  "originalUrl": "https://www.bestbuy.com/site/6576592.p"
             }
       ],
       priceHistory: [
@@ -1798,10 +1850,11 @@ const TV_DATA = {
                   "retailerId": "bestbuy",
                   "currentPrice": 799.99,
                   "retailPrice": 999.99,
-                  "url": "https://www.bestbuy.com/site/6576591.p",
+                  "url": "https://sovrn.co?key=8385bed416f9d04124c9e2a38846b0fb&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F6576591.p",
                   "sku": "6576591",
                   "inStock": true,
-                  "lastChecked": "2026-01-22T20:29:41Z"
+                  "lastChecked": "2026-01-22T20:29:41Z",
+                  "originalUrl": "https://www.bestbuy.com/site/6576591.p"
             }
       ],
       priceHistory: [
@@ -1852,10 +1905,11 @@ const TV_DATA = {
                   "retailerId": "bestbuy",
                   "currentPrice": 999.99,
                   "retailPrice": 999.99,
-                  "url": "https://www.bestbuy.com/site/6576599.p",
+                  "url": "https://sovrn.co?key=8385bed416f9d04124c9e2a38846b0fb&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F6576599.p",
                   "sku": "6576599",
                   "inStock": true,
-                  "lastChecked": "2026-01-22T20:29:40Z"
+                  "lastChecked": "2026-01-22T20:29:40Z",
+                  "originalUrl": "https://www.bestbuy.com/site/6576599.p"
             }
       ],
       priceHistory: [
@@ -1906,10 +1960,11 @@ const TV_DATA = {
                   "retailerId": "bestbuy",
                   "currentPrice": 1139.99,
                   "retailPrice": 1199.99,
-                  "url": "https://www.bestbuy.com/site/6576589.p",
+                  "url": "https://sovrn.co?key=8385bed416f9d04124c9e2a38846b0fb&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F6576589.p",
                   "sku": "6576589",
                   "inStock": true,
-                  "lastChecked": "2026-01-22T20:29:39Z"
+                  "lastChecked": "2026-01-22T20:29:39Z",
+                  "originalUrl": "https://www.bestbuy.com/site/6576589.p"
             }
       ],
       priceHistory: [
@@ -1960,10 +2015,11 @@ const TV_DATA = {
                   "retailerId": "bestbuy",
                   "currentPrice": 1139.99,
                   "retailPrice": 1199.99,
-                  "url": "https://www.bestbuy.com/site/6576597.p",
+                  "url": "https://sovrn.co?key=8385bed416f9d04124c9e2a38846b0fb&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F6576597.p",
                   "sku": "6576597",
                   "inStock": true,
-                  "lastChecked": "2026-01-22T18:48:05Z"
+                  "lastChecked": "2026-01-22T18:48:05Z",
+                  "originalUrl": "https://www.bestbuy.com/site/6576597.p"
             }
       ],
       priceHistory: [
@@ -1975,10 +2031,6 @@ const TV_DATA = {
       ],
       useCaseScores: {
             "sportsScore": 7.2
-      },
-      specs: {
-            "refreshRate": "120Hz",
-            "smartPlatform": "Tizen"
       },
       description: "The Samsung Q80D is Samsung's premium QLED without Mini LED, great brightness and color. It sits above the Q70D and below the QN85D in Samsung's lineup. It uses QLED technology (Quantum Dot LED) for enhanced color volume and brightness compared to standard LED. The 74-inch size is the most popular choice, ideal for average living rooms with 6-8 feet of viewing distance.",
       performanceSpecs: {
@@ -2014,10 +2066,11 @@ const TV_DATA = {
                   "retailerId": "bestbuy",
                   "currentPrice": 2199.99,
                   "retailPrice": 2199.99,
-                  "url": "https://www.bestbuy.com/site/6576600.p",
+                  "url": "https://sovrn.co?key=8385bed416f9d04124c9e2a38846b0fb&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F6576600.p",
                   "sku": "6576600",
                   "inStock": true,
-                  "lastChecked": "2026-01-22T18:48:05Z"
+                  "lastChecked": "2026-01-22T18:48:05Z",
+                  "originalUrl": "https://www.bestbuy.com/site/6576600.p"
             }
       ],
       priceHistory: [
@@ -2068,10 +2121,11 @@ const TV_DATA = {
                   "retailerId": "bestbuy",
                   "currentPrice": 1099.99,
                   "retailPrice": 1299.99,
-                  "url": "https://www.bestbuy.com/site/6613502.p",
+                  "url": "https://sovrn.co?key=8385bed416f9d04124c9e2a38846b0fb&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F6613502.p",
                   "sku": "6613502",
                   "inStock": true,
-                  "lastChecked": "2026-01-22T18:50:56Z"
+                  "lastChecked": "2026-01-22T18:50:56Z",
+                  "originalUrl": "https://www.bestbuy.com/site/6613502.p"
             }
       ],
       priceHistory: [
@@ -2122,10 +2176,11 @@ const TV_DATA = {
                   "retailerId": "bestbuy",
                   "currentPrice": 1199.99,
                   "retailPrice": 1799.99,
-                  "url": "https://www.bestbuy.com/site/6613493.p",
+                  "url": "https://sovrn.co?key=8385bed416f9d04124c9e2a38846b0fb&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F6613493.p",
                   "sku": "6613493",
                   "inStock": true,
-                  "lastChecked": "2026-01-22T20:30:05Z"
+                  "lastChecked": "2026-01-22T20:30:05Z",
+                  "originalUrl": "https://www.bestbuy.com/site/6613493.p"
             }
       ],
       priceHistory: [
@@ -2176,10 +2231,11 @@ const TV_DATA = {
                   "retailerId": "bestbuy",
                   "currentPrice": 1499.99,
                   "retailPrice": 2299.99,
-                  "url": "https://www.bestbuy.com/site/6613449.p",
+                  "url": "https://sovrn.co?key=8385bed416f9d04124c9e2a38846b0fb&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F6613449.p",
                   "sku": "6613449",
                   "inStock": true,
-                  "lastChecked": "2026-01-22T20:30:04Z"
+                  "lastChecked": "2026-01-22T20:30:04Z",
+                  "originalUrl": "https://www.bestbuy.com/site/6613449.p"
             }
       ],
       priceHistory: [
@@ -2230,10 +2286,11 @@ const TV_DATA = {
                   "retailerId": "bestbuy",
                   "currentPrice": 2199.99,
                   "retailPrice": 3499.99,
-                  "url": "https://www.bestbuy.com/site/6613460.p",
+                  "url": "https://sovrn.co?key=8385bed416f9d04124c9e2a38846b0fb&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F6613460.p",
                   "sku": "6613460",
                   "inStock": true,
-                  "lastChecked": "2026-01-22T18:50:56Z"
+                  "lastChecked": "2026-01-22T18:50:56Z",
+                  "originalUrl": "https://www.bestbuy.com/site/6613460.p"
             }
       ],
       priceHistory: [
@@ -2284,10 +2341,11 @@ const TV_DATA = {
                   "retailerId": "bestbuy",
                   "currentPrice": 4999.99,
                   "retailPrice": 5999.99,
-                  "url": "https://www.bestbuy.com/site/6618847.p",
+                  "url": "https://sovrn.co?key=8385bed416f9d04124c9e2a38846b0fb&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F6618847.p",
                   "sku": "6618847",
                   "inStock": true,
-                  "lastChecked": "2026-01-22T18:50:56Z"
+                  "lastChecked": "2026-01-22T18:50:56Z",
+                  "originalUrl": "https://www.bestbuy.com/site/6618847.p"
             }
       ],
       priceHistory: [
@@ -2299,10 +2357,6 @@ const TV_DATA = {
       ],
       useCaseScores: {
             "sportsScore": 7.1
-      },
-      specs: {
-            "refreshRate": "120Hz",
-            "smartPlatform": "Tizen"
       },
       description: "The Samsung QN80F is Samsung's Neo QLED for 2025 with Mini LED backlighting. It sits above the Q80D and below the QN90D in Samsung's lineup. It uses QLED technology (Quantum Dot LED) for enhanced color volume and brightness compared to standard LED. At 100 inches, this is a home theater centerpiece—best for dedicated media rooms or very large living spaces with seating 10+ feet away.",
       performanceSpecs: {
@@ -2338,10 +2392,11 @@ const TV_DATA = {
                   "retailerId": "bestbuy",
                   "currentPrice": 1874.99,
                   "retailPrice": 2499.99,
-                  "url": "https://www.bestbuy.com/site/6576434.p",
+                  "url": "https://sovrn.co?key=8385bed416f9d04124c9e2a38846b0fb&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F6576434.p",
                   "sku": "6576434",
                   "inStock": true,
-                  "lastChecked": "2026-01-22T20:29:39Z"
+                  "lastChecked": "2026-01-22T20:29:39Z",
+                  "originalUrl": "https://www.bestbuy.com/site/6576434.p"
             }
       ],
       priceHistory: [
@@ -2395,10 +2450,11 @@ const TV_DATA = {
                   "retailerId": "bestbuy",
                   "currentPrice": 2089.99,
                   "retailPrice": 2199.99,
-                  "url": "https://www.bestbuy.com/site/6576433.p",
+                  "url": "https://sovrn.co?key=8385bed416f9d04124c9e2a38846b0fb&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F6576433.p",
                   "sku": "6576433",
                   "inStock": true,
-                  "lastChecked": "2026-01-22T20:29:38Z"
+                  "lastChecked": "2026-01-22T20:29:38Z",
+                  "originalUrl": "https://www.bestbuy.com/site/6576433.p"
             }
       ],
       priceHistory: [
@@ -2452,10 +2508,11 @@ const TV_DATA = {
                   "retailerId": "bestbuy",
                   "currentPrice": 1999.99,
                   "retailPrice": 1999.99,
-                  "url": "https://www.bestbuy.com/site/6611509.p",
+                  "url": "https://sovrn.co?key=8385bed416f9d04124c9e2a38846b0fb&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F6611509.p",
                   "sku": "6611509",
                   "inStock": false,
-                  "lastChecked": "2026-01-22T20:29:37Z"
+                  "lastChecked": "2026-01-22T20:29:37Z",
+                  "originalUrl": "https://www.bestbuy.com/site/6611509.p"
             }
       ],
       priceHistory: [
@@ -2509,10 +2566,11 @@ const TV_DATA = {
                   "retailerId": "bestbuy",
                   "currentPrice": 1799.99,
                   "retailPrice": 2599.99,
-                  "url": "https://www.bestbuy.com/site/6576427.p",
+                  "url": "https://sovrn.co?key=8385bed416f9d04124c9e2a38846b0fb&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F6576427.p",
                   "sku": "6576427",
                   "inStock": true,
-                  "lastChecked": "2026-01-22T18:47:51Z"
+                  "lastChecked": "2026-01-22T18:47:51Z",
+                  "originalUrl": "https://www.bestbuy.com/site/6576427.p"
             }
       ],
       priceHistory: [
@@ -2527,10 +2585,6 @@ const TV_DATA = {
             "mixedUsageScore": 8.1,
             "movieScore": 8.2,
             "brightRoomScore": 8.5
-      },
-      specs: {
-            "refreshRate": "120Hz",
-            "smartPlatform": "Tizen"
       },
       description: "The Samsung QN90D is Samsung's flagship Neo QLED (Mini LED), their brightest TV. It sits above the QN85D. It uses Mini LED backlighting with thousands of tiny LEDs for better contrast than standard LED TVs. It excels at bright rooms. The 74-inch size is the most popular choice, ideal for average living rooms with 6-8 feet of viewing distance.",
       performanceSpecs: {
@@ -2566,10 +2620,11 @@ const TV_DATA = {
                   "retailerId": "bestbuy",
                   "currentPrice": 2799.99,
                   "retailPrice": 2799.99,
-                  "url": "https://www.bestbuy.com/site/6576424.p",
+                  "url": "https://sovrn.co?key=8385bed416f9d04124c9e2a38846b0fb&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F6576424.p",
                   "sku": "6576424",
                   "inStock": true,
-                  "lastChecked": "2026-01-22T20:29:37Z"
+                  "lastChecked": "2026-01-22T20:29:37Z",
+                  "originalUrl": "https://www.bestbuy.com/site/6576424.p"
             }
       ],
       priceHistory: [
@@ -2623,10 +2678,11 @@ const TV_DATA = {
                   "retailerId": "bestbuy",
                   "currentPrice": 1699.99,
                   "retailPrice": 1699.99,
-                  "url": "https://www.bestbuy.com/site/6578061.p",
+                  "url": "https://sovrn.co?key=8385bed416f9d04124c9e2a38846b0fb&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F6578061.p",
                   "sku": "6578061",
                   "inStock": true,
-                  "lastChecked": "2026-01-22T20:29:36Z"
+                  "lastChecked": "2026-01-22T20:29:36Z",
+                  "originalUrl": "https://www.bestbuy.com/site/6578061.p"
             }
       ],
       priceHistory: [
@@ -2680,10 +2736,11 @@ const TV_DATA = {
                   "retailerId": "bestbuy",
                   "currentPrice": 1619.99,
                   "retailPrice": 1799.99,
-                  "url": "https://www.bestbuy.com/site/6578059.p",
+                  "url": "https://sovrn.co?key=8385bed416f9d04124c9e2a38846b0fb&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F6578059.p",
                   "sku": "6578059",
                   "inStock": true,
-                  "lastChecked": "2026-01-22T18:47:45Z"
+                  "lastChecked": "2026-01-22T18:47:45Z",
+                  "originalUrl": "https://www.bestbuy.com/site/6578059.p"
             }
       ],
       priceHistory: [
@@ -2698,10 +2755,6 @@ const TV_DATA = {
             "mixedUsageScore": 7.8,
             "movieScore": 8.0,
             "brightRoomScore": 6.8
-      },
-      specs: {
-            "refreshRate": "120Hz",
-            "smartPlatform": "Tizen"
       },
       description: "The Samsung S85D is Samsung's entry-level OLED, bringing self-emitting pixels to a more accessible price. It sits below the flagship S90D. It features OLED technology where each pixel produces its own light, enabling perfect blacks and infinite contrast. At 64 inches, this works great in bedrooms, apartments, or living rooms with closer seating (5-7 feet).",
       performanceSpecs: {
@@ -2737,10 +2790,11 @@ const TV_DATA = {
                   "retailerId": "bestbuy",
                   "currentPrice": 999.99,
                   "retailPrice": 999.99,
-                  "url": "https://www.bestbuy.com/site/6578067.p",
+                  "url": "https://sovrn.co?key=8385bed416f9d04124c9e2a38846b0fb&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F6578067.p",
                   "sku": "6578067",
                   "inStock": true,
-                  "lastChecked": "2026-01-22T20:29:35Z"
+                  "lastChecked": "2026-01-22T20:29:35Z",
+                  "originalUrl": "https://www.bestbuy.com/site/6578067.p"
             }
       ],
       priceHistory: [
@@ -2794,10 +2848,11 @@ const TV_DATA = {
                   "retailerId": "bestbuy",
                   "currentPrice": 1399.99,
                   "retailPrice": 1399.99,
-                  "url": "https://www.bestbuy.com/site/6576598.p",
+                  "url": "https://sovrn.co?key=8385bed416f9d04124c9e2a38846b0fb&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F6576598.p",
                   "sku": "6576598",
                   "inStock": true,
-                  "lastChecked": "2026-01-22T20:29:34Z"
+                  "lastChecked": "2026-01-22T20:29:34Z",
+                  "originalUrl": "https://www.bestbuy.com/site/6576598.p"
             }
       ],
       priceHistory: [
@@ -2851,10 +2906,11 @@ const TV_DATA = {
                   "retailerId": "bestbuy",
                   "currentPrice": 1999.99,
                   "retailPrice": 1999.99,
-                  "url": "https://www.bestbuy.com/site/6578065.p",
+                  "url": "https://sovrn.co?key=8385bed416f9d04124c9e2a38846b0fb&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F6578065.p",
                   "sku": "6578065",
                   "inStock": true,
-                  "lastChecked": "2026-01-22T20:29:35Z"
+                  "lastChecked": "2026-01-22T20:29:35Z",
+                  "originalUrl": "https://www.bestbuy.com/site/6578065.p"
             }
       ],
       priceHistory: [
@@ -2908,10 +2964,11 @@ const TV_DATA = {
                   "retailerId": "bestbuy",
                   "currentPrice": 3299.99,
                   "retailPrice": 3299.99,
-                  "url": "https://www.bestbuy.com/site/6578064.p",
+                  "url": "https://sovrn.co?key=8385bed416f9d04124c9e2a38846b0fb&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F6578064.p",
                   "sku": "6578064",
                   "inStock": true,
-                  "lastChecked": "2026-01-22T18:47:38Z"
+                  "lastChecked": "2026-01-22T18:47:38Z",
+                  "originalUrl": "https://www.bestbuy.com/site/6578064.p"
             }
       ],
       priceHistory: [
@@ -2965,10 +3022,11 @@ const TV_DATA = {
                   "retailerId": "bestbuy",
                   "currentPrice": 899.99,
                   "retailPrice": 1299.99,
-                  "url": "https://www.bestbuy.com/site/6613495.p",
+                  "url": "https://sovrn.co?key=8385bed416f9d04124c9e2a38846b0fb&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F6613495.p",
                   "sku": "6613495",
                   "inStock": true,
-                  "lastChecked": "2026-01-22T20:30:03Z"
+                  "lastChecked": "2026-01-22T20:30:03Z",
+                  "originalUrl": "https://www.bestbuy.com/site/6613495.p"
             }
       ],
       priceHistory: [
@@ -2983,6 +3041,11 @@ const TV_DATA = {
             "mixedUsageScore": 8.6,
             "movieScore": 8.8,
             "brightRoomScore": 7.6
+      },
+      specs: {
+            "refreshRate": "120Hz",
+            "hdr": "HDR10",
+            "smartPlatform": "Tizen"
       },
       description: "The Samsung S90F is Samsung's mid-range QD-OLED for 2025, offering flagship-level picture at a lower price. It sits above the S85D and below the S95F in Samsung's lineup. It uses Quantum Dot OLED technology—combining the perfect blacks of OLED with enhanced color brightness from quantum dots. It excels at movies. The compact 42-inch screen is perfect for bedrooms, offices, kitchens, or as a secondary TV.",
       performanceSpecs: {
@@ -3018,10 +3081,11 @@ const TV_DATA = {
                   "retailerId": "bestbuy",
                   "currentPrice": 999.99,
                   "retailPrice": 1499.99,
-                  "url": "https://www.bestbuy.com/site/6613499.p",
+                  "url": "https://sovrn.co?key=8385bed416f9d04124c9e2a38846b0fb&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F6613499.p",
                   "sku": "6613499",
                   "inStock": true,
-                  "lastChecked": "2026-01-22T20:30:03Z"
+                  "lastChecked": "2026-01-22T20:30:03Z",
+                  "originalUrl": "https://www.bestbuy.com/site/6613499.p"
             }
       ],
       priceHistory: [
@@ -3076,10 +3140,11 @@ const TV_DATA = {
                   "retailerId": "bestbuy",
                   "currentPrice": 1199.99,
                   "retailPrice": 1799.99,
-                  "url": "https://www.bestbuy.com/site/6613501.p",
+                  "url": "https://sovrn.co?key=8385bed416f9d04124c9e2a38846b0fb&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F6613501.p",
                   "sku": "6613501",
                   "inStock": true,
-                  "lastChecked": "2026-01-22T20:30:04Z"
+                  "lastChecked": "2026-01-22T20:30:04Z",
+                  "originalUrl": "https://www.bestbuy.com/site/6613501.p"
             }
       ],
       priceHistory: [
@@ -3134,10 +3199,11 @@ const TV_DATA = {
                   "retailerId": "bestbuy",
                   "currentPrice": 1399.99,
                   "retailPrice": 2499.99,
-                  "url": "https://www.bestbuy.com/site/6613491.p",
+                  "url": "https://sovrn.co?key=8385bed416f9d04124c9e2a38846b0fb&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F6613491.p",
                   "sku": "6613491",
                   "inStock": true,
-                  "lastChecked": "2026-01-22T18:49:57Z"
+                  "lastChecked": "2026-01-22T18:49:57Z",
+                  "originalUrl": "https://www.bestbuy.com/site/6613491.p"
             }
       ],
       priceHistory: [
@@ -3192,10 +3258,11 @@ const TV_DATA = {
                   "retailerId": "bestbuy",
                   "currentPrice": 1999.99,
                   "retailPrice": 3499.99,
-                  "url": "https://www.bestbuy.com/site/6613462.p",
+                  "url": "https://sovrn.co?key=8385bed416f9d04124c9e2a38846b0fb&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F6613462.p",
                   "sku": "6613462",
                   "inStock": true,
-                  "lastChecked": "2026-01-22T20:30:01Z"
+                  "lastChecked": "2026-01-22T20:30:01Z",
+                  "originalUrl": "https://www.bestbuy.com/site/6613462.p"
             }
       ],
       priceHistory: [
@@ -3250,10 +3317,11 @@ const TV_DATA = {
                   "retailerId": "bestbuy",
                   "currentPrice": 3299.99,
                   "retailPrice": 5399.99,
-                  "url": "https://www.bestbuy.com/site/6613461.p",
+                  "url": "https://sovrn.co?key=8385bed416f9d04124c9e2a38846b0fb&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F6613461.p",
                   "sku": "6613461",
                   "inStock": true,
-                  "lastChecked": "2026-01-22T20:30:00Z"
+                  "lastChecked": "2026-01-22T20:30:00Z",
+                  "originalUrl": "https://www.bestbuy.com/site/6613461.p"
             }
       ],
       priceHistory: [
@@ -3308,10 +3376,11 @@ const TV_DATA = {
                   "retailerId": "bestbuy",
                   "currentPrice": 1899.99,
                   "retailPrice": 2299.99,
-                  "url": "https://www.bestbuy.com/site/6613500.p",
+                  "url": "https://sovrn.co?key=8385bed416f9d04124c9e2a38846b0fb&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F6613500.p",
                   "sku": "6613500",
                   "inStock": true,
-                  "lastChecked": "2026-01-22T20:29:59Z"
+                  "lastChecked": "2026-01-22T20:29:59Z",
+                  "originalUrl": "https://www.bestbuy.com/site/6613500.p"
             }
       ],
       priceHistory: [
@@ -3326,6 +3395,11 @@ const TV_DATA = {
             "mixedUsageScore": 8.9,
             "movieScore": 9.0,
             "brightRoomScore": 8.8
+      },
+      specs: {
+            "refreshRate": "120Hz",
+            "hdr": "HDR10",
+            "smartPlatform": "Tizen"
       },
       description: "The Samsung S95F is Samsung's flagship QD-OLED for 2025, their absolute best picture quality. It sits above the S90F. It uses Quantum Dot OLED technology—combining the perfect blacks of OLED with enhanced color brightness from quantum dots. It excels at movies and sports. At 55 inches, this works great in bedrooms, apartments, or living rooms with closer seating (5-7 feet).",
       performanceSpecs: {
@@ -3361,10 +3435,11 @@ const TV_DATA = {
                   "retailerId": "bestbuy",
                   "currentPrice": 2299.99,
                   "retailPrice": 3299.99,
-                  "url": "https://www.bestbuy.com/site/6613492.p",
+                  "url": "https://sovrn.co?key=8385bed416f9d04124c9e2a38846b0fb&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F6613492.p",
                   "sku": "6613492",
                   "inStock": true,
-                  "lastChecked": "2026-01-22T20:29:59Z"
+                  "lastChecked": "2026-01-22T20:29:59Z",
+                  "originalUrl": "https://www.bestbuy.com/site/6613492.p"
             }
       ],
       priceHistory: [
@@ -3419,10 +3494,11 @@ const TV_DATA = {
                   "retailerId": "bestbuy",
                   "currentPrice": 3499.99,
                   "retailPrice": 4499.99,
-                  "url": "https://www.bestbuy.com/site/6613459.p",
+                  "url": "https://sovrn.co?key=8385bed416f9d04124c9e2a38846b0fb&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F6613459.p",
                   "sku": "6613459",
                   "inStock": true,
-                  "lastChecked": "2026-01-22T20:29:58Z"
+                  "lastChecked": "2026-01-22T20:29:58Z",
+                  "originalUrl": "https://www.bestbuy.com/site/6613459.p"
             }
       ],
       priceHistory: [
@@ -3477,10 +3553,11 @@ const TV_DATA = {
                   "retailerId": "bestbuy",
                   "currentPrice": 4999.99,
                   "retailPrice": 6499.99,
-                  "url": "https://www.bestbuy.com/site/6614339.p",
+                  "url": "https://sovrn.co?key=8385bed416f9d04124c9e2a38846b0fb&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F6614339.p",
                   "sku": "6614339",
                   "inStock": true,
-                  "lastChecked": "2026-01-22T18:49:49Z"
+                  "lastChecked": "2026-01-22T18:49:49Z",
+                  "originalUrl": "https://www.bestbuy.com/site/6614339.p"
             }
       ],
       priceHistory: [
@@ -3535,10 +3612,11 @@ const TV_DATA = {
                   "retailerId": "bestbuy",
                   "currentPrice": 3499.99,
                   "retailPrice": 4999.99,
-                  "url": "https://www.bestbuy.com/site/6553380.p",
+                  "url": "https://sovrn.co?key=8385bed416f9d04124c9e2a38846b0fb&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F6553380.p",
                   "sku": "6553380",
                   "inStock": true,
-                  "lastChecked": "2026-01-22T20:29:49Z"
+                  "lastChecked": "2026-01-22T20:29:49Z",
+                  "originalUrl": "https://www.bestbuy.com/site/6553380.p"
             }
       ],
       priceHistory: [
@@ -3550,6 +3628,10 @@ const TV_DATA = {
       ],
       useCaseScores: {
             "sportsScore": 8.8
+      },
+      specs: {
+            "refreshRate": "120Hz",
+            "smartPlatform": "Google TV"
       },
       description: "The Sony A95L is Sony's flagship QD-OLED with their Cognitive Processor XR. It sits above the Bravia 8. It uses Quantum Dot OLED technology—combining the perfect blacks of OLED with enhanced color brightness from quantum dots. It excels at sports. At 77 inches, this fits well in larger living rooms where you sit 7-10 feet from the screen.",
       performanceSpecs: {
@@ -3585,10 +3667,11 @@ const TV_DATA = {
                   "retailerId": "bestbuy",
                   "currentPrice": 1199.99,
                   "retailPrice": 1699.99,
-                  "url": "https://www.bestbuy.com/site/6578569.p",
+                  "url": "https://sovrn.co?key=8385bed416f9d04124c9e2a38846b0fb&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F6578569.p",
                   "sku": "6578569",
                   "inStock": true,
-                  "lastChecked": "2026-01-22T20:29:49Z"
+                  "lastChecked": "2026-01-22T20:29:49Z",
+                  "originalUrl": "https://www.bestbuy.com/site/6578569.p"
             }
       ],
       priceHistory: [
@@ -3642,10 +3725,11 @@ const TV_DATA = {
                   "retailerId": "bestbuy",
                   "currentPrice": 1499.99,
                   "retailPrice": 2299.99,
-                  "url": "https://www.bestbuy.com/site/6578577.p",
+                  "url": "https://sovrn.co?key=8385bed416f9d04124c9e2a38846b0fb&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F6578577.p",
                   "sku": "6578577",
                   "inStock": true,
-                  "lastChecked": "2026-01-22T20:29:50Z"
+                  "lastChecked": "2026-01-22T20:29:50Z",
+                  "originalUrl": "https://www.bestbuy.com/site/6578577.p"
             }
       ],
       priceHistory: [
@@ -3699,10 +3783,11 @@ const TV_DATA = {
                   "retailerId": "bestbuy",
                   "currentPrice": 2199.99,
                   "retailPrice": 3199.99,
-                  "url": "https://www.bestbuy.com/site/6578574.p",
+                  "url": "https://sovrn.co?key=8385bed416f9d04124c9e2a38846b0fb&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F6578574.p",
                   "sku": "6578574",
                   "inStock": true,
-                  "lastChecked": "2026-01-22T20:29:50Z"
+                  "lastChecked": "2026-01-22T20:29:50Z",
+                  "originalUrl": "https://www.bestbuy.com/site/6578574.p"
             }
       ],
       priceHistory: [
@@ -3756,10 +3841,11 @@ const TV_DATA = {
                   "retailerId": "bestbuy",
                   "currentPrice": 1999.99,
                   "retailPrice": 2999.99,
-                  "url": "https://www.bestbuy.com/site/6626033.p",
+                  "url": "https://sovrn.co?key=8385bed416f9d04124c9e2a38846b0fb&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F6626033.p",
                   "sku": "6626033",
                   "inStock": true,
-                  "lastChecked": "2026-01-22T20:30:15Z"
+                  "lastChecked": "2026-01-22T20:30:15Z",
+                  "originalUrl": "https://www.bestbuy.com/site/6626033.p"
             }
       ],
       priceHistory: [
@@ -3771,10 +3857,6 @@ const TV_DATA = {
       ],
       useCaseScores: {
             "sportsScore": 8.7
-      },
-      specs: {
-            "refreshRate": "120Hz",
-            "smartPlatform": "Google TV"
       },
       description: "The Sony Bravia 8 II is Sony's updated mid-range OLED for 2025. It sits above the X90L and below the Bravia 9 in Sony's lineup. It features OLED technology where each pixel produces its own light, enabling perfect blacks and infinite contrast. It excels at sports. At 55 inches, this works great in bedrooms, apartments, or living rooms with closer seating (5-7 feet).",
       performanceSpecs: {
@@ -3810,10 +3892,11 @@ const TV_DATA = {
                   "retailerId": "bestbuy",
                   "currentPrice": 2399.99,
                   "retailPrice": 3499.99,
-                  "url": "https://www.bestbuy.com/site/6626032.p",
+                  "url": "https://sovrn.co?key=8385bed416f9d04124c9e2a38846b0fb&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F6626032.p",
                   "sku": "6626032",
                   "inStock": true,
-                  "lastChecked": "2026-01-22T20:30:15Z"
+                  "lastChecked": "2026-01-22T20:30:15Z",
+                  "originalUrl": "https://www.bestbuy.com/site/6626032.p"
             }
       ],
       priceHistory: [
@@ -3864,10 +3947,11 @@ const TV_DATA = {
                   "retailerId": "bestbuy",
                   "currentPrice": 1999.99,
                   "retailPrice": 2999.99,
-                  "url": "https://www.bestbuy.com/site/6578568.p",
+                  "url": "https://sovrn.co?key=8385bed416f9d04124c9e2a38846b0fb&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F6578568.p",
                   "sku": "6578568",
                   "inStock": true,
-                  "lastChecked": "2026-01-22T18:49:04Z"
+                  "lastChecked": "2026-01-22T18:49:04Z",
+                  "originalUrl": "https://www.bestbuy.com/site/6578568.p"
             }
       ],
       priceHistory: [
@@ -3918,10 +4002,11 @@ const TV_DATA = {
                   "retailerId": "bestbuy",
                   "currentPrice": 2599.99,
                   "retailPrice": 3499.99,
-                  "url": "https://www.bestbuy.com/site/6578575.p",
+                  "url": "https://sovrn.co?key=8385bed416f9d04124c9e2a38846b0fb&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F6578575.p",
                   "sku": "6578575",
                   "inStock": true,
-                  "lastChecked": "2026-01-22T20:29:51Z"
+                  "lastChecked": "2026-01-22T20:29:51Z",
+                  "originalUrl": "https://www.bestbuy.com/site/6578575.p"
             }
       ],
       priceHistory: [
@@ -3933,6 +4018,10 @@ const TV_DATA = {
       ],
       useCaseScores: {
             "sportsScore": 7.7
+      },
+      specs: {
+            "refreshRate": "120Hz",
+            "smartPlatform": "Google TV"
       },
       description: "The Sony Bravia 9 is Sony's flagship Mini LED for 2025, combining brightness with Sony's legendary processing. It sits above the Bravia 8. It uses Mini LED backlighting with thousands of tiny LEDs for better contrast than standard LED TVs. The 74-inch size is the most popular choice, ideal for average living rooms with 6-8 feet of viewing distance.",
       performanceSpecs: {
@@ -3968,10 +4057,11 @@ const TV_DATA = {
                   "retailerId": "bestbuy",
                   "currentPrice": 2999.99,
                   "retailPrice": 4799.99,
-                  "url": "https://www.bestbuy.com/site/6578576.p",
+                  "url": "https://sovrn.co?key=8385bed416f9d04124c9e2a38846b0fb&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F6578576.p",
                   "sku": "6578576",
                   "inStock": true,
-                  "lastChecked": "2026-01-22T20:29:52Z"
+                  "lastChecked": "2026-01-22T20:29:52Z",
+                  "originalUrl": "https://www.bestbuy.com/site/6578576.p"
             }
       ],
       priceHistory: [
@@ -3983,10 +4073,6 @@ const TV_DATA = {
       ],
       useCaseScores: {
             "sportsScore": 7.7
-      },
-      specs: {
-            "refreshRate": "120Hz",
-            "smartPlatform": "Google TV"
       },
       description: "The Sony Bravia 9 is Sony's flagship Mini LED for 2025, combining brightness with Sony's legendary processing. It sits above the Bravia 8. It uses Mini LED backlighting with thousands of tiny LEDs for better contrast than standard LED TVs. The 85-inch screen is designed for large living rooms or home theaters with seating 8-12 feet away.",
       performanceSpecs: {
@@ -4022,10 +4108,11 @@ const TV_DATA = {
                   "retailerId": "bestbuy",
                   "currentPrice": 977.99,
                   "retailPrice": 1149.99,
-                  "url": "https://www.bestbuy.com/site/6544734.p",
+                  "url": "https://sovrn.co?key=8385bed416f9d04124c9e2a38846b0fb&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F6544734.p",
                   "sku": "6544734",
                   "inStock": true,
-                  "lastChecked": "2026-01-22T18:49:11Z"
+                  "lastChecked": "2026-01-22T18:49:11Z",
+                  "originalUrl": "https://www.bestbuy.com/site/6544734.p"
             }
       ],
       priceHistory: [
@@ -4076,10 +4163,11 @@ const TV_DATA = {
                   "retailerId": "bestbuy",
                   "currentPrice": 849.99,
                   "retailPrice": 1199.99,
-                  "url": "https://www.bestbuy.com/site/6544733.p",
+                  "url": "https://sovrn.co?key=8385bed416f9d04124c9e2a38846b0fb&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F6544733.p",
                   "sku": "6544733",
                   "inStock": true,
-                  "lastChecked": "2026-01-22T20:29:53Z"
+                  "lastChecked": "2026-01-22T20:29:53Z",
+                  "originalUrl": "https://www.bestbuy.com/site/6544733.p"
             }
       ],
       priceHistory: [
@@ -4091,6 +4179,10 @@ const TV_DATA = {
       ],
       useCaseScores: {
             "sportsScore": 7.2
+      },
+      specs: {
+            "refreshRate": "120Hz",
+            "smartPlatform": "Google TV"
       },
       description: "The Sony X90L is Sony's Full Array LED, great value with premium Sony processing. It sits below the flagship Bravia 8. It uses LED backlighting, a proven technology offering good value. At 64 inches, this works great in bedrooms, apartments, or living rooms with closer seating (5-7 feet).",
       performanceSpecs: {
@@ -4126,10 +4218,11 @@ const TV_DATA = {
                   "retailerId": "bestbuy",
                   "currentPrice": 1189.99,
                   "retailPrice": 1699.99,
-                  "url": "https://www.bestbuy.com/site/6544735.p",
+                  "url": "https://sovrn.co?key=8385bed416f9d04124c9e2a38846b0fb&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F6544735.p",
                   "sku": "6544735",
                   "inStock": true,
-                  "lastChecked": "2026-01-22T20:29:54Z"
+                  "lastChecked": "2026-01-22T20:29:54Z",
+                  "originalUrl": "https://www.bestbuy.com/site/6544735.p"
             }
       ],
       priceHistory: [
@@ -4180,10 +4273,11 @@ const TV_DATA = {
                   "retailerId": "bestbuy",
                   "currentPrice": 1994.99,
                   "retailPrice": 2099.99,
-                  "url": "https://www.bestbuy.com/site/6544732.p",
+                  "url": "https://sovrn.co?key=8385bed416f9d04124c9e2a38846b0fb&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F6544732.p",
                   "sku": "6544732",
                   "inStock": true,
-                  "lastChecked": "2026-01-22T18:49:11Z"
+                  "lastChecked": "2026-01-22T18:49:11Z",
+                  "originalUrl": "https://www.bestbuy.com/site/6544732.p"
             }
       ],
       priceHistory: [
@@ -4234,10 +4328,11 @@ const TV_DATA = {
                   "retailerId": "bestbuy",
                   "currentPrice": 3499.99,
                   "retailPrice": 6199.99,
-                  "url": "https://www.bestbuy.com/site/6544731.p",
+                  "url": "https://sovrn.co?key=8385bed416f9d04124c9e2a38846b0fb&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F6544731.p",
                   "sku": "6544731",
                   "inStock": true,
-                  "lastChecked": "2026-01-22T20:29:52Z"
+                  "lastChecked": "2026-01-22T20:29:52Z",
+                  "originalUrl": "https://www.bestbuy.com/site/6544731.p"
             }
       ],
       priceHistory: [
@@ -4288,10 +4383,11 @@ const TV_DATA = {
                   "retailerId": "bestbuy",
                   "currentPrice": 427.99,
                   "retailPrice": 449.99,
-                  "url": "https://www.bestbuy.com/site/6538130.p",
+                  "url": "https://sovrn.co?key=8385bed416f9d04124c9e2a38846b0fb&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F6538130.p",
                   "sku": "6538130",
                   "inStock": true,
-                  "lastChecked": "2026-01-22T20:29:57Z"
+                  "lastChecked": "2026-01-22T20:29:57Z",
+                  "originalUrl": "https://www.bestbuy.com/site/6538130.p"
             }
       ],
       priceHistory: [
@@ -4350,10 +4446,11 @@ const TV_DATA = {
                   "retailerId": "bestbuy",
                   "currentPrice": 569.99,
                   "retailPrice": 599.99,
-                  "url": "https://www.bestbuy.com/site/6538137.p",
+                  "url": "https://sovrn.co?key=8385bed416f9d04124c9e2a38846b0fb&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F6538137.p",
                   "sku": "6538137",
                   "inStock": true,
-                  "lastChecked": "2026-01-22T20:29:58Z"
+                  "lastChecked": "2026-01-22T20:29:58Z",
+                  "originalUrl": "https://www.bestbuy.com/site/6538137.p"
             }
       ],
       priceHistory: [
@@ -4412,10 +4509,11 @@ const TV_DATA = {
                   "retailerId": "bestbuy",
                   "currentPrice": 299.99,
                   "retailPrice": 649.99,
-                  "url": "https://www.bestbuy.com/site/6625833.p",
+                  "url": "https://sovrn.co?key=8385bed416f9d04124c9e2a38846b0fb&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F6625833.p",
                   "sku": "6625833",
                   "inStock": true,
-                  "lastChecked": "2026-01-22T20:30:21Z"
+                  "lastChecked": "2026-01-22T20:30:21Z",
+                  "originalUrl": "https://www.bestbuy.com/site/6625833.p"
             }
       ],
       priceHistory: [
@@ -4427,11 +4525,6 @@ const TV_DATA = {
       ],
       useCaseScores: {
             "sportsScore": 6.5
-      },
-      specs: {
-            "refreshRate": "60Hz",
-            "hdr": "HDR10",
-            "smartPlatform": "Google TV"
       },
       description: "The TCL QM5K is TCL's entry-level Mini LED for 2025, offering premium features at a budget price. It sits below the flagship QM7K. It uses Mini LED backlighting with thousands of tiny LEDs for better contrast than standard LED TVs. The compact 50-inch screen is perfect for bedrooms, offices, kitchens, or as a secondary TV.",
       performanceSpecs: {
@@ -4467,10 +4560,11 @@ const TV_DATA = {
                   "retailerId": "bestbuy",
                   "currentPrice": 329.99,
                   "retailPrice": 699.99,
-                  "url": "https://www.bestbuy.com/site/6625835.p",
+                  "url": "https://sovrn.co?key=8385bed416f9d04124c9e2a38846b0fb&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F6625835.p",
                   "sku": "6625835",
                   "inStock": true,
-                  "lastChecked": "2026-01-22T20:30:22Z"
+                  "lastChecked": "2026-01-22T20:30:22Z",
+                  "originalUrl": "https://www.bestbuy.com/site/6625835.p"
             }
       ],
       priceHistory: [
@@ -4522,10 +4616,11 @@ const TV_DATA = {
                   "retailerId": "bestbuy",
                   "currentPrice": 449.99,
                   "retailPrice": 899.99,
-                  "url": "https://www.bestbuy.com/site/6625874.p",
+                  "url": "https://sovrn.co?key=8385bed416f9d04124c9e2a38846b0fb&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F6625874.p",
                   "sku": "6625874",
                   "inStock": true,
-                  "lastChecked": "2026-01-22T20:30:20Z"
+                  "lastChecked": "2026-01-22T20:30:20Z",
+                  "originalUrl": "https://www.bestbuy.com/site/6625874.p"
             }
       ],
       priceHistory: [
@@ -4577,10 +4672,11 @@ const TV_DATA = {
                   "retailerId": "bestbuy",
                   "currentPrice": 599.99,
                   "retailPrice": 1199.99,
-                  "url": "https://www.bestbuy.com/site/6625834.p",
+                  "url": "https://sovrn.co?key=8385bed416f9d04124c9e2a38846b0fb&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F6625834.p",
                   "sku": "6625834",
                   "inStock": true,
-                  "lastChecked": "2026-01-22T18:51:47Z"
+                  "lastChecked": "2026-01-22T18:51:47Z",
+                  "originalUrl": "https://www.bestbuy.com/site/6625834.p"
             }
       ],
       priceHistory: [
@@ -4632,10 +4728,11 @@ const TV_DATA = {
                   "retailerId": "bestbuy",
                   "currentPrice": 899.99,
                   "retailPrice": 1399.99,
-                  "url": "https://www.bestbuy.com/site/6643446.p",
+                  "url": "https://sovrn.co?key=8385bed416f9d04124c9e2a38846b0fb&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F6643446.p",
                   "sku": "6643446",
                   "inStock": true,
-                  "lastChecked": "2026-01-22T20:30:20Z"
+                  "lastChecked": "2026-01-22T20:30:20Z",
+                  "originalUrl": "https://www.bestbuy.com/site/6643446.p"
             }
       ],
       priceHistory: [
@@ -4687,10 +4784,11 @@ const TV_DATA = {
                   "retailerId": "bestbuy",
                   "currentPrice": 699.99,
                   "retailPrice": 1299.99,
-                  "url": "https://www.bestbuy.com/site/6621468.p",
+                  "url": "https://sovrn.co?key=8385bed416f9d04124c9e2a38846b0fb&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F6621468.p",
                   "sku": "6621468",
                   "inStock": true,
-                  "lastChecked": "2026-01-22T20:30:18Z"
+                  "lastChecked": "2026-01-22T20:30:18Z",
+                  "originalUrl": "https://www.bestbuy.com/site/6621468.p"
             }
       ],
       priceHistory: [
@@ -4702,6 +4800,11 @@ const TV_DATA = {
       ],
       useCaseScores: {
             "sportsScore": 7.8
+      },
+      specs: {
+            "refreshRate": "144Hz",
+            "hdr": "HDR10",
+            "smartPlatform": "Google TV"
       },
       description: "The TCL QM7K sits in the middle of TCL's 2025 Mini LED lineup. It sits above the QM5K and below the QM8K in TCL's lineup. It uses Mini LED backlighting with over 2,500 local dimming zones for precise contrast control and excellent HDR performance. At 55 inches, this works great in bedrooms, apartments, or living rooms with closer seating (5-7 feet).",
       performanceSpecs: {
@@ -4738,10 +4841,11 @@ const TV_DATA = {
                   "retailerId": "bestbuy",
                   "currentPrice": 899.99,
                   "retailPrice": 1499.99,
-                  "url": "https://www.bestbuy.com/site/6621470.p",
+                  "url": "https://sovrn.co?key=8385bed416f9d04124c9e2a38846b0fb&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F6621470.p",
                   "sku": "6621470",
                   "inStock": true,
-                  "lastChecked": "2026-01-22T20:30:19Z"
+                  "lastChecked": "2026-01-22T20:30:19Z",
+                  "originalUrl": "https://www.bestbuy.com/site/6621470.p"
             }
       ],
       priceHistory: [
@@ -4794,10 +4898,11 @@ const TV_DATA = {
                   "retailerId": "bestbuy",
                   "currentPrice": 1198.99,
                   "retailPrice": 1999.99,
-                  "url": "https://www.bestbuy.com/site/6621474.p",
+                  "url": "https://sovrn.co?key=8385bed416f9d04124c9e2a38846b0fb&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F6621474.p",
                   "sku": "6621474",
                   "inStock": true,
-                  "lastChecked": "2026-01-22T18:51:40Z"
+                  "lastChecked": "2026-01-22T18:51:40Z",
+                  "originalUrl": "https://www.bestbuy.com/site/6621474.p"
             }
       ],
       priceHistory: [
@@ -4850,10 +4955,11 @@ const TV_DATA = {
                   "retailerId": "bestbuy",
                   "currentPrice": 1699.99,
                   "retailPrice": 2499.99,
-                  "url": "https://www.bestbuy.com/site/6621467.p",
+                  "url": "https://sovrn.co?key=8385bed416f9d04124c9e2a38846b0fb&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F6621467.p",
                   "sku": "6621467",
                   "inStock": true,
-                  "lastChecked": "2026-01-22T20:30:18Z"
+                  "lastChecked": "2026-01-22T20:30:18Z",
+                  "originalUrl": "https://www.bestbuy.com/site/6621467.p"
             }
       ],
       priceHistory: [
@@ -4906,10 +5012,11 @@ const TV_DATA = {
                   "retailerId": "bestbuy",
                   "currentPrice": 1999.99,
                   "retailPrice": 3999.99,
-                  "url": "https://www.bestbuy.com/site/6621472.p",
+                  "url": "https://sovrn.co?key=8385bed416f9d04124c9e2a38846b0fb&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F6621472.p",
                   "sku": "6621472",
                   "inStock": true,
-                  "lastChecked": "2026-01-22T20:30:19Z"
+                  "lastChecked": "2026-01-22T20:30:19Z",
+                  "originalUrl": "https://www.bestbuy.com/site/6621472.p"
             }
       ],
       priceHistory: [
@@ -4962,10 +5069,11 @@ const TV_DATA = {
                   "retailerId": "bestbuy",
                   "currentPrice": 9999.99,
                   "retailPrice": 19999.99,
-                  "url": "https://www.bestbuy.com/site/6621473.p",
+                  "url": "https://sovrn.co?key=8385bed416f9d04124c9e2a38846b0fb&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F6621473.p",
                   "sku": "6621473",
                   "inStock": true,
-                  "lastChecked": "2026-01-22T20:30:17Z"
+                  "lastChecked": "2026-01-22T20:30:17Z",
+                  "originalUrl": "https://www.bestbuy.com/site/6621473.p"
             }
       ],
       priceHistory: [
@@ -5018,10 +5126,11 @@ const TV_DATA = {
                   "retailerId": "bestbuy",
                   "currentPrice": 999.99,
                   "retailPrice": 2499.99,
-                  "url": "https://www.bestbuy.com/site/6625842.p",
+                  "url": "https://sovrn.co?key=8385bed416f9d04124c9e2a38846b0fb&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F6625842.p",
                   "sku": "6625842",
                   "inStock": true,
-                  "lastChecked": "2026-01-22T20:29:56Z"
+                  "lastChecked": "2026-01-22T20:29:56Z",
+                  "originalUrl": "https://www.bestbuy.com/site/6625842.p"
             }
       ],
       priceHistory: [
@@ -5080,10 +5189,11 @@ const TV_DATA = {
                   "retailerId": "bestbuy",
                   "currentPrice": 1499.99,
                   "retailPrice": 3199.99,
-                  "url": "https://www.bestbuy.com/site/6625839.p",
+                  "url": "https://sovrn.co?key=8385bed416f9d04124c9e2a38846b0fb&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F6625839.p",
                   "sku": "6625839",
                   "inStock": true,
-                  "lastChecked": "2026-01-22T20:29:56Z"
+                  "lastChecked": "2026-01-22T20:29:56Z",
+                  "originalUrl": "https://www.bestbuy.com/site/6625839.p"
             }
       ],
       priceHistory: [
@@ -5142,10 +5252,11 @@ const TV_DATA = {
                   "retailerId": "bestbuy",
                   "currentPrice": 1999.99,
                   "retailPrice": 3799.99,
-                  "url": "https://www.bestbuy.com/site/6625843.p",
+                  "url": "https://sovrn.co?key=8385bed416f9d04124c9e2a38846b0fb&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F6625843.p",
                   "sku": "6625843",
                   "inStock": true,
-                  "lastChecked": "2026-01-22T20:29:57Z"
+                  "lastChecked": "2026-01-22T20:29:57Z",
+                  "originalUrl": "https://www.bestbuy.com/site/6625843.p"
             }
       ],
       priceHistory: [
@@ -5204,10 +5315,11 @@ const TV_DATA = {
                   "retailerId": "bestbuy",
                   "currentPrice": 2999.99,
                   "retailPrice": 4999.99,
-                  "url": "https://www.bestbuy.com/site/6625840.p",
+                  "url": "https://sovrn.co?key=8385bed416f9d04124c9e2a38846b0fb&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F6625840.p",
                   "sku": "6625840",
                   "inStock": true,
-                  "lastChecked": "2026-01-22T18:49:17Z"
+                  "lastChecked": "2026-01-22T18:49:17Z",
+                  "originalUrl": "https://www.bestbuy.com/site/6625840.p"
             }
       ],
       priceHistory: [
@@ -5266,10 +5378,11 @@ const TV_DATA = {
                   "retailerId": "bestbuy",
                   "currentPrice": 14999.99,
                   "retailPrice": 19999.99,
-                  "url": "https://www.bestbuy.com/site/6579445.p",
+                  "url": "https://sovrn.co?key=8385bed416f9d04124c9e2a38846b0fb&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F6579445.p",
                   "sku": "6579445",
                   "inStock": true,
-                  "lastChecked": "2026-01-22T20:29:55Z"
+                  "lastChecked": "2026-01-22T20:29:55Z",
+                  "originalUrl": "https://www.bestbuy.com/site/6579445.p"
             }
       ],
       priceHistory: [
@@ -5328,10 +5441,11 @@ const TV_DATA = {
                   "retailerId": "bestbuy",
                   "currentPrice": 999.99,
                   "retailPrice": 2499.99,
-                  "url": "https://www.bestbuy.com/site/6625842.p",
+                  "url": "https://sovrn.co?key=8385bed416f9d04124c9e2a38846b0fb&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F6625842.p",
                   "sku": "6625842",
                   "inStock": true,
-                  "lastChecked": "2026-01-22T20:30:15Z"
+                  "lastChecked": "2026-01-22T20:30:15Z",
+                  "originalUrl": "https://www.bestbuy.com/site/6625842.p"
             }
       ],
       priceHistory: [
@@ -5343,6 +5457,11 @@ const TV_DATA = {
       ],
       useCaseScores: {
             "sportsScore": 8.4
+      },
+      specs: {
+            "refreshRate": "144Hz",
+            "hdr": "HDR10",
+            "smartPlatform": "Google TV"
       },
       description: "The TCL QM8K is TCL's flagship Mini LED for 2025. It sits above the QM7K. It uses Mini LED backlighting with thousands of tiny LEDs for better contrast than standard LED TVs. At 64 inches, this works great in bedrooms, apartments, or living rooms with closer seating (5-7 feet).",
       performanceSpecs: {
@@ -5378,10 +5497,11 @@ const TV_DATA = {
                   "retailerId": "bestbuy",
                   "currentPrice": 1499.99,
                   "retailPrice": 3199.99,
-                  "url": "https://www.bestbuy.com/site/6625839.p",
+                  "url": "https://sovrn.co?key=8385bed416f9d04124c9e2a38846b0fb&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F6625839.p",
                   "sku": "6625839",
                   "inStock": true,
-                  "lastChecked": "2026-01-22T18:51:33Z"
+                  "lastChecked": "2026-01-22T18:51:33Z",
+                  "originalUrl": "https://www.bestbuy.com/site/6625839.p"
             }
       ],
       priceHistory: [
@@ -5433,10 +5553,11 @@ const TV_DATA = {
                   "retailerId": "bestbuy",
                   "currentPrice": 1999.99,
                   "retailPrice": 3799.99,
-                  "url": "https://www.bestbuy.com/site/6625843.p",
+                  "url": "https://sovrn.co?key=8385bed416f9d04124c9e2a38846b0fb&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F6625843.p",
                   "sku": "6625843",
                   "inStock": true,
-                  "lastChecked": "2026-01-22T20:30:17Z"
+                  "lastChecked": "2026-01-22T20:30:17Z",
+                  "originalUrl": "https://www.bestbuy.com/site/6625843.p"
             }
       ],
       priceHistory: [
@@ -5488,10 +5609,11 @@ const TV_DATA = {
                   "retailerId": "bestbuy",
                   "currentPrice": 2999.99,
                   "retailPrice": 4999.99,
-                  "url": "https://www.bestbuy.com/site/6625840.p",
+                  "url": "https://sovrn.co?key=8385bed416f9d04124c9e2a38846b0fb&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F6625840.p",
                   "sku": "6625840",
                   "inStock": true,
-                  "lastChecked": "2026-01-22T20:30:16Z"
+                  "lastChecked": "2026-01-22T20:30:16Z",
+                  "originalUrl": "https://www.bestbuy.com/site/6625840.p"
             }
       ],
       priceHistory: [
@@ -5569,8 +5691,8 @@ const TVDataUtils = {
     if (dealScore >= 0.25) return { text: "A", subtitle: "Great Deal", class: "verdict-a" };
     if (dealScore >= 0.10) return { text: "B", subtitle: "Good Deal", class: "verdict-b" };
     if (dealScore >= -0.10) return { text: "C", subtitle: "Fair Price", class: "verdict-c" };
-    if (dealScore >= -0.25) return { text: "D", subtitle: "Overpriced", class: "verdict-d" };
-    return { text: "F", subtitle: "Very Overpriced", class: "verdict-f" };
+    if (dealScore >= -0.25) return { text: "D", subtitle: "Not Recommended", class: "verdict-d" };
+    return { text: "F", subtitle: "Not Recommended", class: "verdict-f" };
   },
 
   /**

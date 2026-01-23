@@ -7,7 +7,7 @@
   <!-- Primary Meta Tags -->
   <title>TV School - Find the Best TV Deals | Compare TV Prices & Values</title>
   <meta name="title" content="TV School - Find the Best TV Deals | Compare TV Prices & Values">
-  <meta name="description" content="Compare TV prices and find the best deals with TV School's proprietary fair value model. We analyze screen size, panel technology, and quality scores to grade every TV from A to F.">
+  <meta name="description" content="Compare TV prices and find the best deals with TV School's proprietary value prediction model. We analyze screen size, panel technology, and quality scores to grade every TV from A to F.">
   <meta name="keywords" content="TV deals, best TV prices, TV comparison, OLED TV deals, QLED TV deals, Mini LED TV, Samsung TV, LG TV, Sony TV, TCL TV, TV buying guide">
   <meta name="robots" content="index, follow">
   <meta name="author" content="TV School">
@@ -19,7 +19,7 @@
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://tvschool.academy/">
   <meta property="og:title" content="TV School - Find the Best TV Deals">
-  <meta property="og:description" content="Compare TV prices and find the best deals. We grade every TV from A to F based on our fair value model.">
+  <meta property="og:description" content="Compare TV prices and find the best deals. We grade every TV from A to F based on our value prediction model.">
   <meta property="og:image" content="https://tvschool.academy/logo.jpg">
   <meta property="og:site_name" content="TV School">
 
@@ -27,7 +27,7 @@
   <meta property="twitter:card" content="summary_large_image">
   <meta property="twitter:url" content="https://tvschool.academy/">
   <meta property="twitter:title" content="TV School - Find the Best TV Deals">
-  <meta property="twitter:description" content="Compare TV prices and find the best deals. We grade every TV from A to F based on our fair value model.">
+  <meta property="twitter:description" content="Compare TV prices and find the best deals. We grade every TV from A to F based on our value prediction model.">
   <meta property="twitter:image" content="https://tvschool.academy/logo.jpg">
 
   <!-- Structured Data -->
@@ -37,7 +37,7 @@
     "@type": "WebSite",
     "name": "TV School",
     "url": "https://tvschool.academy/",
-    "description": "Compare TV prices and find the best deals with our proprietary fair value model",
+    "description": "Compare TV prices and find the best deals with our proprietary value prediction model",
     "potentialAction": {
       "@type": "SearchAction",
       "target": "https://tvschool.academy/?search={search_term_string}",
@@ -69,6 +69,12 @@
       </a>
     </div>
   </header>
+
+  <!-- Affiliate Disclosure Banner -->
+  <div class="affiliate-banner">
+    We may earn a commission when you buy through links on our site. <a href="disclosure.html">Learn more</a>
+  </div>
+
   <div class="stats-bar">
     <div class="header-stat">
       <span>TVs tracked:</span>
@@ -82,13 +88,17 @@
       <span>How it works</span>
       <strong>→</strong>
     </a>
+    <a href="guides/index.html" class="header-stat header-link">
+      <span>Buying Guides</span>
+      <strong>→</strong>
+    </a>
   </div>
 
   <!-- SEO Intro Section (visible to search engines without JS) -->
   <section class="seo-intro">
     <div class="seo-intro-content">
-      <h2>Find the Best TV Deals with Our Fair Value Model</h2>
-      <p>TV School analyzes TV prices across major retailers and compares them to our proprietary fair value model. We grade every TV from A (great deal) to F (overpriced) based on screen size, panel technology, brand, and professional review scores. Stop overpaying for TVs — find the best deals on OLED, Mini LED, QLED, and LED televisions from top brands.</p>
+      <h2>Find the Best TV Deals with Our Value Prediction Model</h2>
+      <p>TV School analyzes TV prices across major retailers and compares them to our proprietary value prediction model. We grade every TV from A (great deal) to F (not recommended) based on screen size, panel technology, brand, and professional review scores. Stop overpaying for TVs — find the best deals on OLED, Mini LED, QLED, and LED televisions from top brands.</p>
       <div class="seo-features">
         <div class="seo-feature">
           <strong>Brands We Track</strong>
@@ -175,6 +185,20 @@
         </div>
       </div>
 
+      <!-- Refresh Rate -->
+      <div class="filter-section">
+        <label class="filter-label">Minimum Refresh Rate</label>
+        <div class="filter-range refresh-range">
+          <input type="range" id="refresh-slider" min="0" max="2" value="0" step="1">
+          <div class="filter-range-labels refresh-labels">
+            <span>60Hz</span>
+            <span>120Hz</span>
+            <span>144Hz</span>
+          </div>
+          <div class="refresh-current" id="refresh-value">All Refresh Rates</div>
+        </div>
+      </div>
+
       <!-- Price Range -->
       <div class="filter-section">
         <label class="filter-label">Price Range</label>
@@ -214,7 +238,6 @@
           <option value="dealScore">Best Deal First</option>
           <option value="priceLow">Price: Low to High</option>
           <option value="priceHigh">Price: High to Low</option>
-          <option value="rtingsScore">RTINGS Score</option>
           <option value="size">Screen Size</option>
         </select>
       </div>
@@ -230,17 +253,21 @@
   <footer class="footer">
     <div class="footer-content">
       <p>
-        <strong>TV School</strong> - Finding the best TV deals.
+        <strong>TV School</strong> - Helping you find the best TV deals.
       </p>
       <p style="margin-top: 0.5rem;">
         Prices updated daily. Affiliate links may be used.
-        <a href="https://sovrn.co/38v6xua" rel="nofollow">Affiliate Disclosure</a>
+      </p>
+      <p style="margin-top: 0.5rem;">
+        <a href="disclosure.html">Affiliate Disclosure</a> · <a href="privacy.html">Privacy Policy</a>
       </p>
     </div>
   </footer>
 
   <!-- Scripts -->
+  <!-- For local testing, use local data.js. For production, use CDN -->
   <script src="data.js"></script>
+  <!-- <script src="https://cdn.jsdelivr.net/gh/fatbaby52/tvschool-data@master/data.js"></script> -->
   <script src="app.js"></script>
 </body>
 </html>

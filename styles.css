@@ -102,6 +102,25 @@ body {
   opacity: 0.8;
 }
 
+/* Affiliate Disclosure Banner */
+.affiliate-banner {
+  background: #fef3c7;
+  color: #92400e;
+  text-align: center;
+  padding: 0.5rem 1rem;
+  font-size: 0.8125rem;
+}
+
+.affiliate-banner a {
+  color: #92400e;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.affiliate-banner a:hover {
+  color: #78350f;
+}
+
 /* Deal of the Day */
 /* SEO Intro Section */
 .seo-intro {
@@ -272,6 +291,27 @@ body {
 }
 
 .deal-of-day-btn:hover {
+  transform: scale(1.05);
+}
+
+/* Deal of day as clickable link */
+.deal-of-day-link {
+  text-decoration: none;
+  color: white;
+  display: grid;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.deal-of-day-link:visited {
+  color: white;
+}
+
+.deal-of-day-link:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.deal-of-day-link:hover .deal-of-day-btn {
   transform: scale(1.05);
 }
 
@@ -511,6 +551,39 @@ body {
 }
 
 .grade-current {
+  text-align: center;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: var(--primary-color);
+  margin-top: 0.25rem;
+}
+
+/* Refresh rate slider */
+.refresh-range {
+  gap: 0.75rem;
+}
+
+.refresh-labels {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.refresh-labels span {
+  width: 33.33%;
+  text-align: center;
+}
+
+.refresh-labels span:first-child {
+  text-align: left;
+}
+
+.refresh-labels span:last-child {
+  text-align: right;
+}
+
+.refresh-current {
   text-align: center;
   font-size: 0.8125rem;
   font-weight: 600;
@@ -997,6 +1070,61 @@ body {
 .quick-score.pc {
   background: #e0e7ff;
   color: #4338ca;
+}
+
+/* Guide Promo Card */
+.guide-promo-card {
+  background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%);
+  border: 2px solid var(--primary-color);
+  text-decoration: none;
+}
+
+.guide-promo-card:hover {
+  background: linear-gradient(135deg, #dbeafe 0%, #bfdbfe 100%);
+}
+
+.guide-promo-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem 1.5rem;
+  height: 100%;
+  min-height: 300px;
+}
+
+.guide-promo-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.guide-promo-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 0.75rem;
+}
+
+.guide-promo-text {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+.guide-promo-link {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background: var(--primary-color);
+  color: white;
+  border-radius: var(--radius-md);
+  font-weight: 600;
+  font-size: 0.875rem;
+}
+
+.guide-promo-card:hover .guide-promo-link {
+  background: var(--primary-hover);
 }
 
 /* No Results */

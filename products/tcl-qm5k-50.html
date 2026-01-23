@@ -36,6 +36,22 @@
     .price-meta { margin-top: 0.5rem; color: var(--text-secondary); font-size: 0.875rem; }
     .deal-info { margin-top: 1rem; padding-top: 1rem; border-top: 1px solid var(--border-color); display: flex; justify-content: space-between; }
     .buy-button { display: inline-block; width: 100%; padding: 1rem 2rem; background: var(--primary-color); color: white; text-align: center; text-decoration: none; border-radius: var(--radius-md); font-weight: 600; font-size: 1.125rem; margin-top: 1rem; }
+    .buy-button:hover { filter: brightness(0.9); }
+    .buy-buttons-label { font-size: 0.875rem; color: var(--text-secondary); margin-top: 1rem; margin-bottom: 0.5rem; }
+    .buy-buttons-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 0.5rem; }
+    .buy-button-multi { display: flex; flex-direction: column; align-items: center; padding: 0.75rem 1rem; color: white; text-align: center; text-decoration: none; border-radius: var(--radius-md); font-weight: 600; transition: filter 0.15s; }
+    .buy-button-multi:hover { filter: brightness(0.9); }
+    .buy-button-retailer { font-size: 0.875rem; opacity: 0.9; }
+    .buy-button-price { font-size: 1.125rem; font-weight: 700; }
+    .buy-button-multi.best-price { position: relative; box-shadow: 0 0 0 2px #fbbf24; }
+    .best-price-badge { position: absolute; top: -8px; left: 50%; transform: translateX(-50%); background: #fbbf24; color: #1e293b; font-size: 0.65rem; font-weight: 700; padding: 2px 6px; border-radius: 4px; text-transform: uppercase; }
+    .buy-button-grade { display: inline-flex; align-items: center; justify-content: center; padding: 0.25rem 0.5rem; border-radius: 4px; font-size: 0.75rem; font-weight: 700; margin-top: 0.25rem; white-space: nowrap; }
+    .buy-button-grade.verdict-a { background: #dcfce7; color: #166534; }
+    .buy-button-grade.verdict-b { background: #d1fae5; color: #065f46; }
+    .buy-button-grade.verdict-c { background: #fef3c7; color: #92400e; }
+    .buy-button-grade.verdict-d { background: #fed7aa; color: #9a3412; }
+    .buy-button-grade.verdict-f { background: #fee2e2; color: #991b1b; }
+    .buy-button .buy-button-grade { margin-left: 0.5rem; margin-top: 0; }
     .product-description { color: var(--text-secondary); line-height: 1.7; }
     .specs-section { margin-top: 2rem; }
     .specs-title { font-size: 1.25rem; font-weight: 600; margin-bottom: 1rem; }
@@ -113,15 +129,12 @@
         </div>
 
         <div class="price-section">
-          <div class="price-grade-row">
-            <div>
-              <span class="price-main">$300</span>
-              <span class="price-retail">$650</span>
-            </div>
-            <span class="deal-badge verdict-b"><span class="grade">B</span><span class="grade-subtitle">Good Deal</span></span>
+          <div class="price-main-group">
+            <span class="price-main">$300</span>
+            <span class="price-retail">$650</span>
           </div>
           <div class="price-meta">
-            at Best Buy • In Stock
+            Starting at $300 • In Stock
           </div>
           <div class="deal-info">
             <div>
@@ -133,9 +146,7 @@
               <div style="font-weight: 600; color: var(--success-color);">+20.4%</div>
             </div>
           </div>
-          <a href="https://www.bestbuy.com/site/6625833.p" target="_blank" class="buy-button">
-            Buy at Best Buy
-          </a>
+          <a href="https://sovrn.co?key=8385bed416f9d04124c9e2a38846b0fb&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F6625833.p" target="_blank" class="buy-button" style="background: #0046be;">Buy at Best Buy - $300 <span class="buy-button-grade verdict-b">B - Good Deal</span></a>
         </div>
 
         <p class="product-description">The TCL QM5K is TCL's entry-level Mini LED for 2025, offering premium features at a budget price. It sits below the flagship QM7K. It uses Mini LED backlighting with thousands of tiny LEDs for better contrast than standard LED TVs. The compact 50-inch screen is perfect for bedrooms, offices, kitchens, or as a secondary TV.</p>
@@ -158,18 +169,6 @@
           <div class="spec-value">Mini LED</div>
         </div>
         
-            <div class="spec-item">
-              <div class="spec-label">Refresh Rate</div>
-              <div class="spec-value">60Hz</div>
-            </div>
-            <div class="spec-item">
-              <div class="spec-label">HDR Support</div>
-              <div class="spec-value">HDR10</div>
-            </div>
-            <div class="spec-item">
-              <div class="spec-label">Smart Platform</div>
-              <div class="spec-value">Google TV</div>
-            </div>
       </div>
     </section>
 

@@ -186,6 +186,88 @@
     }
     .buy-button:hover {
       background: var(--primary-hover);
+      filter: brightness(0.9);
+    }
+    .buy-buttons-label {
+      font-size: 0.875rem;
+      color: var(--text-secondary);
+      margin-top: 1rem;
+      margin-bottom: 0.5rem;
+    }
+    .buy-buttons-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 0.5rem;
+    }
+    .buy-button-multi {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 0.75rem 1rem;
+      color: white;
+      text-align: center;
+      text-decoration: none;
+      border-radius: var(--radius-md);
+      font-weight: 600;
+      transition: filter 0.15s;
+    }
+    .buy-button-multi:hover {
+      filter: brightness(0.9);
+    }
+    .buy-button-retailer {
+      font-size: 0.875rem;
+      opacity: 0.9;
+    }
+    .buy-button-price {
+      font-size: 1.125rem;
+      font-weight: 700;
+    }
+    .buy-button-multi.best-price {
+      position: relative;
+      box-shadow: 0 0 0 2px #fbbf24;
+    }
+    .best-price-badge {
+      position: absolute;
+      top: -8px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: #fbbf24;
+      color: #1e293b;
+      font-size: 0.65rem;
+      font-weight: 700;
+      padding: 2px 6px;
+      border-radius: 4px;
+      text-transform: uppercase;
+    }
+    .buy-button-grade {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.25rem 0.5rem;
+      border-radius: 4px;
+      font-size: 0.75rem;
+      font-weight: 700;
+      margin-top: 0.25rem;
+      white-space: nowrap;
+    }
+    .buy-button-grade.verdict-a { background: #dcfce7; color: #166534; }
+    .buy-button-grade.verdict-b { background: #d1fae5; color: #065f46; }
+    .buy-button-grade.verdict-c { background: #fef3c7; color: #92400e; }
+    .buy-button-grade.verdict-d { background: #fed7aa; color: #9a3412; }
+    .buy-button-grade.verdict-f { background: #fee2e2; color: #991b1b; }
+    .buy-button .buy-button-grade {
+      margin-left: 0.5rem;
+      margin-top: 0;
+    }
+    .affiliate-note {
+      font-size: 0.75rem;
+      color: var(--text-secondary);
+      margin-top: 0.75rem;
+      text-align: center;
+    }
+    .affiliate-note a {
+      color: var(--text-secondary);
+      text-decoration: underline;
     }
     .product-description {
       color: var(--text-secondary);
@@ -385,12 +467,50 @@
     .price-history-stat.trend-up .stat-value {
       color: var(--danger-color);
     }
+    .price-legend {
+      display: flex;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+      margin-bottom: 1rem;
+    }
+    .price-legend-item {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 0.875rem;
+    }
+    .price-legend-color {
+      width: 12px;
+      height: 12px;
+      border-radius: 3px;
+    }
+    .price-legend-name {
+      color: var(--text-secondary);
+    }
+    .price-legend-price {
+      font-weight: 600;
+    }
+    .price-chart-container {
+      display: flex;
+      gap: 0.5rem;
+    }
+    .price-chart-y-axis {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      font-size: 0.7rem;
+      color: var(--text-secondary);
+      text-align: right;
+      padding: 0.5rem 0;
+      min-width: 50px;
+    }
     .price-chart {
-      height: 120px;
+      flex: 1;
+      height: 150px;
       position: relative;
       background: #f8fafc;
       border-radius: var(--radius-md);
-      padding: 1rem;
+      padding: 0.5rem;
     }
     .price-chart-svg {
       width: 100%;
@@ -406,6 +526,7 @@
     .price-history-note {
       font-size: 0.75rem;
       color: var(--text-secondary);
+      margin-top: 0.75rem;
       text-align: center;
       margin-top: 1rem;
     }
@@ -451,16 +572,20 @@
   <footer class="footer">
     <div class="footer-content">
       <p>
-        <strong>TV School</strong> - Finding the best TV deals using our
-        <a href="methodology.html">proprietary fair value model</a>.
+        <strong>TV School</strong> - Helping you find the best TV deals.
       </p>
       <p style="margin-top: 0.5rem;">
-        <a href="https://sovrn.co/38v6xua" rel="nofollow">Affiliate Disclosure</a>
+        Prices updated daily. Affiliate links may be used.
+      </p>
+      <p style="margin-top: 0.5rem;">
+        <a href="disclosure.html">Affiliate Disclosure</a> · <a href="privacy.html">Privacy Policy</a>
       </p>
     </div>
   </footer>
 
+  <!-- For local testing, use local data.js. For production, use CDN -->
   <script src="data.js"></script>
+  <!-- <script src="https://cdn.jsdelivr.net/gh/fatbaby52/tvschool-data@master/data.js"></script> -->
   <script>
     // Helper function to get score color class
     function getScoreClass(score) {
@@ -513,14 +638,14 @@
     // Get grade tooltip for deal grades
     function getGradeTooltip(grade) {
       const tooltips = {
-        'A': 'Great Deal - This TV is priced 25%+ below our projected fair value based on specs, brand, and historical pricing patterns.',
-        'B': 'Good Deal - This TV is priced 10-25% below our projected fair value. A solid purchase.',
-        'C': 'Fair Price - This TV is priced within 10% of our projected fair value. Not a steal, but not overpriced.',
-        'D': 'Overpriced - This TV is priced 10-25% above our projected fair value. Consider waiting for a sale.',
-        'F': 'Very Overpriced - This TV is priced 25%+ above our projected fair value. We recommend waiting for a better deal.',
+        'A': 'Great Deal - This TV is priced 25%+ below our predicted value based on specs, brand, and historical pricing patterns.',
+        'B': 'Good Deal - This TV is priced 10-25% below our predicted value. A solid purchase.',
+        'C': 'Fair Price - This TV is priced within 10% of our predicted value. Not a steal, but not overpriced.',
+        'D': 'Not Recommended - This TV is priced 10-25% above our predicted value. Consider waiting for a sale.',
+        'F': 'Not Recommended - This TV is priced 25%+ above our predicted value. We recommend waiting for a better deal.',
         '?': 'Limited Data - We do not have enough market data for TVs this size to calculate an accurate projected value.'
       };
-      return tooltips[grade] || 'Deal grade based on comparing sale price to our projected fair value.';
+      return tooltips[grade] || 'Deal grade based on comparing sale price to our predicted value.';
     }
 
     // Get educational tooltip for smart platforms
@@ -591,24 +716,134 @@
       `;
     }
 
+    // Calculate deal grade for a specific price
+    function getGradeForPrice(price, fairValue) {
+      if (!fairValue || fairValue <= 0) return { text: '?', subtitle: 'Unknown', class: 'verdict-unknown' };
+      const dealScore = (fairValue - price) / fairValue;
+      if (dealScore >= 0.25) return { text: 'A', subtitle: 'Great Deal', class: 'verdict-a' };
+      if (dealScore >= 0.10) return { text: 'B', subtitle: 'Good Deal', class: 'verdict-b' };
+      if (dealScore >= -0.10) return { text: 'C', subtitle: 'Fair Price', class: 'verdict-c' };
+      if (dealScore >= -0.25) return { text: 'D', subtitle: 'Not Recommended', class: 'verdict-d' };
+      return { text: 'F', subtitle: 'Not Recommended', class: 'verdict-f' };
+    }
+
+    // Render buy buttons for all retailers
+    function renderBuyButtons(tv) {
+      if (!tv.prices || tv.prices.length === 0) return '';
+
+      // Get all in-stock prices, sorted by price (lowest first)
+      const inStockPrices = tv.prices.filter(p => p.inStock);
+      const pricesToShow = (inStockPrices.length > 0 ? inStockPrices : tv.prices)
+        .sort((a, b) => a.currentPrice - b.currentPrice);
+
+      // Retailer colors for button styling
+      const retailerColors = {
+        bestbuy: { bg: '#0046be' },
+        amazon: { bg: '#ff9900' },
+        costco: { bg: '#e31837' },
+        walmart: { bg: '#0071dc' },
+        target: { bg: '#cc0000' },
+        macys: { bg: '#e21a2c' },
+        hsn: { bg: '#00a3e0' },
+        lowes: { bg: '#004990' },
+        samsung: { bg: '#1428a0' },
+        bq: { bg: '#f27322' }
+      };
+
+      if (pricesToShow.length === 1) {
+        // Single retailer - use standard button with grade
+        const price = pricesToShow[0];
+        const retailer = TVDataUtils.getRetailer(price.retailerId);
+        const colors = retailerColors[price.retailerId] || { bg: 'var(--primary-color)' };
+        const grade = getGradeForPrice(price.currentPrice, tv.fairValue);
+        const retailerName = price.retailerName || retailer?.name || 'Retailer';
+        return `
+          <a href="${price.url || '#'}" target="_blank" class="buy-button" style="background: ${colors.bg};">Buy at ${retailerName} - ${TVDataUtils.formatPrice(price.currentPrice)} <span class="buy-button-grade ${grade.class}">${grade.text} - ${grade.subtitle}</span></a>
+          <div class="affiliate-note">We may earn a commission when you buy through links on our site. <a href="disclosure.html">Learn more</a></div>
+        `;
+      }
+
+      // Multiple retailers - show all options with grades
+      const buttons = pricesToShow.map((price, index) => {
+        const retailer = TVDataUtils.getRetailer(price.retailerId);
+        const colors = retailerColors[price.retailerId] || { bg: 'var(--primary-color)' };
+        const isBest = index === 0;
+        const grade = getGradeForPrice(price.currentPrice, tv.fairValue);
+        // Use retailerName from Sovrn offers, or fall back to retailer lookup, or 'Retailer'
+        const retailerName = price.retailerName || retailer?.name || 'Retailer';
+        return `
+          <a href="${price.url || '#'}" target="_blank" class="buy-button-multi ${isBest ? 'best-price' : ''}" style="background: ${colors.bg};">
+            ${isBest ? '<span class="best-price-badge">Best Price</span>' : ''}
+            <span class="buy-button-retailer">${retailerName}</span>
+            <span class="buy-button-price">${TVDataUtils.formatPrice(price.currentPrice)}</span>
+            <span class="buy-button-grade ${grade.class}">${grade.text} - ${grade.subtitle}</span>
+          </a>
+        `;
+      }).join('');
+
+      return `
+        <div class="buy-buttons-label">Compare prices:</div>
+        <div class="buy-buttons-grid">${buttons}</div>
+        <div class="affiliate-note">We may earn a commission when you buy through links on our site. <a href="disclosure.html">Learn more</a></div>
+      `;
+    }
+
     // Render price history section
     function renderPriceHistory(tv) {
       const history = tv.priceHistory;
       if (!history || history.length === 0) return '';
 
-      // If only 1 data point, show a "tracking started" message
+      // Retailer colors for chart lines
+      const retailerColorsChart = {
+        bestbuy: '#0046be',
+        amazon: '#ff9900',
+        costco: '#e31837',
+        walmart: '#0071dc',
+        target: '#cc0000',
+        macys: '#e21a2c',
+        hsn: '#00a3e0',
+        lowes: '#004990',
+        samsung: '#1428a0',
+        bq: '#f27322'
+      };
+      const retailerNamesChart = {
+        bestbuy: 'Best Buy',
+        amazon: 'Amazon',
+        costco: 'Costco',
+        walmart: 'Walmart',
+        target: 'Target',
+        macys: "Macy's",
+        hsn: 'HSN',
+        lowes: "Lowe's",
+        samsung: 'Samsung',
+        bq: 'B&Q'
+      };
+
+      // Group history by retailer
+      const byRetailer = {};
+      history.forEach(h => {
+        const retailerId = h.retailerId || 'bestbuy';
+        if (!byRetailer[retailerId]) byRetailer[retailerId] = [];
+        byRetailer[retailerId].push(h);
+      });
+
+      // Get all unique dates and sort them
+      const allDates = [...new Set(history.map(h => h.date))].sort();
+
+      // If only 1 data point total, show "tracking started" message
       if (history.length === 1) {
+        const h = history[0];
         return `
           <section class="specs-section price-history-section">
             <h2 class="specs-title">Price History</h2>
             <div class="price-history-summary">
               <div class="price-history-stat">
                 <span class="stat-label">Current Price</span>
-                <span class="stat-value">$${history[0].price.toLocaleString()}</span>
+                <span class="stat-value">$${h.price.toLocaleString()}</span>
               </div>
               <div class="price-history-stat">
                 <span class="stat-label">Tracking Since</span>
-                <span class="stat-value">${history[0].date}</span>
+                <span class="stat-value">${h.date}</span>
               </div>
             </div>
             <div class="price-history-note">
@@ -618,61 +853,90 @@
         `;
       }
 
-      // Get min/max for scaling
-      const prices = history.map(h => h.price);
-      const minPrice = Math.min(...prices);
-      const maxPrice = Math.max(...prices);
+      // Get global min/max for scaling
+      const allPrices = history.map(h => h.price);
+      const minPrice = Math.min(...allPrices);
+      const maxPrice = Math.max(...allPrices);
       const range = maxPrice - minPrice || 1;
+      const padding = range * 0.1; // 10% padding
+      const yMin = minPrice - padding;
+      const yMax = maxPrice + padding;
+      const yRange = yMax - yMin;
 
-      // Calculate percentage height for each point
-      const points = history.map((h, i) => {
-        const heightPct = ((h.price - minPrice) / range) * 80 + 10; // 10-90% range
-        const leftPct = (i / (history.length - 1)) * 100;
-        return { ...h, heightPct, leftPct };
-      });
+      // Build SVG paths for each retailer
+      const retailers = Object.keys(byRetailer);
+      const svgPaths = retailers.map(retailerId => {
+        const data = byRetailer[retailerId].sort((a, b) => a.date.localeCompare(b.date));
+        const color = retailerColorsChart[retailerId] || '#6b7280';
 
-      // Create SVG path for the line
-      const pathPoints = points.map((p, i) => {
-        const x = (i / (history.length - 1)) * 100;
-        const y = 100 - p.heightPct;
-        return `${i === 0 ? 'M' : 'L'} ${x} ${y}`;
-      }).join(' ');
+        // Create path
+        const pathPoints = data.map((h, i) => {
+          const dateIndex = allDates.indexOf(h.date);
+          const x = allDates.length > 1 ? (dateIndex / (allDates.length - 1)) * 100 : 50;
+          const y = 100 - ((h.price - yMin) / yRange) * 100;
+          return `${i === 0 ? 'M' : 'L'} ${x} ${y}`;
+        }).join(' ');
 
-      const firstPrice = history[0].price;
-      const lastPrice = history[history.length - 1].price;
-      const change = lastPrice - firstPrice;
-      const changePct = ((change / firstPrice) * 100).toFixed(1);
-      const trendClass = change < 0 ? 'trend-down' : change > 0 ? 'trend-up' : 'trend-flat';
+        // Create circles for data points
+        const circles = data.map(h => {
+          const dateIndex = allDates.indexOf(h.date);
+          const x = allDates.length > 1 ? (dateIndex / (allDates.length - 1)) * 100 : 50;
+          const y = 100 - ((h.price - yMin) / yRange) * 100;
+          return `<circle cx="${x}" cy="${y}" r="4" fill="${color}" stroke="white" stroke-width="1.5" vector-effect="non-scaling-stroke"/>`;
+        }).join('');
+
+        return `
+          <path d="${pathPoints}" fill="none" stroke="${color}" stroke-width="2.5" vector-effect="non-scaling-stroke" stroke-linecap="round" stroke-linejoin="round"/>
+          ${circles}
+        `;
+      }).join('');
+
+      // Build legend
+      const legend = retailers.map(retailerId => {
+        const color = retailerColorsChart[retailerId] || '#6b7280';
+        const name = retailerNamesChart[retailerId] || retailerId;
+        const data = byRetailer[retailerId];
+        const currentPrice = data[data.length - 1]?.price || 0;
+        return `
+          <div class="price-legend-item">
+            <span class="price-legend-color" style="background: ${color};"></span>
+            <span class="price-legend-name">${name}</span>
+            <span class="price-legend-price">$${currentPrice.toLocaleString()}</span>
+          </div>
+        `;
+      }).join('');
+
+      // Y-axis labels
+      const yAxisLabels = `
+        <div class="price-chart-y-axis">
+          <span>$${Math.round(yMax).toLocaleString()}</span>
+          <span>$${Math.round((yMax + yMin) / 2).toLocaleString()}</span>
+          <span>$${Math.round(yMin).toLocaleString()}</span>
+        </div>
+      `;
 
       return `
         <section class="specs-section price-history-section">
           <h2 class="specs-title">Price History</h2>
-          <div class="price-history-summary">
-            <div class="price-history-stat">
-              <span class="stat-label">Starting</span>
-              <span class="stat-value">$${firstPrice.toLocaleString()}</span>
-            </div>
-            <div class="price-history-stat">
-              <span class="stat-label">Current</span>
-              <span class="stat-value">$${lastPrice.toLocaleString()}</span>
-            </div>
-            <div class="price-history-stat ${trendClass}">
-              <span class="stat-label">Change</span>
-              <span class="stat-value">${change >= 0 ? '+' : ''}$${change.toLocaleString()} (${change >= 0 ? '+' : ''}${changePct}%)</span>
-            </div>
-          </div>
-          <div class="price-chart">
-            <svg viewBox="0 0 100 100" preserveAspectRatio="none" class="price-chart-svg">
-              <path d="${pathPoints}" fill="none" stroke="var(--primary-color)" stroke-width="2" vector-effect="non-scaling-stroke"/>
-              ${points.map(p => `<circle cx="${p.leftPct}" cy="${100 - p.heightPct}" r="3" fill="var(--primary-color)" vector-effect="non-scaling-stroke"/>`).join('')}
-            </svg>
-            <div class="price-chart-labels">
-              <span>${history[0].date}</span>
-              <span>${history[history.length - 1].date}</span>
+          <div class="price-legend">${legend}</div>
+          <div class="price-chart-container">
+            ${yAxisLabels}
+            <div class="price-chart">
+              <svg viewBox="0 0 100 100" preserveAspectRatio="none" class="price-chart-svg">
+                <!-- Grid lines -->
+                <line x1="0" y1="25" x2="100" y2="25" stroke="#e2e8f0" stroke-width="1" vector-effect="non-scaling-stroke"/>
+                <line x1="0" y1="50" x2="100" y2="50" stroke="#e2e8f0" stroke-width="1" vector-effect="non-scaling-stroke"/>
+                <line x1="0" y1="75" x2="100" y2="75" stroke="#e2e8f0" stroke-width="1" vector-effect="non-scaling-stroke"/>
+                ${svgPaths}
+              </svg>
+              <div class="price-chart-labels">
+                <span>${allDates[0]}</span>
+                <span>${allDates[allDates.length - 1]}</span>
+              </div>
             </div>
           </div>
           <div class="price-history-note">
-            Tracking ${history.length} price points since ${history[0].date}
+            Tracking prices from ${retailers.length} retailer${retailers.length > 1 ? 's' : ''} since ${allDates[0]}
           </div>
         </section>
       `;
@@ -839,14 +1103,11 @@
             ${renderRelatedSizes(tv)}
 
             <div class="price-section">
-              <div class="price-grade-row">
-                <div class="price-main-group">
-                  <span class="price-main">${TVDataUtils.formatPrice(bestPrice?.currentPrice || 0)}</span>
-                  ${bestPrice?.retailPrice > bestPrice?.currentPrice
-                    ? `<span class="price-retail">${TVDataUtils.formatPrice(bestPrice.retailPrice)}</span>`
-                    : ''}
-                </div>
-                <span class="deal-badge ${verdict.class}" title="${getGradeTooltip(verdict.text)}"><span class="grade">${verdict.text}</span><span class="grade-subtitle">${verdict.subtitle}</span></span>
+              <div class="price-main-group">
+                <span class="price-main">${TVDataUtils.formatPrice(bestPrice?.currentPrice || 0)}</span>
+                ${bestPrice?.retailPrice > bestPrice?.currentPrice
+                  ? `<span class="price-retail">${TVDataUtils.formatPrice(bestPrice.retailPrice)}</span>`
+                  : ''}
               </div>
               <div class="price-meta">
                 at ${retailer?.name || 'Unknown'} • ${bestPrice?.inStock ? 'In Stock' : 'Out of Stock'}
@@ -863,9 +1124,7 @@
                   </div>
                 </div>
               </div>
-              <a href="${bestPrice?.url || '#'}" target="_blank" class="buy-button">
-                Buy at ${retailer?.name || 'Retailer'}
-              </a>
+              ${renderBuyButtons(tv)}
             </div>
 
             <p class="product-description">${tv.description || ''}</p>
