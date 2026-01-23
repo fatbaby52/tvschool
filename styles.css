@@ -103,6 +103,68 @@ body {
 }
 
 /* Deal of the Day */
+/* SEO Intro Section */
+.seo-intro {
+  background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.seo-intro-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.seo-intro h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 0.75rem;
+}
+
+.seo-intro p {
+  color: var(--text-secondary);
+  line-height: 1.7;
+  max-width: 800px;
+  margin: 0 auto 1.5rem;
+}
+
+.seo-features {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.seo-feature {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.seo-feature strong {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-secondary);
+}
+
+.seo-feature span {
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+@media (max-width: 600px) {
+  .seo-features {
+    gap: 1rem;
+  }
+  .seo-feature {
+    flex: 1 1 40%;
+  }
+}
+
+/* Deal of Day */
 .deal-of-day {
   max-width: 1600px;
   margin: 0 auto;
