@@ -4,13 +4,13 @@
  * Designed to support multiple retailers and price history tracking.
  * Each TV has a unique ID and can have prices from multiple sources.
  *
- * Generated: 2026-01-22 22:48:46
+ * Generated: 2026-01-22 23:04:38
  * Total TVs: 98
  */
 
 const TV_DATA = {
   // Metadata
-  lastUpdated: "2026-01-22T22:48:46Z",
+  lastUpdated: "2026-01-22T23:04:38Z",
 
   // Retailer definitions (easily extensible)
   retailers: {
@@ -82,7 +82,7 @@ const TV_DATA = {
             "hdr": "Dolby Vision",
             "smartPlatform": "webOS"
       },
-      description: "This LG punches above its weight, delivering perfect blacks and infinite contrast. It's cinema-quality at home.",
+      description: "The LG B4 delivers perfect blacks and infinite contrast with self-emitting pixels—ideal for movies and dark room viewing. The 55-inch size works well in bedrooms or apartments with closer seating. Reviewers gave it very good performance that will satisfy most viewers.",
       performanceSpecs: {
             "peakBrightness": 1950,
             "vrrSupport": [
@@ -135,12 +135,7 @@ const TV_DATA = {
             "movieScore": 8.3,
             "brightRoomScore": 6.9
       },
-      specs: {
-            "refreshRate": "120Hz",
-            "hdr": "Dolby Vision",
-            "smartPlatform": "webOS"
-      },
-      description: "High-end performance from LG, delivering true blacks that make content pop. It's cinema-quality at home.",
+      description: "The LG B4 delivers perfect blacks and infinite contrast with self-emitting pixels—ideal for movies and dark room viewing. The 78-inch screen is ideal for living rooms where you sit 8-10 feet from the TV. Reviewers gave it very good performance that will satisfy most viewers.",
       performanceSpecs: {
             "peakBrightness": 1950,
             "vrrSupport": [
@@ -195,7 +190,7 @@ const TV_DATA = {
             "hdr": "Dolby Vision",
             "smartPlatform": "webOS"
       },
-      description: "This LG punches above its weight, delivering true blacks that make content pop. It's keeps up with fast action. Ideal for apartments or secondary rooms. One of the newest models available.",
+      description: "The LG B5 delivers perfect blacks and infinite contrast with self-emitting pixels—ideal for movies and dark room viewing. This compact 48-inch model fits perfectly in bedrooms, offices, or as a secondary display. Reviewers gave it very good performance that will satisfy most viewers.",
       performanceSpecs: {
             "peakBrightness": 1950,
             "vrrSupport": [
@@ -250,7 +245,7 @@ const TV_DATA = {
             "hdr": "Dolby Vision",
             "smartPlatform": "webOS"
       },
-      description: "High-end performance from LG, delivering exceptional contrast with no blooming. It's sports look incredibly smooth. One of the newest models available.",
+      description: "The LG B5 delivers perfect blacks and infinite contrast with self-emitting pixels—ideal for movies and dark room viewing. The 55-inch size works well in bedrooms or apartments with closer seating. Reviewers gave it very good performance that will satisfy most viewers.",
       performanceSpecs: {
             "peakBrightness": 1950,
             "vrrSupport": [
@@ -305,7 +300,7 @@ const TV_DATA = {
             "hdr": "Dolby Vision",
             "smartPlatform": "webOS"
       },
-      description: "LG delivers serious quality here, delivering true blacks that make content pop. It's keeps up with fast action. One of the newest models available.",
+      description: "The LG B5 delivers perfect blacks and infinite contrast with self-emitting pixels—ideal for movies and dark room viewing. A 65-inch display hits the sweet spot for most living rooms at 6-8 feet viewing distance. Reviewers gave it very good performance that will satisfy most viewers.",
       performanceSpecs: {
             "peakBrightness": 1950,
             "vrrSupport": [
@@ -355,7 +350,12 @@ const TV_DATA = {
       useCaseScores: {
             "sportsScore": 8.5
       },
-      description: "High-end performance from LG, delivering pixel-level dimming for stunning dark scenes. It's ideal for game day. Makes a statement in larger rooms. One of the newest models available.",
+      specs: {
+            "refreshRate": "120Hz",
+            "hdr": "Dolby Vision",
+            "smartPlatform": "webOS"
+      },
+      description: "The LG B5 delivers perfect blacks and infinite contrast with self-emitting pixels—ideal for movies and dark room viewing. The 77-inch screen is ideal for living rooms where you sit 8-10 feet from the TV. Reviewers gave it very good performance that will satisfy most viewers.",
       performanceSpecs: {
             "peakBrightness": 1950,
             "vrrSupport": [
@@ -410,7 +410,7 @@ const TV_DATA = {
             "hdr": "Dolby Vision",
             "smartPlatform": "webOS"
       },
-      description: "LG delivers serious quality here, delivering exceptional contrast with no blooming. It's sports look incredibly smooth. One of the newest models available.",
+      description: "The LG B5 delivers perfect blacks and infinite contrast with self-emitting pixels—ideal for movies and dark room viewing. The 84-inch screen is ideal for living rooms where you sit 8-10 feet from the TV. Reviewers gave it very good performance that will satisfy most viewers.",
       performanceSpecs: {
             "peakBrightness": 1950,
             "vrrSupport": [
@@ -468,7 +468,7 @@ const TV_DATA = {
             "hdr": "Dolby Vision",
             "smartPlatform": "webOS"
       },
-      description: "LG delivers serious quality here, delivering perfect blacks and infinite contrast. It's cinema-quality at home.",
+      description: "The LG C4 delivers perfect blacks and infinite contrast with self-emitting pixels—ideal for movies and dark room viewing. A 65-inch display hits the sweet spot for most living rooms at 6-8 feet viewing distance. Reviewers gave it very good performance that will satisfy most viewers.",
       performanceSpecs: {
             "peakBrightness": 1950,
             "vrrSupport": [
@@ -526,7 +526,7 @@ const TV_DATA = {
             "hdr": "Dolby Vision",
             "smartPlatform": "webOS"
       },
-      description: "LG delivers serious quality here, delivering pixel-level dimming for stunning dark scenes. It's perfect for film enthusiasts.",
+      description: "The LG C4 delivers perfect blacks and infinite contrast with self-emitting pixels—ideal for movies and dark room viewing. The 77-inch screen is ideal for living rooms where you sit 8-10 feet from the TV. Reviewers gave it very good performance that will satisfy most viewers.",
       performanceSpecs: {
             "peakBrightness": 1950,
             "vrrSupport": [
@@ -584,7 +584,7 @@ const TV_DATA = {
             "hdr": "Dolby Vision",
             "smartPlatform": "webOS"
       },
-      description: "A premium choice from LG, delivering exceptional contrast with no blooming. It's cinema-quality at home. Go big for that theater feel.",
+      description: "The LG C4 delivers perfect blacks and infinite contrast with self-emitting pixels—ideal for movies and dark room viewing. The 84-inch screen is ideal for living rooms where you sit 8-10 feet from the TV. Reviewers gave it very good performance that will satisfy most viewers.",
       performanceSpecs: {
             "peakBrightness": 1950,
             "vrrSupport": [
@@ -642,7 +642,7 @@ const TV_DATA = {
             "hdr": "Dolby Vision, HDR10",
             "smartPlatform": "webOS"
       },
-      description: "The crown jewel of LG's TV range, delivering true blacks that make content pop. It's cinema-quality at home, and sports look incredibly smooth. Compact but capable. One of the newest models available.",
+      description: "The LG C5 delivers perfect blacks and infinite contrast with self-emitting pixels—ideal for movies and dark room viewing. This compact 42-inch model fits perfectly in bedrooms, offices, or as a secondary display. Reviewers gave it top-tier performance with excellent marks across all categories.",
       performanceSpecs: {
             "peakBrightness": 1950,
             "vrrSupport": [
@@ -700,7 +700,7 @@ const TV_DATA = {
             "hdr": "Dolby Vision, HDR10",
             "smartPlatform": "webOS"
       },
-      description: "The crown jewel of LG's TV range, delivering true blacks that make content pop. It's made for movie night, and sports look incredibly smooth. Compact but capable. One of the newest models available.",
+      description: "The LG C5 delivers perfect blacks and infinite contrast with self-emitting pixels—ideal for movies and dark room viewing. This compact 48-inch model fits perfectly in bedrooms, offices, or as a secondary display. Reviewers gave it top-tier performance with excellent marks across all categories.",
       performanceSpecs: {
             "peakBrightness": 1950,
             "vrrSupport": [
@@ -758,7 +758,7 @@ const TV_DATA = {
             "hdr": "Dolby Vision",
             "smartPlatform": "webOS"
       },
-      description: "LG's best has arrived, delivering pixel-level dimming for stunning dark scenes. It's made for movie night, and sports look incredibly smooth. One of the newest models available.",
+      description: "The LG C5 delivers perfect blacks and infinite contrast with self-emitting pixels—ideal for movies and dark room viewing. The 55-inch size works well in bedrooms or apartments with closer seating. Reviewers gave it top-tier performance with excellent marks across all categories.",
       performanceSpecs: {
             "peakBrightness": 1950,
             "vrrSupport": [
@@ -811,7 +811,12 @@ const TV_DATA = {
             "movieScore": 8.8,
             "brightRoomScore": 7.7
       },
-      description: "LG's best has arrived, delivering exceptional contrast with no blooming. It's made for movie night, and keeps up with fast action. One of the newest models available.",
+      specs: {
+            "refreshRate": "120Hz",
+            "hdr": "Dolby Vision",
+            "smartPlatform": "webOS"
+      },
+      description: "The LG C5 delivers perfect blacks and infinite contrast with self-emitting pixels—ideal for movies and dark room viewing. A 65-inch display hits the sweet spot for most living rooms at 6-8 feet viewing distance. Reviewers gave it top-tier performance with excellent marks across all categories.",
       performanceSpecs: {
             "peakBrightness": 1950,
             "vrrSupport": [
@@ -869,7 +874,7 @@ const TV_DATA = {
             "hdr": "Dolby Vision",
             "smartPlatform": "webOS"
       },
-      description: "LG's best has arrived, delivering pixel-level dimming for stunning dark scenes. It's made for movie night, and keeps up with fast action. One of the newest models available.",
+      description: "The LG C5 delivers perfect blacks and infinite contrast with self-emitting pixels—ideal for movies and dark room viewing. The 77-inch screen is ideal for living rooms where you sit 8-10 feet from the TV. Reviewers gave it top-tier performance with excellent marks across all categories.",
       performanceSpecs: {
             "peakBrightness": 1950,
             "vrrSupport": [
@@ -927,7 +932,7 @@ const TV_DATA = {
             "hdr": "Dolby Vision",
             "smartPlatform": "webOS"
       },
-      description: "The crown jewel of LG's TV range, delivering exceptional contrast with no blooming. It's a cinephile's delight, and ideal for game day. One of the newest models available.",
+      description: "The LG C5 delivers perfect blacks and infinite contrast with self-emitting pixels—ideal for movies and dark room viewing. The 84-inch screen is ideal for living rooms where you sit 8-10 feet from the TV. Reviewers gave it top-tier performance with excellent marks across all categories.",
       performanceSpecs: {
             "peakBrightness": 1950,
             "vrrSupport": [
@@ -980,7 +985,7 @@ const TV_DATA = {
             "movieScore": 8.7,
             "brightRoomScore": 7.7
       },
-      description: "At the top of LG's lineup, delivering true blacks that make content pop. It's perfect for film enthusiasts, and keeps up with fast action. Perfect for bedrooms or smaller spaces.",
+      description: "The LG G4 delivers perfect blacks and infinite contrast with self-emitting pixels—ideal for movies and dark room viewing. This compact 42-inch model fits perfectly in bedrooms, offices, or as a secondary display. Reviewers gave it top-tier performance with excellent marks across all categories.",
       performanceSpecs: {
             "peakBrightness": 1950,
             "vrrSupport": [
@@ -1038,7 +1043,7 @@ const TV_DATA = {
             "hdr": "Dolby Vision",
             "smartPlatform": "webOS"
       },
-      description: "This is LG's flagship offering, delivering exceptional contrast with no blooming. It's made for movie night, and sports look incredibly smooth. Perfect for bedrooms or smaller spaces.",
+      description: "The LG G4 delivers perfect blacks and infinite contrast with self-emitting pixels—ideal for movies and dark room viewing. This compact 48-inch model fits perfectly in bedrooms, offices, or as a secondary display. Reviewers gave it top-tier performance with excellent marks across all categories.",
       performanceSpecs: {
             "peakBrightness": 1950,
             "vrrSupport": [
@@ -1091,12 +1096,7 @@ const TV_DATA = {
             "movieScore": 8.7,
             "brightRoomScore": 7.7
       },
-      specs: {
-            "refreshRate": "120Hz",
-            "hdr": "Dolby Vision",
-            "smartPlatform": "webOS"
-      },
-      description: "At the top of LG's lineup, delivering exceptional contrast with no blooming. It's cinema-quality at home, and ideal for game day.",
+      description: "The LG G4 delivers perfect blacks and infinite contrast with self-emitting pixels—ideal for movies and dark room viewing. A 65-inch display hits the sweet spot for most living rooms at 6-8 feet viewing distance. Reviewers gave it top-tier performance with excellent marks across all categories.",
       performanceSpecs: {
             "peakBrightness": 1950,
             "vrrSupport": [
@@ -1154,7 +1154,7 @@ const TV_DATA = {
             "hdr": "Dolby Vision",
             "smartPlatform": "webOS"
       },
-      description: "At the top of LG's lineup, delivering exceptional contrast with no blooming. It's a cinephile's delight, and handles motion like a champ.",
+      description: "The LG G4 delivers perfect blacks and infinite contrast with self-emitting pixels—ideal for movies and dark room viewing. The 77-inch screen is ideal for living rooms where you sit 8-10 feet from the TV. Reviewers gave it top-tier performance with excellent marks across all categories.",
       performanceSpecs: {
             "peakBrightness": 1950,
             "vrrSupport": [
@@ -1212,7 +1212,7 @@ const TV_DATA = {
             "hdr": "Dolby Vision",
             "smartPlatform": "webOS"
       },
-      description: "The crown jewel of LG's TV range, delivering pixel-level dimming for stunning dark scenes. It's made for movie night, and ideal for game day. One of the newest models available.",
+      description: "The LG G5 delivers perfect blacks and infinite contrast with self-emitting pixels—ideal for movies and dark room viewing. The 55-inch size works well in bedrooms or apartments with closer seating. Reviewers gave it top-tier performance with excellent marks across all categories.",
       performanceSpecs: {
             "peakBrightness": 1950,
             "vrrSupport": [
@@ -1270,7 +1270,7 @@ const TV_DATA = {
             "hdr": "Dolby Vision",
             "smartPlatform": "webOS"
       },
-      description: "LG's best has arrived, delivering pixel-level dimming for stunning dark scenes. It's perfect for film enthusiasts, and sports look incredibly smooth. One of the newest models available.",
+      description: "The LG G5 delivers perfect blacks and infinite contrast with self-emitting pixels—ideal for movies and dark room viewing. A 65-inch display hits the sweet spot for most living rooms at 6-8 feet viewing distance. Reviewers gave it top-tier performance with excellent marks across all categories.",
       performanceSpecs: {
             "peakBrightness": 1950,
             "vrrSupport": [
@@ -1328,7 +1328,7 @@ const TV_DATA = {
             "hdr": "Dolby Vision",
             "smartPlatform": "webOS"
       },
-      description: "This is LG's flagship offering, delivering exceptional contrast with no blooming. It's made for movie night, and sports look incredibly smooth. Go big for that theater feel. One of the newest models available.",
+      description: "The LG G5 delivers perfect blacks and infinite contrast with self-emitting pixels—ideal for movies and dark room viewing. The 77-inch screen is ideal for living rooms where you sit 8-10 feet from the TV. Reviewers gave it top-tier performance with excellent marks across all categories.",
       performanceSpecs: {
             "peakBrightness": 1950,
             "vrrSupport": [
@@ -1386,7 +1386,7 @@ const TV_DATA = {
             "hdr": "Dolby Vision",
             "smartPlatform": "webOS"
       },
-      description: "LG's best has arrived, delivering perfect blacks and infinite contrast. It's cinema-quality at home, and ideal for game day. Go big for that theater feel. One of the newest models available.",
+      description: "The LG G5 delivers perfect blacks and infinite contrast with self-emitting pixels—ideal for movies and dark room viewing. The 84-inch screen is ideal for living rooms where you sit 8-10 feet from the TV. Reviewers gave it top-tier performance with excellent marks across all categories.",
       performanceSpecs: {
             "peakBrightness": 1950,
             "vrrSupport": [
@@ -1444,7 +1444,7 @@ const TV_DATA = {
             "hdr": "Dolby Vision",
             "smartPlatform": "webOS"
       },
-      description: "LG's best has arrived, delivering true blacks that make content pop. It's perfect for film enthusiasts, and keeps up with fast action. A true home theater centerpiece. One of the newest models available.",
+      description: "The LG G5 delivers perfect blacks and infinite contrast with self-emitting pixels—ideal for movies and dark room viewing. At 97 inches, this is a statement piece designed for large rooms or home theater setups. Reviewers gave it top-tier performance with excellent marks across all categories.",
       performanceSpecs: {
             "peakBrightness": 1950,
             "vrrSupport": [
@@ -1498,7 +1498,7 @@ const TV_DATA = {
             "refreshRate": "60Hz",
             "smartPlatform": "Tizen"
       },
-      description: "Samsung's budget-friendly option with bright, vivid quantum dot colors. Compact but capable.",
+      description: "The Samsung Q60D features quantum dot technology for vibrant, accurate colors and excellent brightness. This compact 42-inch model fits perfectly in bedrooms, offices, or as a secondary display. Reviewers gave it entry-level performance that prioritizes value.",
       performanceSpecs: {
             "peakBrightness": 1950,
             "vrrSupport": [
@@ -1548,7 +1548,11 @@ const TV_DATA = {
       useCaseScores: {
             "sportsScore": 5.6
       },
-      description: "Entry-level done right by Samsung with solid all-around picture quality. Ideal for apartments or secondary rooms.",
+      specs: {
+            "refreshRate": "60Hz",
+            "smartPlatform": "Tizen"
+      },
+      description: "The Samsung Q60D features quantum dot technology for vibrant, accurate colors and excellent brightness. This compact 50-inch model fits perfectly in bedrooms, offices, or as a secondary display. Reviewers gave it entry-level performance that prioritizes value.",
       performanceSpecs: {
             "peakBrightness": 1950,
             "vrrSupport": [
@@ -1602,7 +1606,7 @@ const TV_DATA = {
             "refreshRate": "60Hz",
             "smartPlatform": "Tizen"
       },
-      description: "Great value from Samsung with solid all-around picture quality.",
+      description: "The Samsung Q60D features quantum dot technology for vibrant, accurate colors and excellent brightness. A 65-inch display hits the sweet spot for most living rooms at 6-8 feet viewing distance. Reviewers gave it entry-level performance that prioritizes value.",
       performanceSpecs: {
             "peakBrightness": 1950,
             "vrrSupport": [
@@ -1652,7 +1656,11 @@ const TV_DATA = {
       useCaseScores: {
             "sportsScore": 5.6
       },
-      description: "An affordable entry from Samsung with rich colors that hold up in daylight.",
+      specs: {
+            "refreshRate": "60Hz",
+            "smartPlatform": "Tizen"
+      },
+      description: "The Samsung Q60D features quantum dot technology for vibrant, accurate colors and excellent brightness. The 75-inch screen is ideal for living rooms where you sit 8-10 feet from the TV. Reviewers gave it entry-level performance that prioritizes value.",
       performanceSpecs: {
             "peakBrightness": 1950,
             "vrrSupport": [
@@ -1702,11 +1710,7 @@ const TV_DATA = {
       useCaseScores: {
             "sportsScore": 5.6
       },
-      specs: {
-            "refreshRate": "60Hz",
-            "smartPlatform": "Tizen"
-      },
-      description: "Great value from Samsung with rich colors that hold up in daylight. Big-screen immersion for dedicated spaces.",
+      description: "The Samsung Q60D features quantum dot technology for vibrant, accurate colors and excellent brightness. At 85 inches, this is a statement piece designed for large rooms or home theater setups. Reviewers gave it entry-level performance that prioritizes value.",
       performanceSpecs: {
             "peakBrightness": 1950,
             "vrrSupport": [
@@ -1760,7 +1764,7 @@ const TV_DATA = {
             "refreshRate": "120Hz",
             "smartPlatform": "Tizen"
       },
-      description: "The sensible choice from Samsung with excellent brightness for any room.",
+      description: "The Samsung Q70D features quantum dot technology for vibrant, accurate colors and excellent brightness. The 55-inch size works well in bedrooms or apartments with closer seating. Reviewers gave it entry-level performance that prioritizes value.",
       performanceSpecs: {
             "peakBrightness": 1950,
             "vrrSupport": [
@@ -1814,7 +1818,7 @@ const TV_DATA = {
             "refreshRate": "120Hz",
             "smartPlatform": "Tizen"
       },
-      description: "Samsung's sweet spot for value with solid all-around picture quality.",
+      description: "The Samsung Q70D features quantum dot technology for vibrant, accurate colors and excellent brightness. The 64-inch size works well in bedrooms or apartments with closer seating. Reviewers gave it entry-level performance that prioritizes value.",
       performanceSpecs: {
             "peakBrightness": 1950,
             "vrrSupport": [
@@ -1868,7 +1872,7 @@ const TV_DATA = {
             "refreshRate": "120Hz",
             "smartPlatform": "Tizen"
       },
-      description: "The sensible choice from Samsung with bright, vivid quantum dot colors.",
+      description: "The Samsung Q80D features quantum dot technology for vibrant, accurate colors and excellent brightness. The 55-inch size works well in bedrooms or apartments with closer seating. Reviewers gave it entry-level performance that prioritizes value.",
       performanceSpecs: {
             "peakBrightness": 1950,
             "vrrSupport": [
@@ -1922,7 +1926,7 @@ const TV_DATA = {
             "refreshRate": "120Hz",
             "smartPlatform": "Tizen"
       },
-      description: "Balanced performance from Samsung with rich colors that hold up in daylight.",
+      description: "The Samsung Q80D features quantum dot technology for vibrant, accurate colors and excellent brightness. The 64-inch size works well in bedrooms or apartments with closer seating. Reviewers gave it entry-level performance that prioritizes value.",
       performanceSpecs: {
             "peakBrightness": 1950,
             "vrrSupport": [
@@ -1976,7 +1980,7 @@ const TV_DATA = {
             "refreshRate": "120Hz",
             "smartPlatform": "Tizen"
       },
-      description: "A solid mid-range option from Samsung with bright, vivid quantum dot colors.",
+      description: "The Samsung Q80D features quantum dot technology for vibrant, accurate colors and excellent brightness. A 74-inch display hits the sweet spot for most living rooms at 6-8 feet viewing distance. Reviewers gave it entry-level performance that prioritizes value.",
       performanceSpecs: {
             "peakBrightness": 1950,
             "vrrSupport": [
@@ -2030,7 +2034,7 @@ const TV_DATA = {
             "refreshRate": "120Hz",
             "smartPlatform": "Tizen"
       },
-      description: "Samsung's sweet spot for value with rich colors that hold up in daylight. Big-screen immersion for dedicated spaces.",
+      description: "The Samsung Q80D features quantum dot technology for vibrant, accurate colors and excellent brightness. The 84-inch screen is ideal for living rooms where you sit 8-10 feet from the TV. Reviewers gave it entry-level performance that prioritizes value.",
       performanceSpecs: {
             "peakBrightness": 1950,
             "vrrSupport": [
@@ -2084,7 +2088,7 @@ const TV_DATA = {
             "refreshRate": "120Hz",
             "smartPlatform": "Tizen"
       },
-      description: "Balanced performance from Samsung with excellent brightness for any room. One of the newest models available.",
+      description: "The Samsung QN80F features quantum dot technology for vibrant, accurate colors and excellent brightness. The 55-inch size works well in bedrooms or apartments with closer seating. Reviewers gave it entry-level performance that prioritizes value.",
       performanceSpecs: {
             "peakBrightness": 1950,
             "vrrSupport": [
@@ -2138,7 +2142,7 @@ const TV_DATA = {
             "refreshRate": "120Hz",
             "smartPlatform": "Tizen"
       },
-      description: "The sensible choice from Samsung with excellent brightness for any room. One of the newest models available.",
+      description: "The Samsung QN80F features quantum dot technology for vibrant, accurate colors and excellent brightness. The 64-inch size works well in bedrooms or apartments with closer seating. Reviewers gave it entry-level performance that prioritizes value.",
       performanceSpecs: {
             "peakBrightness": 1950,
             "vrrSupport": [
@@ -2192,7 +2196,7 @@ const TV_DATA = {
             "refreshRate": "120Hz",
             "smartPlatform": "Tizen"
       },
-      description: "Samsung's sweet spot for value with bright, vivid quantum dot colors. Go big for that theater feel. One of the newest models available.",
+      description: "The Samsung QN80F features quantum dot technology for vibrant, accurate colors and excellent brightness. A 74-inch display hits the sweet spot for most living rooms at 6-8 feet viewing distance. Reviewers gave it entry-level performance that prioritizes value.",
       performanceSpecs: {
             "peakBrightness": 1950,
             "vrrSupport": [
@@ -2242,7 +2246,11 @@ const TV_DATA = {
       useCaseScores: {
             "sportsScore": 7.1
       },
-      description: "A solid mid-range option from Samsung with excellent brightness for any room. One of the newest models available.",
+      specs: {
+            "refreshRate": "120Hz",
+            "smartPlatform": "Tizen"
+      },
+      description: "The Samsung QN80F features quantum dot technology for vibrant, accurate colors and excellent brightness. The 84-inch screen is ideal for living rooms where you sit 8-10 feet from the TV. Reviewers gave it entry-level performance that prioritizes value.",
       performanceSpecs: {
             "peakBrightness": 1950,
             "vrrSupport": [
@@ -2292,11 +2300,7 @@ const TV_DATA = {
       useCaseScores: {
             "sportsScore": 7.1
       },
-      specs: {
-            "refreshRate": "120Hz",
-            "smartPlatform": "Tizen"
-      },
-      description: "Samsung's sweet spot for value with rich colors that hold up in daylight. When bigger is definitely better. One of the newest models available.",
+      description: "The Samsung QN80F features quantum dot technology for vibrant, accurate colors and excellent brightness. At 100 inches, this is a statement piece designed for large rooms or home theater setups. Reviewers gave it entry-level performance that prioritizes value.",
       performanceSpecs: {
             "peakBrightness": 1950,
             "vrrSupport": [
@@ -2353,7 +2357,7 @@ const TV_DATA = {
             "refreshRate": "120Hz",
             "smartPlatform": "Tizen"
       },
-      description: "This Samsung punches above its weight, delivering excellent brightness with precise backlight control. A versatile performer across different content types.",
+      description: "The Samsung QN85D uses advanced local dimming for excellent contrast and brightness. A 74-inch display hits the sweet spot for most living rooms at 6-8 feet viewing distance. Reviewers gave it solid performance at a competitive price point.",
       performanceSpecs: {
             "peakBrightness": 1950,
             "vrrSupport": [
@@ -2410,7 +2414,7 @@ const TV_DATA = {
             "refreshRate": "120Hz",
             "smartPlatform": "Tizen"
       },
-      description: "A premium choice from Samsung, delivering HDR performance that rivals OLED. A versatile performer across different content types. Makes a statement in larger rooms.",
+      description: "The Samsung QN85D uses advanced local dimming for excellent contrast and brightness. The 84-inch screen is ideal for living rooms where you sit 8-10 feet from the TV. Reviewers gave it solid performance at a competitive price point.",
       performanceSpecs: {
             "peakBrightness": 1950,
             "vrrSupport": [
@@ -2467,7 +2471,7 @@ const TV_DATA = {
             "refreshRate": "120Hz",
             "smartPlatform": "Tizen"
       },
-      description: "The crown jewel of Samsung's TV range, delivering HDR performance that rivals OLED. It's fights glare like a pro, and sports look incredibly smooth.",
+      description: "The Samsung QN90D uses advanced local dimming for excellent contrast and brightness. The 55-inch size works well in bedrooms or apartments with closer seating. Reviewers gave it very good performance that will satisfy most viewers.",
       performanceSpecs: {
             "peakBrightness": 1950,
             "vrrSupport": [
@@ -2520,11 +2524,7 @@ const TV_DATA = {
             "movieScore": 8.2,
             "brightRoomScore": 8.5
       },
-      specs: {
-            "refreshRate": "120Hz",
-            "smartPlatform": "Tizen"
-      },
-      description: "At the top of Samsung's lineup, delivering excellent brightness with precise backlight control. It's fights glare like a pro, and sports look incredibly smooth.",
+      description: "The Samsung QN90D uses advanced local dimming for excellent contrast and brightness. A 74-inch display hits the sweet spot for most living rooms at 6-8 feet viewing distance. Reviewers gave it very good performance that will satisfy most viewers.",
       performanceSpecs: {
             "peakBrightness": 1950,
             "vrrSupport": [
@@ -2581,7 +2581,7 @@ const TV_DATA = {
             "refreshRate": "120Hz",
             "smartPlatform": "Tizen"
       },
-      description: "The crown jewel of Samsung's TV range, delivering impressive local dimming with thousands of zones. It's stays visible in bright conditions, and keeps up with fast action. Big-screen immersion for dedicated spaces.",
+      description: "The Samsung QN90D uses advanced local dimming for excellent contrast and brightness. The 84-inch screen is ideal for living rooms where you sit 8-10 feet from the TV. Reviewers gave it very good performance that will satisfy most viewers.",
       performanceSpecs: {
             "peakBrightness": 1950,
             "vrrSupport": [
@@ -2638,7 +2638,7 @@ const TV_DATA = {
             "refreshRate": "120Hz",
             "smartPlatform": "Tizen"
       },
-      description: "A premium choice from Samsung, delivering exceptional contrast with no blooming. It's a cinephile's delight.",
+      description: "The Samsung S85D delivers perfect blacks and infinite contrast with self-emitting pixels—ideal for movies and dark room viewing. The 55-inch size works well in bedrooms or apartments with closer seating. Reviewers gave it solid performance at a competitive price point.",
       performanceSpecs: {
             "peakBrightness": 1950,
             "vrrSupport": [
@@ -2695,7 +2695,7 @@ const TV_DATA = {
             "refreshRate": "120Hz",
             "smartPlatform": "Tizen"
       },
-      description: "High-end performance from Samsung, delivering pixel-level dimming for stunning dark scenes. It's made for movie night.",
+      description: "The Samsung S85D delivers perfect blacks and infinite contrast with self-emitting pixels—ideal for movies and dark room viewing. The 64-inch size works well in bedrooms or apartments with closer seating. Reviewers gave it solid performance at a competitive price point.",
       performanceSpecs: {
             "peakBrightness": 1950,
             "vrrSupport": [
@@ -2752,7 +2752,7 @@ const TV_DATA = {
             "refreshRate": "120Hz",
             "smartPlatform": "Tizen"
       },
-      description: "Samsung's best has arrived, delivering vibrant, punchy colors alongside infinite contrast. It's perfect for film enthusiasts. Compact but capable.",
+      description: "The Samsung S90D combines quantum dot color with OLED's perfect blacks for the best picture quality available today. This compact 42-inch model fits perfectly in bedrooms, offices, or as a secondary display. Reviewers gave it top-tier performance with excellent marks across all categories.",
       performanceSpecs: {
             "peakBrightness": 1950,
             "vrrSupport": [
@@ -2809,7 +2809,7 @@ const TV_DATA = {
             "refreshRate": "120Hz",
             "smartPlatform": "Tizen"
       },
-      description: "This is Samsung's flagship offering, delivering stunning quantum dot colors with perfect OLED blacks. It's cinema-quality at home.",
+      description: "The Samsung S90D combines quantum dot color with OLED's perfect blacks for the best picture quality available today. The 64-inch size works well in bedrooms or apartments with closer seating. Reviewers gave it top-tier performance with excellent marks across all categories.",
       performanceSpecs: {
             "peakBrightness": 1950,
             "vrrSupport": [
@@ -2866,7 +2866,7 @@ const TV_DATA = {
             "refreshRate": "120Hz",
             "smartPlatform": "Tizen"
       },
-      description: "At the top of Samsung's lineup, delivering exceptional color volume with true black levels. It's cinema-quality at home. Big-screen immersion for dedicated spaces.",
+      description: "The Samsung S90D combines quantum dot color with OLED's perfect blacks for the best picture quality available today. The 77-inch screen is ideal for living rooms where you sit 8-10 feet from the TV. Reviewers gave it top-tier performance with excellent marks across all categories.",
       performanceSpecs: {
             "peakBrightness": 1950,
             "vrrSupport": [
@@ -2923,7 +2923,7 @@ const TV_DATA = {
             "refreshRate": "120Hz",
             "smartPlatform": "Tizen"
       },
-      description: "The crown jewel of Samsung's TV range, delivering stunning quantum dot colors with perfect OLED blacks. It's a cinephile's delight.",
+      description: "The Samsung S90D combines quantum dot color with OLED's perfect blacks for the best picture quality available today. The 82-inch screen is ideal for living rooms where you sit 8-10 feet from the TV. Reviewers gave it top-tier performance with excellent marks across all categories.",
       performanceSpecs: {
             "peakBrightness": 1950,
             "vrrSupport": [
@@ -2981,7 +2981,7 @@ const TV_DATA = {
             "hdr": "HDR10",
             "smartPlatform": "Tizen"
       },
-      description: "At the top of Samsung's lineup, delivering vibrant, punchy colors alongside infinite contrast. It's cinema-quality at home, and handles motion like a champ. Compact but capable. One of the newest models available.",
+      description: "The Samsung S90F combines quantum dot color with OLED's perfect blacks for the best picture quality available today. This compact 42-inch model fits perfectly in bedrooms, offices, or as a secondary display. Reviewers gave it top-tier performance with excellent marks across all categories.",
       performanceSpecs: {
             "peakBrightness": 1950,
             "vrrSupport": [
@@ -3039,7 +3039,7 @@ const TV_DATA = {
             "hdr": "HDR10",
             "smartPlatform": "Tizen"
       },
-      description: "The crown jewel of Samsung's TV range, delivering stunning quantum dot colors with perfect OLED blacks. It's made for movie night, and sports look incredibly smooth. Ideal for apartments or secondary rooms. One of the newest models available.",
+      description: "The Samsung S90F combines quantum dot color with OLED's perfect blacks for the best picture quality available today. This compact 48-inch model fits perfectly in bedrooms, offices, or as a secondary display. Reviewers gave it top-tier performance with excellent marks across all categories.",
       performanceSpecs: {
             "peakBrightness": 1950,
             "vrrSupport": [
@@ -3097,7 +3097,7 @@ const TV_DATA = {
             "hdr": "HDR10",
             "smartPlatform": "Tizen"
       },
-      description: "The crown jewel of Samsung's TV range, delivering exceptional color volume with true black levels. It's cinema-quality at home, and handles motion like a champ. One of the newest models available.",
+      description: "The Samsung S90F combines quantum dot color with OLED's perfect blacks for the best picture quality available today. The 55-inch size works well in bedrooms or apartments with closer seating. Reviewers gave it top-tier performance with excellent marks across all categories.",
       performanceSpecs: {
             "peakBrightness": 1950,
             "vrrSupport": [
@@ -3155,7 +3155,7 @@ const TV_DATA = {
             "hdr": "HDR10",
             "smartPlatform": "Tizen"
       },
-      description: "The crown jewel of Samsung's TV range, delivering vibrant, punchy colors alongside infinite contrast. It's a cinephile's delight, and keeps up with fast action. One of the newest models available.",
+      description: "The Samsung S90F combines quantum dot color with OLED's perfect blacks for the best picture quality available today. The 64-inch size works well in bedrooms or apartments with closer seating. Reviewers gave it top-tier performance with excellent marks across all categories.",
       performanceSpecs: {
             "peakBrightness": 1950,
             "vrrSupport": [
@@ -3213,7 +3213,7 @@ const TV_DATA = {
             "hdr": "HDR10",
             "smartPlatform": "Tizen"
       },
-      description: "At the top of Samsung's lineup, delivering exceptional color volume with true black levels. It's cinema-quality at home, and keeps up with fast action. Makes a statement in larger rooms. One of the newest models available.",
+      description: "The Samsung S90F combines quantum dot color with OLED's perfect blacks for the best picture quality available today. The 77-inch screen is ideal for living rooms where you sit 8-10 feet from the TV. Reviewers gave it top-tier performance with excellent marks across all categories.",
       performanceSpecs: {
             "peakBrightness": 1950,
             "vrrSupport": [
@@ -3271,7 +3271,7 @@ const TV_DATA = {
             "hdr": "HDR10",
             "smartPlatform": "Tizen"
       },
-      description: "The crown jewel of Samsung's TV range, delivering vibrant, punchy colors alongside infinite contrast. It's perfect for film enthusiasts, and keeps up with fast action. Big-screen immersion for dedicated spaces. One of the newest models available.",
+      description: "The Samsung S90F combines quantum dot color with OLED's perfect blacks for the best picture quality available today. The 82-inch screen is ideal for living rooms where you sit 8-10 feet from the TV. Reviewers gave it top-tier performance with excellent marks across all categories.",
       performanceSpecs: {
             "peakBrightness": 1950,
             "vrrSupport": [
@@ -3329,7 +3329,7 @@ const TV_DATA = {
             "hdr": "HDR10",
             "smartPlatform": "Tizen"
       },
-      description: "The crown jewel of Samsung's TV range, delivering stunning quantum dot colors with perfect OLED blacks. It's made for movie night, and sports look incredibly smooth. One of the newest models available.",
+      description: "The Samsung S95F combines quantum dot color with OLED's perfect blacks for the best picture quality available today. The 55-inch size works well in bedrooms or apartments with closer seating. Reviewers gave it top-tier performance with excellent marks across all categories.",
       performanceSpecs: {
             "peakBrightness": 1950,
             "vrrSupport": [
@@ -3387,7 +3387,7 @@ const TV_DATA = {
             "hdr": "HDR10",
             "smartPlatform": "Tizen"
       },
-      description: "Samsung's best has arrived, delivering exceptional color volume with true black levels. It's perfect for film enthusiasts, and sports look incredibly smooth. One of the newest models available.",
+      description: "The Samsung S95F combines quantum dot color with OLED's perfect blacks for the best picture quality available today. The 64-inch size works well in bedrooms or apartments with closer seating. Reviewers gave it top-tier performance with excellent marks across all categories.",
       performanceSpecs: {
             "peakBrightness": 1950,
             "vrrSupport": [
@@ -3445,7 +3445,7 @@ const TV_DATA = {
             "hdr": "HDR10",
             "smartPlatform": "Tizen"
       },
-      description: "Samsung's best has arrived, delivering exceptional color volume with true black levels. It's a cinephile's delight, and sports look incredibly smooth. Big-screen immersion for dedicated spaces. One of the newest models available.",
+      description: "The Samsung S95F combines quantum dot color with OLED's perfect blacks for the best picture quality available today. The 77-inch screen is ideal for living rooms where you sit 8-10 feet from the TV. Reviewers gave it top-tier performance with excellent marks across all categories.",
       performanceSpecs: {
             "peakBrightness": 1950,
             "vrrSupport": [
@@ -3503,7 +3503,7 @@ const TV_DATA = {
             "hdr": "HDR10",
             "smartPlatform": "Tizen"
       },
-      description: "At the top of Samsung's lineup, delivering stunning quantum dot colors with perfect OLED blacks. It's a cinephile's delight, and keeps up with fast action. Makes a statement in larger rooms. One of the newest models available.",
+      description: "The Samsung S95F combines quantum dot color with OLED's perfect blacks for the best picture quality available today. The 82-inch screen is ideal for living rooms where you sit 8-10 feet from the TV. Reviewers gave it top-tier performance with excellent marks across all categories.",
       performanceSpecs: {
             "peakBrightness": 1950,
             "vrrSupport": [
@@ -3557,7 +3557,7 @@ const TV_DATA = {
             "refreshRate": "120Hz",
             "smartPlatform": "Google TV"
       },
-      description: "High-end performance from Sony, delivering the best of both worlds: quantum dot brightness and OLED contrast. It's handles motion like a champ.",
+      description: "The Sony A95L combines quantum dot color with OLED's perfect blacks for the best picture quality available today. The 77-inch screen is ideal for living rooms where you sit 8-10 feet from the TV. Reviewers gave it very good performance that will satisfy most viewers.",
       performanceSpecs: {
             "peakBrightness": 1950,
             "vrrSupport": [
@@ -3614,7 +3614,7 @@ const TV_DATA = {
             "refreshRate": "120Hz",
             "smartPlatform": "Google TV"
       },
-      description: "A premium choice from Sony, delivering exceptional contrast with no blooming. It's cinema-quality at home.",
+      description: "The Sony Bravia 8 delivers perfect blacks and infinite contrast with self-emitting pixels—ideal for movies and dark room viewing. The 55-inch size works well in bedrooms or apartments with closer seating. Reviewers gave it solid performance at a competitive price point.",
       performanceSpecs: {
             "peakBrightness": 1950,
             "vrrSupport": [
@@ -3671,7 +3671,7 @@ const TV_DATA = {
             "refreshRate": "120Hz",
             "smartPlatform": "Google TV"
       },
-      description: "This Sony punches above its weight, delivering exceptional contrast with no blooming. It's a cinephile's delight.",
+      description: "The Sony Bravia 8 delivers perfect blacks and infinite contrast with self-emitting pixels—ideal for movies and dark room viewing. The 64-inch size works well in bedrooms or apartments with closer seating. Reviewers gave it solid performance at a competitive price point.",
       performanceSpecs: {
             "peakBrightness": 1950,
             "vrrSupport": [
@@ -3728,7 +3728,7 @@ const TV_DATA = {
             "refreshRate": "120Hz",
             "smartPlatform": "Google TV"
       },
-      description: "Sony delivers serious quality here, delivering perfect blacks and infinite contrast. It's a cinephile's delight.",
+      description: "The Sony Bravia 8 delivers perfect blacks and infinite contrast with self-emitting pixels—ideal for movies and dark room viewing. The 77-inch screen is ideal for living rooms where you sit 8-10 feet from the TV. Reviewers gave it solid performance at a competitive price point.",
       performanceSpecs: {
             "peakBrightness": 1950,
             "vrrSupport": [
@@ -3782,7 +3782,7 @@ const TV_DATA = {
             "refreshRate": "120Hz",
             "smartPlatform": "Google TV"
       },
-      description: "This is Sony's flagship offering, delivering exceptional contrast with no blooming. It's ideal for game day. One of the newest models available.",
+      description: "The Sony Bravia 8 II delivers perfect blacks and infinite contrast with self-emitting pixels—ideal for movies and dark room viewing. The 55-inch size works well in bedrooms or apartments with closer seating. Reviewers gave it top-tier performance with excellent marks across all categories.",
       performanceSpecs: {
             "peakBrightness": 1950,
             "vrrSupport": [
@@ -3836,7 +3836,7 @@ const TV_DATA = {
             "refreshRate": "120Hz",
             "smartPlatform": "Google TV"
       },
-      description: "At the top of Sony's lineup, delivering pixel-level dimming for stunning dark scenes. It's sports look incredibly smooth. One of the newest models available.",
+      description: "The Sony Bravia 8 II delivers perfect blacks and infinite contrast with self-emitting pixels—ideal for movies and dark room viewing. The 64-inch size works well in bedrooms or apartments with closer seating. Reviewers gave it top-tier performance with excellent marks across all categories.",
       performanceSpecs: {
             "peakBrightness": 1950,
             "vrrSupport": [
@@ -3890,7 +3890,7 @@ const TV_DATA = {
             "refreshRate": "120Hz",
             "smartPlatform": "Google TV"
       },
-      description: "The crown jewel of Sony's TV range, delivering impressive local dimming with thousands of zones. A versatile performer across different content types.",
+      description: "The Sony Bravia 9 uses advanced local dimming for excellent contrast and brightness. The 64-inch size works well in bedrooms or apartments with closer seating. Reviewers gave it top-tier performance with excellent marks across all categories.",
       performanceSpecs: {
             "peakBrightness": 1950,
             "vrrSupport": [
@@ -3944,7 +3944,7 @@ const TV_DATA = {
             "refreshRate": "120Hz",
             "smartPlatform": "Google TV"
       },
-      description: "Sony's best has arrived, delivering HDR performance that rivals OLED. A versatile performer across different content types.",
+      description: "The Sony Bravia 9 uses advanced local dimming for excellent contrast and brightness. A 74-inch display hits the sweet spot for most living rooms at 6-8 feet viewing distance. Reviewers gave it top-tier performance with excellent marks across all categories.",
       performanceSpecs: {
             "peakBrightness": 1950,
             "vrrSupport": [
@@ -3998,7 +3998,7 @@ const TV_DATA = {
             "refreshRate": "120Hz",
             "smartPlatform": "Google TV"
       },
-      description: "This is Sony's flagship offering, delivering punchy highlights with deep blacks. A versatile performer across different content types. Go big for that theater feel.",
+      description: "The Sony Bravia 9 uses advanced local dimming for excellent contrast and brightness. At 85 inches, this is a statement piece designed for large rooms or home theater setups. Reviewers gave it top-tier performance with excellent marks across all categories.",
       performanceSpecs: {
             "peakBrightness": 1950,
             "vrrSupport": [
@@ -4052,7 +4052,7 @@ const TV_DATA = {
             "refreshRate": "120Hz",
             "smartPlatform": "Google TV"
       },
-      description: "This Sony punches above its weight, delivering reliable performance at a great value. A versatile performer across different content types.",
+      description: "The Sony X90L offers reliable performance and good value for everyday viewing. The 55-inch size works well in bedrooms or apartments with closer seating. Reviewers gave it very good performance that will satisfy most viewers.",
       performanceSpecs: {
             "peakBrightness": 1950,
             "vrrSupport": [
@@ -4106,7 +4106,7 @@ const TV_DATA = {
             "refreshRate": "120Hz",
             "smartPlatform": "Google TV"
       },
-      description: "A premium choice from Sony, delivering good basics for casual viewers. A versatile performer across different content types.",
+      description: "The Sony X90L offers reliable performance and good value for everyday viewing. The 64-inch size works well in bedrooms or apartments with closer seating. Reviewers gave it very good performance that will satisfy most viewers.",
       performanceSpecs: {
             "peakBrightness": 1950,
             "vrrSupport": [
@@ -4160,7 +4160,7 @@ const TV_DATA = {
             "refreshRate": "120Hz",
             "smartPlatform": "Google TV"
       },
-      description: "Sony delivers serious quality here, delivering straightforward functionality without the premium price. A versatile performer across different content types.",
+      description: "The Sony X90L offers reliable performance and good value for everyday viewing. A 74-inch display hits the sweet spot for most living rooms at 6-8 feet viewing distance. Reviewers gave it very good performance that will satisfy most viewers.",
       performanceSpecs: {
             "peakBrightness": 1950,
             "vrrSupport": [
@@ -4214,7 +4214,7 @@ const TV_DATA = {
             "refreshRate": "120Hz",
             "smartPlatform": "Google TV"
       },
-      description: "This Sony punches above its weight, delivering dependable picture quality for everyday viewing. A versatile performer across different content types.",
+      description: "The Sony X90L offers reliable performance and good value for everyday viewing. At 85 inches, this is a statement piece designed for large rooms or home theater setups. Reviewers gave it very good performance that will satisfy most viewers.",
       performanceSpecs: {
             "peakBrightness": 1950,
             "vrrSupport": [
@@ -4268,7 +4268,7 @@ const TV_DATA = {
             "refreshRate": "120Hz",
             "smartPlatform": "Google TV"
       },
-      description: "A premium choice from Sony, delivering reliable performance at a great value. A versatile performer across different content types. For those who want maximum impact.",
+      description: "The Sony X90L offers reliable performance and good value for everyday viewing. At 98 inches, this is a statement piece designed for large rooms or home theater setups. Reviewers gave it very good performance that will satisfy most viewers.",
       performanceSpecs: {
             "peakBrightness": 1950,
             "vrrSupport": [
@@ -4329,7 +4329,7 @@ const TV_DATA = {
             "hdr": "Dolby Vision, HDR10",
             "smartPlatform": "Google TV"
       },
-      description: "A premium choice from TCL, delivering rich colors that hold up in daylight. It's a gamer's dream with low input lag, and cinema-quality at home.",
+      description: "The TCL Q7 features quantum dot technology for vibrant, accurate colors and excellent brightness. The 55-inch size works well in bedrooms or apartments with closer seating. Reviewers gave it solid performance at a competitive price point.",
       performanceSpecs: {
             "dimmingZones": 200,
             "peakBrightness": 1950,
@@ -4386,12 +4386,7 @@ const TV_DATA = {
             "mixedUsageScore": 7.9,
             "pcMonitorScore": 8.3
       },
-      specs: {
-            "refreshRate": "120Hz",
-            "hdr": "Dolby Vision, HDR10",
-            "smartPlatform": "Google TV"
-      },
-      description: "This TCL punches above its weight, delivering excellent brightness for any room. It's built for serious gamers, and made for movie night.",
+      description: "The TCL Q7 features quantum dot technology for vibrant, accurate colors and excellent brightness. A 65-inch display hits the sweet spot for most living rooms at 6-8 feet viewing distance. Reviewers gave it solid performance at a competitive price point.",
       performanceSpecs: {
             "dimmingZones": 200,
             "peakBrightness": 1950,
@@ -4442,7 +4437,12 @@ const TV_DATA = {
       useCaseScores: {
             "sportsScore": 6.5
       },
-      description: "A solid mid-range option from TCL with HDR performance that rivals OLED. Ideal for apartments or secondary rooms. One of the newest models available.",
+      specs: {
+            "refreshRate": "60Hz",
+            "hdr": "HDR10",
+            "smartPlatform": "Google TV"
+      },
+      description: "The TCL QM5K uses advanced local dimming for excellent contrast and brightness. This compact 50-inch model fits perfectly in bedrooms, offices, or as a secondary display. Reviewers gave it entry-level performance that prioritizes value.",
       performanceSpecs: {
             "peakBrightness": 1950,
             "vrrSupport": [
@@ -4492,12 +4492,7 @@ const TV_DATA = {
       useCaseScores: {
             "sportsScore": 6.5
       },
-      specs: {
-            "refreshRate": "60Hz",
-            "hdr": "HDR10",
-            "smartPlatform": "Google TV"
-      },
-      description: "A solid mid-range option from TCL with punchy highlights with deep blacks. One of the newest models available.",
+      description: "The TCL QM5K uses advanced local dimming for excellent contrast and brightness. The 55-inch size works well in bedrooms or apartments with closer seating. Reviewers gave it entry-level performance that prioritizes value.",
       performanceSpecs: {
             "peakBrightness": 1950,
             "vrrSupport": [
@@ -4552,7 +4547,7 @@ const TV_DATA = {
             "hdr": "HDR10",
             "smartPlatform": "Google TV"
       },
-      description: "The sensible choice from TCL with HDR performance that rivals OLED. One of the newest models available.",
+      description: "The TCL QM5K uses advanced local dimming for excellent contrast and brightness. The 64-inch size works well in bedrooms or apartments with closer seating. Reviewers gave it entry-level performance that prioritizes value.",
       performanceSpecs: {
             "peakBrightness": 1950,
             "vrrSupport": [
@@ -4607,7 +4602,7 @@ const TV_DATA = {
             "hdr": "HDR10",
             "smartPlatform": "Google TV"
       },
-      description: "Balanced performance from TCL with punchy highlights with deep blacks. Makes a statement in larger rooms. One of the newest models available.",
+      description: "The TCL QM5K uses advanced local dimming for excellent contrast and brightness. A 74-inch display hits the sweet spot for most living rooms at 6-8 feet viewing distance. Reviewers gave it entry-level performance that prioritizes value.",
       performanceSpecs: {
             "peakBrightness": 1950,
             "vrrSupport": [
@@ -4662,7 +4657,7 @@ const TV_DATA = {
             "hdr": "HDR10",
             "smartPlatform": "Google TV"
       },
-      description: "A solid mid-range option from TCL with impressive local dimming with thousands of zones. Makes a statement in larger rooms. One of the newest models available.",
+      description: "The TCL QM5K uses advanced local dimming for excellent contrast and brightness. The 84-inch screen is ideal for living rooms where you sit 8-10 feet from the TV. Reviewers gave it entry-level performance that prioritizes value.",
       performanceSpecs: {
             "peakBrightness": 1950,
             "vrrSupport": [
@@ -4717,7 +4712,7 @@ const TV_DATA = {
             "hdr": "HDR10",
             "smartPlatform": "Google TV"
       },
-      description: "TCL's best has arrived, delivering impressive local dimming with thousands of zones. A versatile performer across different content types. One of the newest models available.",
+      description: "The TCL QM7K uses over 2500 local dimming zones for excellent contrast and brightness. The 55-inch size works well in bedrooms or apartments with closer seating. Reviewers gave it top-tier performance with excellent marks across all categories.",
       performanceSpecs: {
             "dimmingZones": 2500,
             "peakBrightness": 1950,
@@ -4768,7 +4763,12 @@ const TV_DATA = {
       useCaseScores: {
             "sportsScore": 7.8
       },
-      description: "At the top of TCL's lineup, delivering HDR performance that rivals OLED. A versatile performer across different content types. One of the newest models available.",
+      specs: {
+            "refreshRate": "144Hz",
+            "hdr": "HDR10",
+            "smartPlatform": "Google TV"
+      },
+      description: "The TCL QM7K uses over 2500 local dimming zones for excellent contrast and brightness. The 64-inch size works well in bedrooms or apartments with closer seating. Reviewers gave it top-tier performance with excellent marks across all categories.",
       performanceSpecs: {
             "dimmingZones": 2500,
             "peakBrightness": 1950,
@@ -4824,7 +4824,7 @@ const TV_DATA = {
             "hdr": "HDR10",
             "smartPlatform": "Google TV"
       },
-      description: "The crown jewel of TCL's TV range, delivering excellent brightness with precise backlight control. A versatile performer across different content types. Makes a statement in larger rooms. One of the newest models available.",
+      description: "The TCL QM7K uses over 2500 local dimming zones for excellent contrast and brightness. A 74-inch display hits the sweet spot for most living rooms at 6-8 feet viewing distance. Reviewers gave it top-tier performance with excellent marks across all categories.",
       performanceSpecs: {
             "dimmingZones": 2500,
             "peakBrightness": 1950,
@@ -4875,12 +4875,7 @@ const TV_DATA = {
       useCaseScores: {
             "sportsScore": 7.8
       },
-      specs: {
-            "refreshRate": "144Hz",
-            "hdr": "HDR10",
-            "smartPlatform": "Google TV"
-      },
-      description: "The crown jewel of TCL's TV range, delivering excellent brightness with precise backlight control. A versatile performer across different content types. Go big for that theater feel. One of the newest models available.",
+      description: "The TCL QM7K uses over 2500 local dimming zones for excellent contrast and brightness. At 85 inches, this is a statement piece designed for large rooms or home theater setups. Reviewers gave it top-tier performance with excellent marks across all categories.",
       performanceSpecs: {
             "dimmingZones": 2500,
             "peakBrightness": 1950,
@@ -4936,7 +4931,7 @@ const TV_DATA = {
             "hdr": "HDR10",
             "smartPlatform": "Google TV"
       },
-      description: "The crown jewel of TCL's TV range, delivering excellent brightness with precise backlight control. A versatile performer across different content types. A true home theater centerpiece. One of the newest models available.",
+      description: "The TCL QM7K uses over 2500 local dimming zones for excellent contrast and brightness. At 98 inches, this is a statement piece designed for large rooms or home theater setups. Reviewers gave it top-tier performance with excellent marks across all categories.",
       performanceSpecs: {
             "dimmingZones": 2500,
             "peakBrightness": 1950,
@@ -4992,7 +4987,7 @@ const TV_DATA = {
             "hdr": "HDR10",
             "smartPlatform": "Google TV"
       },
-      description: "The crown jewel of TCL's TV range, delivering HDR performance that rivals OLED. A versatile performer across different content types. A true home theater centerpiece. One of the newest models available.",
+      description: "The TCL QM7K uses over 2500 local dimming zones for excellent contrast and brightness. At 114 inches, this is a statement piece designed for large rooms or home theater setups. Reviewers gave it top-tier performance with excellent marks across all categories.",
       performanceSpecs: {
             "dimmingZones": 2500,
             "peakBrightness": 1950,
@@ -5054,7 +5049,7 @@ const TV_DATA = {
             "hdr": "HDR10",
             "smartPlatform": "Google TV"
       },
-      description: "The crown jewel of TCL's TV range, delivering excellent brightness with precise backlight control. It's made for movie night, and a gamer's dream with low input lag.",
+      description: "The TCL QM8 uses over 2300 local dimming zones for excellent contrast and brightness. The 64-inch size works well in bedrooms or apartments with closer seating. Reviewers gave it very good performance that will satisfy most viewers.",
       performanceSpecs: {
             "dimmingZones": 2300,
             "peakBrightness": 1950,
@@ -5116,7 +5111,7 @@ const TV_DATA = {
             "hdr": "HDR10",
             "smartPlatform": "Google TV"
       },
-      description: "The crown jewel of TCL's TV range, delivering impressive local dimming with thousands of zones. It's cinema-quality at home, and gaming performance that won't disappoint.",
+      description: "The TCL QM8 uses over 2300 local dimming zones for excellent contrast and brightness. A 74-inch display hits the sweet spot for most living rooms at 6-8 feet viewing distance. Reviewers gave it very good performance that will satisfy most viewers.",
       performanceSpecs: {
             "dimmingZones": 2300,
             "peakBrightness": 1950,
@@ -5178,7 +5173,7 @@ const TV_DATA = {
             "hdr": "HDR10",
             "smartPlatform": "Google TV"
       },
-      description: "The crown jewel of TCL's TV range, delivering impressive local dimming with thousands of zones. It's a cinephile's delight, and built for serious gamers. Big-screen immersion for dedicated spaces.",
+      description: "The TCL QM8 uses over 2300 local dimming zones for excellent contrast and brightness. At 85 inches, this is a statement piece designed for large rooms or home theater setups. Reviewers gave it very good performance that will satisfy most viewers.",
       performanceSpecs: {
             "dimmingZones": 2300,
             "peakBrightness": 1950,
@@ -5235,12 +5230,7 @@ const TV_DATA = {
             "mixedUsageScore": 8.4,
             "pcMonitorScore": 8.7
       },
-      specs: {
-            "refreshRate": "144Hz",
-            "hdr": "HDR10",
-            "smartPlatform": "Google TV"
-      },
-      description: "This is TCL's flagship offering, delivering impressive local dimming with thousands of zones. It's a cinephile's delight, and optimized for responsive gaming. When bigger is definitely better.",
+      description: "The TCL QM8 uses over 2300 local dimming zones for excellent contrast and brightness. At 98 inches, this is a statement piece designed for large rooms or home theater setups. Reviewers gave it very good performance that will satisfy most viewers.",
       performanceSpecs: {
             "dimmingZones": 2300,
             "peakBrightness": 1950,
@@ -5297,7 +5287,12 @@ const TV_DATA = {
             "mixedUsageScore": 8.4,
             "pcMonitorScore": 8.7
       },
-      description: "At the top of TCL's lineup, delivering impressive local dimming with thousands of zones. It's perfect for film enthusiasts, and gaming performance that won't disappoint. For those who want maximum impact.",
+      specs: {
+            "refreshRate": "144Hz",
+            "hdr": "Dolby Vision, HDR10",
+            "smartPlatform": "Google TV"
+      },
+      description: "The TCL QM8 uses over 2300 local dimming zones for excellent contrast and brightness. At 114 inches, this is a statement piece designed for large rooms or home theater setups. Reviewers gave it very good performance that will satisfy most viewers.",
       performanceSpecs: {
             "dimmingZones": 2300,
             "peakBrightness": 1950,
@@ -5353,7 +5348,7 @@ const TV_DATA = {
             "hdr": "HDR10",
             "smartPlatform": "Google TV"
       },
-      description: "The crown jewel of TCL's TV range, delivering punchy highlights with deep blacks. It's keeps up with fast action. One of the newest models available.",
+      description: "The TCL QM8K uses advanced local dimming for excellent contrast and brightness. The 64-inch size works well in bedrooms or apartments with closer seating. Reviewers gave it top-tier performance with excellent marks across all categories.",
       performanceSpecs: {
             "peakBrightness": 1950,
             "vrrSupport": [
@@ -5403,12 +5398,7 @@ const TV_DATA = {
       useCaseScores: {
             "sportsScore": 8.4
       },
-      specs: {
-            "refreshRate": "144Hz",
-            "hdr": "HDR10",
-            "smartPlatform": "Google TV"
-      },
-      description: "TCL's best has arrived, delivering excellent brightness with precise backlight control. It's ideal for game day. Big-screen immersion for dedicated spaces. One of the newest models available.",
+      description: "The TCL QM8K uses advanced local dimming for excellent contrast and brightness. A 74-inch display hits the sweet spot for most living rooms at 6-8 feet viewing distance. Reviewers gave it top-tier performance with excellent marks across all categories.",
       performanceSpecs: {
             "peakBrightness": 1950,
             "vrrSupport": [
@@ -5463,7 +5453,7 @@ const TV_DATA = {
             "hdr": "HDR10",
             "smartPlatform": "Google TV"
       },
-      description: "TCL's best has arrived, delivering excellent brightness with precise backlight control. It's handles motion like a champ. One of the newest models available.",
+      description: "The TCL QM8K uses advanced local dimming for excellent contrast and brightness. At 85 inches, this is a statement piece designed for large rooms or home theater setups. Reviewers gave it top-tier performance with excellent marks across all categories.",
       performanceSpecs: {
             "peakBrightness": 1950,
             "vrrSupport": [
@@ -5513,7 +5503,12 @@ const TV_DATA = {
       useCaseScores: {
             "sportsScore": 8.4
       },
-      description: "TCL's best has arrived, delivering impressive local dimming with thousands of zones. It's sports look incredibly smooth. When bigger is definitely better. One of the newest models available.",
+      specs: {
+            "refreshRate": "144Hz",
+            "hdr": "HDR10",
+            "smartPlatform": "Google TV"
+      },
+      description: "The TCL QM8K uses advanced local dimming for excellent contrast and brightness. At 98 inches, this is a statement piece designed for large rooms or home theater setups. Reviewers gave it top-tier performance with excellent marks across all categories.",
       performanceSpecs: {
             "peakBrightness": 1950,
             "vrrSupport": [

@@ -199,15 +199,61 @@
       background: var(--card-bg);
       border: 1px solid var(--border-color);
       border-radius: var(--radius-md);
+      position: relative;
+    }
+    .spec-item.has-tooltip {
+      cursor: help;
     }
     .spec-label {
       font-size: 0.75rem;
       color: var(--text-secondary);
       text-transform: uppercase;
       margin-bottom: 0.25rem;
+      display: flex;
+      align-items: center;
+      gap: 0.35rem;
+    }
+    .info-icon {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      background: var(--border-color);
+      color: var(--text-secondary);
+      font-size: 0.6rem;
+      font-weight: 700;
     }
     .spec-value {
       font-weight: 600;
+    }
+    .spec-tooltip {
+      display: none;
+      position: absolute;
+      bottom: calc(100% + 8px);
+      left: 0;
+      right: 0;
+      background: #1e293b;
+      color: white;
+      padding: 0.75rem;
+      border-radius: var(--radius-md);
+      font-size: 0.8rem;
+      font-weight: 400;
+      line-height: 1.5;
+      z-index: 100;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+    .spec-tooltip::after {
+      content: '';
+      position: absolute;
+      top: 100%;
+      left: 20px;
+      border: 6px solid transparent;
+      border-top-color: #1e293b;
+    }
+    .spec-item.has-tooltip:hover .spec-tooltip {
+      display: block;
     }
     /* Use Case Scores */
     .scores-section {
@@ -428,6 +474,43 @@
       if (score >= 8.0) return { stars: '★★★★☆', tier: 4 };
       if (score >= 6.5) return { stars: '★★★☆☆', tier: 3 };
       return { stars: '★★☆☆☆', tier: 2 };
+    }
+
+    // Render a spec item with educational tooltip
+    function renderSpecItem(label, value, tooltip) {
+      return `
+        <div class="spec-item has-tooltip">
+          <div class="spec-label">${label} <span class="info-icon">?</span></div>
+          <div class="spec-value">${value}</div>
+          <div class="spec-tooltip">${tooltip}</div>
+        </div>
+      `;
+    }
+
+    // Get educational tooltip for panel types
+    function getPanelTypeTooltip(panelType) {
+      const tooltips = {
+        'OLED': 'OLED pixels emit their own light and turn completely off for perfect blacks. Best contrast and viewing angles, but can be dimmer than LED. Risk of burn-in with static content.',
+        'QD-OLED': 'Quantum Dot OLED combines OLED\'s perfect blacks with brighter, more vivid colors from quantum dots. Currently the best picture quality available, but premium priced.',
+        'Mini LED': 'Uses thousands of tiny LEDs for backlighting with many dimming zones. Better contrast than regular LED, brighter than OLED. Great middle ground between LED and OLED.',
+        'QLED': 'Samsung\'s marketing term for LED TVs with Quantum Dot color enhancement. Brighter and more colorful than basic LED, but not as good contrast as OLED.',
+        'LED': 'Standard LCD panel with LED backlighting. Most affordable option. Good brightness but limited contrast compared to OLED or Mini LED.',
+        'Neo QLED': 'Samsung\'s Mini LED TVs with Quantum Dot technology. Combines Mini LED\'s contrast benefits with QLED\'s color vibrancy.'
+      };
+      return tooltips[panelType] || 'Display technology affects picture quality, contrast, and brightness.';
+    }
+
+    // Get educational tooltip for smart platforms
+    function getSmartPlatformTooltip(platform) {
+      const tooltips = {
+        'webOS': 'LG\'s smart TV platform. Clean interface, good app selection, and Magic Remote with point-and-click. Regular updates and reliable performance.',
+        'Tizen': 'Samsung\'s smart TV platform. Fast and responsive with excellent app support. Integrates well with Samsung phones and SmartThings.',
+        'Google TV': 'Google\'s platform (used by Sony, TCL, others). Best content discovery with personalized recommendations. Full Google Assistant and Chromecast built-in.',
+        'Roku TV': 'Simple, easy-to-use interface with excellent app selection. Great for streaming-focused users who want no-frills navigation.',
+        'Fire TV': 'Amazon\'s platform with Alexa built-in. Great for Prime Video users and smart home integration. Lots of apps available.',
+        'Android TV': 'Google\'s older platform, now mostly replaced by Google TV. Good app support via Google Play Store.'
+      };
+      return tooltips[platform] || 'The smart TV operating system determines which apps you can use and how you navigate the TV.';
     }
 
     // Render use-case scores section
@@ -767,38 +850,12 @@
         <section class="specs-section">
           <h2 class="specs-title">Specifications</h2>
           <div class="specs-grid">
-            <div class="spec-item">
-              <div class="spec-label">Screen Size</div>
-              <div class="spec-value">${tv.size}"</div>
-            </div>
-            <div class="spec-item">
-              <div class="spec-label">Resolution</div>
-              <div class="spec-value">${tv.resolution}</div>
-            </div>
-            <div class="spec-item">
-              <div class="spec-label">Panel Type</div>
-              <div class="spec-value">${tv.panelType}</div>
-            </div>
-            <div class="spec-item">
-              <div class="spec-label">Refresh Rate</div>
-              <div class="spec-value">${tv.specs?.refreshRate || 'N/A'}</div>
-            </div>
-            <div class="spec-item">
-              <div class="spec-label">HDR Support</div>
-              <div class="spec-value">${tv.specs?.hdr || 'N/A'}</div>
-            </div>
-            <div class="spec-item">
-              <div class="spec-label">Smart Platform</div>
-              <div class="spec-value">${tv.specs?.smartPlatform || 'N/A'}</div>
-            </div>
-            <div class="spec-item">
-              <div class="spec-label">HDMI Ports</div>
-              <div class="spec-value">${tv.specs?.hdmiPorts || 'N/A'} (${tv.specs?.hdmi21Ports || 0} HDMI 2.1)</div>
-            </div>
-            <div class="spec-item">
-              <div class="spec-label">Speakers</div>
-              <div class="spec-value">${tv.specs?.speakers || 'N/A'}</div>
-            </div>
+            ${renderSpecItem('Screen Size', tv.size + '"', 'Measured diagonally. Bigger screens are more immersive but need more viewing distance. A good rule: sit 1.5x the screen size away (e.g., 65" TV = ~8 feet).')}
+            ${renderSpecItem('Resolution', tv.resolution, '4K (3840x2160) has 4x the pixels of 1080p, delivering sharper detail. 8K exists but has limited content. For most people, 4K is the sweet spot.')}
+            ${renderSpecItem('Panel Type', tv.panelType, getPanelTypeTooltip(tv.panelType))}
+            ${tv.specs?.refreshRate ? renderSpecItem('Refresh Rate', tv.specs.refreshRate, '120Hz displays update twice as fast as 60Hz, making motion smoother. Essential for gaming and sports. Most streaming content is 24-60fps, so 60Hz works fine for movies.') : ''}
+            ${tv.specs?.hdr ? renderSpecItem('HDR Support', tv.specs.hdr, 'HDR (High Dynamic Range) delivers brighter highlights and deeper blacks. Dolby Vision is premium (dynamic metadata), HDR10+ is Samsung\\'s alternative, HDR10 is the baseline. More formats = more compatible content.') : ''}
+            ${tv.specs?.smartPlatform ? renderSpecItem('Smart Platform', tv.specs.smartPlatform, getSmartPlatformTooltip(tv.specs.smartPlatform)) : ''}
           </div>
         </section>
 
