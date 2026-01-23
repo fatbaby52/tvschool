@@ -854,7 +854,7 @@
             ${renderSpecItem('Resolution', tv.resolution, '4K (3840x2160) has 4x the pixels of 1080p, delivering sharper detail. 8K exists but has limited content. For most people, 4K is the sweet spot.')}
             ${renderSpecItem('Panel Type', tv.panelType, getPanelTypeTooltip(tv.panelType))}
             ${tv.specs?.refreshRate ? renderSpecItem('Refresh Rate', tv.specs.refreshRate, '120Hz displays update twice as fast as 60Hz, making motion smoother. Essential for gaming and sports. Most streaming content is 24-60fps, so 60Hz works fine for movies.') : ''}
-            ${tv.specs?.hdr ? renderSpecItem('HDR Support', tv.specs.hdr, 'HDR (High Dynamic Range) delivers brighter highlights and deeper blacks. Dolby Vision is premium (dynamic metadata), HDR10+ is Samsungs alternative, HDR10 is the baseline. More formats = more compatible content.') : ''}
+            ${tv.specs?.hdr ? renderSpecItem('HDR Support', tv.specs.hdr, "HDR (High Dynamic Range) delivers brighter highlights and deeper blacks. Dolby Vision is premium (dynamic metadata), HDR10+ is Samsung's alternative, HDR10 is the baseline. More formats = more compatible content.") : ''}
             ${tv.specs?.smartPlatform ? renderSpecItem('Smart Platform', tv.specs.smartPlatform, getSmartPlatformTooltip(tv.specs.smartPlatform)) : ''}
           </div>
         </section>
