@@ -4,13 +4,13 @@
  * Designed to support multiple retailers and price history tracking.
  * Each TV has a unique ID and can have prices from multiple sources.
  *
- * Generated: 2026-01-23 01:37:42
+ * Generated: 2026-01-23 01:41:16
  * Total TVs: 98
  */
 
 const TV_DATA = {
   // Metadata
-  lastUpdated: "2026-01-23T01:37:42Z",
+  lastUpdated: "2026-01-23T01:41:16Z",
 
   // Retailer definitions (easily extensible)
   retailers: {
@@ -557,6 +557,11 @@ const TV_DATA = {
             "movieScore": 8.5,
             "brightRoomScore": 6.9
       },
+      specs: {
+            "refreshRate": "120Hz",
+            "hdr": "Dolby Vision",
+            "smartPlatform": "webOS"
+      },
       description: "The LG C4 is LG's most popular OLED, the sweet spot of price and performance. It sits above the B4 and below the G4 in LG's lineup. It features OLED technology where each pixel produces its own light, enabling perfect blacks and infinite contrast. It excels at movies. The 65-inch size is the most popular choice, ideal for average living rooms with 6-8 feet of viewing distance.",
       performanceSpecs: {
             "peakBrightness": 1950,
@@ -749,6 +754,11 @@ const TV_DATA = {
             "movieScore": 8.8,
             "brightRoomScore": 7.7
       },
+      specs: {
+            "refreshRate": "120Hz",
+            "hdr": "Dolby Vision, HDR10",
+            "smartPlatform": "webOS"
+      },
       description: "The LG C5 is LG's most popular OLED for 2025, the sweet spot of price and performance. It sits above the B5 and below the G5 in LG's lineup. It features OLED technology where each pixel produces its own light, enabling perfect blacks and infinite contrast. It excels at movies. The compact 42-inch screen is perfect for bedrooms, offices, kitchens, or as a secondary TV.",
       performanceSpecs: {
             "peakBrightness": 1950,
@@ -940,6 +950,11 @@ const TV_DATA = {
             "mixedUsageScore": 8.6,
             "movieScore": 8.8,
             "brightRoomScore": 7.7
+      },
+      specs: {
+            "refreshRate": "120Hz",
+            "hdr": "Dolby Vision",
+            "smartPlatform": "webOS"
       },
       description: "The LG C5 is LG's most popular OLED for 2025, the sweet spot of price and performance. It sits above the B5 and below the G5 in LG's lineup. It features OLED technology where each pixel produces its own light, enabling perfect blacks and infinite contrast. It excels at movies. The 65-inch size is the most popular choice, ideal for average living rooms with 6-8 feet of viewing distance.",
       performanceSpecs: {
@@ -1251,11 +1266,6 @@ const TV_DATA = {
             "movieScore": 8.7,
             "brightRoomScore": 7.7
       },
-      specs: {
-            "refreshRate": "120Hz",
-            "hdr": "Dolby Vision",
-            "smartPlatform": "webOS"
-      },
       description: "The LG G4 is LG's flagship Gallery OLED, designed to mount flush against the wall. It sits above the C4. It features OLED technology where each pixel produces its own light, enabling perfect blacks and infinite contrast. It excels at movies. The 65-inch size is the most popular choice, ideal for average living rooms with 6-8 feet of viewing distance.",
       performanceSpecs: {
             "peakBrightness": 1950,
@@ -1378,11 +1388,6 @@ const TV_DATA = {
             "mixedUsageScore": 9.0,
             "movieScore": 9.0,
             "brightRoomScore": 8.7
-      },
-      specs: {
-            "refreshRate": "120Hz",
-            "hdr": "Dolby Vision",
-            "smartPlatform": "webOS"
       },
       description: "The LG G5 is LG's flagship Gallery OLED for 2025, designed to mount flush against the wall. It sits above the C5. It features OLED technology where each pixel produces its own light, enabling perfect blacks and infinite contrast. It excels at movies and sports. At 55 inches, this works great in bedrooms, apartments, or living rooms with closer seating (5-7 feet).",
       performanceSpecs: {
@@ -1516,11 +1521,6 @@ const TV_DATA = {
             "mixedUsageScore": 9.0,
             "movieScore": 9.0,
             "brightRoomScore": 8.7
-      },
-      specs: {
-            "refreshRate": "120Hz",
-            "hdr": "Dolby Vision",
-            "smartPlatform": "webOS"
       },
       description: "The LG G5 is LG's flagship Gallery OLED for 2025, designed to mount flush against the wall. It sits above the C5. It features OLED technology where each pixel produces its own light, enabling perfect blacks and infinite contrast. It excels at movies and sports. At 77 inches, this fits well in larger living rooms where you sit 7-10 feet from the screen.",
       performanceSpecs: {
@@ -1856,10 +1856,6 @@ const TV_DATA = {
       useCaseScores: {
             "sportsScore": 5.6
       },
-      specs: {
-            "refreshRate": "60Hz",
-            "smartPlatform": "Tizen"
-      },
       description: "The Samsung Q60D is Samsung's entry-level QLED, their most affordable quantum dot TV. It sits below the flagship Q70D. It uses QLED technology (Quantum Dot LED) for enhanced color volume and brightness compared to standard LED. At 75 inches, this fits well in larger living rooms where you sit 7-10 feet from the screen.",
       performanceSpecs: {
             "peakBrightness": 1950,
@@ -1910,6 +1906,10 @@ const TV_DATA = {
       ],
       useCaseScores: {
             "sportsScore": 5.6
+      },
+      specs: {
+            "refreshRate": "60Hz",
+            "smartPlatform": "Tizen"
       },
       description: "The Samsung Q60D is Samsung's entry-level QLED, their most affordable quantum dot TV. It sits below the flagship Q70D. It uses QLED technology (Quantum Dot LED) for enhanced color volume and brightness compared to standard LED. The 85-inch screen is designed for large living rooms or home theaters with seating 8-12 feet away.",
       performanceSpecs: {
@@ -2236,6 +2236,10 @@ const TV_DATA = {
       ],
       useCaseScores: {
             "sportsScore": 7.2
+      },
+      specs: {
+            "refreshRate": "120Hz",
+            "smartPlatform": "Tizen"
       },
       description: "The Samsung Q80D is Samsung's premium QLED without Mini LED, great brightness and color. It sits above the Q70D and below the QN85D in Samsung's lineup. It uses QLED technology (Quantum Dot LED) for enhanced color volume and brightness compared to standard LED. At 84 inches, this fits well in larger living rooms where you sit 7-10 feet from the screen.",
       performanceSpecs: {
@@ -3168,6 +3172,10 @@ const TV_DATA = {
             "movieScore": 8.7,
             "brightRoomScore": 7.2
       },
+      specs: {
+            "refreshRate": "120Hz",
+            "smartPlatform": "Tizen"
+      },
       description: "The Samsung S90D is Samsung's mid-range QD-OLED, offering flagship-level picture at a lower price. It sits above the S85D and below the S95D in Samsung's lineup. It uses Quantum Dot OLED technology—combining the perfect blacks of OLED with enhanced color brightness from quantum dots. It excels at movies. At 77 inches, this fits well in larger living rooms where you sit 7-10 feet from the screen.",
       performanceSpecs: {
             "peakBrightness": 1950,
@@ -3407,6 +3415,11 @@ const TV_DATA = {
             "mixedUsageScore": 8.6,
             "movieScore": 8.8,
             "brightRoomScore": 7.6
+      },
+      specs: {
+            "refreshRate": "120Hz",
+            "hdr": "HDR10",
+            "smartPlatform": "Tizen"
       },
       description: "The Samsung S90F is Samsung's mid-range QD-OLED for 2025, offering flagship-level picture at a lower price. It sits above the S85D and below the S95F in Samsung's lineup. It uses Quantum Dot OLED technology—combining the perfect blacks of OLED with enhanced color brightness from quantum dots. It excels at movies. At 55 inches, this works great in bedrooms, apartments, or living rooms with closer seating (5-7 feet).",
       performanceSpecs: {
@@ -3866,11 +3879,6 @@ const TV_DATA = {
             "movieScore": 9.0,
             "brightRoomScore": 8.8
       },
-      specs: {
-            "refreshRate": "120Hz",
-            "hdr": "HDR10",
-            "smartPlatform": "Tizen"
-      },
       description: "The Samsung S95F is Samsung's flagship QD-OLED for 2025, their absolute best picture quality. It sits above the S90F. It uses Quantum Dot OLED technology—combining the perfect blacks of OLED with enhanced color brightness from quantum dots. It excels at movies and sports. At 82 inches, this fits well in larger living rooms where you sit 7-10 feet from the screen.",
       performanceSpecs: {
             "peakBrightness": 1950,
@@ -4136,6 +4144,10 @@ const TV_DATA = {
             "movieScore": 8.2,
             "brightRoomScore": 7.0
       },
+      specs: {
+            "refreshRate": "120Hz",
+            "smartPlatform": "Google TV"
+      },
       description: "The Sony Bravia 8 is Sony's mid-range OLED, excellent picture with Sony's processing. It sits above the X90L and below the Bravia 9 in Sony's lineup. It features OLED technology where each pixel produces its own light, enabling perfect blacks and infinite contrast. At 77 inches, this fits well in larger living rooms where you sit 7-10 feet from the screen.",
       performanceSpecs: {
             "peakBrightness": 1950,
@@ -4241,6 +4253,10 @@ const TV_DATA = {
       ],
       useCaseScores: {
             "sportsScore": 8.7
+      },
+      specs: {
+            "refreshRate": "120Hz",
+            "smartPlatform": "Google TV"
       },
       description: "The Sony Bravia 8 II is Sony's updated mid-range OLED for 2025. It sits above the X90L and below the Bravia 9 in Sony's lineup. It features OLED technology where each pixel produces its own light, enabling perfect blacks and infinite contrast. It excels at sports. At 64 inches, this works great in bedrooms, apartments, or living rooms with closer seating (5-7 feet).",
       performanceSpecs: {
@@ -4533,10 +4549,6 @@ const TV_DATA = {
       useCaseScores: {
             "sportsScore": 7.2
       },
-      specs: {
-            "refreshRate": "120Hz",
-            "smartPlatform": "Google TV"
-      },
       description: "The Sony X90L is Sony's Full Array LED, great value with premium Sony processing. It sits below the flagship Bravia 8. It uses LED backlighting, a proven technology offering good value. At 64 inches, this works great in bedrooms, apartments, or living rooms with closer seating (5-7 feet).",
       performanceSpecs: {
             "peakBrightness": 1950,
@@ -4587,6 +4599,10 @@ const TV_DATA = {
       ],
       useCaseScores: {
             "sportsScore": 7.2
+      },
+      specs: {
+            "refreshRate": "120Hz",
+            "smartPlatform": "Google TV"
       },
       description: "The Sony X90L is Sony's Full Array LED, great value with premium Sony processing. It sits below the flagship Bravia 8. It uses LED backlighting, a proven technology offering good value. The 74-inch size is the most popular choice, ideal for average living rooms with 6-8 feet of viewing distance.",
       performanceSpecs: {
@@ -4694,6 +4710,10 @@ const TV_DATA = {
       useCaseScores: {
             "sportsScore": 7.2
       },
+      specs: {
+            "refreshRate": "120Hz",
+            "smartPlatform": "Google TV"
+      },
       description: "The Sony X90L is Sony's Full Array LED, great value with premium Sony processing. It sits below the flagship Bravia 8. It uses LED backlighting, a proven technology offering good value. At 98 inches, this is a home theater centerpiece—best for dedicated media rooms or very large living spaces with seating 10+ feet away.",
       performanceSpecs: {
             "peakBrightness": 1950,
@@ -4750,11 +4770,6 @@ const TV_DATA = {
             "hdrGamingScore": 8.5,
             "mixedUsageScore": 7.9,
             "pcMonitorScore": 8.3
-      },
-      specs: {
-            "refreshRate": "120Hz",
-            "hdr": "Dolby Vision, HDR10",
-            "smartPlatform": "Google TV"
       },
       description: "The TCL Q7 is TCL's step-down from Mini LED, using standard QLED technology. It sits below the flagship QM5. It uses QLED technology (Quantum Dot LED) for enhanced color volume and brightness compared to standard LED. It excels at gaming and movies. At 55 inches, this works great in bedrooms, apartments, or living rooms with closer seating (5-7 feet).",
       performanceSpecs: {
@@ -4983,11 +4998,6 @@ const TV_DATA = {
       useCaseScores: {
             "sportsScore": 6.5
       },
-      specs: {
-            "refreshRate": "60Hz",
-            "hdr": "HDR10",
-            "smartPlatform": "Google TV"
-      },
       description: "The TCL QM5K is TCL's entry-level Mini LED for 2025, offering premium features at a budget price. It sits below the flagship QM7K. It uses Mini LED backlighting with thousands of tiny LEDs for better contrast than standard LED TVs. At 64 inches, this works great in bedrooms, apartments, or living rooms with closer seating (5-7 feet).",
       performanceSpecs: {
             "peakBrightness": 1950,
@@ -5038,6 +5048,11 @@ const TV_DATA = {
       ],
       useCaseScores: {
             "sportsScore": 6.5
+      },
+      specs: {
+            "refreshRate": "60Hz",
+            "hdr": "HDR10",
+            "smartPlatform": "Google TV"
       },
       description: "The TCL QM5K is TCL's entry-level Mini LED for 2025, offering premium features at a budget price. It sits below the flagship QM7K. It uses Mini LED backlighting with thousands of tiny LEDs for better contrast than standard LED TVs. The 74-inch size is the most popular choice, ideal for average living rooms with 6-8 feet of viewing distance.",
       performanceSpecs: {
@@ -5260,6 +5275,11 @@ const TV_DATA = {
       useCaseScores: {
             "sportsScore": 7.8
       },
+      specs: {
+            "refreshRate": "144Hz",
+            "hdr": "HDR10",
+            "smartPlatform": "Google TV"
+      },
       description: "The TCL QM7K sits in the middle of TCL's 2025 Mini LED lineup. It sits above the QM5K and below the QM8K in TCL's lineup. It uses Mini LED backlighting with over 2,500 local dimming zones for precise contrast control and excellent HDR performance. The 74-inch size is the most popular choice, ideal for average living rooms with 6-8 feet of viewing distance.",
       performanceSpecs: {
             "dimmingZones": 2500,
@@ -5477,8 +5497,8 @@ const TV_DATA = {
                   "retailerName": "Amazon",
                   "currentPrice": 797.99,
                   "retailPrice": 797.99,
-                  "url": "https://www.amazon.com/dp/B0CZ51B3W6?tag=tvschool-20",
-                  "asin": "B0CZ51B3W6",
+                  "url": "https://www.amazon.com/dp/B0C1J4MPBB?tag=tvschool-20",
+                  "asin": "B0C1J4MPBB",
                   "inStock": true,
                   "lastChecked": "2026-01-23T01:36:15Z"
             }
@@ -5498,11 +5518,6 @@ const TV_DATA = {
             "hdrGamingScore": 9.0,
             "mixedUsageScore": 8.4,
             "pcMonitorScore": 8.7
-      },
-      specs: {
-            "refreshRate": "144Hz",
-            "hdr": "HDR10",
-            "smartPlatform": "Google TV"
       },
       description: "The TCL QM8 is TCL's flagship Mini LED. It sits above the QM7. It uses Mini LED backlighting with over 2,300 local dimming zones for precise contrast control and excellent HDR performance. It excels at movies and HDR gaming. At 64 inches, this works great in bedrooms, apartments, or living rooms with closer seating (5-7 feet).",
       performanceSpecs: {
@@ -5550,8 +5565,8 @@ const TV_DATA = {
                   "retailerName": "Amazon",
                   "currentPrice": 997.99,
                   "retailPrice": 997.99,
-                  "url": "https://www.amazon.com/dp/B0CZ4ZJT4M?tag=tvschool-20",
-                  "asin": "B0CZ4ZJT4M",
+                  "url": "https://www.amazon.com/dp/B0C1J6PP81?tag=tvschool-20",
+                  "asin": "B0C1J6PP81",
                   "inStock": true,
                   "lastChecked": "2026-01-23T01:36:15Z"
             }
@@ -5623,8 +5638,8 @@ const TV_DATA = {
                   "retailerName": "Amazon",
                   "currentPrice": 1297.99,
                   "retailPrice": 1297.99,
-                  "url": "https://www.amazon.com/dp/B0CZ51SFHP?tag=tvschool-20",
-                  "asin": "B0CZ51SFHP",
+                  "url": "https://www.amazon.com/dp/B0C1J4FKS2?tag=tvschool-20",
+                  "asin": "B0C1J4FKS2",
                   "inStock": true,
                   "lastChecked": "2026-01-23T01:36:15Z"
             }
@@ -5696,8 +5711,8 @@ const TV_DATA = {
                   "retailerName": "Amazon",
                   "currentPrice": 1997.99,
                   "retailPrice": 1997.99,
-                  "url": "https://www.amazon.com/dp/B0CZ4YJJTK?tag=tvschool-20",
-                  "asin": "B0CZ4YJJTK",
+                  "url": "https://www.amazon.com/dp/B0C1J56NSM?tag=tvschool-20",
+                  "asin": "B0C1J56NSM",
                   "inStock": true,
                   "lastChecked": "2026-01-23T01:36:15Z"
             }
@@ -5717,6 +5732,11 @@ const TV_DATA = {
             "hdrGamingScore": 9.0,
             "mixedUsageScore": 8.4,
             "pcMonitorScore": 8.7
+      },
+      specs: {
+            "refreshRate": "144Hz",
+            "hdr": "HDR10",
+            "smartPlatform": "Google TV"
       },
       description: "The TCL QM8 is TCL's flagship Mini LED. It sits above the QM7. It uses Mini LED backlighting with over 2,300 local dimming zones for precise contrast control and excellent HDR performance. It excels at movies and HDR gaming. At 98 inches, this is a home theater centerpiece—best for dedicated media rooms or very large living spaces with seating 10+ feet away.",
       performanceSpecs: {
@@ -5888,11 +5908,6 @@ const TV_DATA = {
       ],
       useCaseScores: {
             "sportsScore": 8.4
-      },
-      specs: {
-            "refreshRate": "144Hz",
-            "hdr": "HDR10",
-            "smartPlatform": "Google TV"
       },
       description: "The TCL QM8K is TCL's flagship Mini LED for 2025. It sits above the QM7K. It uses Mini LED backlighting with thousands of tiny LEDs for better contrast than standard LED TVs. The 74-inch size is the most popular choice, ideal for average living rooms with 6-8 feet of viewing distance.",
       performanceSpecs: {
