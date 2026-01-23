@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Primary Meta Tags (dynamically updated by JS) -->
+  <title>TV Details - TV School</title>
+  <meta name="description" content="View TV details, pricing, and deal score on TV School.">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph (dynamically updated by JS) -->
+  <meta property="og:type" content="product">
+  <meta property="og:site_name" content="TV School">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="logo.jpg">
+  <link rel="apple-touch-icon" href="logo.jpg">
+  <style>
+    .product-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 2rem;
+    }
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      color: var(--primary-color);
+      text-decoration: none;
+      margin-bottom: 1.5rem;
+    }
+    .back-link:hover {
+      text-decoration: underline;
+    }
+    .product-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+    }
+    .product-image {
+      background: #f1f5f9;
+      border-radius: var(--radius-lg);
+      padding: 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .product-image img {
+      max-width: 100%;
+      max-height: 400px;
+      object-fit: contain;
+    }
+    .product-info {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+    .product-brand {
+      font-size: 0.875rem;
+      color: var(--text-secondary);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    .product-title {
+      font-size: 2rem;
+      font-weight: 700;
+      line-height: 1.2;
+    }
+    .product-badges {
+      display: flex;
+      gap: 0.75rem;
+      flex-wrap: wrap;
+    }
+    .badge {
+      padding: 0.5rem 1rem;
+      border-radius: 9999px;
+      font-size: 0.875rem;
+      font-weight: 500;
+    }
+    .badge-panel {
+      background: #e0e7ff;
+      color: #3730a3;
+    }
+    .badge-size {
+      background: #f3f4f6;
+      color: #374151;
+    }
+    .badge-quality {
+      background: #fef3c7;
+      color: #92400e;
+    }
+    /* Related Sizes */
+    .related-sizes {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      flex-wrap: wrap;
+      padding: 0.75rem 1rem;
+      background: #f8fafc;
+      border-radius: var(--radius-md);
+      border: 1px solid var(--border-color);
+    }
+    .related-sizes-label {
+      font-size: 0.875rem;
+      color: var(--text-secondary);
+    }
+    .related-size-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.5rem 0.75rem;
+      background: white;
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-md);
+      color: var(--text-primary);
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 0.875rem;
+      transition: all 0.15s;
+    }
+    .related-size-link:hover {
+      border-color: var(--primary-color);
+      background: #eff6ff;
+    }
+    .related-size-price {
+      color: var(--success-color);
+      font-weight: 600;
+    }
+    .price-section {
+      background: var(--card-bg);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-lg);
+      padding: 1.5rem;
+    }
+    .price-main {
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: var(--success-color);
+    }
+    .price-retail {
+      font-size: 1.25rem;
+      color: var(--text-secondary);
+      text-decoration: line-through;
+      margin-left: 0.75rem;
+    }
+    .price-meta {
+      margin-top: 0.5rem;
+      color: var(--text-secondary);
+      font-size: 0.875rem;
+    }
+    .deal-info {
+      margin-top: 1rem;
+      padding-top: 1rem;
+      border-top: 1px solid var(--border-color);
+      display: flex;
+      justify-content: space-between;
+    }
+    .buy-button {
+      display: inline-block;
+      width: 100%;
+      padding: 1rem 2rem;
+      background: var(--primary-color);
+      color: white;
+      text-align: center;
+      text-decoration: none;
+      border-radius: var(--radius-md);
+      font-weight: 600;
+      font-size: 1.125rem;
+      margin-top: 1rem;
+      transition: background 0.15s;
+    }
+    .buy-button:hover {
+      background: var(--primary-hover);
+    }
+    .product-description {
+      color: var(--text-secondary);
+      line-height: 1.7;
+    }
+    .specs-section {
+      margin-top: 2rem;
+    }
+    .specs-title {
+      font-size: 1.25rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+    .specs-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+    }
+    .spec-item {
+      padding: 1rem;
+      background: var(--card-bg);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-md);
+    }
+    .spec-label {
+      font-size: 0.75rem;
+      color: var(--text-secondary);
+      text-transform: uppercase;
+      margin-bottom: 0.25rem;
+    }
+    .spec-value {
+      font-weight: 600;
+    }
+    /* Use Case Scores */
+    .scores-section {
+      margin-top: 2rem;
+    }
+    .scores-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1rem;
+    }
+    .score-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-md);
+      padding: 1.25rem;
+      text-align: center;
+    }
+    .score-card-icon {
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+    .score-card-label {
+      font-size: 0.875rem;
+      color: var(--text-secondary);
+      margin-bottom: 0.5rem;
+    }
+    .score-card-value {
+      font-size: 1.5rem;
+      font-weight: 700;
+    }
+    .score-excellent { color: #059669; }
+    .score-good { color: #3b82f6; }
+    .score-average { color: #f59e0b; }
+    .score-poor { color: #ef4444; }
+    .score-stars {
+      color: #f59e0b;
+      font-size: 1.1rem;
+      letter-spacing: -1px;
+    }
+    /* Performance Specs */
+    .perf-specs-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+    .perf-spec-item {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      padding: 1rem;
+      background: var(--card-bg);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-md);
+    }
+    .perf-spec-icon {
+      width: 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #f1f5f9;
+      border-radius: var(--radius-md);
+      font-size: 1.25rem;
+    }
+    .perf-spec-info {
+      flex: 1;
+    }
+    .perf-spec-label {
+      font-size: 0.75rem;
+      color: var(--text-secondary);
+      text-transform: uppercase;
+    }
+    .perf-spec-value {
+      font-weight: 600;
+    }
+    .vrr-badges {
+      display: flex;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+      margin-top: 0.25rem;
+    }
+    .vrr-badge {
+      font-size: 0.7rem;
+      padding: 0.2rem 0.5rem;
+      background: #dbeafe;
+      color: #1e40af;
+      border-radius: 4px;
+      font-weight: 500;
+    }
+    /* Price History */
+    .price-history-section {
+      background: var(--card-bg);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-lg);
+      padding: 1.5rem;
+    }
+    .price-history-summary {
+      display: flex;
+      gap: 2rem;
+      margin-bottom: 1.5rem;
+    }
+    .price-history-stat {
+      display: flex;
+      flex-direction: column;
+    }
+    .price-history-stat .stat-label {
+      font-size: 0.75rem;
+      color: var(--text-secondary);
+      text-transform: uppercase;
+    }
+    .price-history-stat .stat-value {
+      font-size: 1.25rem;
+      font-weight: 600;
+    }
+    .price-history-stat.trend-down .stat-value {
+      color: var(--success-color);
+    }
+    .price-history-stat.trend-up .stat-value {
+      color: var(--danger-color);
+    }
+    .price-chart {
+      height: 120px;
+      position: relative;
+      background: #f8fafc;
+      border-radius: var(--radius-md);
+      padding: 1rem;
+    }
+    .price-chart-svg {
+      width: 100%;
+      height: 100%;
+    }
+    .price-chart-labels {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.75rem;
+      color: var(--text-secondary);
+      margin-top: 0.5rem;
+    }
+    .price-history-note {
+      font-size: 0.75rem;
+      color: var(--text-secondary);
+      text-align: center;
+      margin-top: 1rem;
+    }
+
+    @media (max-width: 768px) {
+      .product-grid {
+        grid-template-columns: 1fr;
+      }
+      .specs-grid {
+        grid-template-columns: 1fr;
+      }
+      .scores-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .perf-specs-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="header-content">
+      <a href="index.html" class="logo">
+        <img src="logo.jpg" alt="TV School" class="logo-img">
+      </a>
+    </div>
+  </header>
+
+  <!-- Product Content -->
+  <main class="product-container">
+    <a href="index.html" class="back-link">← Back to all TVs</a>
+
+    <div id="product-content">
+      <div class="loading">
+        <div class="loading-spinner"></div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <p>
+        <strong>TV School</strong> - Finding the best TV deals using our
+        <a href="methodology.html">proprietary fair value model</a>.
+      </p>
+      <p style="margin-top: 0.5rem;">
+        <a href="https://sovrn.co/38v6xua" rel="nofollow">Affiliate Disclosure</a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="data.js"></script>
+  <script>
+    // Helper function to get score color class
+    function getScoreClass(score) {
+      if (score >= 8.5) return 'score-excellent';
+      if (score >= 7.5) return 'score-good';
+      if (score >= 6.5) return 'score-average';
+      return 'score-poor';
+    }
+
+    // Convert score to quality tier (2-5 scale, no 1-star ratings)
+    function getQualityTier(score) {
+      if (score >= 8.5) return { tier: 5, label: 'Excellent', stars: '★★★★★' };
+      if (score >= 8.0) return { tier: 4, label: 'Very Good', stars: '★★★★☆' };
+      if (score >= 7.0) return { tier: 3, label: 'Good', stars: '★★★☆☆' };
+      return { tier: 2, label: 'Average', stars: '★★☆☆☆' };
+    }
+
+    // Convert use case score to stars (8.0 = 4 stars, 8.6+ = 5 stars)
+    function getUseCaseStars(score) {
+      if (score >= 8.6) return { stars: '★★★★★', tier: 5 };
+      if (score >= 8.0) return { stars: '★★★★☆', tier: 4 };
+      if (score >= 7.0) return { stars: '★★★☆☆', tier: 3 };
+      return { stars: '★★☆☆☆', tier: 2 };
+    }
+
+    // Render use-case scores section
+    function renderUseCaseScores(tv) {
+      const scores = tv.useCaseScores;
+      if (!scores) return '';
+
+      const scoreItems = [
+        { key: 'movieScore', label: 'Movies', icon: '🎬' },
+        { key: 'tvShowScore', label: 'TV Shows', icon: '📺' },
+        { key: 'sportsScore', label: 'Sports', icon: '⚽' },
+        { key: 'gamingScore', label: 'Gaming', icon: '🎮' },
+        { key: 'hdrGamingScore', label: 'HDR Gaming', icon: '✨' },
+        { key: 'pcMonitorScore', label: 'PC Monitor', icon: '💻' },
+      ];
+
+      const validScores = scoreItems.filter(item => scores[item.key] != null);
+      if (validScores.length === 0) return '';
+
+      return `
+        <section class="scores-section">
+          <h2 class="specs-title">Best For</h2>
+          <div class="scores-grid">
+            ${validScores.map(item => {
+              const { stars } = getUseCaseStars(scores[item.key]);
+              return `
+              <div class="score-card">
+                <div class="score-card-icon">${item.icon}</div>
+                <div class="score-card-label">${item.label}</div>
+                <div class="score-card-value score-stars">
+                  ${stars}
+                </div>
+              </div>
+            `}).join('')}
+          </div>
+        </section>
+      `;
+    }
+
+    // Render "Also available in" section for related sizes
+    function renderRelatedSizes(tv) {
+      const relatedTvs = TVDataUtils.getRelatedSizes(tv);
+      if (relatedTvs.length === 0) return '';
+
+      return `
+        <div class="related-sizes">
+          <span class="related-sizes-label">Also available in:</span>
+          ${relatedTvs.map(related => {
+            const relatedPrice = TVDataUtils.getBestPrice(related);
+            return `<a href="product.html?id=${related.id}" class="related-size-link">
+              ${related.size}" <span class="related-size-price">${TVDataUtils.formatPrice(relatedPrice?.currentPrice || 0)}</span>
+            </a>`;
+          }).join('')}
+        </div>
+      `;
+    }
+
+    // Render price history section
+    function renderPriceHistory(tv) {
+      const history = tv.priceHistory;
+      if (!history || history.length === 0) return '';
+
+      // If only 1 data point, show a "tracking started" message
+      if (history.length === 1) {
+        return `
+          <section class="specs-section price-history-section">
+            <h2 class="specs-title">Price History</h2>
+            <div class="price-history-summary">
+              <div class="price-history-stat">
+                <span class="stat-label">Current Price</span>
+                <span class="stat-value">$${history[0].price.toLocaleString()}</span>
+              </div>
+              <div class="price-history-stat">
+                <span class="stat-label">Tracking Since</span>
+                <span class="stat-value">${history[0].date}</span>
+              </div>
+            </div>
+            <div class="price-history-note">
+              Price tracking just started. Check back soon to see price trends over time.
+            </div>
+          </section>
+        `;
+      }
+
+      // Get min/max for scaling
+      const prices = history.map(h => h.price);
+      const minPrice = Math.min(...prices);
+      const maxPrice = Math.max(...prices);
+      const range = maxPrice - minPrice || 1;
+
+      // Calculate percentage height for each point
+      const points = history.map((h, i) => {
+        const heightPct = ((h.price - minPrice) / range) * 80 + 10; // 10-90% range
+        const leftPct = (i / (history.length - 1)) * 100;
+        return { ...h, heightPct, leftPct };
+      });
+
+      // Create SVG path for the line
+      const pathPoints = points.map((p, i) => {
+        const x = (i / (history.length - 1)) * 100;
+        const y = 100 - p.heightPct;
+        return `${i === 0 ? 'M' : 'L'} ${x} ${y}`;
+      }).join(' ');
+
+      const firstPrice = history[0].price;
+      const lastPrice = history[history.length - 1].price;
+      const change = lastPrice - firstPrice;
+      const changePct = ((change / firstPrice) * 100).toFixed(1);
+      const trendClass = change < 0 ? 'trend-down' : change > 0 ? 'trend-up' : 'trend-flat';
+
+      return `
+        <section class="specs-section price-history-section">
+          <h2 class="specs-title">Price History</h2>
+          <div class="price-history-summary">
+            <div class="price-history-stat">
+              <span class="stat-label">Starting</span>
+              <span class="stat-value">$${firstPrice.toLocaleString()}</span>
+            </div>
+            <div class="price-history-stat">
+              <span class="stat-label">Current</span>
+              <span class="stat-value">$${lastPrice.toLocaleString()}</span>
+            </div>
+            <div class="price-history-stat ${trendClass}">
+              <span class="stat-label">Change</span>
+              <span class="stat-value">${change >= 0 ? '+' : ''}$${change.toLocaleString()} (${change >= 0 ? '+' : ''}${changePct}%)</span>
+            </div>
+          </div>
+          <div class="price-chart">
+            <svg viewBox="0 0 100 100" preserveAspectRatio="none" class="price-chart-svg">
+              <path d="${pathPoints}" fill="none" stroke="var(--primary-color)" stroke-width="2" vector-effect="non-scaling-stroke"/>
+              ${points.map(p => `<circle cx="${p.leftPct}" cy="${100 - p.heightPct}" r="3" fill="var(--primary-color)" vector-effect="non-scaling-stroke"/>`).join('')}
+            </svg>
+            <div class="price-chart-labels">
+              <span>${history[0].date}</span>
+              <span>${history[history.length - 1].date}</span>
+            </div>
+          </div>
+          <div class="price-history-note">
+            Tracking ${history.length} price points since ${history[0].date}
+          </div>
+        </section>
+      `;
+    }
+
+    // Render performance specs section
+    function renderPerformanceSpecs(tv) {
+      const perf = tv.performanceSpecs;
+      if (!perf) return '';
+
+      const specItems = [];
+
+      if (perf.peakBrightnessHdr) {
+        specItems.push({
+          icon: '☀️',
+          label: 'Peak Brightness (HDR)',
+          value: `${perf.peakBrightnessHdr} nits`
+        });
+      }
+
+      if (perf.contrastRatio) {
+        specItems.push({
+          icon: '🌓',
+          label: 'Contrast Ratio',
+          value: perf.contrastRatio
+        });
+      }
+
+      if (perf.dimmingZones) {
+        specItems.push({
+          icon: '🔲',
+          label: 'Local Dimming Zones',
+          value: perf.dimmingZones.toLocaleString()
+        });
+      }
+
+      if (perf.responseTime) {
+        specItems.push({
+          icon: '⚡',
+          label: 'Response Time',
+          value: `${perf.responseTime} ms`
+        });
+      }
+
+      // VRR Support (special rendering)
+      if (perf.vrrSupport && perf.vrrSupport.length > 0) {
+        specItems.push({
+          icon: '🔄',
+          label: 'VRR Support',
+          value: perf.vrrSupport,
+          isVrr: true
+        });
+      }
+
+      if (perf.hdmi21) {
+        specItems.push({
+          icon: '🔌',
+          label: 'HDMI 2.1',
+          value: 'Yes'
+        });
+      }
+
+      if (specItems.length === 0) return '';
+
+      return `
+        <section class="specs-section">
+          <h2 class="specs-title">Performance Specs</h2>
+          <div class="perf-specs-grid">
+            ${specItems.map(item => `
+              <div class="perf-spec-item">
+                <div class="perf-spec-icon">${item.icon}</div>
+                <div class="perf-spec-info">
+                  <div class="perf-spec-label">${item.label}</div>
+                  ${item.isVrr
+                    ? `<div class="vrr-badges">${item.value.map(v => `<span class="vrr-badge">${v}</span>`).join('')}</div>`
+                    : `<div class="perf-spec-value">${item.value}</div>`
+                  }
+                </div>
+              </div>
+            `).join('')}
+          </div>
+        </section>
+      `;
+    }
+
+    // Get TV ID from URL
+    const urlParams = new URLSearchParams(window.location.search);
+    const tvId = urlParams.get('id');
+
+    // Find the TV
+    const tv = TV_DATA.tvs.find(t => t.id === tvId);
+
+    if (tv) {
+      const bestPrice = TVDataUtils.getBestPrice(tv);
+      const dealScore = TVDataUtils.calculateDealScore(tv);
+      const verdict = TVDataUtils.getVerdict(dealScore);
+      const retailer = TVDataUtils.getRetailer(bestPrice?.retailerId);
+
+      // Update page title and meta tags for SEO
+      document.title = `${tv.fullName} - ${verdict.subtitle} | TV School`;
+
+      // Update meta description
+      const metaDesc = document.querySelector('meta[name="description"]');
+      if (metaDesc) {
+        metaDesc.content = `${tv.fullName} - Currently ${TVDataUtils.formatPrice(bestPrice?.currentPrice)} at ${retailer?.name}. Grade: ${verdict.text} (${verdict.subtitle}). ${tv.panelType} panel, ${tv.size}" screen.`;
+      }
+
+      // Update Open Graph tags
+      document.querySelector('meta[property="og:title"]')?.setAttribute('content', `${tv.fullName} - ${verdict.subtitle}`);
+      document.querySelector('meta[property="og:description"]')?.setAttribute('content', `${verdict.text} grade deal at ${TVDataUtils.formatPrice(bestPrice?.currentPrice)}. ${tv.panelType} ${tv.size}" TV.`);
+      document.querySelector('meta[property="og:image"]')?.setAttribute('content', tv.image);
+
+      // Add Product structured data
+      const productSchema = {
+        "@context": "https://schema.org",
+        "@type": "Product",
+        "name": tv.fullName,
+        "description": tv.description || `${tv.brand} ${tv.model} ${tv.size}" ${tv.panelType} TV`,
+        "image": tv.image,
+        "brand": {
+          "@type": "Brand",
+          "name": tv.brand
+        },
+        "offers": {
+          "@type": "Offer",
+          "price": bestPrice?.currentPrice,
+          "priceCurrency": "USD",
+          "availability": bestPrice?.inStock ? "https://schema.org/InStock" : "https://schema.org/OutOfStock",
+          "seller": {
+            "@type": "Organization",
+            "name": retailer?.name
+          }
+        },
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": getQualityTier(tv.rtingsScore).tier,
+          "bestRating": 5,
+          "worstRating": 1
+        }
+      };
+
+      const scriptTag = document.createElement('script');
+      scriptTag.type = 'application/ld+json';
+      scriptTag.textContent = JSON.stringify(productSchema);
+      document.head.appendChild(scriptTag);
+
+      document.getElementById('product-content').innerHTML = `
+        <div class="product-grid">
+          <div class="product-image">
+            <img src="${tv.image}" alt="${tv.fullName}">
+          </div>
+          <div class="product-info">
+            <div>
+              <div class="product-brand">${tv.brand}</div>
+              <h1 class="product-title">${tv.fullName}</h1>
+            </div>
+
+            <div class="product-badges">
+              <span class="badge badge-panel">${tv.panelType}</span>
+              <span class="badge badge-size">${tv.size}" Screen</span>
+              <span class="badge badge-quality">${getQualityTier(tv.rtingsScore).stars} ${getQualityTier(tv.rtingsScore).label}</span>
+              <span class="deal-badge ${verdict.class}"><span class="grade">${verdict.text}</span><span class="grade-subtitle">${verdict.subtitle}</span></span>
+            </div>
+
+            ${renderRelatedSizes(tv)}
+
+            <div class="price-section">
+              <div>
+                <span class="price-main">${TVDataUtils.formatPrice(bestPrice?.currentPrice || 0)}</span>
+                ${bestPrice?.retailPrice > bestPrice?.currentPrice
+                  ? `<span class="price-retail">${TVDataUtils.formatPrice(bestPrice.retailPrice)}</span>`
+                  : ''}
+              </div>
+              <div class="price-meta">
+                at ${retailer?.name || 'Unknown'} • ${bestPrice?.inStock ? 'In Stock' : 'Out of Stock'}
+              </div>
+              <div class="deal-info">
+                <div>
+                  <div style="font-size: 0.75rem; color: var(--text-secondary);">Projected Price</div>
+                  <div style="font-weight: 600;">${TVDataUtils.formatPrice(tv.fairValue)}</div>
+                </div>
+                <div>
+                  <div style="font-size: 0.75rem; color: var(--text-secondary);">Deal Score</div>
+                  <div style="font-weight: 600; color: ${dealScore >= 0 ? 'var(--success-color)' : 'var(--danger-color)'};">
+                    ${TVDataUtils.formatDealScore(dealScore)}
+                  </div>
+                </div>
+              </div>
+              <a href="${bestPrice?.url || '#'}" target="_blank" class="buy-button">
+                Buy at ${retailer?.name || 'Retailer'}
+              </a>
+            </div>
+
+            <p class="product-description">${tv.description || ''}</p>
+          </div>
+        </div>
+
+        <section class="specs-section">
+          <h2 class="specs-title">Specifications</h2>
+          <div class="specs-grid">
+            <div class="spec-item">
+              <div class="spec-label">Screen Size</div>
+              <div class="spec-value">${tv.size}"</div>
+            </div>
+            <div class="spec-item">
+              <div class="spec-label">Resolution</div>
+              <div class="spec-value">${tv.resolution}</div>
+            </div>
+            <div class="spec-item">
+              <div class="spec-label">Panel Type</div>
+              <div class="spec-value">${tv.panelType}</div>
+            </div>
+            <div class="spec-item">
+              <div class="spec-label">Refresh Rate</div>
+              <div class="spec-value">${tv.specs?.refreshRate || 'N/A'}</div>
+            </div>
+            <div class="spec-item">
+              <div class="spec-label">HDR Support</div>
+              <div class="spec-value">${tv.specs?.hdr || 'N/A'}</div>
+            </div>
+            <div class="spec-item">
+              <div class="spec-label">Smart Platform</div>
+              <div class="spec-value">${tv.specs?.smartPlatform || 'N/A'}</div>
+            </div>
+            <div class="spec-item">
+              <div class="spec-label">HDMI Ports</div>
+              <div class="spec-value">${tv.specs?.hdmiPorts || 'N/A'} (${tv.specs?.hdmi21Ports || 0} HDMI 2.1)</div>
+            </div>
+            <div class="spec-item">
+              <div class="spec-label">Speakers</div>
+              <div class="spec-value">${tv.specs?.speakers || 'N/A'}</div>
+            </div>
+          </div>
+        </section>
+
+        ${renderUseCaseScores(tv)}
+
+        ${renderPerformanceSpecs(tv)}
+
+        ${renderPriceHistory(tv)}
+      `;
+    } else {
+      document.getElementById('product-content').innerHTML = `
+        <div class="no-results">
+          <div class="no-results-icon">🔍</div>
+          <h3 class="no-results-title">TV not found</h3>
+          <p class="no-results-text">The TV you're looking for doesn't exist.</p>
+          <a href="index.html" class="buy-button" style="max-width: 200px; margin: 1rem auto;">Back to Home</a>
+        </div>
+      `;
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,9 @@
+# TV School robots.txt
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://tvschool.academy/sitemap.xml
+
+# Crawl-delay for politeness
+Crawl-delay: 1
