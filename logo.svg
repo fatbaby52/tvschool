@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="none">
+  <!-- TV Screen -->
+  <rect x="4" y="12" width="40" height="28" rx="3" fill="#2563eb" />
+  <rect x="7" y="15" width="34" height="22" rx="2" fill="#1e40af" />
+  <rect x="9" y="17" width="30" height="18" rx="1" fill="#60a5fa" />
+
+  <!-- TV Stand -->
+  <path d="M18 40h12v3H18z" fill="#2563eb" />
+  <path d="M14 43h20v2H14z" fill="#1e40af" />
+
+  <!-- Graduation Cap -->
+  <path d="M24 2L8 10l16 8 16-8L24 2z" fill="#1e293b" />
+  <path d="M24 18v6" stroke="#1e293b" stroke-width="2" stroke-linecap="round" />
+  <path d="M12 12v8c0 2 5.4 5 12 5s12-3 12-5v-8" fill="none" stroke="#1e293b" stroke-width="2" />
+  <circle cx="24" cy="24" r="1.5" fill="#fbbf24" />
+
+  <!-- Tassel -->
+  <path d="M38 10v6" stroke="#fbbf24" stroke-width="2" stroke-linecap="round" />
+  <circle cx="38" cy="17" r="2" fill="#fbbf24" />
+</svg>

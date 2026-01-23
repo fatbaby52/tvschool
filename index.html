@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Primary Meta Tags -->
+  <title>TV School - Find the Best TV Deals | Compare TV Prices & Values</title>
+  <meta name="title" content="TV School - Find the Best TV Deals | Compare TV Prices & Values">
+  <meta name="description" content="Compare TV prices and find the best deals with TV School's proprietary fair value model. We analyze screen size, panel technology, and quality scores to grade every TV from A to F.">
+  <meta name="keywords" content="TV deals, best TV prices, TV comparison, OLED TV deals, QLED TV deals, Mini LED TV, Samsung TV, LG TV, Sony TV, TCL TV, TV buying guide">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="TV School">
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://tvschool.academy/">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://tvschool.academy/">
+  <meta property="og:title" content="TV School - Find the Best TV Deals">
+  <meta property="og:description" content="Compare TV prices and find the best deals. We grade every TV from A to F based on our fair value model.">
+  <meta property="og:image" content="https://tvschool.academy/logo.jpg">
+  <meta property="og:site_name" content="TV School">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://tvschool.academy/">
+  <meta property="twitter:title" content="TV School - Find the Best TV Deals">
+  <meta property="twitter:description" content="Compare TV prices and find the best deals. We grade every TV from A to F based on our fair value model.">
+  <meta property="twitter:image" content="https://tvschool.academy/logo.jpg">
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "TV School",
+    "url": "https://tvschool.academy/",
+    "description": "Compare TV prices and find the best deals with our proprietary fair value model",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://tvschool.academy/?search={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "TV School",
+    "url": "https://tvschool.academy/",
+    "logo": "https://tvschool.academy/logo.jpg",
+    "description": "TV School helps consumers find the best TV deals by comparing prices against fair market values."
+  }
+  </script>
+
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="logo.jpg">
+  <link rel="apple-touch-icon" href="logo.jpg">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="header-content">
+      <a href="index.html" class="logo">
+        <img src="logo.jpg" alt="TV School" class="logo-img">
+      </a>
+    </div>
+  </header>
+  <div class="stats-bar">
+    <div class="header-stat">
+      <span>TVs tracked:</span>
+      <strong id="total-count">0</strong>
+    </div>
+    <div class="header-stat">
+      <span>Great deals:</span>
+      <strong id="deals-count">0</strong>
+    </div>
+    <a href="methodology.html" class="header-stat header-link">
+      <span>How it works</span>
+      <strong>→</strong>
+    </a>
+  </div>
+
+  <!-- Deal of the Day -->
+  <section class="deal-of-day" id="deal-of-day">
+    <!-- Populated by JS -->
+  </section>
+
+  <!-- Main Content -->
+  <main class="main-container">
+    <!-- Sidebar Filters -->
+    <aside class="sidebar">
+      <h2 class="sidebar-title">
+        <span>🔍</span>
+        <span>Filters</span>
+      </h2>
+
+      <!-- Screen Size -->
+      <div class="filter-section">
+        <label class="filter-label">Screen Size</label>
+        <div id="size-histogram" class="size-histogram">
+          <!-- Populated by JS -->
+        </div>
+        <div class="filter-range size-range">
+          <div class="size-slider-container">
+            <input type="range" id="min-size-slider" min="40" max="120" value="40" step="5">
+            <input type="range" id="max-size-slider" min="40" max="120" value="120" step="5">
+          </div>
+          <div class="filter-range-labels">
+            <span id="min-size-label">40"</span>
+            <span>to</span>
+            <span id="max-size-label">120"</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Panel Type -->
+      <div class="filter-section">
+        <label class="filter-label">Panel Type</label>
+        <div id="panel-filters" class="filter-options">
+          <!-- Populated by JS -->
+        </div>
+      </div>
+
+      <!-- Brand -->
+      <div class="filter-section">
+        <label class="filter-label">Brand</label>
+        <div id="brand-filters" class="filter-options">
+          <!-- Populated by JS -->
+        </div>
+      </div>
+
+      <!-- Grade Filter -->
+      <div class="filter-section">
+        <label class="filter-label">Minimum Grade</label>
+        <div class="filter-range grade-range">
+          <input type="range" id="grade-slider" min="0" max="4" value="0" step="1">
+          <div class="filter-range-labels grade-labels">
+            <span>All</span>
+            <span>D</span>
+            <span>C</span>
+            <span>B</span>
+            <span>A</span>
+          </div>
+          <div class="grade-current" id="grade-value">All Grades</div>
+        </div>
+      </div>
+
+      <!-- Price Range -->
+      <div class="filter-section">
+        <label class="filter-label">Price Range</label>
+        <div style="display: flex; gap: 0.5rem; align-items: center;">
+          <input type="number" id="min-price" class="filter-input" placeholder="Min $" style="width: 50%;">
+          <span>-</span>
+          <input type="number" id="max-price" class="filter-input" placeholder="Max $" style="width: 50%;">
+        </div>
+      </div>
+
+      <!-- Use Case Filters -->
+      <div class="filter-section">
+        <label class="filter-label">Best For</label>
+        <div id="use-case-filters" class="filter-options">
+          <button class="filter-chip" data-filter="useCase" data-value="gaming">🎮 Gaming</button>
+          <button class="filter-chip" data-filter="useCase" data-value="movies">🎬 Movies</button>
+          <button class="filter-chip" data-filter="useCase" data-value="sports">⚽ Sports</button>
+          <button class="filter-chip" data-filter="useCase" data-value="tvshows">📺 TV Shows</button>
+          <button class="filter-chip" data-filter="useCase" data-value="pc">💻 PC Monitor</button>
+        </div>
+      </div>
+
+      <!-- Clear Filters -->
+      <button id="clear-filters" class="clear-filters">
+        Clear All Filters
+      </button>
+    </aside>
+
+    <!-- TV Grid -->
+    <section class="tv-grid-section">
+      <div class="tv-grid-header">
+        <div>
+          <h1 class="tv-grid-title">Best TV Deals</h1>
+          <span id="tv-count" class="tv-count">0 TVs</span>
+        </div>
+        <select id="sort-select" class="sort-select">
+          <option value="dealScore">Best Deal First</option>
+          <option value="priceLow">Price: Low to High</option>
+          <option value="priceHigh">Price: High to Low</option>
+          <option value="rtingsScore">RTINGS Score</option>
+          <option value="size">Screen Size</option>
+        </select>
+      </div>
+      <div id="tv-grid" class="tv-grid">
+        <div class="loading">
+          <div class="loading-spinner"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <p>
+        <strong>TV School</strong> - Finding the best TV deals.
+      </p>
+      <p style="margin-top: 0.5rem;">
+        Prices updated daily. Affiliate links may be used.
+        <a href="https://sovrn.co/38v6xua" rel="nofollow">Affiliate Disclosure</a>
+      </p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
