@@ -1,9 +1,8 @@
-# TV School robots.txt
+# Laptop School robots.txt
 User-agent: *
 Allow: /
 
-# Sitemaps
-Sitemap: https://tvschool.academy/tv-deal-finder/sitemap.xml
+# Sitemap
 Sitemap: https://tvschool.academy/laptop-deal-finder/sitemap.xml
 
 # Crawl-delay for politeness
