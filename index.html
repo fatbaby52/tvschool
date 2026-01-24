@@ -64,9 +64,14 @@
   <!-- Header -->
   <header class="header">
     <div class="header-content">
-      <a href="index.html" class="logo">
-        <img src="logo.jpg" alt="TV School" class="logo-img">
-      </a>
+      <div class="logo-group">
+        <a href="index.html" class="logo logo-active">
+          <img src="logo.jpg" alt="TV School" class="logo-img">
+        </a>
+        <a href="../laptop-deal-finder/index.html" class="logo logo-sister" title="Laptop School">
+          <img src="../laptop-deal-finder/Laptop Logo.png" alt="Laptop School" class="logo-img">
+        </a>
+      </div>
     </div>
   </header>
 
@@ -94,8 +99,8 @@
     </a>
   </div>
 
-  <!-- SEO Intro Section (visible to search engines without JS) -->
-  <section class="seo-intro">
+  <!-- SEO Intro Section (hidden visually but available for SEO) -->
+  <section class="seo-intro seo-intro-hidden">
     <div class="seo-intro-content">
       <h2>Find the Best TV Deals with Our Value Prediction Model</h2>
       <p>TV School analyzes TV prices across major retailers and compares them to our proprietary value prediction model. We grade every TV from A (great deal) to F (not recommended) based on screen size, panel technology, brand, and professional review scores. Stop overpaying for TVs — find the best deals on OLED, Mini LED, QLED, and LED televisions from top brands.</p>
@@ -120,113 +125,152 @@
     </div>
   </section>
 
+  <!-- AI-Powered Search Section -->
+  <section class="ai-search-section" id="ai-search-section">
+    <div class="ai-search-container">
+      <h2 class="ai-search-title">What will you use your TV for?</h2>
+
+      <!-- Use Case Buttons -->
+      <div class="use-case-buttons">
+        <button class="use-case-btn" data-use-case="movies">
+          <span class="use-case-icon">🎬</span>
+          <span class="use-case-label">Movies</span>
+        </button>
+        <button class="use-case-btn" data-use-case="gaming">
+          <span class="use-case-icon">🎮</span>
+          <span class="use-case-label">Gaming</span>
+        </button>
+        <button class="use-case-btn" data-use-case="sports">
+          <span class="use-case-icon">⚽</span>
+          <span class="use-case-label">Sports</span>
+        </button>
+        <button class="use-case-btn" data-use-case="tvshows">
+          <span class="use-case-icon">📺</span>
+          <span class="use-case-label">TV Shows</span>
+        </button>
+        <button class="use-case-btn" data-use-case="pc">
+          <span class="use-case-icon">💻</span>
+          <span class="use-case-label">PC Monitor</span>
+        </button>
+      </div>
+
+      <!-- AI Text Input -->
+      <div class="ai-input-wrapper">
+        <input type="text" id="ai-search-input" class="ai-search-input"
+               placeholder="Or describe what you need... (e.g., '65 inch for movies under $1500' or 'best for PS5 gaming')">
+        <button id="ai-search-btn" class="ai-search-btn">
+          <span class="ai-search-btn-icon">✨</span>
+          <span>Find TVs</span>
+        </button>
+      </div>
+      <div id="ai-search-status" class="ai-search-status"></div>
+
+      <!-- Filters Toggle -->
+      <button id="filters-toggle" class="filters-toggle">
+        <span>Or use our advanced filters</span>
+        <span class="filters-toggle-icon">▼</span>
+      </button>
+    </div>
+  </section>
+
+  <!-- Advanced Filters Panel (collapsible, above deal of day) -->
+  <section class="filters-panel filters-collapsed" id="filters-panel">
+    <div class="filters-panel-content">
+      <div class="filters-grid">
+        <!-- Row 1: Quick filters -->
+        <div class="filter-section">
+          <label class="filter-label">Panel Type</label>
+          <div id="panel-filters" class="filter-options">
+            <!-- Populated by JS -->
+          </div>
+        </div>
+
+        <div class="filter-section">
+          <label class="filter-label">Brand</label>
+          <div id="brand-filters" class="filter-options">
+            <!-- Populated by JS -->
+          </div>
+        </div>
+
+        <div class="filter-section">
+          <label class="filter-label">Screen Size</label>
+          <div id="size-histogram" class="size-histogram">
+            <!-- Populated by JS -->
+          </div>
+          <div class="filter-range size-range">
+            <div class="size-slider-container">
+              <input type="range" id="min-size-slider" min="40" max="120" value="40" step="5">
+              <input type="range" id="max-size-slider" min="40" max="120" value="120" step="5">
+            </div>
+            <div class="filter-range-labels">
+              <span id="min-size-label">40"</span>
+              <span>to</span>
+              <span id="max-size-label">120"</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="filter-section">
+          <label class="filter-label">Price Range</label>
+          <div style="display: flex; gap: 0.5rem; align-items: center;">
+            <input type="number" id="min-price" class="filter-input" placeholder="Min $" style="width: 50%;">
+            <span>-</span>
+            <input type="number" id="max-price" class="filter-input" placeholder="Max $" style="width: 50%;">
+          </div>
+        </div>
+
+        <!-- Row 2: More filters -->
+        <div class="filter-section">
+          <label class="filter-label">Minimum Grade</label>
+          <div class="filter-range grade-range">
+            <input type="range" id="grade-slider" min="0" max="4" value="0" step="1">
+            <div class="filter-range-labels grade-labels">
+              <span>All</span>
+              <span>D</span>
+              <span>C</span>
+              <span>B</span>
+              <span>A</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="filter-section">
+          <label class="filter-label">Minimum Refresh Rate</label>
+          <div class="filter-range refresh-range">
+            <input type="range" id="refresh-slider" min="0" max="2" value="0" step="1">
+            <div class="filter-range-labels refresh-labels">
+              <span>60Hz</span>
+              <span>120Hz</span>
+              <span>144Hz</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="filter-section">
+          <label class="filter-label">Best For</label>
+          <div id="use-case-filters" class="filter-options">
+            <button class="filter-chip" data-filter="useCase" data-value="gaming">🎮 Gaming</button>
+            <button class="filter-chip" data-filter="useCase" data-value="movies">🎬 Movies</button>
+            <button class="filter-chip" data-filter="useCase" data-value="sports">⚽ Sports</button>
+          </div>
+        </div>
+
+        <div class="filter-section filter-section-clear">
+          <button id="clear-filters" class="clear-filters">
+            Clear All Filters
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- Deal of the Day -->
   <section class="deal-of-day" id="deal-of-day">
     <!-- Populated by JS -->
   </section>
 
   <!-- Main Content -->
-  <main class="main-container">
-    <!-- Sidebar Filters -->
-    <aside class="sidebar">
-      <h2 class="sidebar-title">
-        <span>🔍</span>
-        <span>Filters</span>
-      </h2>
-
-      <!-- Screen Size -->
-      <div class="filter-section">
-        <label class="filter-label">Screen Size</label>
-        <div id="size-histogram" class="size-histogram">
-          <!-- Populated by JS -->
-        </div>
-        <div class="filter-range size-range">
-          <div class="size-slider-container">
-            <input type="range" id="min-size-slider" min="40" max="120" value="40" step="5">
-            <input type="range" id="max-size-slider" min="40" max="120" value="120" step="5">
-          </div>
-          <div class="filter-range-labels">
-            <span id="min-size-label">40"</span>
-            <span>to</span>
-            <span id="max-size-label">120"</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- Panel Type -->
-      <div class="filter-section">
-        <label class="filter-label">Panel Type</label>
-        <div id="panel-filters" class="filter-options">
-          <!-- Populated by JS -->
-        </div>
-      </div>
-
-      <!-- Brand -->
-      <div class="filter-section">
-        <label class="filter-label">Brand</label>
-        <div id="brand-filters" class="filter-options">
-          <!-- Populated by JS -->
-        </div>
-      </div>
-
-      <!-- Grade Filter -->
-      <div class="filter-section">
-        <label class="filter-label">Minimum Grade</label>
-        <div class="filter-range grade-range">
-          <input type="range" id="grade-slider" min="0" max="4" value="0" step="1">
-          <div class="filter-range-labels grade-labels">
-            <span>All</span>
-            <span>D</span>
-            <span>C</span>
-            <span>B</span>
-            <span>A</span>
-          </div>
-          <div class="grade-current" id="grade-value">All Grades</div>
-        </div>
-      </div>
-
-      <!-- Refresh Rate -->
-      <div class="filter-section">
-        <label class="filter-label">Minimum Refresh Rate</label>
-        <div class="filter-range refresh-range">
-          <input type="range" id="refresh-slider" min="0" max="2" value="0" step="1">
-          <div class="filter-range-labels refresh-labels">
-            <span>60Hz</span>
-            <span>120Hz</span>
-            <span>144Hz</span>
-          </div>
-          <div class="refresh-current" id="refresh-value">All Refresh Rates</div>
-        </div>
-      </div>
-
-      <!-- Price Range -->
-      <div class="filter-section">
-        <label class="filter-label">Price Range</label>
-        <div style="display: flex; gap: 0.5rem; align-items: center;">
-          <input type="number" id="min-price" class="filter-input" placeholder="Min $" style="width: 50%;">
-          <span>-</span>
-          <input type="number" id="max-price" class="filter-input" placeholder="Max $" style="width: 50%;">
-        </div>
-      </div>
-
-      <!-- Use Case Filters -->
-      <div class="filter-section">
-        <label class="filter-label">Best For</label>
-        <div id="use-case-filters" class="filter-options">
-          <button class="filter-chip" data-filter="useCase" data-value="gaming">🎮 Gaming</button>
-          <button class="filter-chip" data-filter="useCase" data-value="movies">🎬 Movies</button>
-          <button class="filter-chip" data-filter="useCase" data-value="sports">⚽ Sports</button>
-          <button class="filter-chip" data-filter="useCase" data-value="tvshows">📺 TV Shows</button>
-          <button class="filter-chip" data-filter="useCase" data-value="pc">💻 PC Monitor</button>
-        </div>
-      </div>
-
-      <!-- Clear Filters -->
-      <button id="clear-filters" class="clear-filters">
-        Clear All Filters
-      </button>
-    </aside>
-
+  <main class="main-container main-container-full">
     <!-- TV Grid -->
     <section class="tv-grid-section">
       <div class="tv-grid-header">
@@ -266,8 +310,8 @@
 
   <!-- Scripts -->
   <!-- For local testing, use local data.js. For production, use CDN -->
-  <script src="data.js"></script>
+  <script src="data.js?v=1"></script>
   <!-- <script src="https://cdn.jsdelivr.net/gh/fatbaby52/tvschool-data@master/data.js"></script> -->
-  <script src="app.js"></script>
+  <script src="app.js?v=2"></script>
 </body>
 </html>

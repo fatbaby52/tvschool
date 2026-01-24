@@ -185,6 +185,9 @@ function init() {
   // Initialize filters
   initializeFilters();
 
+  // Initialize AI search and new UI
+  initializeAISearch();
+
   // Render size histogram
   renderSizeHistogram();
 
@@ -775,6 +778,230 @@ function updateStats() {
   if (dealsEl) {
     dealsEl.textContent = greatDeals;
   }
+}
+
+// ===== AI SEARCH & NEW UI =====
+
+// Rate limiting for AI queries
+const AI_RATE_LIMIT = {
+  maxQueries: 5,
+  windowMs: 10 * 60 * 1000, // 10 minutes
+  queries: []
+};
+
+function canMakeAIQuery() {
+  const now = Date.now();
+  AI_RATE_LIMIT.queries = AI_RATE_LIMIT.queries.filter(t => now - t < AI_RATE_LIMIT.windowMs);
+  return AI_RATE_LIMIT.queries.length < AI_RATE_LIMIT.maxQueries;
+}
+
+function recordAIQuery() {
+  AI_RATE_LIMIT.queries.push(Date.now());
+}
+
+function getTimeUntilReset() {
+  if (AI_RATE_LIMIT.queries.length === 0) return 0;
+  const oldest = Math.min(...AI_RATE_LIMIT.queries);
+  const resetTime = oldest + AI_RATE_LIMIT.windowMs;
+  return Math.max(0, Math.ceil((resetTime - Date.now()) / 60000));
+}
+
+function initializeAISearch() {
+  // Filters toggle
+  const filtersToggle = document.getElementById('filters-toggle');
+  const filtersPanel = document.getElementById('filters-panel');
+
+  if (filtersToggle && filtersPanel) {
+    filtersToggle.addEventListener('click', () => {
+      const isExpanded = filtersPanel.classList.contains('filters-expanded');
+      if (isExpanded) {
+        filtersPanel.classList.remove('filters-expanded');
+        filtersPanel.classList.add('filters-collapsed');
+        filtersToggle.classList.remove('expanded');
+      } else {
+        filtersPanel.classList.remove('filters-collapsed');
+        filtersPanel.classList.add('filters-expanded');
+        filtersToggle.classList.add('expanded');
+      }
+    });
+  }
+
+  // Use case buttons (new UI)
+  document.querySelectorAll('.use-case-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const useCase = btn.dataset.useCase;
+
+      // Toggle active state
+      document.querySelectorAll('.use-case-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+
+      // Apply use case filter
+      AppState.filters.useCase = useCase;
+      applyFilters();
+    });
+  });
+
+  // AI search input
+  const aiInput = document.getElementById('ai-search-input');
+  const aiBtn = document.getElementById('ai-search-btn');
+
+  if (aiInput && aiBtn) {
+    aiInput.addEventListener('keypress', (e) => {
+      if (e.key === 'Enter') {
+        handleAISearch();
+      }
+    });
+
+    aiBtn.addEventListener('click', handleAISearch);
+  }
+}
+
+async function handleAISearch() {
+  const aiInput = document.getElementById('ai-search-input');
+  const aiBtn = document.getElementById('ai-search-btn');
+  const aiStatus = document.getElementById('ai-search-status');
+
+  const query = aiInput.value.trim();
+  if (!query) {
+    aiStatus.textContent = 'Please describe what you\'re looking for';
+    aiStatus.className = 'ai-search-status error';
+    return;
+  }
+
+  if (!canMakeAIQuery()) {
+    const waitTime = getTimeUntilReset();
+    aiStatus.innerHTML = `🤖 <em>Our AI assistant is taking a quick coffee break!</em><br>Try again in ${waitTime} minute${waitTime !== 1 ? 's' : ''}, or use the filters below.`;
+    aiStatus.className = 'ai-search-status error';
+    return;
+  }
+
+  aiBtn.disabled = true;
+  aiStatus.textContent = '✨ Thinking...';
+  aiStatus.className = 'ai-search-status';
+
+  try {
+    const filters = parseQueryKeywords(query);
+    recordAIQuery();
+    applyAIFilters(filters);
+
+    aiStatus.textContent = `Found ${AppState.filteredTvs.length} TVs matching your needs`;
+    aiStatus.className = 'ai-search-status success';
+  } catch (error) {
+    console.error('AI search error:', error);
+    aiStatus.textContent = 'Something went wrong. Try using the filters instead.';
+    aiStatus.className = 'ai-search-status error';
+  } finally {
+    aiBtn.disabled = false;
+  }
+}
+
+// Keyword-based query parsing
+function parseQueryKeywords(query) {
+  const q = query.toLowerCase();
+  const filters = {};
+
+  // Price detection
+  const priceMatch = q.match(/under\s*\$?(\d+)/i) || q.match(/\$?(\d+)\s*budget/i) || q.match(/max\s*\$?(\d+)/i);
+  if (priceMatch) {
+    filters.maxPrice = parseInt(priceMatch[1]);
+  }
+
+  const minPriceMatch = q.match(/over\s*\$?(\d+)/i) || q.match(/at least\s*\$?(\d+)/i);
+  if (minPriceMatch) {
+    filters.minPrice = parseInt(minPriceMatch[1]);
+  }
+
+  // Size detection
+  const sizeMatch = q.match(/(\d{2,3})\s*(?:inch|in|")/i);
+  if (sizeMatch) {
+    const size = parseInt(sizeMatch[1]);
+    filters.minSize = size - 5;
+    filters.maxSize = size + 5;
+  }
+
+  // Use case detection
+  if (q.includes('gaming') || q.includes('game') || q.includes('ps5') || q.includes('xbox')) {
+    filters.useCase = 'gaming';
+  } else if (q.includes('movie') || q.includes('film') || q.includes('cinema') || q.includes('hdr')) {
+    filters.useCase = 'movies';
+  } else if (q.includes('sport') || q.includes('football') || q.includes('soccer') || q.includes('basketball')) {
+    filters.useCase = 'sports';
+  } else if (q.includes('tv show') || q.includes('streaming') || q.includes('netflix')) {
+    filters.useCase = 'tvshows';
+  } else if (q.includes('pc') || q.includes('computer') || q.includes('monitor')) {
+    filters.useCase = 'pc';
+  }
+
+  // Panel type detection
+  if (q.includes('oled')) {
+    filters.panelType = 'OLED';
+  } else if (q.includes('mini led') || q.includes('miniled')) {
+    filters.panelType = 'Mini LED';
+  } else if (q.includes('qled')) {
+    filters.panelType = 'QLED';
+  }
+
+  // Brand detection
+  if (q.includes('samsung')) {
+    filters.brand = 'Samsung';
+  } else if (q.includes('lg')) {
+    filters.brand = 'LG';
+  } else if (q.includes('sony')) {
+    filters.brand = 'Sony';
+  } else if (q.includes('tcl')) {
+    filters.brand = 'TCL';
+  } else if (q.includes('hisense')) {
+    filters.brand = 'Hisense';
+  }
+
+  return filters;
+}
+
+function applyAIFilters(filters) {
+  // Clear existing filters
+  clearFilters();
+
+  // Apply parsed filters
+  if (filters.maxPrice) {
+    const maxPriceInput = document.getElementById('max-price');
+    if (maxPriceInput) {
+      maxPriceInput.value = filters.maxPrice;
+      AppState.filters.maxPrice = filters.maxPrice;
+    }
+  }
+
+  if (filters.minPrice) {
+    const minPriceInput = document.getElementById('min-price');
+    if (minPriceInput) {
+      minPriceInput.value = filters.minPrice;
+      AppState.filters.minPrice = filters.minPrice;
+    }
+  }
+
+  if (filters.minSize) {
+    AppState.filters.minSize = filters.minSize;
+  }
+
+  if (filters.maxSize) {
+    AppState.filters.maxSize = filters.maxSize;
+  }
+
+  if (filters.useCase) {
+    AppState.filters.useCase = filters.useCase;
+    document.querySelectorAll('.use-case-btn').forEach(btn => {
+      btn.classList.toggle('active', btn.dataset.useCase === filters.useCase);
+    });
+  }
+
+  if (filters.panelType) {
+    AppState.filters.panelTypes = [filters.panelType];
+  }
+
+  if (filters.brand) {
+    AppState.filters.brands = [filters.brand];
+  }
+
+  applyFilters();
 }
 
 // Initialize on DOM load
