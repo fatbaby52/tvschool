@@ -1,0 +1,14 @@
+# Redirect root to TV site
+/   /tv-deal-finder/   301
+
+# Handle direct access to old URLs (before restructure)
+/index.html   /tv-deal-finder/index.html   301
+/app.js   /tv-deal-finder/app.js   301
+/data.js   /tv-deal-finder/data.js   301
+/styles.css   /tv-deal-finder/styles.css   301
+/methodology.html   /tv-deal-finder/methodology.html   301
+/disclosure.html   /tv-deal-finder/disclosure.html   301
+/privacy.html   /tv-deal-finder/privacy.html   301
+/product.html   /tv-deal-finder/product.html   301
+/guides/*   /tv-deal-finder/guides/:splat   301
+/products/*   /tv-deal-finder/products/:splat   301

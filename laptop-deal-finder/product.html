@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Primary Meta Tags (dynamically updated by JS) -->
+  <title>Laptop Details - Laptop School</title>
+  <meta name="description" content="View laptop details, pricing, and deal score on Laptop School.">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph (dynamically updated by JS) -->
+  <meta property="og:type" content="product">
+  <meta property="og:site_name" content="Laptop School">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="logo.jpg">
+  <link rel="apple-touch-icon" href="logo.jpg">
+  <style>
+    .product-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 2rem;
+    }
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      color: var(--primary-color);
+      text-decoration: none;
+      margin-bottom: 1.5rem;
+    }
+    .back-link:hover {
+      text-decoration: underline;
+    }
+    .product-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+    }
+    .product-image {
+      background: #f1f5f9;
+      border-radius: var(--radius-lg);
+      padding: 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .product-image img {
+      max-width: 100%;
+      max-height: 400px;
+      object-fit: contain;
+    }
+    .product-info {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+    .product-brand {
+      font-size: 0.875rem;
+      color: var(--text-secondary);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    .product-title {
+      font-size: 2rem;
+      font-weight: 700;
+      line-height: 1.2;
+    }
+    .product-badges {
+      display: flex;
+      gap: 0.75rem;
+      flex-wrap: wrap;
+    }
+    .badge {
+      padding: 0.5rem 1rem;
+      border-radius: 9999px;
+      font-size: 0.875rem;
+      font-weight: 500;
+    }
+    .badge-display {
+      background: #e0e7ff;
+      color: #3730a3;
+    }
+    .badge-size {
+      background: #f3f4f6;
+      color: #374151;
+    }
+    .badge-quality {
+      background: #fef3c7;
+      color: #92400e;
+    }
+    .price-section {
+      background: var(--card-bg);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-lg);
+      padding: 1.5rem;
+    }
+    .price-grade-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+    .price-main-group {
+      display: flex;
+      align-items: baseline;
+    }
+    .price-main {
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: var(--success-color);
+    }
+    .price-retail {
+      font-size: 1.25rem;
+      color: var(--text-secondary);
+      text-decoration: line-through;
+      margin-left: 0.75rem;
+    }
+    .price-meta {
+      margin-top: 0.5rem;
+      color: var(--text-secondary);
+      font-size: 0.875rem;
+    }
+    .deal-info {
+      margin-top: 1rem;
+      padding-top: 1rem;
+      border-top: 1px solid var(--border-color);
+      display: flex;
+      justify-content: space-between;
+    }
+    .buy-button {
+      display: inline-block;
+      width: 100%;
+      padding: 1rem 2rem;
+      background: var(--primary-color);
+      color: white;
+      text-align: center;
+      text-decoration: none;
+      border-radius: var(--radius-md);
+      font-weight: 600;
+      font-size: 1.125rem;
+      margin-top: 1rem;
+      transition: background 0.15s;
+    }
+    .buy-button:hover {
+      filter: brightness(0.9);
+    }
+    .buy-button-grade {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.25rem 0.5rem;
+      border-radius: 4px;
+      font-size: 0.75rem;
+      font-weight: 700;
+      margin-left: 0.5rem;
+      white-space: nowrap;
+    }
+    .buy-button-grade.verdict-a { background: #dcfce7; color: #166534; }
+    .buy-button-grade.verdict-b { background: #d1fae5; color: #065f46; }
+    .buy-button-grade.verdict-c { background: #fef3c7; color: #92400e; }
+    .buy-button-grade.verdict-d { background: #fed7aa; color: #9a3412; }
+    .buy-button-grade.verdict-f { background: #fee2e2; color: #991b1b; }
+    .affiliate-note {
+      font-size: 0.75rem;
+      color: var(--text-secondary);
+      margin-top: 0.75rem;
+      text-align: center;
+    }
+    .affiliate-note a {
+      color: var(--text-secondary);
+      text-decoration: underline;
+    }
+    .product-description {
+      color: var(--text-secondary);
+      line-height: 1.7;
+    }
+    .specs-section {
+      margin-top: 2rem;
+    }
+    .specs-title {
+      font-size: 1.25rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+    .specs-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+    }
+    .spec-item {
+      padding: 1rem;
+      background: var(--card-bg);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-md);
+      position: relative;
+    }
+    .spec-item.has-tooltip {
+      cursor: help;
+    }
+    .spec-label {
+      font-size: 0.75rem;
+      color: var(--text-secondary);
+      text-transform: uppercase;
+      margin-bottom: 0.25rem;
+      display: flex;
+      align-items: center;
+      gap: 0.35rem;
+    }
+    .info-icon {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      background: var(--border-color);
+      color: var(--text-secondary);
+      font-size: 0.6rem;
+      font-weight: 700;
+    }
+    .spec-value {
+      font-weight: 600;
+    }
+    .spec-tooltip {
+      display: none;
+      position: absolute;
+      bottom: calc(100% + 8px);
+      left: 0;
+      right: 0;
+      background: #1e293b;
+      color: white;
+      padding: 0.75rem;
+      border-radius: var(--radius-md);
+      font-size: 0.8rem;
+      font-weight: 400;
+      line-height: 1.5;
+      z-index: 100;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+    .spec-tooltip::after {
+      content: '';
+      position: absolute;
+      top: 100%;
+      left: 20px;
+      border: 6px solid transparent;
+      border-top-color: #1e293b;
+    }
+    .spec-item.has-tooltip:hover .spec-tooltip {
+      display: block;
+    }
+    /* Use Case Scores */
+    .scores-section {
+      margin-top: 2rem;
+    }
+    .scores-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1rem;
+    }
+    .score-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-md);
+      padding: 1.25rem;
+      text-align: center;
+    }
+    .score-card-icon {
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+    .score-card-label {
+      font-size: 0.875rem;
+      color: var(--text-secondary);
+      margin-bottom: 0.5rem;
+    }
+    .score-card-value {
+      font-size: 1.5rem;
+      font-weight: 700;
+    }
+    .score-stars {
+      color: #f59e0b;
+      font-size: 1.1rem;
+      letter-spacing: -1px;
+    }
+    /* Benchmark Section */
+    .benchmark-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+    .benchmark-item {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      padding: 1rem;
+      background: var(--card-bg);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-md);
+    }
+    .benchmark-icon {
+      width: 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #f1f5f9;
+      border-radius: var(--radius-md);
+      font-size: 1.25rem;
+    }
+    .benchmark-info {
+      flex: 1;
+    }
+    .benchmark-label {
+      font-size: 0.75rem;
+      color: var(--text-secondary);
+      text-transform: uppercase;
+    }
+    .benchmark-value {
+      font-weight: 600;
+    }
+    .benchmark-bar {
+      height: 4px;
+      background: #e2e8f0;
+      border-radius: 2px;
+      margin-top: 0.25rem;
+      overflow: hidden;
+    }
+    .benchmark-bar-fill {
+      height: 100%;
+      background: var(--primary-color);
+      border-radius: 2px;
+    }
+
+    @media (max-width: 768px) {
+      .product-grid {
+        grid-template-columns: 1fr;
+      }
+      .specs-grid {
+        grid-template-columns: 1fr;
+      }
+      .scores-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .benchmark-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="header-content">
+      <a href="index.html" class="logo">
+        <img src="logo.jpg" alt="Laptop School" class="logo-img">
+      </a>
+    </div>
+  </header>
+
+  <!-- Product Content -->
+  <main class="product-container">
+    <a href="index.html" class="back-link">&larr; Back to all Laptops</a>
+
+    <div id="product-content">
+      <div class="loading">
+        <div class="loading-spinner"></div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <p>
+        <strong>Laptop School</strong> - Helping you find the best laptop deals.
+      </p>
+      <p style="margin-top: 0.5rem;">
+        Prices updated daily. Affiliate links may be used.
+      </p>
+      <p style="margin-top: 0.5rem;">
+        <a href="disclosure.html">Affiliate Disclosure</a> &middot; <a href="privacy.html">Privacy Policy</a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="data.js?v=6"></script>
+  <script>
+    // Laptop data utilities
+    const LaptopDataUtils = {
+      getBestPrice(laptop) {
+        if (!laptop.prices || laptop.prices.length === 0) return null;
+        const inStock = laptop.prices.filter(p => p.inStock);
+        const available = inStock.length > 0 ? inStock : laptop.prices;
+        return available.reduce((best, current) =>
+          current.currentPrice < best.currentPrice ? current : best
+        );
+      },
+
+      calculateDealScore(laptop) {
+        const bestPrice = this.getBestPrice(laptop);
+        if (!bestPrice || !laptop.fairValue) return 0;
+        return (laptop.fairValue - bestPrice.currentPrice) / laptop.fairValue;
+      },
+
+      getVerdict(dealScore) {
+        // Match thresholds with app.js
+        if (dealScore >= 0.35) return { text: 'A', subtitle: 'Great Deal', class: 'verdict-a' };
+        if (dealScore > 0) return { text: 'B', subtitle: 'Good Deal', class: 'verdict-b' };
+        if (dealScore >= -0.15) return { text: 'C', subtitle: 'Fair Price', class: 'verdict-c' };
+        if (dealScore >= -0.35) return { text: 'D', subtitle: 'Overpriced', class: 'verdict-d' };
+        return { text: 'F', subtitle: 'Bad Deal', class: 'verdict-f' };
+      },
+
+      formatPrice(price) {
+        if (price == null) return 'N/A';
+        return '$' + price.toLocaleString('en-US', { minimumFractionDigits: 0, maximumFractionDigits: 0 });
+      },
+
+      formatDealScore(score) {
+        const pct = (score * 100).toFixed(1);
+        return score >= 0 ? `+${pct}%` : `${pct}%`;
+      },
+
+      getRetailer(retailerId) {
+        const retailers = {
+          bestbuy: { name: 'Best Buy', color: '#0046be' },
+          amazon: { name: 'Amazon', color: '#ff9900' },
+          walmart: { name: 'Walmart', color: '#0071dc' },
+          dell: { name: 'Dell', color: '#007db8' },
+          lenovo: { name: 'Lenovo', color: '#e2231a' },
+          hp: { name: 'HP', color: '#0096d6' },
+          apple: { name: 'Apple', color: '#000000' },
+          newegg: { name: 'Newegg', color: '#f7931e' }
+        };
+        return retailers[retailerId] || { name: retailerId, color: '#6b7280' };
+      }
+    };
+
+    // Get quality tier
+    function getQualityTier(score) {
+      if (score >= 90) return { tier: 5, label: 'Excellent', stars: '★★★★★' };
+      if (score >= 85) return { tier: 4, label: 'Very Good', stars: '★★★★☆' };
+      if (score >= 80) return { tier: 3, label: 'Good', stars: '★★★☆☆' };
+      if (score >= 70) return { tier: 2, label: 'Average', stars: '★★☆☆☆' };
+      return { tier: 1, label: 'Below Average', stars: '★☆☆☆☆' };
+    }
+
+    // Get use case stars
+    function getUseCaseStars(score) {
+      if (score >= 9.0) return { stars: '★★★★★', tier: 5 };
+      if (score >= 8.0) return { stars: '★★★★☆', tier: 4 };
+      if (score >= 7.0) return { stars: '★★★☆☆', tier: 3 };
+      if (score >= 6.0) return { stars: '★★☆☆☆', tier: 2 };
+      return { stars: '★☆☆☆☆', tier: 1 };
+    }
+
+    // Render spec item with tooltip
+    function renderSpecItem(label, value, tooltip) {
+      return `
+        <div class="spec-item has-tooltip">
+          <div class="spec-label">${label} <span class="info-icon">?</span></div>
+          <div class="spec-value">${value}</div>
+          <div class="spec-tooltip">${tooltip}</div>
+        </div>
+      `;
+    }
+
+    // Render use case scores
+    function renderUseCaseScores(laptop) {
+      const scores = laptop.useCaseScores;
+      if (!scores) return '';
+
+      const scoreItems = [
+        { key: 'gaming', label: 'Gaming', icon: '🎮' },
+        { key: 'productivity', label: 'Productivity', icon: '💼' },
+        { key: 'contentCreation', label: 'Content Creation', icon: '🎬' },
+        { key: 'student', label: 'Student', icon: '📚' },
+        { key: 'portable', label: 'Portable', icon: '✈️' }
+      ];
+
+      const validScores = scoreItems.filter(item => scores[item.key] != null);
+      if (validScores.length === 0) return '';
+
+      return `
+        <section class="scores-section">
+          <h2 class="specs-title">Best For</h2>
+          <div class="scores-grid">
+            ${validScores.map(item => {
+              const { stars } = getUseCaseStars(scores[item.key]);
+              return `
+              <div class="score-card">
+                <div class="score-card-icon">${item.icon}</div>
+                <div class="score-card-label">${item.label}</div>
+                <div class="score-card-value score-stars">${stars}</div>
+              </div>
+            `}).join('')}
+          </div>
+        </section>
+      `;
+    }
+
+    // Render benchmarks section
+    function renderBenchmarks(laptop) {
+      const benchmarks = laptop.benchmarks;
+      if (!benchmarks) return '';
+
+      const items = [];
+
+      if (benchmarks.cinebenchR23Multi) {
+        const pct = Math.min(100, (benchmarks.cinebenchR23Multi / 25000) * 100);
+        items.push({
+          icon: '🔧',
+          label: 'Cinebench R23 Multi',
+          value: benchmarks.cinebenchR23Multi.toLocaleString(),
+          pct
+        });
+      }
+
+      if (benchmarks.cinebenchR23Single) {
+        const pct = Math.min(100, (benchmarks.cinebenchR23Single / 2200) * 100);
+        items.push({
+          icon: '⚡',
+          label: 'Cinebench R23 Single',
+          value: benchmarks.cinebenchR23Single.toLocaleString(),
+          pct
+        });
+      }
+
+      if (benchmarks.timeSpyGraphics) {
+        const pct = Math.min(100, (benchmarks.timeSpyGraphics / 15000) * 100);
+        items.push({
+          icon: '🎮',
+          label: '3DMark Time Spy',
+          value: benchmarks.timeSpyGraphics.toLocaleString(),
+          pct
+        });
+      }
+
+      if (benchmarks.gaming1080pAvgFps) {
+        const pct = Math.min(100, (benchmarks.gaming1080pAvgFps / 144) * 100);
+        items.push({
+          icon: '🖥️',
+          label: 'Avg FPS @ 1080p',
+          value: benchmarks.gaming1080pAvgFps + ' FPS',
+          pct
+        });
+      }
+
+      if (benchmarks.gaming1440pAvgFps) {
+        const pct = Math.min(100, (benchmarks.gaming1440pAvgFps / 100) * 100);
+        items.push({
+          icon: '🖥️',
+          label: 'Avg FPS @ 1440p',
+          value: benchmarks.gaming1440pAvgFps + ' FPS',
+          pct
+        });
+      }
+
+      if (items.length === 0) return '';
+
+      return `
+        <section class="specs-section">
+          <h2 class="specs-title">Benchmarks</h2>
+          <div class="benchmark-grid">
+            ${items.map(item => `
+              <div class="benchmark-item">
+                <div class="benchmark-icon">${item.icon}</div>
+                <div class="benchmark-info">
+                  <div class="benchmark-label">${item.label}</div>
+                  <div class="benchmark-value">${item.value}</div>
+                  <div class="benchmark-bar">
+                    <div class="benchmark-bar-fill" style="width: ${item.pct}%"></div>
+                  </div>
+                </div>
+              </div>
+            `).join('')}
+          </div>
+        </section>
+      `;
+    }
+
+    // Render buy button
+    function renderBuyButton(laptop) {
+      const bestPrice = LaptopDataUtils.getBestPrice(laptop);
+      if (!bestPrice) return '';
+
+      const retailer = LaptopDataUtils.getRetailer(bestPrice.retailerId);
+      const grade = LaptopDataUtils.getVerdict(LaptopDataUtils.calculateDealScore(laptop));
+
+      return `
+        <a href="${bestPrice.url || '#'}" target="_blank" class="buy-button" style="background: ${retailer.color};">
+          Buy at ${retailer.name} - ${LaptopDataUtils.formatPrice(bestPrice.currentPrice)}
+          <span class="buy-button-grade ${grade.class}">${grade.text} - ${grade.subtitle}</span>
+        </a>
+        <div class="affiliate-note">We may earn a commission when you buy through links on our site. <a href="disclosure.html">Learn more</a></div>
+      `;
+    }
+
+    // Get laptop ID from URL
+    const urlParams = new URLSearchParams(window.location.search);
+    const laptopId = urlParams.get('id');
+
+    // Find the laptop
+    const laptop = typeof LAPTOP_DATA !== 'undefined' ? LAPTOP_DATA.laptops.find(l => l.id === laptopId) : null;
+
+    if (laptop) {
+      const bestPrice = LaptopDataUtils.getBestPrice(laptop);
+      const dealScore = LaptopDataUtils.calculateDealScore(laptop);
+      const verdict = LaptopDataUtils.getVerdict(dealScore);
+      const retailer = LaptopDataUtils.getRetailer(bestPrice?.retailerId);
+      const quality = getQualityTier(laptop.notebookcheckScore || 80);
+
+      // Update page title
+      document.title = `${laptop.fullName} - ${verdict.subtitle} | Laptop School`;
+
+      // Update meta description
+      const metaDesc = document.querySelector('meta[name="description"]');
+      if (metaDesc) {
+        metaDesc.content = `${laptop.fullName} - Currently ${LaptopDataUtils.formatPrice(bestPrice?.currentPrice)} at ${retailer?.name}. Grade: ${verdict.text} (${verdict.subtitle}). ${laptop.cpu}, ${laptop.gpu}.`;
+      }
+
+      document.getElementById('product-content').innerHTML = `
+        <div class="product-grid">
+          <div class="product-image">
+            <img src="${laptop.image || 'https://via.placeholder.com/400x300?text=Laptop'}" alt="${laptop.fullName}">
+          </div>
+          <div class="product-info">
+            <div>
+              <div class="product-brand">${laptop.brand}</div>
+              <h1 class="product-title">${laptop.fullName}</h1>
+            </div>
+
+            <div class="product-badges">
+              <span class="badge badge-display">${laptop.displayType || 'LCD'}</span>
+              <span class="badge badge-size">${laptop.screenSize}" Screen</span>
+              <span class="badge badge-quality">${quality.stars} ${quality.label}</span>
+            </div>
+
+            <div class="price-section">
+              <div class="price-main-group">
+                <span class="price-main">${LaptopDataUtils.formatPrice(bestPrice?.currentPrice || 0)}</span>
+                ${bestPrice?.retailPrice > bestPrice?.currentPrice
+                  ? `<span class="price-retail">${LaptopDataUtils.formatPrice(bestPrice.retailPrice)}</span>`
+                  : ''}
+              </div>
+              <div class="price-meta">
+                at ${retailer?.name || 'Unknown'} &bull; ${bestPrice?.inStock ? 'In Stock' : 'Out of Stock'}
+              </div>
+              <div class="deal-info">
+                <div>
+                  <div style="font-size: 0.75rem; color: var(--text-secondary);">Projected Price</div>
+                  <div style="font-weight: 600;">${LaptopDataUtils.formatPrice(laptop.fairValue)}</div>
+                </div>
+                <div>
+                  <div style="font-size: 0.75rem; color: var(--text-secondary);">Deal Score</div>
+                  <div style="font-weight: 600; color: ${dealScore >= 0 ? 'var(--success-color)' : 'var(--danger-color)'};">
+                    ${LaptopDataUtils.formatDealScore(dealScore)}
+                  </div>
+                </div>
+              </div>
+              ${renderBuyButton(laptop)}
+            </div>
+
+            <p class="product-description">${laptop.description || ''}</p>
+          </div>
+        </div>
+
+        <section class="specs-section">
+          <h2 class="specs-title">Specifications</h2>
+          <div class="specs-grid">
+            ${renderSpecItem('Processor', laptop.cpu, 'The CPU handles general computing tasks. Higher core counts and clock speeds mean better performance for multitasking and demanding applications.')}
+            ${renderSpecItem('Graphics', laptop.gpu, 'The GPU handles graphics rendering. Dedicated GPUs are essential for gaming and content creation. Integrated graphics work for basic tasks.')}
+            ${renderSpecItem('Memory', laptop.ram + 'GB ' + (laptop.ramSpeed || 'DDR5'), 'RAM affects how many applications you can run simultaneously. 16GB is the sweet spot for most users, 32GB+ for power users.')}
+            ${renderSpecItem('Storage', laptop.storage, 'SSD storage is faster than HDD. NVMe SSDs are the fastest. 512GB is good for most users, 1TB+ for content creators.')}
+            ${renderSpecItem('Display', laptop.screenSize + '" ' + laptop.resolution + ' ' + (laptop.displayType || 'IPS'), 'Higher resolution means sharper text and images. OLED offers perfect blacks, IPS has good viewing angles.')}
+            ${renderSpecItem('Refresh Rate', (laptop.refreshRate || 60) + 'Hz', 'Higher refresh rates mean smoother motion. 120Hz+ is ideal for gaming, 60Hz is fine for productivity.')}
+            ${laptop.batteryLife ? renderSpecItem('Battery Life', laptop.batteryLife + ' hours', 'Real-world battery life varies based on usage. Light web browsing lasts longer than gaming or video editing.') : ''}
+            ${laptop.weight ? renderSpecItem('Weight', laptop.weight + ' kg', 'Lighter laptops are easier to carry. Under 1.5kg is very portable, 2kg+ is desktop replacement territory.') : ''}
+          </div>
+        </section>
+
+        ${renderUseCaseScores(laptop)}
+
+        ${renderBenchmarks(laptop)}
+      `;
+    } else {
+      document.getElementById('product-content').innerHTML = `
+        <div class="no-results">
+          <div class="no-results-icon">🔍</div>
+          <h3 class="no-results-title">Laptop not found</h3>
+          <p class="no-results-text">The laptop you're looking for doesn't exist.</p>
+          <a href="index.html" class="buy-button" style="max-width: 200px; margin: 1rem auto;">Back to Home</a>
+        </div>
+      `;
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Primary Meta Tags -->
+  <title>Laptop School - Find the Best Laptop Deals | Compare Laptop Prices & Values</title>
+  <meta name="title" content="Laptop School - Find the Best Laptop Deals | Compare Laptop Prices & Values">
+  <meta name="description" content="Compare laptop prices and find the best deals with Laptop School's performance-based value model. We analyze CPU, GPU, benchmarks, and real-world performance to grade every laptop from A to F.">
+  <meta name="keywords" content="laptop deals, best laptop prices, laptop comparison, gaming laptop deals, ultrabook deals, laptop buying guide, best laptop for students, best laptop for gaming">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Laptop School">
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://laptopschool.academy/">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://laptopschool.academy/">
+  <meta property="og:title" content="Laptop School - Find the Best Laptop Deals">
+  <meta property="og:description" content="Compare laptop prices and find the best deals. We grade every laptop from A to F based on our performance-based value model.">
+  <meta property="og:image" content="https://laptopschool.academy/logo.jpg">
+  <meta property="og:site_name" content="Laptop School">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://laptopschool.academy/">
+  <meta property="twitter:title" content="Laptop School - Find the Best Laptop Deals">
+  <meta property="twitter:description" content="Compare laptop prices and find the best deals. We grade every laptop from A to F based on our performance-based value model.">
+  <meta property="twitter:image" content="https://laptopschool.academy/logo.jpg">
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Laptop School",
+    "url": "https://laptopschool.academy/",
+    "description": "Compare laptop prices and find the best deals with our performance-based value model",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://laptopschool.academy/?search={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Laptop School",
+    "url": "https://laptopschool.academy/",
+    "logo": "https://laptopschool.academy/logo.jpg",
+    "description": "Laptop School helps consumers find the best laptop deals by comparing prices against performance-based fair values."
+  }
+  </script>
+
+  <link rel="stylesheet" href="styles.css?v=3">
+  <link rel="icon" href="logo.jpg">
+  <link rel="apple-touch-icon" href="logo.jpg">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="header-content">
+      <div class="logo-group">
+        <a href="index.html" class="logo logo-active">
+          <img src="Laptop Logo.png?v=2" alt="Laptop School" class="logo-img">
+        </a>
+        <a href="../tv-deal-finder/index.html" class="logo logo-sister" title="TV School">
+          <img src="../tv-deal-finder/logo.jpg" alt="TV School" class="logo-img">
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Affiliate Disclosure Banner -->
+  <div class="affiliate-banner">
+    We may earn a commission when you buy through links on our site. <a href="disclosure.html">Learn more</a>
+  </div>
+
+  <div class="stats-bar">
+    <div class="header-stat">
+      <span>Laptops tracked:</span>
+      <strong id="total-count">0</strong>
+    </div>
+    <div class="header-stat">
+      <span>Great deals:</span>
+      <strong id="deals-count">0</strong>
+    </div>
+    <a href="methodology.html" class="header-stat header-link">
+      <span>How it works</span>
+      <strong>&rarr;</strong>
+    </a>
+    <a href="guides/index.html" class="header-stat header-link">
+      <span>Buying Guides</span>
+      <strong>&rarr;</strong>
+    </a>
+  </div>
+
+  <!-- SEO Intro Section (hidden visually but available for SEO) -->
+  <section class="seo-intro seo-intro-hidden">
+    <div class="seo-intro-content">
+      <h2>Find the Best Laptop Deals with Our Performance-Based Value Model</h2>
+      <p>Laptop School analyzes laptop prices across major retailers and compares them to our performance-based value model. We grade every laptop from A (great deal) to F (not recommended) based on CPU benchmarks, GPU performance, build quality, and real-world use case scores. Stop overpaying for laptops &mdash; find the best deals on gaming laptops, ultrabooks, and productivity machines from top brands.</p>
+      <div class="seo-features">
+        <div class="seo-feature">
+          <strong>Brands We Track</strong>
+          <span>Dell, Lenovo, HP, ASUS, Apple, Razer</span>
+        </div>
+        <div class="seo-feature">
+          <strong>Use Cases</strong>
+          <span>Gaming, Productivity, Student, Portable</span>
+        </div>
+        <div class="seo-feature">
+          <strong>Screen Sizes</strong>
+          <span>13" to 17" Laptops</span>
+        </div>
+        <div class="seo-feature">
+          <strong>Updated Daily</strong>
+          <span>Fresh prices every day</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- AI-Powered Search Section -->
+  <section class="ai-search-section" id="ai-search-section">
+    <div class="ai-search-container">
+      <h2 class="ai-search-title">What will you use your laptop for?</h2>
+
+      <!-- Use Case Buttons -->
+      <div class="use-case-buttons">
+        <button class="use-case-btn" data-preset="gaming">
+          <span class="use-case-icon">🎮</span>
+          <span class="use-case-label">Gaming</span>
+        </button>
+        <button class="use-case-btn" data-preset="productivity">
+          <span class="use-case-icon">💼</span>
+          <span class="use-case-label">Work</span>
+        </button>
+        <button class="use-case-btn" data-preset="content-creation">
+          <span class="use-case-icon">🎬</span>
+          <span class="use-case-label">Creative</span>
+        </button>
+        <button class="use-case-btn" data-preset="student">
+          <span class="use-case-icon">📚</span>
+          <span class="use-case-label">Student</span>
+        </button>
+        <button class="use-case-btn" data-preset="portable">
+          <span class="use-case-icon">✈️</span>
+          <span class="use-case-label">Portable</span>
+        </button>
+      </div>
+
+      <!-- AI Text Input -->
+      <div class="ai-input-wrapper">
+        <input type="text" id="ai-search-input" class="ai-search-input"
+               placeholder="Or describe what you need... (e.g., 'gaming laptop under $1200' or 'light laptop for coding')">
+        <button id="ai-search-btn" class="ai-search-btn">
+          <span class="ai-search-btn-icon">✨</span>
+          <span>Find Laptops</span>
+        </button>
+      </div>
+      <div id="ai-search-status" class="ai-search-status"></div>
+
+      <!-- Filters Toggle -->
+      <button id="filters-toggle" class="filters-toggle">
+        <span>Or use our advanced filters</span>
+        <span class="filters-toggle-icon">▼</span>
+      </button>
+    </div>
+  </section>
+
+  <!-- Use Case Presets (hidden, kept for JS compatibility) -->
+  <section class="use-case-presets use-case-presets-hidden" id="use-case-presets">
+    <div class="presets-header">
+      <h2>What will you use it for?</h2>
+      <p>Select a use case to see the best laptops for your needs</p>
+    </div>
+    <div class="presets-grid">
+      <button class="preset-btn" data-preset="gaming">
+        <span class="preset-icon">🎮</span>
+        <span class="preset-label">Gaming</span>
+        <span class="preset-desc">High FPS, fast response</span>
+      </button>
+      <button class="preset-btn" data-preset="productivity">
+        <span class="preset-icon">💼</span>
+        <span class="preset-label">Productivity</span>
+        <span class="preset-desc">Multi-tasking, office work</span>
+      </button>
+      <button class="preset-btn" data-preset="content-creation">
+        <span class="preset-icon">🎬</span>
+        <span class="preset-label">Content Creation</span>
+        <span class="preset-desc">Video editing, 3D rendering</span>
+      </button>
+      <button class="preset-btn" data-preset="student">
+        <span class="preset-icon">📚</span>
+        <span class="preset-label">Student</span>
+        <span class="preset-desc">Battery life, portability</span>
+      </button>
+      <button class="preset-btn" data-preset="portable">
+        <span class="preset-icon">✈️</span>
+        <span class="preset-label">Portable</span>
+        <span class="preset-desc">Light weight, all-day battery</span>
+      </button>
+    </div>
+  </section>
+
+  <!-- Advanced Filters Panel (collapsible, above deal of day) -->
+  <section class="filters-panel filters-collapsed" id="filters-sidebar">
+    <div class="filters-panel-content">
+      <div class="filters-grid">
+        <!-- Row 1: Quick filters -->
+        <div class="filter-section">
+          <label class="filter-label">Brand</label>
+          <div id="brand-filters" class="filter-options">
+            <!-- Populated by JS -->
+          </div>
+        </div>
+
+        <div class="filter-section">
+          <label class="filter-label">CPU</label>
+          <div id="cpu-filters" class="filter-options">
+            <button class="filter-chip" data-filter="cpuBrand" data-value="Intel">Intel</button>
+            <button class="filter-chip" data-filter="cpuBrand" data-value="AMD">AMD</button>
+            <button class="filter-chip" data-filter="cpuBrand" data-value="Apple">Apple Silicon</button>
+          </div>
+        </div>
+
+        <div class="filter-section">
+          <label class="filter-label">GPU</label>
+          <div id="gpu-filters" class="filter-options">
+            <button class="filter-chip" data-filter="gpuBrand" data-value="NVIDIA">NVIDIA</button>
+            <button class="filter-chip" data-filter="gpuBrand" data-value="AMD">AMD</button>
+            <button class="filter-chip" data-filter="gpuBrand" data-value="Intel">Intel</button>
+            <button class="filter-chip" data-filter="gpuBrand" data-value="Apple">Apple</button>
+          </div>
+        </div>
+
+        <div class="filter-section">
+          <label class="filter-label">Display Type</label>
+          <div id="display-filters" class="filter-options">
+            <button class="filter-chip" data-filter="displayType" data-value="OLED">OLED</button>
+            <button class="filter-chip" data-filter="displayType" data-value="Mini LED">Mini LED</button>
+            <button class="filter-chip" data-filter="displayType" data-value="IPS">IPS</button>
+          </div>
+        </div>
+
+        <!-- Row 2: Sliders -->
+        <div class="filter-section">
+          <label class="filter-label">Screen Size</label>
+          <div id="size-histogram" class="size-histogram">
+            <!-- Populated by JS -->
+          </div>
+          <div class="filter-range size-range">
+            <div class="size-slider-container">
+              <input type="range" id="min-size-slider" min="13" max="18" value="13" step="0.5">
+              <input type="range" id="max-size-slider" min="13" max="18" value="18" step="0.5">
+            </div>
+            <div class="filter-range-labels">
+              <span id="min-size-label">13"</span>
+              <span>to</span>
+              <span id="max-size-label">18"</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="filter-section">
+          <label class="filter-label">Price Range</label>
+          <div style="display: flex; gap: 0.5rem; align-items: center;">
+            <input type="number" id="min-price" class="filter-input" placeholder="Min $" style="width: 50%;">
+            <span>-</span>
+            <input type="number" id="max-price" class="filter-input" placeholder="Max $" style="width: 50%;">
+          </div>
+        </div>
+
+        <div class="filter-section">
+          <label class="filter-label">Minimum RAM</label>
+          <div class="filter-range ram-range">
+            <input type="range" id="ram-slider" min="0" max="4" value="0" step="1">
+            <div class="filter-range-labels ram-labels">
+              <span>8GB</span>
+              <span>16GB</span>
+              <span>32GB</span>
+              <span>64GB</span>
+              <span>128GB</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="filter-section">
+          <label class="filter-label">Minimum Grade</label>
+          <div class="filter-range grade-range">
+            <input type="range" id="grade-slider" min="0" max="4" value="0" step="1">
+            <div class="filter-range-labels grade-labels">
+              <span>All</span>
+              <span>D</span>
+              <span>C</span>
+              <span>B</span>
+              <span>A</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Row 3: Performance sliders -->
+        <div class="filter-section">
+          <label class="filter-label">CPU Performance</label>
+          <div class="filter-range benchmark-range">
+            <input type="range" id="cpu-perf-slider" min="0" max="4" value="0" step="1">
+            <div class="filter-range-labels benchmark-labels-wide">
+              <span>Any</span>
+              <span>Office</span>
+              <span>1080p Edit</span>
+              <span>4K Edit</span>
+              <span>Pro</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="filter-section">
+          <label class="filter-label">GPU Performance</label>
+          <div class="filter-range benchmark-range">
+            <input type="range" id="gpu-perf-slider" min="0" max="4" value="0" step="1">
+            <div class="filter-range-labels benchmark-labels-wide">
+              <span>Any</span>
+              <span>1080p Med</span>
+              <span>1080p High</span>
+              <span>1440p</span>
+              <span>Ray Tracing</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="filter-section">
+          <label class="filter-label">Gaming (Cyberpunk 1080p)</label>
+          <div class="filter-range benchmark-range">
+            <input type="range" id="gaming-fps-slider" min="0" max="4" value="0" step="1">
+            <div class="filter-range-labels benchmark-labels-wide">
+              <span>Any</span>
+              <span>60 FPS</span>
+              <span>90 FPS</span>
+              <span>120 FPS</span>
+              <span>144+</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="filter-section filter-section-clear">
+          <button id="clear-filters" class="clear-filters">
+            Clear All Filters
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Deal of the Day -->
+  <section class="deal-of-day" id="deal-of-day">
+    <!-- Populated by JS -->
+  </section>
+
+  <!-- Main Content -->
+  <main class="main-container main-container-full">
+    <!-- Laptop Grid -->
+    <section class="tv-grid-section">
+      <div class="tv-grid-header">
+        <div>
+          <h1 class="tv-grid-title">Best Laptop Deals</h1>
+          <span id="laptop-count" class="tv-count">0 Laptops</span>
+        </div>
+        <select id="sort-select" class="sort-select">
+          <option value="dealScore">Best Deal First</option>
+          <option value="priceLow">Price: Low to High</option>
+          <option value="priceHigh">Price: High to Low</option>
+          <option value="performance">Performance Score</option>
+          <option value="portable">Most Portable</option>
+        </select>
+      </div>
+      <div id="laptop-grid" class="tv-grid">
+        <div class="loading">
+          <div class="loading-spinner"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <p>
+        <strong>Laptop School</strong> - Helping you find the best laptop deals.
+      </p>
+      <p style="margin-top: 0.5rem;">
+        Prices updated daily. Affiliate links may be used.
+      </p>
+      <p style="margin-top: 0.5rem;">
+        <a href="disclosure.html">Affiliate Disclosure</a> &middot; <a href="privacy.html">Privacy Policy</a>
+      </p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="data.js?v=11"></script>
+  <script src="app.js?v=11"></script>
+</body>
+</html>
