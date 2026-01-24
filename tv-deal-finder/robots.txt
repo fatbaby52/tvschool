@@ -3,8 +3,8 @@ User-agent: *
 Allow: /
 
 # Sitemaps
-Sitemap: https://tvschool.academy/tv-deal-finder/sitemap.xml
-Sitemap: https://tvschool.academy/laptop-deal-finder/sitemap.xml
+Sitemap: https://deals.academy/tv-deal-finder/sitemap.xml
+Sitemap: https://deals.academy/laptop-deal-finder/sitemap.xml
 
 # Crawl-delay for politeness
 Crawl-delay: 1
