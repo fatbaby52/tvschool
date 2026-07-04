@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tool School - Find the Best Tool Deals | Fair-Value Kit Math for Cordless Tools</title>
+<meta name="description" content="We price cordless tool kits as parts — tool + batteries + charger — and grade every deal against fair value. DeWalt, Milwaukee, Makita, Ryobi, EGO and more.">
+<link rel="stylesheet" href="styles.css">
+<style>
+.kit-math{font-size:12px;color:#666;display:flex;flex-wrap:wrap;gap:4px 12px;margin:6px 0}
+.km-row{white-space:nowrap}
+.own-batteries-row{display:flex;align-items:center;gap:8px;margin:10px 0;font-size:14px}
+.platform-hero{margin:14px 0}
+</style>
+</head>
+<body>
+<header class="site-header">
+  <div class="header-content">
+    <img src="deals-academy-logo.png" alt="Deals Academy" style="height:42px">
+    <nav><a href="../tv-deal-finder/index.html">TV School</a> · <a href="../laptop-deal-finder/index.html">Laptop School</a></nav>
+  </div>
+</header>
+<div class="disclosure-banner">We may earn a commission when you buy through links on our site. <a href="../tv-deal-finder/disclosure.html">Learn more</a></div>
+<div class="stats-bar"><span id="tool-count">0 tools</span> · <a href="methodology.html">How our fair values work →</a></div>
+<main class="container">
+  <section class="platform-hero">
+    <h1>What battery platform are you on?</h1>
+    <div id="platform-filters" class="filter-chips"></div>
+    <label class="own-batteries-row"><input type="checkbox" id="own-batteries"> I already own batteries on my platform — grade kits accordingly</label>
+  </section>
+  <section>
+    <h2>What kind of work?</h2>
+    <div id="usecase-filters" class="filter-chips"></div>
+  </section>
+  <section class="filters-row">
+    <label>Min grade: <input type="range" id="grade-slider" min="0" max="4" value="0"> <span id="grade-value">All Grades</span></label>
+    <select id="sort-select">
+      <option value="dealScore">Best Deal First</option>
+      <option value="priceLow">Price: Low to High</option>
+      <option value="priceHigh">Price: High to Low</option>
+    </select>
+  </section>
+  <section id="tool-grid" class="tv-grid"></section>
+</main>
+<footer class="site-footer">
+  <p>Fair values are computed by decomposing kits into parts (tool + batteries + charger) using our street-value tables. <a href="methodology.html">Methodology</a> · <a href="../tv-deal-finder/privacy.html">Privacy</a></p>
+</footer>
+<script src="data.js?v=1"></script>
+<script src="app.js?v=1"></script>
+</body>
+</html>
