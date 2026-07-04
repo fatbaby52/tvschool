@@ -9,7 +9,7 @@
  */
 
 const TV_DATA = {
-  "lastUpdated": "2026-07-03T22:30:00Z",
+  "lastUpdated": "2026-07-04T19:11:07Z",
   "retailers": {
     "bestbuy": {
       "id": "bestbuy",
@@ -76,11 +76,12 @@ const TV_DATA = {
           "retailerId": "bestbuy",
           "currentPrice": 989.99,
           "retailPrice": 1099.99,
-          "url": "https://sovrn.co?key=8385bed416f9d04124c9e2a38846b0fb&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F6578057.p",
+          "url": "https://www.bestbuy.com/site/6578057.p",
           "sku": "6578057",
-          "inStock": true,
+          "inStock": false,
           "lastChecked": "2026-01-23T21:04:32Z",
-          "originalUrl": "https://www.bestbuy.com/site/6578057.p"
+          "originalUrl": "https://www.bestbuy.com/site/6578057.p",
+          "staleHidden": true
         }
       ],
       "priceHistory": [
@@ -142,11 +143,12 @@ const TV_DATA = {
           "retailerId": "bestbuy",
           "currentPrice": 1529.99,
           "retailPrice": 1599.99,
-          "url": "https://sovrn.co?key=8385bed416f9d04124c9e2a38846b0fb&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F6578055.p",
+          "url": "https://www.bestbuy.com/site/6578055.p",
           "sku": "6578055",
-          "inStock": true,
+          "inStock": false,
           "lastChecked": "2026-01-23T21:04:32Z",
-          "originalUrl": "https://www.bestbuy.com/site/6578055.p"
+          "originalUrl": "https://www.bestbuy.com/site/6578055.p",
+          "staleHidden": true
         }
       ],
       "priceHistory": [
@@ -208,11 +210,12 @@ const TV_DATA = {
           "retailerId": "bestbuy",
           "currentPrice": 599.99,
           "retailPrice": 1299.99,
-          "url": "https://sovrn.co?key=8385bed416f9d04124c9e2a38846b0fb&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F6635292.p",
+          "url": "https://www.bestbuy.com/site/6635292.p",
           "sku": "6635292",
-          "inStock": true,
+          "inStock": false,
           "lastChecked": "2026-01-23T21:04:53Z",
-          "originalUrl": "https://www.bestbuy.com/site/6635292.p"
+          "originalUrl": "https://www.bestbuy.com/site/6635292.p",
+          "staleHidden": true
         }
       ],
       "priceHistory": [
@@ -271,11 +274,12 @@ const TV_DATA = {
           "retailerId": "bestbuy",
           "currentPrice": 899.99,
           "retailPrice": 1499.99,
-          "url": "https://sovrn.co?key=8385bed416f9d04124c9e2a38846b0fb&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F6635751.p",
+          "url": "https://www.bestbuy.com/site/6635751.p",
           "sku": "6635751",
-          "inStock": true,
+          "inStock": false,
           "lastChecked": "2026-01-23T21:04:54Z",
-          "originalUrl": "https://www.bestbuy.com/site/6635751.p"
+          "originalUrl": "https://www.bestbuy.com/site/6635751.p",
+          "staleHidden": true
         },
         {
           "retailerId": "amazon",
@@ -285,9 +289,9 @@ const TV_DATA = {
           "originalUrl": "https://www.amazon.com/dp/B0GCBJDML3",
           "sku": "B0GCBJDML3",
           "asin": "B0GCBJDML3",
-          "inStock": true,
+          "inStock": false,
           "onSale": false,
-          "lastChecked": "2026-07-03T22:30:00Z"
+          "lastChecked": "2026-07-04T15:15:16Z"
         }
       ],
       "priceHistory": [
@@ -346,11 +350,12 @@ const TV_DATA = {
           "retailerId": "bestbuy",
           "currentPrice": 986.99,
           "retailPrice": 1999.99,
-          "url": "https://sovrn.co?key=8385bed416f9d04124c9e2a38846b0fb&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F6633087.p",
+          "url": "https://www.bestbuy.com/site/6633087.p",
           "sku": "6633087",
-          "inStock": true,
+          "inStock": false,
           "lastChecked": "2026-01-22T20:30:13Z",
-          "originalUrl": "https://www.bestbuy.com/site/6633087.p"
+          "originalUrl": "https://www.bestbuy.com/site/6633087.p",
+          "staleHidden": true
         }
       ],
       "priceHistory": [
@@ -404,11 +409,12 @@ const TV_DATA = {
           "retailerId": "bestbuy",
           "currentPrice": 1499.99,
           "retailPrice": 2999.99,
-          "url": "https://sovrn.co?key=8385bed416f9d04124c9e2a38846b0fb&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F6621813.p",
+          "url": "https://www.bestbuy.com/site/6621813.p",
           "sku": "6621813",
-          "inStock": true,
+          "inStock": false,
           "lastChecked": "2026-01-23T21:04:52Z",
-          "originalUrl": "https://www.bestbuy.com/site/6621813.p"
+          "originalUrl": "https://www.bestbuy.com/site/6621813.p",
+          "staleHidden": true
         }
       ],
       "priceHistory": [
@@ -467,11 +473,12 @@ const TV_DATA = {
           "retailerId": "bestbuy",
           "currentPrice": 4499.99,
           "retailPrice": 4499.99,
-          "url": "https://sovrn.co?key=8385bed416f9d04124c9e2a38846b0fb&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F6621823.p",
+          "url": "https://www.bestbuy.com/site/6621823.p",
           "sku": "6621823",
-          "inStock": true,
+          "inStock": false,
           "lastChecked": "2026-01-23T21:04:53Z",
-          "originalUrl": "https://www.bestbuy.com/site/6621823.p"
+          "originalUrl": "https://www.bestbuy.com/site/6621823.p",
+          "staleHidden": true
         }
       ],
       "priceHistory": [
@@ -525,11 +532,12 @@ const TV_DATA = {
           "retailerId": "bestbuy",
           "currentPrice": 1274.99,
           "retailPrice": 1499.99,
-          "url": "https://sovrn.co?key=8385bed416f9d04124c9e2a38846b0fb&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F6578042.p",
+          "url": "https://www.bestbuy.com/site/6578042.p",
           "sku": "6578042",
-          "inStock": true,
+          "inStock": false,
           "lastChecked": "2026-01-23T21:04:30Z",
-          "originalUrl": "https://www.bestbuy.com/site/6578042.p"
+          "originalUrl": "https://www.bestbuy.com/site/6578042.p",
+          "staleHidden": true
         }
       ],
       "priceHistory": [
@@ -591,11 +599,12 @@ const TV_DATA = {
           "retailerId": "bestbuy",
           "currentPrice": 1975.99,
           "retailPrice": 2499.99,
-          "url": "https://sovrn.co?key=8385bed416f9d04124c9e2a38846b0fb&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F6578044.p",
+          "url": "https://www.bestbuy.com/site/6578044.p",
           "sku": "6578044",
-          "inStock": true,
+          "inStock": false,
           "lastChecked": "2026-01-22T18:48:30Z",
-          "originalUrl": "https://www.bestbuy.com/site/6578044.p"
+          "originalUrl": "https://www.bestbuy.com/site/6578044.p",
+          "staleHidden": true
         }
       ],
       "priceHistory": [
@@ -652,11 +661,12 @@ const TV_DATA = {
           "retailerId": "bestbuy",
           "currentPrice": 2999.99,
           "retailPrice": 3499.99,
-          "url": "https://sovrn.co?key=8385bed416f9d04124c9e2a38846b0fb&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F6578043.p",
+          "url": "https://www.bestbuy.com/site/6578043.p",
           "sku": "6578043",
-          "inStock": true,
+          "inStock": false,
           "lastChecked": "2026-01-23T21:04:31Z",
-          "originalUrl": "https://www.bestbuy.com/site/6578043.p"
+          "originalUrl": "https://www.bestbuy.com/site/6578043.p",
+          "staleHidden": true
         }
       ],
       "priceHistory": [
@@ -718,11 +728,12 @@ const TV_DATA = {
           "retailerId": "bestbuy",
           "currentPrice": 899.99,
           "retailPrice": 1399.99,
-          "url": "https://sovrn.co?key=8385bed416f9d04124c9e2a38846b0fb&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F6621833.p",
+          "url": "https://www.bestbuy.com/site/6621833.p",
           "sku": "6621833",
-          "inStock": true,
+          "inStock": false,
           "lastChecked": "2026-01-22T20:30:11Z",
-          "originalUrl": "https://www.bestbuy.com/site/6621833.p"
+          "originalUrl": "https://www.bestbuy.com/site/6621833.p",
+          "staleHidden": true
         }
       ],
       "priceHistory": [
@@ -779,11 +790,12 @@ const TV_DATA = {
           "retailerId": "bestbuy",
           "currentPrice": 999.99,
           "retailPrice": 1599.99,
-          "url": "https://sovrn.co?key=8385bed416f9d04124c9e2a38846b0fb&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F6621817.p",
+          "url": "https://www.bestbuy.com/site/6621817.p",
           "sku": "6621817",
-          "inStock": true,
+          "inStock": false,
           "lastChecked": "2026-01-22T20:30:09Z",
-          "originalUrl": "https://www.bestbuy.com/site/6621817.p"
+          "originalUrl": "https://www.bestbuy.com/site/6621817.p",
+          "staleHidden": true
         }
       ],
       "priceHistory": [
@@ -840,15 +852,16 @@ const TV_DATA = {
           "retailerId": "bestbuy",
           "currentPrice": 1199.99,
           "retailPrice": 1999.99,
-          "url": "https://sovrn.co?key=8385bed416f9d04124c9e2a38846b0fb&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F6621828.p",
+          "url": "https://www.bestbuy.com/site/6621828.p",
           "sku": "6621828",
-          "inStock": true,
+          "inStock": false,
           "lastChecked": "2026-01-23T21:04:51Z",
-          "originalUrl": "https://www.bestbuy.com/site/6621828.p"
+          "originalUrl": "https://www.bestbuy.com/site/6621828.p",
+          "staleHidden": true
         },
         {
           "retailerId": "amazon",
-          "currentPrice": 1079.99,
+          "currentPrice": 1099,
           "retailPrice": null,
           "url": "https://www.amazon.com/dp/B0DYQF1Q3Z?tag=tvschool-20",
           "originalUrl": "https://www.amazon.com/dp/B0DYQF1Q3Z",
@@ -856,7 +869,7 @@ const TV_DATA = {
           "asin": "B0DYQF1Q3Z",
           "inStock": true,
           "onSale": false,
-          "lastChecked": "2026-07-03T22:30:00Z"
+          "lastChecked": "2026-07-04T15:15:16Z"
         }
       ],
       "priceHistory": [
@@ -869,6 +882,10 @@ const TV_DATA = {
           "date": "2026-01-23",
           "retailerId": "bestbuy",
           "price": 1199.99
+        },
+        {
+          "date": "2026-07-04",
+          "price": 1099
         }
       ],
       "useCaseScores": {
@@ -918,11 +935,12 @@ const TV_DATA = {
           "retailerId": "bestbuy",
           "currentPrice": 1399.99,
           "retailPrice": 2699.99,
-          "url": "https://sovrn.co?key=8385bed416f9d04124c9e2a38846b0fb&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F6621824.p",
+          "url": "https://www.bestbuy.com/site/6621824.p",
           "sku": "6621824",
-          "inStock": true,
+          "inStock": false,
           "lastChecked": "2026-01-23T21:04:50Z",
-          "originalUrl": "https://www.bestbuy.com/site/6621824.p"
+          "originalUrl": "https://www.bestbuy.com/site/6621824.p",
+          "staleHidden": true
         },
         {
           "retailerId": "amazon",
@@ -934,7 +952,7 @@ const TV_DATA = {
           "asin": "B0DYQM4BDB",
           "inStock": true,
           "onSale": false,
-          "lastChecked": "2026-07-03T22:30:00Z"
+          "lastChecked": "2026-07-04T15:15:16Z"
         }
       ],
       "priceHistory": [
@@ -947,6 +965,10 @@ const TV_DATA = {
           "date": "2026-01-23",
           "retailerId": "bestbuy",
           "price": 1399.99
+        },
+        {
+          "date": "2026-07-04",
+          "price": 1299
         }
       ],
       "useCaseScores": {
@@ -996,11 +1018,12 @@ const TV_DATA = {
           "retailerId": "bestbuy",
           "currentPrice": 1999.99,
           "retailPrice": 3699.99,
-          "url": "https://sovrn.co?key=8385bed416f9d04124c9e2a38846b0fb&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F6621825.p",
+          "url": "https://www.bestbuy.com/site/6621825.p",
           "sku": "6621825",
-          "inStock": true,
+          "inStock": false,
           "lastChecked": "2026-01-23T21:04:51Z",
-          "originalUrl": "https://www.bestbuy.com/site/6621825.p"
+          "originalUrl": "https://www.bestbuy.com/site/6621825.p",
+          "staleHidden": true
         }
       ],
       "priceHistory": [
@@ -1062,11 +1085,12 @@ const TV_DATA = {
           "retailerId": "bestbuy",
           "currentPrice": 3299.99,
           "retailPrice": 5399.99,
-          "url": "https://sovrn.co?key=8385bed416f9d04124c9e2a38846b0fb&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F6621822.p",
+          "url": "https://www.bestbuy.com/site/6621822.p",
           "sku": "6621822",
-          "inStock": true,
+          "inStock": false,
           "lastChecked": "2026-01-22T20:30:09Z",
-          "originalUrl": "https://www.bestbuy.com/site/6621822.p"
+          "originalUrl": "https://www.bestbuy.com/site/6621822.p",
+          "staleHidden": true
         }
       ],
       "priceHistory": [
@@ -1123,11 +1147,12 @@ const TV_DATA = {
           "retailerId": "bestbuy",
           "currentPrice": 2279.99,
           "retailPrice": 2399.99,
-          "url": "https://sovrn.co?key=8385bed416f9d04124c9e2a38846b0fb&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F6578150.p",
+          "url": "https://www.bestbuy.com/site/6578150.p",
           "sku": "6578150",
           "inStock": false,
           "lastChecked": "2026-01-23T21:04:29Z",
-          "originalUrl": "https://www.bestbuy.com/site/6578150.p"
+          "originalUrl": "https://www.bestbuy.com/site/6578150.p",
+          "staleHidden": true
         }
       ],
       "priceHistory": [
@@ -1189,11 +1214,12 @@ const TV_DATA = {
           "retailerId": "bestbuy",
           "currentPrice": 2804.99,
           "retailPrice": 3299.99,
-          "url": "https://sovrn.co?key=8385bed416f9d04124c9e2a38846b0fb&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F6578047.p",
+          "url": "https://www.bestbuy.com/site/6578047.p",
           "sku": "6578047",
-          "inStock": true,
+          "inStock": false,
           "lastChecked": "2026-01-23T21:04:30Z",
-          "originalUrl": "https://www.bestbuy.com/site/6578047.p"
+          "originalUrl": "https://www.bestbuy.com/site/6578047.p",
+          "staleHidden": true
         }
       ],
       "priceHistory": [
@@ -1255,11 +1281,12 @@ const TV_DATA = {
           "retailerId": "bestbuy",
           "currentPrice": 899.99,
           "retailPrice": 1499.99,
-          "url": "https://sovrn.co?key=8385bed416f9d04124c9e2a38846b0fb&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F6635751.p",
+          "url": "https://www.bestbuy.com/site/6635751.p",
           "sku": "6635751",
-          "inStock": true,
+          "inStock": false,
           "lastChecked": "2026-01-23T21:04:49Z",
-          "originalUrl": "https://www.bestbuy.com/site/6635751.p"
+          "originalUrl": "https://www.bestbuy.com/site/6635751.p",
+          "staleHidden": true
         }
       ],
       "priceHistory": [
@@ -1316,11 +1343,12 @@ const TV_DATA = {
           "retailerId": "bestbuy",
           "currentPrice": 2299.99,
           "retailPrice": 3399.99,
-          "url": "https://sovrn.co?key=8385bed416f9d04124c9e2a38846b0fb&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F6621810.p",
+          "url": "https://www.bestbuy.com/site/6621810.p",
           "sku": "6621810",
-          "inStock": true,
+          "inStock": false,
           "lastChecked": "2026-01-22T20:30:06Z",
-          "originalUrl": "https://www.bestbuy.com/site/6621810.p"
+          "originalUrl": "https://www.bestbuy.com/site/6621810.p",
+          "staleHidden": true
         }
       ],
       "priceHistory": [
@@ -1377,11 +1405,12 @@ const TV_DATA = {
           "retailerId": "bestbuy",
           "currentPrice": 3499.99,
           "retailPrice": 4499.99,
-          "url": "https://sovrn.co?key=8385bed416f9d04124c9e2a38846b0fb&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F6621819.p",
+          "url": "https://www.bestbuy.com/site/6621819.p",
           "sku": "6621819",
-          "inStock": true,
+          "inStock": false,
           "lastChecked": "2026-01-23T21:04:48Z",
-          "originalUrl": "https://www.bestbuy.com/site/6621819.p"
+          "originalUrl": "https://www.bestbuy.com/site/6621819.p",
+          "staleHidden": true
         }
       ],
       "priceHistory": [
@@ -1443,11 +1472,12 @@ const TV_DATA = {
           "retailerId": "bestbuy",
           "currentPrice": 4999.99,
           "retailPrice": 6499.99,
-          "url": "https://sovrn.co?key=8385bed416f9d04124c9e2a38846b0fb&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F6621830.p",
+          "url": "https://www.bestbuy.com/site/6621830.p",
           "sku": "6621830",
-          "inStock": true,
+          "inStock": false,
           "lastChecked": "2026-01-23T21:04:49Z",
-          "originalUrl": "https://www.bestbuy.com/site/6621830.p"
+          "originalUrl": "https://www.bestbuy.com/site/6621830.p",
+          "staleHidden": true
         }
       ],
       "priceHistory": [
@@ -1509,11 +1539,12 @@ const TV_DATA = {
           "retailerId": "bestbuy",
           "currentPrice": 22996.99,
           "retailPrice": 24999.99,
-          "url": "https://sovrn.co?key=8385bed416f9d04124c9e2a38846b0fb&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F6621820.p",
+          "url": "https://www.bestbuy.com/site/6621820.p",
           "sku": "6621820",
-          "inStock": true,
+          "inStock": false,
           "lastChecked": "2026-01-23T21:04:48Z",
-          "originalUrl": "https://www.bestbuy.com/site/6621820.p"
+          "originalUrl": "https://www.bestbuy.com/site/6621820.p",
+          "staleHidden": true
         }
       ],
       "priceHistory": [
@@ -1575,11 +1606,12 @@ const TV_DATA = {
           "retailerId": "bestbuy",
           "currentPrice": 549.99,
           "retailPrice": 549.99,
-          "url": "https://sovrn.co?key=8385bed416f9d04124c9e2a38846b0fb&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F6611507.p",
+          "url": "https://www.bestbuy.com/site/6611507.p",
           "sku": "6611507",
           "inStock": false,
           "lastChecked": "2026-01-23T21:04:28Z",
-          "originalUrl": "https://www.bestbuy.com/site/6611507.p"
+          "originalUrl": "https://www.bestbuy.com/site/6611507.p",
+          "staleHidden": true
         }
       ],
       "priceHistory": [
@@ -1637,11 +1669,12 @@ const TV_DATA = {
           "retailerId": "bestbuy",
           "currentPrice": 649.99,
           "retailPrice": 649.99,
-          "url": "https://sovrn.co?key=8385bed416f9d04124c9e2a38846b0fb&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F6611508.p",
+          "url": "https://www.bestbuy.com/site/6611508.p",
           "sku": "6611508",
           "inStock": false,
           "lastChecked": "2026-01-23T21:04:29Z",
-          "originalUrl": "https://www.bestbuy.com/site/6611508.p"
+          "originalUrl": "https://www.bestbuy.com/site/6611508.p",
+          "staleHidden": true
         }
       ],
       "priceHistory": [
@@ -1699,11 +1732,12 @@ const TV_DATA = {
           "retailerId": "bestbuy",
           "currentPrice": 999.99,
           "retailPrice": 999.99,
-          "url": "https://sovrn.co?key=8385bed416f9d04124c9e2a38846b0fb&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F6611505.p",
+          "url": "https://www.bestbuy.com/site/6611505.p",
           "sku": "6611505",
           "inStock": false,
           "lastChecked": "2026-01-22T20:29:44Z",
-          "originalUrl": "https://www.bestbuy.com/site/6611505.p"
+          "originalUrl": "https://www.bestbuy.com/site/6611505.p",
+          "staleHidden": true
         }
       ],
       "priceHistory": [
@@ -1756,11 +1790,12 @@ const TV_DATA = {
           "retailerId": "bestbuy",
           "currentPrice": 999.99,
           "retailPrice": 999.99,
-          "url": "https://sovrn.co?key=8385bed416f9d04124c9e2a38846b0fb&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F6575029.p",
+          "url": "https://www.bestbuy.com/site/6575029.p",
           "sku": "6575029",
-          "inStock": true,
+          "inStock": false,
           "lastChecked": "2026-01-23T21:04:27Z",
-          "originalUrl": "https://www.bestbuy.com/site/6575029.p"
+          "originalUrl": "https://www.bestbuy.com/site/6575029.p",
+          "staleHidden": true
         }
       ],
       "priceHistory": [
@@ -1818,11 +1853,12 @@ const TV_DATA = {
           "retailerId": "bestbuy",
           "currentPrice": 1299.99,
           "retailPrice": 1299.99,
-          "url": "https://sovrn.co?key=8385bed416f9d04124c9e2a38846b0fb&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F6575099.p",
+          "url": "https://www.bestbuy.com/site/6575099.p",
           "sku": "6575099",
-          "inStock": true,
+          "inStock": false,
           "lastChecked": "2026-01-23T21:04:27Z",
-          "originalUrl": "https://www.bestbuy.com/site/6575099.p"
+          "originalUrl": "https://www.bestbuy.com/site/6575099.p",
+          "staleHidden": true
         }
       ],
       "priceHistory": [
@@ -1876,11 +1912,12 @@ const TV_DATA = {
           "retailerId": "bestbuy",
           "currentPrice": 799.99,
           "retailPrice": 999.99,
-          "url": "https://sovrn.co?key=8385bed416f9d04124c9e2a38846b0fb&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F6576592.p",
+          "url": "https://www.bestbuy.com/site/6576592.p",
           "sku": "6576592",
-          "inStock": true,
+          "inStock": false,
           "lastChecked": "2026-01-23T21:04:27Z",
-          "originalUrl": "https://www.bestbuy.com/site/6576592.p"
+          "originalUrl": "https://www.bestbuy.com/site/6576592.p",
+          "staleHidden": true
         }
       ],
       "priceHistory": [
@@ -1938,11 +1975,12 @@ const TV_DATA = {
           "retailerId": "bestbuy",
           "currentPrice": 799.99,
           "retailPrice": 999.99,
-          "url": "https://sovrn.co?key=8385bed416f9d04124c9e2a38846b0fb&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F6576591.p",
+          "url": "https://www.bestbuy.com/site/6576591.p",
           "sku": "6576591",
-          "inStock": true,
+          "inStock": false,
           "lastChecked": "2026-01-23T21:04:26Z",
-          "originalUrl": "https://www.bestbuy.com/site/6576591.p"
+          "originalUrl": "https://www.bestbuy.com/site/6576591.p",
+          "staleHidden": true
         }
       ],
       "priceHistory": [
@@ -2000,11 +2038,12 @@ const TV_DATA = {
           "retailerId": "bestbuy",
           "currentPrice": 999.99,
           "retailPrice": 999.99,
-          "url": "https://sovrn.co?key=8385bed416f9d04124c9e2a38846b0fb&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F6576599.p",
+          "url": "https://www.bestbuy.com/site/6576599.p",
           "sku": "6576599",
-          "inStock": true,
+          "inStock": false,
           "lastChecked": "2026-01-23T21:04:25Z",
-          "originalUrl": "https://www.bestbuy.com/site/6576599.p"
+          "originalUrl": "https://www.bestbuy.com/site/6576599.p",
+          "staleHidden": true
         }
       ],
       "priceHistory": [
@@ -2062,11 +2101,12 @@ const TV_DATA = {
           "retailerId": "bestbuy",
           "currentPrice": 1139.99,
           "retailPrice": 1199.99,
-          "url": "https://sovrn.co?key=8385bed416f9d04124c9e2a38846b0fb&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F6576589.p",
+          "url": "https://www.bestbuy.com/site/6576589.p",
           "sku": "6576589",
-          "inStock": true,
+          "inStock": false,
           "lastChecked": "2026-01-23T21:04:24Z",
-          "originalUrl": "https://www.bestbuy.com/site/6576589.p"
+          "originalUrl": "https://www.bestbuy.com/site/6576589.p",
+          "staleHidden": true
         }
       ],
       "priceHistory": [
@@ -2124,11 +2164,12 @@ const TV_DATA = {
           "retailerId": "bestbuy",
           "currentPrice": 1139.99,
           "retailPrice": 1199.99,
-          "url": "https://sovrn.co?key=8385bed416f9d04124c9e2a38846b0fb&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F6576597.p",
+          "url": "https://www.bestbuy.com/site/6576597.p",
           "sku": "6576597",
-          "inStock": true,
+          "inStock": false,
           "lastChecked": "2026-01-22T18:48:05Z",
-          "originalUrl": "https://www.bestbuy.com/site/6576597.p"
+          "originalUrl": "https://www.bestbuy.com/site/6576597.p",
+          "staleHidden": true
         }
       ],
       "priceHistory": [
@@ -2181,11 +2222,12 @@ const TV_DATA = {
           "retailerId": "bestbuy",
           "currentPrice": 2199.99,
           "retailPrice": 2199.99,
-          "url": "https://sovrn.co?key=8385bed416f9d04124c9e2a38846b0fb&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F6576600.p",
+          "url": "https://www.bestbuy.com/site/6576600.p",
           "sku": "6576600",
-          "inStock": true,
+          "inStock": false,
           "lastChecked": "2026-01-22T18:48:05Z",
-          "originalUrl": "https://www.bestbuy.com/site/6576600.p"
+          "originalUrl": "https://www.bestbuy.com/site/6576600.p",
+          "staleHidden": true
         }
       ],
       "priceHistory": [
@@ -2238,11 +2280,12 @@ const TV_DATA = {
           "retailerId": "bestbuy",
           "currentPrice": 1099.99,
           "retailPrice": 1299.99,
-          "url": "https://sovrn.co?key=8385bed416f9d04124c9e2a38846b0fb&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F6613502.p",
+          "url": "https://www.bestbuy.com/site/6613502.p",
           "sku": "6613502",
-          "inStock": true,
+          "inStock": false,
           "lastChecked": "2026-01-23T21:04:47Z",
-          "originalUrl": "https://www.bestbuy.com/site/6613502.p"
+          "originalUrl": "https://www.bestbuy.com/site/6613502.p",
+          "staleHidden": true
         }
       ],
       "priceHistory": [
@@ -2296,11 +2339,12 @@ const TV_DATA = {
           "retailerId": "bestbuy",
           "currentPrice": 1199.99,
           "retailPrice": 1799.99,
-          "url": "https://sovrn.co?key=8385bed416f9d04124c9e2a38846b0fb&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F6613493.p",
+          "url": "https://www.bestbuy.com/site/6613493.p",
           "sku": "6613493",
-          "inStock": true,
+          "inStock": false,
           "lastChecked": "2026-01-23T21:04:46Z",
-          "originalUrl": "https://www.bestbuy.com/site/6613493.p"
+          "originalUrl": "https://www.bestbuy.com/site/6613493.p",
+          "staleHidden": true
         }
       ],
       "priceHistory": [
@@ -2358,11 +2402,12 @@ const TV_DATA = {
           "retailerId": "bestbuy",
           "currentPrice": 1499.99,
           "retailPrice": 2299.99,
-          "url": "https://sovrn.co?key=8385bed416f9d04124c9e2a38846b0fb&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F6613449.p",
+          "url": "https://www.bestbuy.com/site/6613449.p",
           "sku": "6613449",
-          "inStock": true,
+          "inStock": false,
           "lastChecked": "2026-01-23T21:04:45Z",
-          "originalUrl": "https://www.bestbuy.com/site/6613449.p"
+          "originalUrl": "https://www.bestbuy.com/site/6613449.p",
+          "staleHidden": true
         }
       ],
       "priceHistory": [
@@ -2420,11 +2465,12 @@ const TV_DATA = {
           "retailerId": "bestbuy",
           "currentPrice": 2199.99,
           "retailPrice": 3499.99,
-          "url": "https://sovrn.co?key=8385bed416f9d04124c9e2a38846b0fb&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F6613460.p",
+          "url": "https://www.bestbuy.com/site/6613460.p",
           "sku": "6613460",
-          "inStock": true,
+          "inStock": false,
           "lastChecked": "2026-01-22T18:50:56Z",
-          "originalUrl": "https://www.bestbuy.com/site/6613460.p"
+          "originalUrl": "https://www.bestbuy.com/site/6613460.p",
+          "staleHidden": true
         }
       ],
       "priceHistory": [
@@ -2477,11 +2523,12 @@ const TV_DATA = {
           "retailerId": "bestbuy",
           "currentPrice": 4999.99,
           "retailPrice": 5999.99,
-          "url": "https://sovrn.co?key=8385bed416f9d04124c9e2a38846b0fb&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F6618847.p",
+          "url": "https://www.bestbuy.com/site/6618847.p",
           "sku": "6618847",
-          "inStock": true,
+          "inStock": false,
           "lastChecked": "2026-01-23T21:04:47Z",
-          "originalUrl": "https://www.bestbuy.com/site/6618847.p"
+          "originalUrl": "https://www.bestbuy.com/site/6618847.p",
+          "staleHidden": true
         }
       ],
       "priceHistory": [
@@ -2539,11 +2586,12 @@ const TV_DATA = {
           "retailerId": "bestbuy",
           "currentPrice": 1874.99,
           "retailPrice": 2499.99,
-          "url": "https://sovrn.co?key=8385bed416f9d04124c9e2a38846b0fb&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F6576434.p",
+          "url": "https://www.bestbuy.com/site/6576434.p",
           "sku": "6576434",
-          "inStock": true,
+          "inStock": false,
           "lastChecked": "2026-01-23T21:04:24Z",
-          "originalUrl": "https://www.bestbuy.com/site/6576434.p"
+          "originalUrl": "https://www.bestbuy.com/site/6576434.p",
+          "staleHidden": true
         }
       ],
       "priceHistory": [
@@ -2604,11 +2652,12 @@ const TV_DATA = {
           "retailerId": "bestbuy",
           "currentPrice": 2089.99,
           "retailPrice": 2199.99,
-          "url": "https://sovrn.co?key=8385bed416f9d04124c9e2a38846b0fb&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F6576433.p",
+          "url": "https://www.bestbuy.com/site/6576433.p",
           "sku": "6576433",
-          "inStock": true,
+          "inStock": false,
           "lastChecked": "2026-01-23T21:04:24Z",
-          "originalUrl": "https://www.bestbuy.com/site/6576433.p"
+          "originalUrl": "https://www.bestbuy.com/site/6576433.p",
+          "staleHidden": true
         }
       ],
       "priceHistory": [
@@ -2665,11 +2714,12 @@ const TV_DATA = {
           "retailerId": "bestbuy",
           "currentPrice": 1999.99,
           "retailPrice": 1999.99,
-          "url": "https://sovrn.co?key=8385bed416f9d04124c9e2a38846b0fb&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F6611509.p",
+          "url": "https://www.bestbuy.com/site/6611509.p",
           "sku": "6611509",
           "inStock": false,
           "lastChecked": "2026-01-23T21:04:22Z",
-          "originalUrl": "https://www.bestbuy.com/site/6611509.p"
+          "originalUrl": "https://www.bestbuy.com/site/6611509.p",
+          "staleHidden": true
         }
       ],
       "priceHistory": [
@@ -2730,11 +2780,12 @@ const TV_DATA = {
           "retailerId": "bestbuy",
           "currentPrice": 1799.99,
           "retailPrice": 2599.99,
-          "url": "https://sovrn.co?key=8385bed416f9d04124c9e2a38846b0fb&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F6576427.p",
+          "url": "https://www.bestbuy.com/site/6576427.p",
           "sku": "6576427",
-          "inStock": true,
+          "inStock": false,
           "lastChecked": "2026-01-22T18:47:51Z",
-          "originalUrl": "https://www.bestbuy.com/site/6576427.p"
+          "originalUrl": "https://www.bestbuy.com/site/6576427.p",
+          "staleHidden": true
         }
       ],
       "priceHistory": [
@@ -2790,11 +2841,12 @@ const TV_DATA = {
           "retailerId": "bestbuy",
           "currentPrice": 2799.99,
           "retailPrice": 2799.99,
-          "url": "https://sovrn.co?key=8385bed416f9d04124c9e2a38846b0fb&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F6576424.p",
+          "url": "https://www.bestbuy.com/site/6576424.p",
           "sku": "6576424",
-          "inStock": true,
+          "inStock": false,
           "lastChecked": "2026-01-23T21:04:23Z",
-          "originalUrl": "https://www.bestbuy.com/site/6576424.p"
+          "originalUrl": "https://www.bestbuy.com/site/6576424.p",
+          "staleHidden": true
         }
       ],
       "priceHistory": [
@@ -2855,11 +2907,12 @@ const TV_DATA = {
           "retailerId": "bestbuy",
           "currentPrice": 1699.99,
           "retailPrice": 1699.99,
-          "url": "https://sovrn.co?key=8385bed416f9d04124c9e2a38846b0fb&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F6578061.p",
+          "url": "https://www.bestbuy.com/site/6578061.p",
           "sku": "6578061",
-          "inStock": true,
+          "inStock": false,
           "lastChecked": "2026-01-23T21:04:22Z",
-          "originalUrl": "https://www.bestbuy.com/site/6578061.p"
+          "originalUrl": "https://www.bestbuy.com/site/6578061.p",
+          "staleHidden": true
         }
       ],
       "priceHistory": [
@@ -2916,11 +2969,12 @@ const TV_DATA = {
           "retailerId": "bestbuy",
           "currentPrice": 1619.99,
           "retailPrice": 1799.99,
-          "url": "https://sovrn.co?key=8385bed416f9d04124c9e2a38846b0fb&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F6578059.p",
+          "url": "https://www.bestbuy.com/site/6578059.p",
           "sku": "6578059",
-          "inStock": true,
+          "inStock": false,
           "lastChecked": "2026-01-22T18:47:45Z",
-          "originalUrl": "https://www.bestbuy.com/site/6578059.p"
+          "originalUrl": "https://www.bestbuy.com/site/6578059.p",
+          "staleHidden": true
         }
       ],
       "priceHistory": [
@@ -2976,11 +3030,12 @@ const TV_DATA = {
           "retailerId": "bestbuy",
           "currentPrice": 999.99,
           "retailPrice": 999.99,
-          "url": "https://sovrn.co?key=8385bed416f9d04124c9e2a38846b0fb&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F6578067.p",
+          "url": "https://www.bestbuy.com/site/6578067.p",
           "sku": "6578067",
-          "inStock": true,
+          "inStock": false,
           "lastChecked": "2026-01-23T21:04:21Z",
-          "originalUrl": "https://www.bestbuy.com/site/6578067.p"
+          "originalUrl": "https://www.bestbuy.com/site/6578067.p",
+          "staleHidden": true
         }
       ],
       "priceHistory": [
@@ -3041,11 +3096,12 @@ const TV_DATA = {
           "retailerId": "bestbuy",
           "currentPrice": 1399.99,
           "retailPrice": 1399.99,
-          "url": "https://sovrn.co?key=8385bed416f9d04124c9e2a38846b0fb&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F6576598.p",
+          "url": "https://www.bestbuy.com/site/6576598.p",
           "sku": "6576598",
-          "inStock": true,
+          "inStock": false,
           "lastChecked": "2026-01-23T21:04:20Z",
-          "originalUrl": "https://www.bestbuy.com/site/6576598.p"
+          "originalUrl": "https://www.bestbuy.com/site/6576598.p",
+          "staleHidden": true
         }
       ],
       "priceHistory": [
@@ -3106,11 +3162,12 @@ const TV_DATA = {
           "retailerId": "bestbuy",
           "currentPrice": 1999.99,
           "retailPrice": 1999.99,
-          "url": "https://sovrn.co?key=8385bed416f9d04124c9e2a38846b0fb&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F6578065.p",
+          "url": "https://www.bestbuy.com/site/6578065.p",
           "sku": "6578065",
-          "inStock": true,
+          "inStock": false,
           "lastChecked": "2026-01-22T20:29:35Z",
-          "originalUrl": "https://www.bestbuy.com/site/6578065.p"
+          "originalUrl": "https://www.bestbuy.com/site/6578065.p",
+          "staleHidden": true
         }
       ],
       "priceHistory": [
@@ -3166,11 +3223,12 @@ const TV_DATA = {
           "retailerId": "bestbuy",
           "currentPrice": 3299.99,
           "retailPrice": 3299.99,
-          "url": "https://sovrn.co?key=8385bed416f9d04124c9e2a38846b0fb&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F6578064.p",
+          "url": "https://www.bestbuy.com/site/6578064.p",
           "sku": "6578064",
-          "inStock": true,
+          "inStock": false,
           "lastChecked": "2026-01-23T21:04:20Z",
-          "originalUrl": "https://www.bestbuy.com/site/6578064.p"
+          "originalUrl": "https://www.bestbuy.com/site/6578064.p",
+          "staleHidden": true
         }
       ],
       "priceHistory": [
@@ -3231,11 +3289,12 @@ const TV_DATA = {
           "retailerId": "bestbuy",
           "currentPrice": 899.99,
           "retailPrice": 1299.99,
-          "url": "https://sovrn.co?key=8385bed416f9d04124c9e2a38846b0fb&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F6613495.p",
+          "url": "https://www.bestbuy.com/site/6613495.p",
           "sku": "6613495",
-          "inStock": true,
+          "inStock": false,
           "lastChecked": "2026-01-22T20:30:03Z",
-          "originalUrl": "https://www.bestbuy.com/site/6613495.p"
+          "originalUrl": "https://www.bestbuy.com/site/6613495.p",
+          "staleHidden": true
         }
       ],
       "priceHistory": [
@@ -3292,11 +3351,12 @@ const TV_DATA = {
           "retailerId": "bestbuy",
           "currentPrice": 999.99,
           "retailPrice": 1499.99,
-          "url": "https://sovrn.co?key=8385bed416f9d04124c9e2a38846b0fb&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F6613499.p",
+          "url": "https://www.bestbuy.com/site/6613499.p",
           "sku": "6613499",
-          "inStock": true,
+          "inStock": false,
           "lastChecked": "2026-01-23T21:04:44Z",
-          "originalUrl": "https://www.bestbuy.com/site/6613499.p"
+          "originalUrl": "https://www.bestbuy.com/site/6613499.p",
+          "staleHidden": true
         }
       ],
       "priceHistory": [
@@ -3358,11 +3418,12 @@ const TV_DATA = {
           "retailerId": "bestbuy",
           "currentPrice": 1199.99,
           "retailPrice": 1799.99,
-          "url": "https://sovrn.co?key=8385bed416f9d04124c9e2a38846b0fb&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F6613501.p",
+          "url": "https://www.bestbuy.com/site/6613501.p",
           "sku": "6613501",
-          "inStock": true,
+          "inStock": false,
           "lastChecked": "2026-01-22T20:30:04Z",
-          "originalUrl": "https://www.bestbuy.com/site/6613501.p"
+          "originalUrl": "https://www.bestbuy.com/site/6613501.p",
+          "staleHidden": true
         }
       ],
       "priceHistory": [
@@ -3414,23 +3475,24 @@ const TV_DATA = {
           "retailerId": "bestbuy",
           "currentPrice": 1399.99,
           "retailPrice": 2499.99,
-          "url": "https://sovrn.co?key=8385bed416f9d04124c9e2a38846b0fb&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F6613491.p",
+          "url": "https://www.bestbuy.com/site/6613491.p",
           "sku": "6613491",
-          "inStock": true,
+          "inStock": false,
           "lastChecked": "2026-01-23T21:04:44Z",
-          "originalUrl": "https://www.bestbuy.com/site/6613491.p"
+          "originalUrl": "https://www.bestbuy.com/site/6613491.p",
+          "staleHidden": true
         },
         {
           "retailerId": "amazon",
           "currentPrice": 1197.99,
-          "retailPrice": null,
+          "retailPrice": 1697.99,
           "url": "https://www.amazon.com/dp/B0DXMJGQWC?tag=tvschool-20",
           "originalUrl": "https://www.amazon.com/dp/B0DXMJGQWC",
           "sku": "B0DXMJGQWC",
           "asin": "B0DXMJGQWC",
           "inStock": true,
-          "onSale": false,
-          "lastChecked": "2026-07-03T22:30:00Z"
+          "onSale": true,
+          "lastChecked": "2026-07-04T15:15:16Z"
         }
       ],
       "priceHistory": [
@@ -3443,6 +3505,10 @@ const TV_DATA = {
           "date": "2026-01-23",
           "retailerId": "bestbuy",
           "price": 1399.99
+        },
+        {
+          "date": "2026-07-04",
+          "price": 1197.99
         }
       ],
       "useCaseScores": {
@@ -3490,13 +3556,14 @@ const TV_DATA = {
       "prices": [
         {
           "retailerId": "bestbuy",
-          "currentPrice": 1999.99,
+          "currentPrice": 1799.99,
           "retailPrice": 3499.99,
-          "url": "https://sovrn.co?key=8385bed416f9d04124c9e2a38846b0fb&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F6613462.p",
+          "url": "https://www.bestbuy.com/site/6613462.p",
           "sku": "6613462",
           "inStock": true,
-          "lastChecked": "2026-01-22T20:30:01Z",
-          "originalUrl": "https://www.bestbuy.com/site/6613462.p"
+          "lastChecked": "2026-07-04T19:11:07Z",
+          "originalUrl": "https://www.bestbuy.com/site/6613462.p",
+          "onSale": true
         }
       ],
       "priceHistory": [
@@ -3504,6 +3571,10 @@ const TV_DATA = {
           "date": "2026-01-22",
           "retailerId": "bestbuy",
           "price": 1999.99
+        },
+        {
+          "date": "2026-07-04",
+          "price": 1799.99
         }
       ],
       "useCaseScores": {
@@ -3553,11 +3624,12 @@ const TV_DATA = {
           "retailerId": "bestbuy",
           "currentPrice": 3299.99,
           "retailPrice": 5399.99,
-          "url": "https://sovrn.co?key=8385bed416f9d04124c9e2a38846b0fb&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F6613461.p",
+          "url": "https://www.bestbuy.com/site/6613461.p",
           "sku": "6613461",
-          "inStock": true,
+          "inStock": false,
           "lastChecked": "2026-01-23T21:04:43Z",
-          "originalUrl": "https://www.bestbuy.com/site/6613461.p"
+          "originalUrl": "https://www.bestbuy.com/site/6613461.p",
+          "staleHidden": true
         }
       ],
       "priceHistory": [
@@ -3619,11 +3691,12 @@ const TV_DATA = {
           "retailerId": "bestbuy",
           "currentPrice": 1899.99,
           "retailPrice": 2299.99,
-          "url": "https://sovrn.co?key=8385bed416f9d04124c9e2a38846b0fb&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F6613500.p",
+          "url": "https://www.bestbuy.com/site/6613500.p",
           "sku": "6613500",
-          "inStock": true,
+          "inStock": false,
           "lastChecked": "2026-01-22T20:29:59Z",
-          "originalUrl": "https://www.bestbuy.com/site/6613500.p"
+          "originalUrl": "https://www.bestbuy.com/site/6613500.p",
+          "staleHidden": true
         }
       ],
       "priceHistory": [
@@ -3680,11 +3753,12 @@ const TV_DATA = {
           "retailerId": "bestbuy",
           "currentPrice": 2299.99,
           "retailPrice": 3299.99,
-          "url": "https://sovrn.co?key=8385bed416f9d04124c9e2a38846b0fb&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F6613492.p",
+          "url": "https://www.bestbuy.com/site/6613492.p",
           "sku": "6613492",
-          "inStock": true,
+          "inStock": false,
           "lastChecked": "2026-01-23T21:04:41Z",
-          "originalUrl": "https://www.bestbuy.com/site/6613492.p"
+          "originalUrl": "https://www.bestbuy.com/site/6613492.p",
+          "staleHidden": true
         }
       ],
       "priceHistory": [
@@ -3746,11 +3820,12 @@ const TV_DATA = {
           "retailerId": "bestbuy",
           "currentPrice": 3499.99,
           "retailPrice": 4499.99,
-          "url": "https://sovrn.co?key=8385bed416f9d04124c9e2a38846b0fb&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F6613459.p",
+          "url": "https://www.bestbuy.com/site/6613459.p",
           "sku": "6613459",
-          "inStock": true,
+          "inStock": false,
           "lastChecked": "2026-01-23T21:04:41Z",
-          "originalUrl": "https://www.bestbuy.com/site/6613459.p"
+          "originalUrl": "https://www.bestbuy.com/site/6613459.p",
+          "staleHidden": true
         }
       ],
       "priceHistory": [
@@ -3812,11 +3887,12 @@ const TV_DATA = {
           "retailerId": "bestbuy",
           "currentPrice": 4999.99,
           "retailPrice": 6499.99,
-          "url": "https://sovrn.co?key=8385bed416f9d04124c9e2a38846b0fb&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F6614339.p",
+          "url": "https://www.bestbuy.com/site/6614339.p",
           "sku": "6614339",
-          "inStock": true,
+          "inStock": false,
           "lastChecked": "2026-01-23T21:04:42Z",
-          "originalUrl": "https://www.bestbuy.com/site/6614339.p"
+          "originalUrl": "https://www.bestbuy.com/site/6614339.p",
+          "staleHidden": true
         }
       ],
       "priceHistory": [
@@ -3878,11 +3954,12 @@ const TV_DATA = {
           "retailerId": "bestbuy",
           "currentPrice": 3499.99,
           "retailPrice": 4999.99,
-          "url": "https://sovrn.co?key=8385bed416f9d04124c9e2a38846b0fb&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F6553380.p",
+          "url": "https://www.bestbuy.com/site/6553380.p",
           "sku": "6553380",
-          "inStock": true,
+          "inStock": false,
           "lastChecked": "2026-01-23T21:04:33Z",
-          "originalUrl": "https://www.bestbuy.com/site/6553380.p"
+          "originalUrl": "https://www.bestbuy.com/site/6553380.p",
+          "staleHidden": true
         }
       ],
       "priceHistory": [
@@ -3940,11 +4017,12 @@ const TV_DATA = {
           "retailerId": "bestbuy",
           "currentPrice": 1199.99,
           "retailPrice": 1699.99,
-          "url": "https://sovrn.co?key=8385bed416f9d04124c9e2a38846b0fb&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F6578569.p",
+          "url": "https://www.bestbuy.com/site/6578569.p",
           "sku": "6578569",
-          "inStock": true,
+          "inStock": false,
           "lastChecked": "2026-01-23T21:04:33Z",
-          "originalUrl": "https://www.bestbuy.com/site/6578569.p"
+          "originalUrl": "https://www.bestbuy.com/site/6578569.p",
+          "staleHidden": true
         }
       ],
       "priceHistory": [
@@ -4001,11 +4079,12 @@ const TV_DATA = {
           "retailerId": "bestbuy",
           "currentPrice": 1499.99,
           "retailPrice": 2299.99,
-          "url": "https://sovrn.co?key=8385bed416f9d04124c9e2a38846b0fb&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F6578577.p",
+          "url": "https://www.bestbuy.com/site/6578577.p",
           "sku": "6578577",
-          "inStock": true,
+          "inStock": false,
           "lastChecked": "2026-01-23T21:04:34Z",
-          "originalUrl": "https://www.bestbuy.com/site/6578577.p"
+          "originalUrl": "https://www.bestbuy.com/site/6578577.p",
+          "staleHidden": true
         },
         {
           "retailerId": "amazon",
@@ -4017,7 +4096,7 @@ const TV_DATA = {
           "asin": "B0CVQ6YLH7",
           "inStock": true,
           "onSale": false,
-          "lastChecked": "2026-07-03T22:30:00Z"
+          "lastChecked": "2026-07-04T15:15:16Z"
         }
       ],
       "priceHistory": [
@@ -4030,6 +4109,10 @@ const TV_DATA = {
           "date": "2026-01-23",
           "retailerId": "bestbuy",
           "price": 1499.99
+        },
+        {
+          "date": "2026-07-04",
+          "price": 1598
         }
       ],
       "useCaseScores": {
@@ -4078,11 +4161,12 @@ const TV_DATA = {
           "retailerId": "bestbuy",
           "currentPrice": 2199.99,
           "retailPrice": 3199.99,
-          "url": "https://sovrn.co?key=8385bed416f9d04124c9e2a38846b0fb&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F6578574.p",
+          "url": "https://www.bestbuy.com/site/6578574.p",
           "sku": "6578574",
-          "inStock": true,
+          "inStock": false,
           "lastChecked": "2026-01-23T21:04:34Z",
-          "originalUrl": "https://www.bestbuy.com/site/6578574.p"
+          "originalUrl": "https://www.bestbuy.com/site/6578574.p",
+          "staleHidden": true
         }
       ],
       "priceHistory": [
@@ -4143,11 +4227,12 @@ const TV_DATA = {
           "retailerId": "bestbuy",
           "currentPrice": 1999.99,
           "retailPrice": 2999.99,
-          "url": "https://sovrn.co?key=8385bed416f9d04124c9e2a38846b0fb&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F6626033.p",
+          "url": "https://www.bestbuy.com/site/6626033.p",
           "sku": "6626033",
-          "inStock": true,
+          "inStock": false,
           "lastChecked": "2026-01-23T21:04:55Z",
-          "originalUrl": "https://www.bestbuy.com/site/6626033.p"
+          "originalUrl": "https://www.bestbuy.com/site/6626033.p",
+          "staleHidden": true
         }
       ],
       "priceHistory": [
@@ -4201,11 +4286,12 @@ const TV_DATA = {
           "retailerId": "bestbuy",
           "currentPrice": 2399.99,
           "retailPrice": 3499.99,
-          "url": "https://sovrn.co?key=8385bed416f9d04124c9e2a38846b0fb&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F6626032.p",
+          "url": "https://www.bestbuy.com/site/6626032.p",
           "sku": "6626032",
-          "inStock": true,
+          "inStock": false,
           "lastChecked": "2026-01-23T21:04:54Z",
-          "originalUrl": "https://www.bestbuy.com/site/6626032.p"
+          "originalUrl": "https://www.bestbuy.com/site/6626032.p",
+          "staleHidden": true
         }
       ],
       "priceHistory": [
@@ -4263,11 +4349,12 @@ const TV_DATA = {
           "retailerId": "bestbuy",
           "currentPrice": 1999.99,
           "retailPrice": 2999.99,
-          "url": "https://sovrn.co?key=8385bed416f9d04124c9e2a38846b0fb&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F6578568.p",
+          "url": "https://www.bestbuy.com/site/6578568.p",
           "sku": "6578568",
-          "inStock": true,
+          "inStock": false,
           "lastChecked": "2026-01-23T21:04:34Z",
-          "originalUrl": "https://www.bestbuy.com/site/6578568.p"
+          "originalUrl": "https://www.bestbuy.com/site/6578568.p",
+          "staleHidden": true
         }
       ],
       "priceHistory": [
@@ -4325,11 +4412,12 @@ const TV_DATA = {
           "retailerId": "bestbuy",
           "currentPrice": 2599.99,
           "retailPrice": 3499.99,
-          "url": "https://sovrn.co?key=8385bed416f9d04124c9e2a38846b0fb&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F6578575.p",
+          "url": "https://www.bestbuy.com/site/6578575.p",
           "sku": "6578575",
-          "inStock": true,
+          "inStock": false,
           "lastChecked": "2026-01-23T21:04:35Z",
-          "originalUrl": "https://www.bestbuy.com/site/6578575.p"
+          "originalUrl": "https://www.bestbuy.com/site/6578575.p",
+          "staleHidden": true
         }
       ],
       "priceHistory": [
@@ -4383,11 +4471,12 @@ const TV_DATA = {
           "retailerId": "bestbuy",
           "currentPrice": 2999.99,
           "retailPrice": 4799.99,
-          "url": "https://sovrn.co?key=8385bed416f9d04124c9e2a38846b0fb&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F6578576.p",
+          "url": "https://www.bestbuy.com/site/6578576.p",
           "sku": "6578576",
-          "inStock": true,
+          "inStock": false,
           "lastChecked": "2026-01-22T20:29:52Z",
-          "originalUrl": "https://www.bestbuy.com/site/6578576.p"
+          "originalUrl": "https://www.bestbuy.com/site/6578576.p",
+          "staleHidden": true
         }
       ],
       "priceHistory": [
@@ -4440,11 +4529,12 @@ const TV_DATA = {
           "retailerId": "bestbuy",
           "currentPrice": 977.99,
           "retailPrice": 1149.99,
-          "url": "https://sovrn.co?key=8385bed416f9d04124c9e2a38846b0fb&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F6544734.p",
+          "url": "https://www.bestbuy.com/site/6544734.p",
           "sku": "6544734",
-          "inStock": true,
+          "inStock": false,
           "lastChecked": "2026-01-23T21:04:37Z",
-          "originalUrl": "https://www.bestbuy.com/site/6544734.p"
+          "originalUrl": "https://www.bestbuy.com/site/6544734.p",
+          "staleHidden": true
         }
       ],
       "priceHistory": [
@@ -4498,11 +4588,12 @@ const TV_DATA = {
           "retailerId": "bestbuy",
           "currentPrice": 849.99,
           "retailPrice": 1199.99,
-          "url": "https://sovrn.co?key=8385bed416f9d04124c9e2a38846b0fb&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F6544733.p",
+          "url": "https://www.bestbuy.com/site/6544733.p",
           "sku": "6544733",
-          "inStock": true,
+          "inStock": false,
           "lastChecked": "2026-01-23T21:04:37Z",
-          "originalUrl": "https://www.bestbuy.com/site/6544733.p"
+          "originalUrl": "https://www.bestbuy.com/site/6544733.p",
+          "staleHidden": true
         }
       ],
       "priceHistory": [
@@ -4560,11 +4651,12 @@ const TV_DATA = {
           "retailerId": "bestbuy",
           "currentPrice": 1189.99,
           "retailPrice": 1699.99,
-          "url": "https://sovrn.co?key=8385bed416f9d04124c9e2a38846b0fb&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F6544735.p",
+          "url": "https://www.bestbuy.com/site/6544735.p",
           "sku": "6544735",
-          "inStock": true,
+          "inStock": false,
           "lastChecked": "2026-01-22T20:29:54Z",
-          "originalUrl": "https://www.bestbuy.com/site/6544735.p"
+          "originalUrl": "https://www.bestbuy.com/site/6544735.p",
+          "staleHidden": true
         }
       ],
       "priceHistory": [
@@ -4617,11 +4709,12 @@ const TV_DATA = {
           "retailerId": "bestbuy",
           "currentPrice": 1994.99,
           "retailPrice": 2099.99,
-          "url": "https://sovrn.co?key=8385bed416f9d04124c9e2a38846b0fb&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F6544732.p",
+          "url": "https://www.bestbuy.com/site/6544732.p",
           "sku": "6544732",
-          "inStock": true,
+          "inStock": false,
           "lastChecked": "2026-01-23T21:04:36Z",
-          "originalUrl": "https://www.bestbuy.com/site/6544732.p"
+          "originalUrl": "https://www.bestbuy.com/site/6544732.p",
+          "staleHidden": true
         }
       ],
       "priceHistory": [
@@ -4679,11 +4772,12 @@ const TV_DATA = {
           "retailerId": "bestbuy",
           "currentPrice": 3499.99,
           "retailPrice": 6199.99,
-          "url": "https://sovrn.co?key=8385bed416f9d04124c9e2a38846b0fb&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F6544731.p",
+          "url": "https://www.bestbuy.com/site/6544731.p",
           "sku": "6544731",
-          "inStock": true,
+          "inStock": false,
           "lastChecked": "2026-01-23T21:04:36Z",
-          "originalUrl": "https://www.bestbuy.com/site/6544731.p"
+          "originalUrl": "https://www.bestbuy.com/site/6544731.p",
+          "staleHidden": true
         }
       ],
       "priceHistory": [
@@ -4741,11 +4835,12 @@ const TV_DATA = {
           "retailerId": "bestbuy",
           "currentPrice": 427.99,
           "retailPrice": 449.99,
-          "url": "https://sovrn.co?key=8385bed416f9d04124c9e2a38846b0fb&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F6538130.p",
+          "url": "https://www.bestbuy.com/site/6538130.p",
           "sku": "6538130",
-          "inStock": true,
+          "inStock": false,
           "lastChecked": "2026-01-23T21:04:40Z",
-          "originalUrl": "https://www.bestbuy.com/site/6538130.p"
+          "originalUrl": "https://www.bestbuy.com/site/6538130.p",
+          "staleHidden": true
         }
       ],
       "priceHistory": [
@@ -4809,13 +4904,14 @@ const TV_DATA = {
       "prices": [
         {
           "retailerId": "bestbuy",
-          "currentPrice": 569.99,
+          "currentPrice": 649.99,
           "retailPrice": 599.99,
-          "url": "https://sovrn.co?key=8385bed416f9d04124c9e2a38846b0fb&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F6538137.p",
+          "url": "https://www.bestbuy.com/site/6538137.p",
           "sku": "6538137",
           "inStock": true,
-          "lastChecked": "2026-01-23T21:04:41Z",
-          "originalUrl": "https://www.bestbuy.com/site/6538137.p"
+          "lastChecked": "2026-07-04T19:11:07Z",
+          "originalUrl": "https://www.bestbuy.com/site/6538137.p",
+          "onSale": false
         }
       ],
       "priceHistory": [
@@ -4828,6 +4924,10 @@ const TV_DATA = {
           "date": "2026-01-23",
           "retailerId": "bestbuy",
           "price": 569.99
+        },
+        {
+          "date": "2026-07-04",
+          "price": 649.99
         }
       ],
       "useCaseScores": {
@@ -4881,11 +4981,12 @@ const TV_DATA = {
           "retailerId": "bestbuy",
           "currentPrice": 299.99,
           "retailPrice": 649.99,
-          "url": "https://sovrn.co?key=8385bed416f9d04124c9e2a38846b0fb&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F6625833.p",
+          "url": "https://www.bestbuy.com/site/6625833.p",
           "sku": "6625833",
-          "inStock": true,
+          "inStock": false,
           "lastChecked": "2026-01-23T21:05:01Z",
-          "originalUrl": "https://www.bestbuy.com/site/6625833.p"
+          "originalUrl": "https://www.bestbuy.com/site/6625833.p",
+          "staleHidden": true
         }
       ],
       "priceHistory": [
@@ -4937,13 +5038,14 @@ const TV_DATA = {
       "prices": [
         {
           "retailerId": "bestbuy",
-          "currentPrice": 329.99,
+          "currentPrice": 349.99,
           "retailPrice": 699.99,
-          "url": "https://sovrn.co?key=8385bed416f9d04124c9e2a38846b0fb&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F6625835.p",
+          "url": "https://www.bestbuy.com/site/6625835.p",
           "sku": "6625835",
           "inStock": true,
-          "lastChecked": "2026-01-22T20:30:22Z",
-          "originalUrl": "https://www.bestbuy.com/site/6625835.p"
+          "lastChecked": "2026-07-04T19:11:07Z",
+          "originalUrl": "https://www.bestbuy.com/site/6625835.p",
+          "onSale": false
         }
       ],
       "priceHistory": [
@@ -4951,6 +5053,10 @@ const TV_DATA = {
           "date": "2026-01-22",
           "retailerId": "bestbuy",
           "price": 329.99
+        },
+        {
+          "date": "2026-07-04",
+          "price": 349.99
         }
       ],
       "useCaseScores": {
@@ -4997,11 +5103,12 @@ const TV_DATA = {
           "retailerId": "bestbuy",
           "currentPrice": 449.99,
           "retailPrice": 899.99,
-          "url": "https://sovrn.co?key=8385bed416f9d04124c9e2a38846b0fb&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F6625874.p",
+          "url": "https://www.bestbuy.com/site/6625874.p",
           "sku": "6625874",
           "inStock": true,
-          "lastChecked": "2026-01-23T21:05:00Z",
-          "originalUrl": "https://www.bestbuy.com/site/6625874.p"
+          "lastChecked": "2026-07-04T19:11:07Z",
+          "originalUrl": "https://www.bestbuy.com/site/6625874.p",
+          "onSale": true
         }
       ],
       "priceHistory": [
@@ -5013,6 +5120,10 @@ const TV_DATA = {
         {
           "date": "2026-01-23",
           "retailerId": "bestbuy",
+          "price": 449.99
+        },
+        {
+          "date": "2026-07-04",
           "price": 449.99
         }
       ],
@@ -5060,11 +5171,12 @@ const TV_DATA = {
           "retailerId": "bestbuy",
           "currentPrice": 599.99,
           "retailPrice": 1199.99,
-          "url": "https://sovrn.co?key=8385bed416f9d04124c9e2a38846b0fb&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F6625834.p",
+          "url": "https://www.bestbuy.com/site/6625834.p",
           "sku": "6625834",
           "inStock": true,
-          "lastChecked": "2026-01-23T21:05:02Z",
-          "originalUrl": "https://www.bestbuy.com/site/6625834.p"
+          "lastChecked": "2026-07-04T19:11:07Z",
+          "originalUrl": "https://www.bestbuy.com/site/6625834.p",
+          "onSale": true
         }
       ],
       "priceHistory": [
@@ -5076,6 +5188,10 @@ const TV_DATA = {
         {
           "date": "2026-01-23",
           "retailerId": "bestbuy",
+          "price": 599.99
+        },
+        {
+          "date": "2026-07-04",
           "price": 599.99
         }
       ],
@@ -5121,13 +5237,14 @@ const TV_DATA = {
       "prices": [
         {
           "retailerId": "bestbuy",
-          "currentPrice": 899.99,
+          "currentPrice": 849.99,
           "retailPrice": 1399.99,
-          "url": "https://sovrn.co?key=8385bed416f9d04124c9e2a38846b0fb&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F6643446.p",
+          "url": "https://www.bestbuy.com/site/6643446.p",
           "sku": "6643446",
           "inStock": true,
-          "lastChecked": "2026-01-23T21:05:01Z",
-          "originalUrl": "https://www.bestbuy.com/site/6643446.p"
+          "lastChecked": "2026-07-04T19:11:07Z",
+          "originalUrl": "https://www.bestbuy.com/site/6643446.p",
+          "onSale": true
         }
       ],
       "priceHistory": [
@@ -5140,6 +5257,10 @@ const TV_DATA = {
           "date": "2026-01-23",
           "retailerId": "bestbuy",
           "price": 899.99
+        },
+        {
+          "date": "2026-07-04",
+          "price": 849.99
         }
       ],
       "useCaseScores": {
@@ -5186,11 +5307,12 @@ const TV_DATA = {
           "retailerId": "bestbuy",
           "currentPrice": 699.99,
           "retailPrice": 1299.99,
-          "url": "https://sovrn.co?key=8385bed416f9d04124c9e2a38846b0fb&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F6621468.p",
+          "url": "https://www.bestbuy.com/site/6621468.p",
           "sku": "6621468",
-          "inStock": true,
+          "inStock": false,
           "lastChecked": "2026-01-23T21:04:58Z",
-          "originalUrl": "https://www.bestbuy.com/site/6621468.p"
+          "originalUrl": "https://www.bestbuy.com/site/6621468.p",
+          "staleHidden": true
         }
       ],
       "priceHistory": [
@@ -5250,23 +5372,24 @@ const TV_DATA = {
           "retailerId": "bestbuy",
           "currentPrice": 899.99,
           "retailPrice": 1499.99,
-          "url": "https://sovrn.co?key=8385bed416f9d04124c9e2a38846b0fb&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F6621470.p",
+          "url": "https://www.bestbuy.com/site/6621470.p",
           "sku": "6621470",
-          "inStock": true,
+          "inStock": false,
           "lastChecked": "2026-01-22T20:30:19Z",
-          "originalUrl": "https://www.bestbuy.com/site/6621470.p"
+          "originalUrl": "https://www.bestbuy.com/site/6621470.p",
+          "staleHidden": true
         },
         {
           "retailerId": "amazon",
           "currentPrice": 749.99,
-          "retailPrice": null,
+          "retailPrice": 798.99,
           "url": "https://www.amazon.com/dp/B0DVX8WJ7S?tag=tvschool-20",
           "originalUrl": "https://www.amazon.com/dp/B0DVX8WJ7S",
           "sku": "B0DVX8WJ7S",
           "asin": "B0DVX8WJ7S",
           "inStock": true,
-          "onSale": false,
-          "lastChecked": "2026-07-03T22:30:00Z"
+          "onSale": true,
+          "lastChecked": "2026-07-04T15:15:16Z"
         }
       ],
       "priceHistory": [
@@ -5274,6 +5397,10 @@ const TV_DATA = {
           "date": "2026-01-22",
           "retailerId": "bestbuy",
           "price": 899.99
+        },
+        {
+          "date": "2026-07-04",
+          "price": 749.99
         }
       ],
       "useCaseScores": {
@@ -5319,13 +5446,14 @@ const TV_DATA = {
       "prices": [
         {
           "retailerId": "bestbuy",
-          "currentPrice": 1198.99,
-          "retailPrice": 1999.99,
-          "url": "https://sovrn.co?key=8385bed416f9d04124c9e2a38846b0fb&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F6621474.p",
+          "currentPrice": 999.99,
+          "retailPrice": 1299.99,
+          "url": "https://www.bestbuy.com/site/6621474.p",
           "sku": "6621474",
-          "inStock": true,
-          "lastChecked": "2026-01-23T21:05:00Z",
-          "originalUrl": "https://www.bestbuy.com/site/6621474.p"
+          "inStock": false,
+          "lastChecked": "2026-07-04T19:11:07Z",
+          "originalUrl": "https://www.bestbuy.com/site/6621474.p",
+          "onSale": true
         }
       ],
       "priceHistory": [
@@ -5383,13 +5511,14 @@ const TV_DATA = {
       "prices": [
         {
           "retailerId": "bestbuy",
-          "currentPrice": 1699.99,
-          "retailPrice": 2499.99,
-          "url": "https://sovrn.co?key=8385bed416f9d04124c9e2a38846b0fb&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F6621467.p",
+          "currentPrice": 1499.99,
+          "retailPrice": 1799.99,
+          "url": "https://www.bestbuy.com/site/6621467.p",
           "sku": "6621467",
           "inStock": true,
-          "lastChecked": "2026-01-23T21:04:58Z",
-          "originalUrl": "https://www.bestbuy.com/site/6621467.p"
+          "lastChecked": "2026-07-04T19:11:07Z",
+          "originalUrl": "https://www.bestbuy.com/site/6621467.p",
+          "onSale": true
         }
       ],
       "priceHistory": [
@@ -5402,6 +5531,10 @@ const TV_DATA = {
           "date": "2026-01-23",
           "retailerId": "bestbuy",
           "price": 1699.99
+        },
+        {
+          "date": "2026-07-04",
+          "price": 1499.99
         }
       ],
       "useCaseScores": {
@@ -5447,13 +5580,14 @@ const TV_DATA = {
       "prices": [
         {
           "retailerId": "bestbuy",
-          "currentPrice": 1999.99,
-          "retailPrice": 3999.99,
-          "url": "https://sovrn.co?key=8385bed416f9d04124c9e2a38846b0fb&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F6621472.p",
+          "currentPrice": 1897.99,
+          "retailPrice": 2799.99,
+          "url": "https://www.bestbuy.com/site/6621472.p",
           "sku": "6621472",
           "inStock": true,
-          "lastChecked": "2026-01-23T21:04:59Z",
-          "originalUrl": "https://www.bestbuy.com/site/6621472.p"
+          "lastChecked": "2026-07-04T19:11:07Z",
+          "originalUrl": "https://www.bestbuy.com/site/6621472.p",
+          "onSale": true
         }
       ],
       "priceHistory": [
@@ -5466,6 +5600,10 @@ const TV_DATA = {
           "date": "2026-01-23",
           "retailerId": "bestbuy",
           "price": 1999.99
+        },
+        {
+          "date": "2026-07-04",
+          "price": 1897.99
         }
       ],
       "useCaseScores": {
@@ -5513,11 +5651,12 @@ const TV_DATA = {
           "retailerId": "bestbuy",
           "currentPrice": 9999.99,
           "retailPrice": 19999.99,
-          "url": "https://sovrn.co?key=8385bed416f9d04124c9e2a38846b0fb&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F6621473.p",
+          "url": "https://www.bestbuy.com/site/6621473.p",
           "sku": "6621473",
-          "inStock": true,
+          "inStock": false,
           "lastChecked": "2026-01-23T21:04:57Z",
-          "originalUrl": "https://www.bestbuy.com/site/6621473.p"
+          "originalUrl": "https://www.bestbuy.com/site/6621473.p",
+          "staleHidden": true
         }
       ],
       "priceHistory": [
@@ -5577,11 +5716,12 @@ const TV_DATA = {
           "retailerId": "bestbuy",
           "currentPrice": 999.99,
           "retailPrice": 2499.99,
-          "url": "https://sovrn.co?key=8385bed416f9d04124c9e2a38846b0fb&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F6579452.p",
+          "url": "https://www.bestbuy.com/site/6579452.p",
           "sku": "6579452",
-          "inStock": true,
+          "inStock": false,
           "lastChecked": "2026-01-22T20:29:56Z",
-          "originalUrl": "https://www.bestbuy.com/site/6579452.p"
+          "originalUrl": "https://www.bestbuy.com/site/6579452.p",
+          "staleHidden": true
         }
       ],
       "priceHistory": [
@@ -5642,11 +5782,12 @@ const TV_DATA = {
           "retailerId": "bestbuy",
           "currentPrice": 1499.99,
           "retailPrice": 3199.99,
-          "url": "https://sovrn.co?key=8385bed416f9d04124c9e2a38846b0fb&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F6579442.p",
+          "url": "https://www.bestbuy.com/site/6579442.p",
           "sku": "6579442",
-          "inStock": true,
+          "inStock": false,
           "lastChecked": "2026-01-22T20:29:56Z",
-          "originalUrl": "https://www.bestbuy.com/site/6579442.p"
+          "originalUrl": "https://www.bestbuy.com/site/6579442.p",
+          "staleHidden": true
         }
       ],
       "priceHistory": [
@@ -5702,11 +5843,12 @@ const TV_DATA = {
           "retailerId": "bestbuy",
           "currentPrice": 1999.99,
           "retailPrice": 3799.99,
-          "url": "https://sovrn.co?key=8385bed416f9d04124c9e2a38846b0fb&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F6579456.p",
+          "url": "https://www.bestbuy.com/site/6579456.p",
           "sku": "6579456",
-          "inStock": true,
+          "inStock": false,
           "lastChecked": "2026-01-22T20:29:57Z",
-          "originalUrl": "https://www.bestbuy.com/site/6579456.p"
+          "originalUrl": "https://www.bestbuy.com/site/6579456.p",
+          "staleHidden": true
         }
       ],
       "priceHistory": [
@@ -5767,11 +5909,12 @@ const TV_DATA = {
           "retailerId": "bestbuy",
           "currentPrice": 2999.99,
           "retailPrice": 4999.99,
-          "url": "https://sovrn.co?key=8385bed416f9d04124c9e2a38846b0fb&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F6579450.p",
+          "url": "https://www.bestbuy.com/site/6579450.p",
           "sku": "6579450",
-          "inStock": true,
+          "inStock": false,
           "lastChecked": "2026-01-22T18:49:17Z",
-          "originalUrl": "https://www.bestbuy.com/site/6579450.p"
+          "originalUrl": "https://www.bestbuy.com/site/6579450.p",
+          "staleHidden": true
         }
       ],
       "priceHistory": [
@@ -5832,11 +5975,12 @@ const TV_DATA = {
           "retailerId": "bestbuy",
           "currentPrice": 14999.99,
           "retailPrice": 19999.99,
-          "url": "https://sovrn.co?key=8385bed416f9d04124c9e2a38846b0fb&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F6579445.p",
+          "url": "https://www.bestbuy.com/site/6579445.p",
           "sku": "6579445",
-          "inStock": true,
+          "inStock": false,
           "lastChecked": "2026-01-22T20:29:55Z",
-          "originalUrl": "https://www.bestbuy.com/site/6579445.p"
+          "originalUrl": "https://www.bestbuy.com/site/6579445.p",
+          "staleHidden": true
         }
       ],
       "priceHistory": [
@@ -5897,23 +6041,24 @@ const TV_DATA = {
           "retailerId": "bestbuy",
           "currentPrice": 999.99,
           "retailPrice": 2499.99,
-          "url": "https://sovrn.co?key=8385bed416f9d04124c9e2a38846b0fb&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F6625842.p",
+          "url": "https://www.bestbuy.com/site/6625842.p",
           "sku": "6625842",
-          "inStock": true,
+          "inStock": false,
           "lastChecked": "2026-01-23T21:04:55Z",
-          "originalUrl": "https://www.bestbuy.com/site/6625842.p"
+          "originalUrl": "https://www.bestbuy.com/site/6625842.p",
+          "staleHidden": true
         },
         {
           "retailerId": "amazon",
           "currentPrice": 997.99,
-          "retailPrice": null,
+          "retailPrice": 1499.99,
           "url": "https://www.amazon.com/dp/B0F53CZ4WT?tag=tvschool-20",
           "originalUrl": "https://www.amazon.com/dp/B0F53CZ4WT",
           "sku": "B0F53CZ4WT",
           "asin": "B0F53CZ4WT",
           "inStock": true,
-          "onSale": false,
-          "lastChecked": "2026-07-03T22:30:00Z"
+          "onSale": true,
+          "lastChecked": "2026-07-04T15:15:16Z"
         }
       ],
       "priceHistory": [
@@ -5926,6 +6071,10 @@ const TV_DATA = {
           "date": "2026-01-23",
           "retailerId": "bestbuy",
           "price": 999.99
+        },
+        {
+          "date": "2026-07-04",
+          "price": 997.99
         }
       ],
       "useCaseScores": {
@@ -5972,23 +6121,24 @@ const TV_DATA = {
           "retailerId": "bestbuy",
           "currentPrice": 1499.99,
           "retailPrice": 3199.99,
-          "url": "https://sovrn.co?key=8385bed416f9d04124c9e2a38846b0fb&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F6625839.p",
+          "url": "https://www.bestbuy.com/site/6625839.p",
           "sku": "6625839",
-          "inStock": true,
+          "inStock": false,
           "lastChecked": "2026-01-22T18:51:33Z",
-          "originalUrl": "https://www.bestbuy.com/site/6625839.p"
+          "originalUrl": "https://www.bestbuy.com/site/6625839.p",
+          "staleHidden": true
         },
         {
           "retailerId": "amazon",
           "currentPrice": 1397.99,
-          "retailPrice": null,
+          "retailPrice": 1999.99,
           "url": "https://www.amazon.com/dp/B0F53HDFBR?tag=tvschool-20",
           "originalUrl": "https://www.amazon.com/dp/B0F53HDFBR",
           "sku": "B0F53HDFBR",
           "asin": "B0F53HDFBR",
           "inStock": true,
-          "onSale": false,
-          "lastChecked": "2026-07-03T22:30:00Z"
+          "onSale": true,
+          "lastChecked": "2026-07-04T15:15:16Z"
         }
       ],
       "priceHistory": [
@@ -5996,6 +6146,10 @@ const TV_DATA = {
           "date": "2026-01-22",
           "retailerId": "bestbuy",
           "price": 1499.99
+        },
+        {
+          "date": "2026-07-04",
+          "price": 1397.99
         }
       ],
       "useCaseScores": {
@@ -6042,11 +6196,12 @@ const TV_DATA = {
           "retailerId": "bestbuy",
           "currentPrice": 1999.99,
           "retailPrice": 3799.99,
-          "url": "https://sovrn.co?key=8385bed416f9d04124c9e2a38846b0fb&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F6625843.p",
+          "url": "https://www.bestbuy.com/site/6625843.p",
           "sku": "6625843",
-          "inStock": true,
+          "inStock": false,
           "lastChecked": "2026-01-23T21:04:57Z",
-          "originalUrl": "https://www.bestbuy.com/site/6625843.p"
+          "originalUrl": "https://www.bestbuy.com/site/6625843.p",
+          "staleHidden": true
         }
       ],
       "priceHistory": [
@@ -6105,11 +6260,12 @@ const TV_DATA = {
           "retailerId": "bestbuy",
           "currentPrice": 2999.99,
           "retailPrice": 4999.99,
-          "url": "https://sovrn.co?key=8385bed416f9d04124c9e2a38846b0fb&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F6625840.p",
+          "url": "https://www.bestbuy.com/site/6625840.p",
           "sku": "6625840",
-          "inStock": true,
+          "inStock": false,
           "lastChecked": "2026-01-22T20:30:16Z",
-          "originalUrl": "https://www.bestbuy.com/site/6625840.p"
+          "originalUrl": "https://www.bestbuy.com/site/6625840.p",
+          "staleHidden": true
         }
       ],
       "priceHistory": [
