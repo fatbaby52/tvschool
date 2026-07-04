@@ -54,12 +54,12 @@ const LAPTOP_DATA = {
     },
     {
       "id": "bestbuy-6626057",
-      "brand": "HP OMEN",
-      "model": "16-AP0053DX / BP1Q1UA#ABA",
+      "brand": "HP",
+      "model": "OMEN 16-AP0053DX / BP1Q1UA#ABA",
       "fullName": "HP OMEN - 16\" 2K 144Hz Gaming Laptop - AMD Ryzen 9 8940HX 2025 - 32GB DDR5 Memory - NVIDIA GeForce RTX 5060 - 1TB SSD - Shadow Black",
       "displayName": "HP OMEN",
       "year": 2024,
-      "screenSize": 16.0,
+      "screenSize": 16,
       "resolution": "1920x1080",
       "displayType": "IPS",
       "refreshRate": 144,
@@ -84,7 +84,7 @@ const LAPTOP_DATA = {
         "gaming": 7.5,
         "productivity": 10,
         "contentCreation": 9.2,
-        "student": 6.0,
+        "student": 6,
         "portable": 5
       },
       "prices": [
@@ -130,8 +130,8 @@ const LAPTOP_DATA = {
       "useCaseScores": {
         "gaming": 5.5,
         "productivity": 4.5,
-        "contentCreation": 5.0,
-        "student": 7.0,
+        "contentCreation": 5,
+        "student": 7,
         "portable": 5
       },
       "prices": [
@@ -155,7 +155,7 @@ const LAPTOP_DATA = {
       "fullName": "GIGABYTE - G6 KF 16\" 165Hz Gaming Laptop IPS - Intel i7-13620H with 32GB RAM - NVIDIA GeForce RTX 4060 - 1TB SSD - Black",
       "displayName": "G6 KF 16",
       "year": 2024,
-      "screenSize": 16.0,
+      "screenSize": 16,
       "resolution": "1920x1080",
       "displayType": "IPS",
       "refreshRate": 165,
@@ -179,8 +179,8 @@ const LAPTOP_DATA = {
       "useCaseScores": {
         "gaming": 5.5,
         "productivity": 9.5,
-        "contentCreation": 8.0,
-        "student": 6.0,
+        "contentCreation": 8,
+        "student": 6,
         "portable": 5
       },
       "prices": [
@@ -204,7 +204,7 @@ const LAPTOP_DATA = {
       "fullName": "GIGABYTE - GAMING A16 - 16\" 165Hz 1920x1200 WUXGA Intel Core i7-13620H - 512GB SSD - 16GB DDR5 RAM - GeForce RTX 4050 - Black Steel",
       "displayName": "GAMING A16",
       "year": 2024,
-      "screenSize": 16.0,
+      "screenSize": 16,
       "resolution": "1920x1200",
       "displayType": "IPS",
       "refreshRate": 165,
@@ -227,9 +227,9 @@ const LAPTOP_DATA = {
       "dealScore": 177.3,
       "useCaseScores": {
         "gaming": 5.5,
-        "productivity": 9.0,
+        "productivity": 9,
         "contentCreation": 7.2,
-        "student": 7.0,
+        "student": 7,
         "portable": 5
       },
       "prices": [
@@ -276,8 +276,8 @@ const LAPTOP_DATA = {
       "dealScore": 176.5,
       "useCaseScores": {
         "gaming": 5,
-        "productivity": 9.0,
-        "contentCreation": 7.0,
+        "productivity": 9,
+        "contentCreation": 7,
         "student": 7.5,
         "portable": 5
       },
@@ -302,7 +302,7 @@ const LAPTOP_DATA = {
       "fullName": "Geek Squad Certified Refurbished MacBook Pro 14\" Laptop - Apple M1 Pro chip - 16GB Memory - 1TB SSD - Space Gray",
       "displayName": "MacBook Pro 14 (Refurb)",
       "year": 2024,
-      "screenSize": 14.0,
+      "screenSize": 14,
       "resolution": "1920x1080",
       "displayType": "IPS",
       "refreshRate": 60,
@@ -332,7 +332,7 @@ const LAPTOP_DATA = {
           "retailerId": "bestbuy",
           "retailer": "Best Buy",
           "currentPrice": 599.99,
-          "retailPrice": 2499.0,
+          "retailPrice": 2499,
           "url": "https://api.bestbuy.com/click/-/6561785/pdp",
           "inStock": false
         }
@@ -366,12 +366,12 @@ const LAPTOP_DATA = {
         "gaming1080pAvgFps": 45
       },
       "fairValue": 1620,
-      "currentPrice": 999.0,
+      "currentPrice": 999,
       "dealGrade": "A",
       "dealScore": 162.2,
       "useCaseScores": {
         "gaming": 5.5,
-        "productivity": 9.0,
+        "productivity": 9,
         "contentCreation": 7.2,
         "student": 6.5,
         "portable": 5
@@ -380,8 +380,8 @@ const LAPTOP_DATA = {
         {
           "retailerId": "bestbuy",
           "retailer": "Best Buy",
-          "currentPrice": 999.0,
-          "retailPrice": 999.0,
+          "currentPrice": 999,
+          "retailPrice": 999,
           "url": "https://api.bestbuy.com/click/-/6643727/pdp",
           "inStock": true
         }
@@ -397,7 +397,7 @@ const LAPTOP_DATA = {
       "fullName": "ASUS - TUF Gaming A16 16\" 165Hz Gaming Laptop FHD-AMD Ryzen 7 7735HS with 16GB DDR5 Memory- Radeon RX7700S 512GB PCIe SSD - Off Black",
       "displayName": "TUF Gaming A16 16",
       "year": 2024,
-      "screenSize": 16.0,
+      "screenSize": 16,
       "resolution": "1920x1080",
       "displayType": "IPS",
       "refreshRate": 165,
@@ -422,7 +422,7 @@ const LAPTOP_DATA = {
         "gaming": 5.5,
         "productivity": 7.5,
         "contentCreation": 6.5,
-        "student": 6.0,
+        "student": 6,
         "portable": 5
       },
       "prices": [
@@ -476,7 +476,7 @@ const LAPTOP_DATA = {
           "retailerId": "bestbuy",
           "retailer": "Best Buy",
           "currentPrice": 329.99,
-          "retailPrice": 699.0,
+          "retailPrice": 699,
           "url": "https://api.bestbuy.com/click/-/6489687/pdp",
           "inStock": false
         }
@@ -492,7 +492,7 @@ const LAPTOP_DATA = {
       "fullName": "ASUS - ROG Strix G16 16\" FHD 165Hz Gaming Laptop - AMD Ryzen 9 HX - 16GB RAM - NVIDIA GeForce RTX 5070 Ti - 1TB SSD - Eclipse Gray",
       "displayName": "ROG Strix G16",
       "year": 2024,
-      "screenSize": 16.0,
+      "screenSize": 16,
       "resolution": "1920x1080",
       "displayType": "IPS",
       "refreshRate": 165,
@@ -517,7 +517,7 @@ const LAPTOP_DATA = {
         "gaming": 7.5,
         "productivity": 10,
         "contentCreation": 8.8,
-        "student": 6.0,
+        "student": 6,
         "portable": 5
       },
       "prices": [
@@ -564,7 +564,7 @@ const LAPTOP_DATA = {
         "gaming": 5,
         "productivity": 4.5,
         "contentCreation": 4.8,
-        "student": 7.0,
+        "student": 7,
         "portable": 5
       },
       "prices": [
@@ -588,7 +588,7 @@ const LAPTOP_DATA = {
       "fullName": "GIGABYTE - GAMING A16 - 16\" 165Hz 1920x1200 WUXGA Intel Core i7-13620H - 1TB SSD - 32GB DDR5 RAM - GeForce RTX 5060 - Black Steel",
       "displayName": "GAMING A16",
       "year": 2024,
-      "screenSize": 16.0,
+      "screenSize": 16,
       "resolution": "1920x1200",
       "displayType": "IPS",
       "refreshRate": 165,
@@ -612,8 +612,8 @@ const LAPTOP_DATA = {
       "useCaseScores": {
         "gaming": 7.5,
         "productivity": 9.5,
-        "contentCreation": 9.0,
-        "student": 6.0,
+        "contentCreation": 9,
+        "student": 6,
         "portable": 5
       },
       "prices": [
@@ -684,7 +684,7 @@ const LAPTOP_DATA = {
       "fullName": "Geek Squad Certified Refurbished MacBook Pro 14\" Laptop - Apple M1 Pro chip - 16GB Memory - 512GB SSD - Silver",
       "displayName": "MacBook Pro 14 (Refurb)",
       "year": 2024,
-      "screenSize": 14.0,
+      "screenSize": 14,
       "resolution": "1920x1080",
       "displayType": "IPS",
       "refreshRate": 60,
@@ -714,7 +714,7 @@ const LAPTOP_DATA = {
           "retailerId": "bestbuy",
           "retailer": "Best Buy",
           "currentPrice": 679.99,
-          "retailPrice": 1999.0,
+          "retailPrice": 1999,
           "url": "https://api.bestbuy.com/click/-/6544237/pdp",
           "inStock": false
         }
@@ -747,7 +747,7 @@ const LAPTOP_DATA = {
       "fairValue": 547,
       "currentPrice": 379.99,
       "dealGrade": "B",
-      "dealScore": 144.0,
+      "dealScore": 144,
       "useCaseScores": {
         "gaming": 1.5,
         "productivity": 5.5,
@@ -776,7 +776,7 @@ const LAPTOP_DATA = {
       "fullName": "ASUS - TUF Gaming F16 16\" FHD+ 165Hz - Intel Core i7-14650HX - 16GB Memory - NVIDIA GeForce RTX 5050 - 512GB SSD - Jaeger Gray",
       "displayName": "TUF Gaming F16 16",
       "year": 2024,
-      "screenSize": 16.0,
+      "screenSize": 16,
       "resolution": "1920x1200",
       "displayType": "IPS",
       "refreshRate": 165,
@@ -801,7 +801,7 @@ const LAPTOP_DATA = {
         "gaming": 5.5,
         "productivity": 10,
         "contentCreation": 7.8,
-        "student": 6.0,
+        "student": 6,
         "portable": 5
       },
       "prices": [
@@ -825,7 +825,7 @@ const LAPTOP_DATA = {
       "fullName": "ASUS - ROG Zephyrus G14 14\" OLED 3K 120Hz Gaming Laptop - AMD Ryzen 9 8945HS - 16GB LPDDR5X - NVIDIA GeForce RTX 4060 - 1TB SSD - Platinum White",
       "displayName": "ROG Zephyrus G14",
       "year": 2024,
-      "screenSize": 14.0,
+      "screenSize": 14,
       "resolution": "1920x1080",
       "displayType": "OLED",
       "refreshRate": 120,
@@ -845,12 +845,12 @@ const LAPTOP_DATA = {
       "fairValue": 1680,
       "currentPrice": 1199.99,
       "dealGrade": "B",
-      "dealScore": 140.0,
+      "dealScore": 140,
       "useCaseScores": {
         "gaming": 5,
         "productivity": 8.5,
         "contentCreation": 7.2,
-        "student": 7.0,
+        "student": 7,
         "portable": 7.5
       },
       "prices": [
@@ -874,7 +874,7 @@ const LAPTOP_DATA = {
       "fullName": "GIGABYTE - G6X 16\" 165Hz Gaming Laptop IPS - Intel i7-13650HX with 32GB RAM - NVIDIA GeForce RTX 4060 - 1TB SSD - Black",
       "displayName": "G6X 16",
       "year": 2024,
-      "screenSize": 16.0,
+      "screenSize": 16,
       "resolution": "1920x1080",
       "displayType": "IPS",
       "refreshRate": 165,
@@ -899,7 +899,7 @@ const LAPTOP_DATA = {
         "gaming": 5.5,
         "productivity": 10,
         "contentCreation": 8.2,
-        "student": 6.0,
+        "student": 6,
         "portable": 5
       },
       "prices": [
@@ -923,7 +923,7 @@ const LAPTOP_DATA = {
       "fullName": "Geek Squad Certified Refurbished MacBook Pro 14\" Laptop - Apple M1 Pro chip - 16GB Memory - 1TB SSD - Silver",
       "displayName": "MacBook Pro 14 (Refurb)",
       "year": 2024,
-      "screenSize": 14.0,
+      "screenSize": 14,
       "resolution": "1920x1080",
       "displayType": "IPS",
       "refreshRate": 60,
@@ -953,7 +953,7 @@ const LAPTOP_DATA = {
           "retailerId": "bestbuy",
           "retailer": "Best Buy",
           "currentPrice": 749.99,
-          "retailPrice": 2499.0,
+          "retailPrice": 2499,
           "url": "https://api.bestbuy.com/click/-/6515461/pdp",
           "inStock": true
         }
@@ -969,7 +969,7 @@ const LAPTOP_DATA = {
       "fullName": "ASUS - TUF Gaming F16 16\" FHD+ 165Hz Gaming Laptop - Intel Core i7-14650HX - 32GB RAM - NVIDIA GeForce RTX 5060 - 1TB SSD - Jaeger Gray",
       "displayName": "TUF Gaming F16 16",
       "year": 2024,
-      "screenSize": 16.0,
+      "screenSize": 16,
       "resolution": "1920x1200",
       "displayType": "IPS",
       "refreshRate": 165,
@@ -994,7 +994,7 @@ const LAPTOP_DATA = {
         "gaming": 7.5,
         "productivity": 10,
         "contentCreation": 9.2,
-        "student": 6.0,
+        "student": 6,
         "portable": 5
       },
       "prices": [
@@ -1041,7 +1041,7 @@ const LAPTOP_DATA = {
       "dealScore": 134.7,
       "useCaseScores": {
         "gaming": 7.5,
-        "productivity": 9.0,
+        "productivity": 9,
         "contentCreation": 8.2,
         "student": 6.5,
         "portable": 5
@@ -1067,7 +1067,7 @@ const LAPTOP_DATA = {
       "fullName": "ASUS - ROG Strix G16 16\" FHD+ 165Hz Gaming Laptop - Intel Core i7-14650HX - 16GB RAM - NVIDIA GeForce RTX 5050 - 1TB SSD - Eclipse Gray",
       "displayName": "ROG Strix G16",
       "year": 2024,
-      "screenSize": 16.0,
+      "screenSize": 16,
       "resolution": "1920x1200",
       "displayType": "IPS",
       "refreshRate": 165,
@@ -1092,7 +1092,7 @@ const LAPTOP_DATA = {
         "gaming": 5.5,
         "productivity": 10,
         "contentCreation": 7.8,
-        "student": 6.0,
+        "student": 6,
         "portable": 5
       },
       "prices": [
@@ -1165,7 +1165,7 @@ const LAPTOP_DATA = {
       "fullName": "Lenovo - Legion Pro 5 16\" 2.5K OLED Gaming Laptop - AMD Ryzen 7 8745HX 2025 - 32GB RAM - NVIDIA GeForce RTX 5060 - 1TB SSD - Eclipse Black",
       "displayName": "Legion Pro 5 16",
       "year": 2024,
-      "screenSize": 16.0,
+      "screenSize": 16,
       "resolution": "1920x1080",
       "displayType": "OLED",
       "refreshRate": 60,
@@ -1187,7 +1187,7 @@ const LAPTOP_DATA = {
       "useCaseScores": {
         "gaming": 7,
         "productivity": 5,
-        "contentCreation": 7.0,
+        "contentCreation": 7,
         "student": 5.5,
         "portable": 5
       },
@@ -1212,7 +1212,7 @@ const LAPTOP_DATA = {
       "fullName": "Apple - MacBook Pro 14\" Certified Refurbished - M1 Pro chip - 8CPU/14GPU with 16GB Memory - 512GB SSD (2021) - Silver",
       "displayName": "MacBook Pro 14 (Refurb)",
       "year": 2024,
-      "screenSize": 14.0,
+      "screenSize": 14,
       "resolution": "1920x1080",
       "displayType": "IPS",
       "refreshRate": 60,
@@ -1258,7 +1258,7 @@ const LAPTOP_DATA = {
       "fullName": "Apple - MacBook Pro 14\" Certified Refurbished - M1 Pro chip - 8CPU/14GPU with 16GB Memory - 512GB SSD (2021) - Gray",
       "displayName": "MacBook Pro 14 (Refurb)",
       "year": 2024,
-      "screenSize": 14.0,
+      "screenSize": 14,
       "resolution": "1920x1080",
       "displayType": "IPS",
       "refreshRate": 60,
@@ -1342,7 +1342,7 @@ const LAPTOP_DATA = {
           "inStock": false
         }
       ],
-      "rating": 5.0,
+      "rating": 5,
       "reviewCount": 1,
       "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/7146c071-545e-47c8-b5ea-b47f4ed015ac.jpg"
     },
@@ -1383,7 +1383,7 @@ const LAPTOP_DATA = {
           "retailerId": "bestbuy",
           "retailer": "Best Buy",
           "currentPrice": 399.99,
-          "retailPrice": 699.0,
+          "retailPrice": 699,
           "url": "https://api.bestbuy.com/click/-/6489684/pdp",
           "inStock": true
         }
@@ -1429,7 +1429,7 @@ const LAPTOP_DATA = {
           "retailerId": "bestbuy",
           "retailer": "Best Buy",
           "currentPrice": 399.99,
-          "retailPrice": 699.0,
+          "retailPrice": 699,
           "url": "https://api.bestbuy.com/click/-/6489769/pdp",
           "inStock": false
         }
@@ -1445,7 +1445,7 @@ const LAPTOP_DATA = {
       "fullName": "Geek Squad Certified Refurbished MacBook Pro 16\" Laptop - Apple M1 Pro chip - 16GB Memory - 512GB SSD - Silver",
       "displayName": "MacBook Pro 16 (Refurb)",
       "year": 2024,
-      "screenSize": 16.0,
+      "screenSize": 16,
       "resolution": "1920x1080",
       "displayType": "IPS",
       "refreshRate": 60,
@@ -1467,7 +1467,7 @@ const LAPTOP_DATA = {
         "gaming": 1.5,
         "productivity": 7.5,
         "contentCreation": 4.5,
-        "student": 7.0,
+        "student": 7,
         "portable": 6
       },
       "prices": [
@@ -1475,7 +1475,7 @@ const LAPTOP_DATA = {
           "retailerId": "bestbuy",
           "retailer": "Best Buy",
           "currentPrice": 799.99,
-          "retailPrice": 2499.0,
+          "retailPrice": 2499,
           "url": "https://api.bestbuy.com/click/-/6544247/pdp",
           "inStock": true
         }
@@ -1491,7 +1491,7 @@ const LAPTOP_DATA = {
       "fullName": "Geek Squad Certified Refurbished MacBook Pro 14\" Laptop - Apple M1 Pro chip - 16GB Memory - 512GB SSD - Space Gray",
       "displayName": "MacBook Pro 14 (Refurb)",
       "year": 2024,
-      "screenSize": 14.0,
+      "screenSize": 14,
       "resolution": "1920x1080",
       "displayType": "IPS",
       "refreshRate": 60,
@@ -1521,7 +1521,7 @@ const LAPTOP_DATA = {
           "retailerId": "bestbuy",
           "retailer": "Best Buy",
           "currentPrice": 809.99,
-          "retailPrice": 1999.0,
+          "retailPrice": 1999,
           "url": "https://api.bestbuy.com/click/-/6544232/pdp",
           "inStock": true
         }
@@ -1583,7 +1583,7 @@ const LAPTOP_DATA = {
       "fullName": "Apple - Geek Squad Certified Refurbished MacBook Pro 14\" Laptop - M2 Pro chip - 16GB Memory - 512GB SSD - Silver",
       "displayName": "MacBook Pro 14 (Refurb)",
       "year": 2024,
-      "screenSize": 14.0,
+      "screenSize": 14,
       "resolution": "1920x1080",
       "displayType": "IPS",
       "refreshRate": 60,
@@ -1616,7 +1616,7 @@ const LAPTOP_DATA = {
           "retailerId": "bestbuy",
           "retailer": "Best Buy",
           "currentPrice": 899.99,
-          "retailPrice": 1999.0,
+          "retailPrice": 1999,
           "url": "https://api.bestbuy.com/click/-/6550217/pdp",
           "inStock": false
         }
@@ -1632,7 +1632,7 @@ const LAPTOP_DATA = {
       "fullName": "Lenovo - Legion Pro 5 16\" 2.5K Gaming Laptop - AMD Ryzen 9 8945HX 2023 - NVIDIA GeForce RTX 5060 - 16GB Memory - 1TB SSD - Eclipse Black",
       "displayName": "Legion Pro 5 16",
       "year": 2024,
-      "screenSize": 16.0,
+      "screenSize": 16,
       "resolution": "1920x1080",
       "displayType": "OLED",
       "refreshRate": 60,
@@ -1655,9 +1655,9 @@ const LAPTOP_DATA = {
       "dealScore": 118.4,
       "useCaseScores": {
         "gaming": 7,
-        "productivity": 9.0,
+        "productivity": 9,
         "contentCreation": 8.5,
-        "student": 6.0,
+        "student": 6,
         "portable": 5
       },
       "prices": [
@@ -1705,8 +1705,8 @@ const LAPTOP_DATA = {
       "useCaseScores": {
         "gaming": 5,
         "productivity": 7,
-        "contentCreation": 6.0,
-        "student": 6.0,
+        "contentCreation": 6,
+        "student": 6,
         "portable": 5
       },
       "prices": [
@@ -1730,7 +1730,7 @@ const LAPTOP_DATA = {
       "fullName": "Geek Squad Certified Refurbished MacBook Pro 16\" Laptop - Apple M1 Pro chip - 16GB Memory - 1TB SSD - Silver",
       "displayName": "MacBook Pro 16 (Refurb)",
       "year": 2024,
-      "screenSize": 16.0,
+      "screenSize": 16,
       "resolution": "1920x1080",
       "displayType": "IPS",
       "refreshRate": 60,
@@ -1752,7 +1752,7 @@ const LAPTOP_DATA = {
         "gaming": 1.5,
         "productivity": 7.5,
         "contentCreation": 4.5,
-        "student": 7.0,
+        "student": 7,
         "portable": 6
       },
       "prices": [
@@ -1760,7 +1760,7 @@ const LAPTOP_DATA = {
           "retailerId": "bestbuy",
           "retailer": "Best Buy",
           "currentPrice": 899.99,
-          "retailPrice": 2699.0,
+          "retailPrice": 2699,
           "url": "https://api.bestbuy.com/click/-/6561787/pdp",
           "inStock": false
         }
@@ -1914,7 +1914,7 @@ const LAPTOP_DATA = {
       "fullName": "Apple - MacBook Pro 16\" Certified Refurbished - M1 Pro chip - 10 CPU/16 GPU with 16GB Memory - 1TB SSD (2021) - Silver",
       "displayName": "MacBook Pro 16 (Refurb)",
       "year": 2024,
-      "screenSize": 16.0,
+      "screenSize": 16,
       "resolution": "1920x1080",
       "displayType": "IPS",
       "refreshRate": 60,
@@ -1936,7 +1936,7 @@ const LAPTOP_DATA = {
         "gaming": 1.5,
         "productivity": 7.5,
         "contentCreation": 4.5,
-        "student": 6.0,
+        "student": 6,
         "portable": 6
       },
       "prices": [
@@ -1995,7 +1995,7 @@ const LAPTOP_DATA = {
           "inStock": false
         }
       ],
-      "rating": 5.0,
+      "rating": 5,
       "reviewCount": 2,
       "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/1f8c0f99-aa12-4f0c-97cb-28975b718c55.jpg"
     },
@@ -2006,7 +2006,7 @@ const LAPTOP_DATA = {
       "fullName": "Apple - MacBook Pro 16\" Certified Refurbished - M1 Pro chip - 10 CPU/16 GPU with 16GB Memory - 512GB SSD (2021) - Silver",
       "displayName": "MacBook Pro 16 (Refurb)",
       "year": 2024,
-      "screenSize": 16.0,
+      "screenSize": 16,
       "resolution": "1920x1080",
       "displayType": "IPS",
       "refreshRate": 60,
@@ -2028,7 +2028,7 @@ const LAPTOP_DATA = {
         "gaming": 1.5,
         "productivity": 7.5,
         "contentCreation": 4.5,
-        "student": 7.0,
+        "student": 7,
         "portable": 6
       },
       "prices": [
@@ -2052,7 +2052,7 @@ const LAPTOP_DATA = {
       "fullName": "MSI - 18\" Gaming Laptop 2560 x 1600 (QHD+) - AMD Ryzen 9 9955HX with 32GB Memory - GeForce RTX 5070 Ti - 2 TB SSD - Cosmo Gray, Gray",
       "displayName": "MSI",
       "year": 2024,
-      "screenSize": 18.0,
+      "screenSize": 18,
       "resolution": "3024x1964",
       "displayType": "IPS",
       "refreshRate": 60,
@@ -2076,7 +2076,7 @@ const LAPTOP_DATA = {
       "useCaseScores": {
         "gaming": 7,
         "productivity": 10,
-        "contentCreation": 9.0,
+        "contentCreation": 9,
         "student": 3.5,
         "portable": 2
       },
@@ -2101,7 +2101,7 @@ const LAPTOP_DATA = {
       "fullName": "MacBook Pro 16\" Laptop - Apple M1 Max chip - 32GB Memory - 1TB SSD - Silver",
       "displayName": "MacBook Pro 16",
       "year": 2024,
-      "screenSize": 16.0,
+      "screenSize": 16,
       "resolution": "1920x1080",
       "displayType": "IPS",
       "refreshRate": 60,
@@ -2123,7 +2123,7 @@ const LAPTOP_DATA = {
         "gaming": 1.5,
         "productivity": 8,
         "contentCreation": 5.2,
-        "student": 6.0,
+        "student": 6,
         "portable": 6
       },
       "prices": [
@@ -2131,7 +2131,7 @@ const LAPTOP_DATA = {
           "retailerId": "bestbuy",
           "retailer": "Best Buy",
           "currentPrice": 1978.99,
-          "retailPrice": 3299.0,
+          "retailPrice": 3299,
           "url": "https://api.bestbuy.com/click/-/6450865/pdp",
           "inStock": false
         }
@@ -2147,7 +2147,7 @@ const LAPTOP_DATA = {
       "fullName": "Dell - 5400 14\" Refurbished Laptop - Intel 8th Gen Core i5 with 16GB RAM - Intel UHD Graphics 620 - 512GB SSD - Black",
       "displayName": "5400 14 (Refurb)",
       "year": 2024,
-      "screenSize": 14.0,
+      "screenSize": 14,
       "resolution": "3840x2160",
       "displayType": "IPS",
       "refreshRate": 60,
@@ -2171,8 +2171,8 @@ const LAPTOP_DATA = {
       "useCaseScores": {
         "gaming": 1.5,
         "productivity": 4.5,
-        "contentCreation": 3.0,
-        "student": 9.0,
+        "contentCreation": 3,
+        "student": 9,
         "portable": 7.5
       },
       "prices": [
@@ -2334,7 +2334,7 @@ const LAPTOP_DATA = {
       "fullName": "Apple - MacBook Pro 13\" (2021) Refurbished 2560 x 1600 - M1 8 Core CPU with 8GB Memory - 8 Core GPU - 256GB SSD - Space Gray",
       "displayName": "MacBook Pro 13 (Refurb)",
       "year": 2024,
-      "screenSize": 13.0,
+      "screenSize": 13,
       "resolution": "1920x1080",
       "displayType": "IPS",
       "refreshRate": 60,
@@ -2380,7 +2380,7 @@ const LAPTOP_DATA = {
       "fullName": "Geek Squad Certified Refurbished MacBook Pro 16\" Laptop - Apple M1 Pro chip - 16GB Memory - 512GB SSD - Space Gray",
       "displayName": "MacBook Pro 16 (Refurb)",
       "year": 2024,
-      "screenSize": 16.0,
+      "screenSize": 16,
       "resolution": "1920x1080",
       "displayType": "IPS",
       "refreshRate": 60,
@@ -2402,7 +2402,7 @@ const LAPTOP_DATA = {
         "gaming": 1.5,
         "productivity": 7.5,
         "contentCreation": 4.5,
-        "student": 6.0,
+        "student": 6,
         "portable": 6
       },
       "prices": [
@@ -2410,7 +2410,7 @@ const LAPTOP_DATA = {
           "retailerId": "bestbuy",
           "retailer": "Best Buy",
           "currentPrice": 909.99,
-          "retailPrice": 2499.0,
+          "retailPrice": 2499,
           "url": "https://api.bestbuy.com/click/-/6544230/pdp",
           "inStock": true
         }
@@ -2426,7 +2426,7 @@ const LAPTOP_DATA = {
       "fullName": "Apple - Geek Squad Certified Refurbished MacBook Pro 14\" Laptop - M2 Max chip - 32GB Memory - 1TB SSD - Space Gray",
       "displayName": "MacBook Pro 14 (Refurb)",
       "year": 2024,
-      "screenSize": 14.0,
+      "screenSize": 14,
       "resolution": "1920x1080",
       "displayType": "IPS",
       "refreshRate": 60,
@@ -2459,12 +2459,12 @@ const LAPTOP_DATA = {
           "retailerId": "bestbuy",
           "retailer": "Best Buy",
           "currentPrice": 1499.99,
-          "retailPrice": 3099.0,
+          "retailPrice": 3099,
           "url": "https://api.bestbuy.com/click/-/6550216/pdp",
           "inStock": true
         }
       ],
-      "rating": 1.0,
+      "rating": 1,
       "reviewCount": 1,
       "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6455/6455377_sd.jpg"
     },
@@ -2475,7 +2475,7 @@ const LAPTOP_DATA = {
       "fullName": "Apple - Geek Squad Certified Refurbished MacBook Pro 14\" Laptop - M2 Max chip - 32GB Memory - 1TB SSD - Silver",
       "displayName": "MacBook Pro 14 (Refurb)",
       "year": 2024,
-      "screenSize": 14.0,
+      "screenSize": 14,
       "resolution": "1920x1080",
       "displayType": "IPS",
       "refreshRate": 60,
@@ -2508,12 +2508,12 @@ const LAPTOP_DATA = {
           "retailerId": "bestbuy",
           "retailer": "Best Buy",
           "currentPrice": 1499.99,
-          "retailPrice": 3099.0,
+          "retailPrice": 3099,
           "url": "https://api.bestbuy.com/click/-/6550221/pdp",
           "inStock": false
         }
       ],
-      "rating": 1.0,
+      "rating": 1,
       "reviewCount": 1,
       "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6550/6550221_sd.jpg"
     },
@@ -2524,7 +2524,7 @@ const LAPTOP_DATA = {
       "fullName": "GIGABYTE - AERO 14\" OLED QHD Creator Laptop - Intel i7-13700H with 16GB LPDDR5 and 1TB SSD - NVIDIA RTX 4050 - Silver",
       "displayName": "AERO 14",
       "year": 2024,
-      "screenSize": 14.0,
+      "screenSize": 14,
       "resolution": "2560x1440",
       "displayType": "OLED",
       "refreshRate": 60,
@@ -2548,8 +2548,8 @@ const LAPTOP_DATA = {
       "useCaseScores": {
         "gaming": 5,
         "productivity": 10,
-        "contentCreation": 8.0,
-        "student": 7.0,
+        "contentCreation": 8,
+        "student": 7,
         "portable": 7.5
       },
       "prices": [
@@ -2562,7 +2562,7 @@ const LAPTOP_DATA = {
           "inStock": false
         }
       ],
-      "rating": 3.0,
+      "rating": 3,
       "reviewCount": 1,
       "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6537/6537012_sd.jpg"
     },
@@ -2665,7 +2665,7 @@ const LAPTOP_DATA = {
       "fullName": "Apple - Geek Squad Certified Refurbished MacBook Pro 14\" Laptop - M2 Pro chip - 16GB Memory - 512GB SSD - Space Gray",
       "displayName": "MacBook Pro 14 (Refurb)",
       "year": 2024,
-      "screenSize": 14.0,
+      "screenSize": 14,
       "resolution": "1920x1080",
       "displayType": "IPS",
       "refreshRate": 60,
@@ -2698,7 +2698,7 @@ const LAPTOP_DATA = {
           "retailerId": "bestbuy",
           "retailer": "Best Buy",
           "currentPrice": 999.99,
-          "retailPrice": 1999.0,
+          "retailPrice": 1999,
           "url": "https://api.bestbuy.com/click/-/6550207/pdp",
           "inStock": true
         }
@@ -2739,7 +2739,7 @@ const LAPTOP_DATA = {
         "gaming": 1.5,
         "productivity": 5.5,
         "contentCreation": 3.5,
-        "student": 9.0,
+        "student": 9,
         "portable": 8.5
       },
       "prices": [
@@ -2747,7 +2747,7 @@ const LAPTOP_DATA = {
           "retailerId": "bestbuy",
           "retailer": "Best Buy",
           "currentPrice": 569.99,
-          "retailPrice": 899.0,
+          "retailPrice": 899,
           "url": "https://api.bestbuy.com/click/-/6550232/pdp",
           "inStock": true
         }
@@ -2763,7 +2763,7 @@ const LAPTOP_DATA = {
       "fullName": "Lenovo - Yoga 7 2-in-1 16\" 2K Touchscreen Laptop - AMD Ryzen 7 8840HS with 16GB Memory - 1TB SSD - Arctic Gray",
       "displayName": "Yoga 7",
       "year": 2024,
-      "screenSize": 16.0,
+      "screenSize": 16,
       "resolution": "1920x1080",
       "displayType": "IPS",
       "refreshRate": 60,
@@ -2785,7 +2785,7 @@ const LAPTOP_DATA = {
         "gaming": 1.5,
         "productivity": 7.5,
         "contentCreation": 4.5,
-        "student": 7.0,
+        "student": 7,
         "portable": 5
       },
       "prices": [
@@ -2809,7 +2809,7 @@ const LAPTOP_DATA = {
       "fullName": "Lenovo - Yoga 7 2-in-1 14\" 2K Touchscreen Laptop - AMD Ryzen 7 8840HS 2023 - 16GB Memory - 1 TB SSD - Arctic Gray",
       "displayName": "Yoga 7",
       "year": 2024,
-      "screenSize": 14.0,
+      "screenSize": 14,
       "resolution": "1920x1080",
       "displayType": "IPS",
       "refreshRate": 60,
@@ -2855,7 +2855,7 @@ const LAPTOP_DATA = {
       "fullName": "Apple - MacBook Pro 16\" (2021) Refurbished 3456x2234 - M1 Max 10 Core CPU with 32GB Memory - 32 Core GPU - 1TB SSD - Space Gray",
       "displayName": "MacBook Pro 16 (Refurb)",
       "year": 2024,
-      "screenSize": 16.0,
+      "screenSize": 16,
       "resolution": "1920x1080",
       "displayType": "IPS",
       "refreshRate": 60,
@@ -2877,7 +2877,7 @@ const LAPTOP_DATA = {
         "gaming": 1.5,
         "productivity": 8,
         "contentCreation": 5.2,
-        "student": 6.0,
+        "student": 6,
         "portable": 6
       },
       "prices": [
@@ -2936,7 +2936,7 @@ const LAPTOP_DATA = {
           "inStock": true
         }
       ],
-      "rating": 5.0,
+      "rating": 5,
       "reviewCount": 3,
       "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/09f1a663-583b-4aa0-82c2-92abea56708d.jpg"
     },
@@ -2982,7 +2982,7 @@ const LAPTOP_DATA = {
           "inStock": true
         }
       ],
-      "rating": 5.0,
+      "rating": 5,
       "reviewCount": 3,
       "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/90f9e042-4d1d-44b4-9db9-22ef9e0db0bc.jpg"
     },
@@ -3013,12 +3013,12 @@ const LAPTOP_DATA = {
       "fairValue": 567,
       "currentPrice": 539.99,
       "dealGrade": "B",
-      "dealScore": 105.0,
+      "dealScore": 105,
       "useCaseScores": {
         "gaming": 1.5,
         "productivity": 5.5,
         "contentCreation": 3.5,
-        "student": 9.0,
+        "student": 9,
         "portable": 8.5
       },
       "prices": [
@@ -3026,7 +3026,7 @@ const LAPTOP_DATA = {
           "retailerId": "bestbuy",
           "retailer": "Best Buy",
           "currentPrice": 539.99,
-          "retailPrice": 749.0,
+          "retailPrice": 749,
           "url": "https://api.bestbuy.com/click/-/6550212/pdp",
           "inStock": false
         }
@@ -3042,7 +3042,7 @@ const LAPTOP_DATA = {
       "fullName": "Apple - MacBook Air 15-inch Laptop - M3 chip Built for Apple Intelligence - 8GB Memory - 512GB SSD - Space Gray",
       "displayName": "MacBook Air 15",
       "year": 2024,
-      "screenSize": 15.0,
+      "screenSize": 15,
       "resolution": "1920x1080",
       "displayType": "IPS",
       "refreshRate": 60,
@@ -3061,12 +3061,12 @@ const LAPTOP_DATA = {
       "fairValue": 936,
       "currentPrice": 899.99,
       "dealGrade": "B",
-      "dealScore": 104.0,
+      "dealScore": 104,
       "useCaseScores": {
         "gaming": 1.5,
         "productivity": 7,
         "contentCreation": 4.2,
-        "student": 7.0,
+        "student": 7,
         "portable": 6
       },
       "prices": [
@@ -3074,7 +3074,7 @@ const LAPTOP_DATA = {
           "retailerId": "bestbuy",
           "retailer": "Best Buy",
           "currentPrice": 899.99,
-          "retailPrice": 1199.0,
+          "retailPrice": 1199,
           "url": "https://api.bestbuy.com/click/-/6565845/pdp",
           "inStock": false
         }
@@ -3090,7 +3090,7 @@ const LAPTOP_DATA = {
       "fullName": "Geek Squad Certified Refurbished MacBook Pro 16\" Laptop - Apple M1 Pro chip - 16GB Memory - 1TB SSD - Space Gray",
       "displayName": "MacBook Pro 16 (Refurb)",
       "year": 2024,
-      "screenSize": 16.0,
+      "screenSize": 16,
       "resolution": "1920x1080",
       "displayType": "IPS",
       "refreshRate": 60,
@@ -3112,7 +3112,7 @@ const LAPTOP_DATA = {
         "gaming": 1.5,
         "productivity": 7.5,
         "contentCreation": 4.5,
-        "student": 6.0,
+        "student": 6,
         "portable": 6
       },
       "prices": [
@@ -3120,7 +3120,7 @@ const LAPTOP_DATA = {
           "retailerId": "bestbuy",
           "retailer": "Best Buy",
           "currentPrice": 999.99,
-          "retailPrice": 2699.0,
+          "retailPrice": 2699,
           "url": "https://api.bestbuy.com/click/-/6544236/pdp",
           "inStock": true
         }
@@ -3136,7 +3136,7 @@ const LAPTOP_DATA = {
       "fullName": "Apple - Geek Squad Certified Refurbished MacBook Air 13-inch Laptop - M3 chip - 8GB Memory - 256GB SSD - Space Gray",
       "displayName": "MacBook Air 13 (Refurb)",
       "year": 2024,
-      "screenSize": 13.0,
+      "screenSize": 13,
       "resolution": "1920x1080",
       "displayType": "IPS",
       "refreshRate": 60,
@@ -3155,12 +3155,12 @@ const LAPTOP_DATA = {
       "fairValue": 618,
       "currentPrice": 599.99,
       "dealGrade": "B",
-      "dealScore": 103.0,
+      "dealScore": 103,
       "useCaseScores": {
         "gaming": 1.5,
         "productivity": 7,
         "contentCreation": 4.2,
-        "student": 9.0,
+        "student": 9,
         "portable": 10
       },
       "prices": [
@@ -3168,7 +3168,7 @@ const LAPTOP_DATA = {
           "retailerId": "bestbuy",
           "retailer": "Best Buy",
           "currentPrice": 599.99,
-          "retailPrice": 849.0,
+          "retailPrice": 849,
           "url": "https://api.bestbuy.com/click/-/6598740/pdp",
           "inStock": false
         }
@@ -3184,7 +3184,7 @@ const LAPTOP_DATA = {
       "fullName": "Apple - Geek Squad Certified Refurbished MacBook Air 13-inch Laptop - M3 chip - 8GB Memory - 256GB SSD - Silver",
       "displayName": "MacBook Air 13 (Refurb)",
       "year": 2024,
-      "screenSize": 13.0,
+      "screenSize": 13,
       "resolution": "1920x1080",
       "displayType": "IPS",
       "refreshRate": 60,
@@ -3203,12 +3203,12 @@ const LAPTOP_DATA = {
       "fairValue": 618,
       "currentPrice": 599.99,
       "dealGrade": "B",
-      "dealScore": 103.0,
+      "dealScore": 103,
       "useCaseScores": {
         "gaming": 1.5,
         "productivity": 7,
         "contentCreation": 4.2,
-        "student": 9.0,
+        "student": 9,
         "portable": 10
       },
       "prices": [
@@ -3216,7 +3216,7 @@ const LAPTOP_DATA = {
           "retailerId": "bestbuy",
           "retailer": "Best Buy",
           "currentPrice": 599.99,
-          "retailPrice": 849.0,
+          "retailPrice": 849,
           "url": "https://api.bestbuy.com/click/-/6598744/pdp",
           "inStock": false
         }
@@ -3232,7 +3232,7 @@ const LAPTOP_DATA = {
       "fullName": "Apple - MacBook Pro 14\" Laptop - M2 Pro chip - 16GB Memory - 512GB SSD - Space Gray",
       "displayName": "MacBook Pro 14",
       "year": 2024,
-      "screenSize": 14.0,
+      "screenSize": 14,
       "resolution": "1920x1080",
       "displayType": "IPS",
       "refreshRate": 60,
@@ -3250,7 +3250,7 @@ const LAPTOP_DATA = {
         "gaming1080pAvgFps": 16
       },
       "fairValue": 1642,
-      "currentPrice": 1599.0,
+      "currentPrice": 1599,
       "dealGrade": "B",
       "dealScore": 102.7,
       "useCaseScores": {
@@ -3264,8 +3264,8 @@ const LAPTOP_DATA = {
         {
           "retailerId": "bestbuy",
           "retailer": "Best Buy",
-          "currentPrice": 1599.0,
-          "retailPrice": 1899.0,
+          "currentPrice": 1599,
+          "retailPrice": 1899,
           "url": "https://api.bestbuy.com/click/-/6530629/pdp",
           "inStock": true
         }
@@ -3281,7 +3281,7 @@ const LAPTOP_DATA = {
       "fullName": "Apple - MacBook Pro 14\" Laptop - M3 Pro chip Built for Apple Intelligence - 18GB Memory - 14-core GPU - 512GB SSD - Space Black",
       "displayName": "MacBook Pro 14",
       "year": 2024,
-      "screenSize": 14.0,
+      "screenSize": 14,
       "resolution": "1920x1080",
       "displayType": "IPS",
       "refreshRate": 60,
@@ -3296,12 +3296,12 @@ const LAPTOP_DATA = {
         "cinebenchR23Multi": 15106
       },
       "fairValue": 1642,
-      "currentPrice": 1599.0,
+      "currentPrice": 1599,
       "dealGrade": "B",
       "dealScore": 102.7,
       "useCaseScores": {
         "gaming": 1.5,
-        "productivity": 9.0,
+        "productivity": 9,
         "contentCreation": 5.2,
         "student": 7.5,
         "portable": 8.5
@@ -3310,8 +3310,8 @@ const LAPTOP_DATA = {
         {
           "retailerId": "bestbuy",
           "retailer": "Best Buy",
-          "currentPrice": 1599.0,
-          "retailPrice": 1899.0,
+          "currentPrice": 1599,
+          "retailPrice": 1899,
           "url": "https://api.bestbuy.com/click/-/6534488/pdp",
           "inStock": false
         }
@@ -3327,7 +3327,7 @@ const LAPTOP_DATA = {
       "fullName": "Apple - Geek Squad Certified Refurbished MacBook Pro 14\" Laptop - M2 Pro chip - 16GB Memory - 1TB SSD - Space Gray",
       "displayName": "MacBook Pro 14 (Refurb)",
       "year": 2024,
-      "screenSize": 14.0,
+      "screenSize": 14,
       "resolution": "1920x1080",
       "displayType": "IPS",
       "refreshRate": 60,
@@ -3360,7 +3360,7 @@ const LAPTOP_DATA = {
           "retailerId": "bestbuy",
           "retailer": "Best Buy",
           "currentPrice": 1099.99,
-          "retailPrice": 2499.0,
+          "retailPrice": 2499,
           "url": "https://api.bestbuy.com/click/-/6550215/pdp",
           "inStock": false
         }
@@ -3401,7 +3401,7 @@ const LAPTOP_DATA = {
         "gaming": 1.5,
         "productivity": 5.5,
         "contentCreation": 3.5,
-        "student": 9.0,
+        "student": 9,
         "portable": 8.5
       },
       "prices": [
@@ -3409,7 +3409,7 @@ const LAPTOP_DATA = {
           "retailerId": "bestbuy",
           "retailer": "Best Buy",
           "currentPrice": 599.99,
-          "retailPrice": 899.0,
+          "retailPrice": 899,
           "url": "https://api.bestbuy.com/click/-/6550218/pdp",
           "inStock": false
         }
@@ -3450,7 +3450,7 @@ const LAPTOP_DATA = {
         "gaming": 1.5,
         "productivity": 5.5,
         "contentCreation": 3.5,
-        "student": 9.0,
+        "student": 9,
         "portable": 8.5
       },
       "prices": [
@@ -3458,7 +3458,7 @@ const LAPTOP_DATA = {
           "retailerId": "bestbuy",
           "retailer": "Best Buy",
           "currentPrice": 559.99,
-          "retailPrice": 749.0,
+          "retailPrice": 749,
           "url": "https://api.bestbuy.com/click/-/6550223/pdp",
           "inStock": true
         }
@@ -3499,7 +3499,7 @@ const LAPTOP_DATA = {
         "gaming": 1.5,
         "productivity": 5.5,
         "contentCreation": 3.5,
-        "student": 9.0,
+        "student": 9,
         "portable": 8.5
       },
       "prices": [
@@ -3507,7 +3507,7 @@ const LAPTOP_DATA = {
           "retailerId": "bestbuy",
           "retailer": "Best Buy",
           "currentPrice": 599.99,
-          "retailPrice": 899.0,
+          "retailPrice": 899,
           "url": "https://api.bestbuy.com/click/-/6550224/pdp",
           "inStock": true
         }
@@ -3548,7 +3548,7 @@ const LAPTOP_DATA = {
         "gaming": 1.5,
         "productivity": 5.5,
         "contentCreation": 3.5,
-        "student": 9.0,
+        "student": 9,
         "portable": 8.5
       },
       "prices": [
@@ -3556,7 +3556,7 @@ const LAPTOP_DATA = {
           "retailerId": "bestbuy",
           "retailer": "Best Buy",
           "currentPrice": 599.99,
-          "retailPrice": 899.0,
+          "retailPrice": 899,
           "url": "https://api.bestbuy.com/click/-/6550225/pdp",
           "inStock": false
         }
@@ -3597,7 +3597,7 @@ const LAPTOP_DATA = {
         "gaming": 1.5,
         "productivity": 5.5,
         "contentCreation": 3.5,
-        "student": 9.0,
+        "student": 9,
         "portable": 8.5
       },
       "prices": [
@@ -3605,7 +3605,7 @@ const LAPTOP_DATA = {
           "retailerId": "bestbuy",
           "retailer": "Best Buy",
           "currentPrice": 559.99,
-          "retailPrice": 749.0,
+          "retailPrice": 749,
           "url": "https://api.bestbuy.com/click/-/6550226/pdp",
           "inStock": false
         }
@@ -3646,7 +3646,7 @@ const LAPTOP_DATA = {
         "gaming": 1.5,
         "productivity": 5.5,
         "contentCreation": 3.5,
-        "student": 9.0,
+        "student": 9,
         "portable": 8.5
       },
       "prices": [
@@ -3654,7 +3654,7 @@ const LAPTOP_DATA = {
           "retailerId": "bestbuy",
           "retailer": "Best Buy",
           "currentPrice": 569.99,
-          "retailPrice": 749.0,
+          "retailPrice": 749,
           "url": "https://api.bestbuy.com/click/-/6550220/pdp",
           "inStock": true
         }
@@ -3695,7 +3695,7 @@ const LAPTOP_DATA = {
         "gaming": 1.5,
         "productivity": 5.5,
         "contentCreation": 3.5,
-        "student": 9.0,
+        "student": 9,
         "portable": 10
       },
       "prices": [
@@ -3703,7 +3703,7 @@ const LAPTOP_DATA = {
           "retailerId": "bestbuy",
           "retailer": "Best Buy",
           "currentPrice": 579.99,
-          "retailPrice": 1299.0,
+          "retailPrice": 1299,
           "url": "https://api.bestbuy.com/click/-/6550210/pdp",
           "inStock": false
         }
@@ -3719,7 +3719,7 @@ const LAPTOP_DATA = {
       "fullName": "HP - OMEN 16\" 240Hz Gaming Laptop WQXGA Intel Core i7-13700HX With 16GB Memory - NVIDIA GeForce RTX 4070 8GB GDDR6 512GB SSD - Shadow Black",
       "displayName": "OMEN 16",
       "year": 2024,
-      "screenSize": 16.0,
+      "screenSize": 16,
       "resolution": "1920x1080",
       "displayType": "IPS",
       "refreshRate": 240,
@@ -3768,7 +3768,7 @@ const LAPTOP_DATA = {
       "fullName": "Apple - Geek Squad Certified Refurbished MacBook Pro 14\" Laptop - M2 Pro chip - 16GB Memory - 1TB SSD - Silver",
       "displayName": "MacBook Pro 14 (Refurb)",
       "year": 2024,
-      "screenSize": 14.0,
+      "screenSize": 14,
       "resolution": "1920x1080",
       "displayType": "IPS",
       "refreshRate": 60,
@@ -3801,7 +3801,7 @@ const LAPTOP_DATA = {
           "retailerId": "bestbuy",
           "retailer": "Best Buy",
           "currentPrice": 1149.99,
-          "retailPrice": 2499.0,
+          "retailPrice": 2499,
           "url": "https://api.bestbuy.com/click/-/6550219/pdp",
           "inStock": false
         }
@@ -3817,7 +3817,7 @@ const LAPTOP_DATA = {
       "fullName": "Apple - MacBook Pro 14\" Laptop - M2 Pro chip - 16GB Memory - 512GB SSD - Silver",
       "displayName": "MacBook Pro 14",
       "year": 2024,
-      "screenSize": 14.0,
+      "screenSize": 14,
       "resolution": "1920x1080",
       "displayType": "IPS",
       "refreshRate": 60,
@@ -3835,7 +3835,7 @@ const LAPTOP_DATA = {
         "gaming1080pAvgFps": 16
       },
       "fairValue": 1642,
-      "currentPrice": 1699.0,
+      "currentPrice": 1699,
       "dealGrade": "C",
       "dealScore": 96.6,
       "useCaseScores": {
@@ -3849,8 +3849,8 @@ const LAPTOP_DATA = {
         {
           "retailerId": "bestbuy",
           "retailer": "Best Buy",
-          "currentPrice": 1699.0,
-          "retailPrice": 1999.0,
+          "currentPrice": 1699,
+          "retailPrice": 1999,
           "url": "https://api.bestbuy.com/click/-/6530630/pdp",
           "inStock": true
         }
@@ -3866,7 +3866,7 @@ const LAPTOP_DATA = {
       "fullName": "ASUS - ROG Strix G18 18\" FHD+ 144Hz Gaming Laptop - AMD Ryzen 9 8940HX - 16GB Memory - NVIDIA GeForce RTX 5050 - 1TB SSD - Eclipse Gray",
       "displayName": "ROG Strix G18",
       "year": 2024,
-      "screenSize": 18.0,
+      "screenSize": 18,
       "resolution": "1920x1200",
       "displayType": "IPS",
       "refreshRate": 144,
@@ -3888,7 +3888,7 @@ const LAPTOP_DATA = {
       "useCaseScores": {
         "gaming": 5.5,
         "productivity": 4.5,
-        "contentCreation": 5.0,
+        "contentCreation": 5,
         "student": 4.5,
         "portable": 2
       },
@@ -3902,7 +3902,7 @@ const LAPTOP_DATA = {
           "inStock": true
         }
       ],
-      "rating": 5.0,
+      "rating": 5,
       "reviewCount": 1,
       "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/3e6c64f1-8243-4772-ac9d-b1dc586eb7f5.jpg"
     },
@@ -3938,7 +3938,7 @@ const LAPTOP_DATA = {
         "gaming": 1.5,
         "productivity": 5.5,
         "contentCreation": 3.5,
-        "student": 7.0,
+        "student": 7,
         "portable": 10
       },
       "prices": [
@@ -3946,7 +3946,7 @@ const LAPTOP_DATA = {
           "retailerId": "bestbuy",
           "retailer": "Best Buy",
           "currentPrice": 909.99,
-          "retailPrice": 1299.0,
+          "retailPrice": 1299,
           "url": "https://api.bestbuy.com/click/-/6509660/pdp",
           "inStock": false
         }
@@ -3962,7 +3962,7 @@ const LAPTOP_DATA = {
       "fullName": "Apple - Geek Squad Certified Refurbished MacBook Pro 14\" Laptop - M3 Pro chip - 18GB Memory - 14-core GPU - 512GB SSD - Space Black",
       "displayName": "MacBook Pro 14 (Refurb)",
       "year": 2024,
-      "screenSize": 14.0,
+      "screenSize": 14,
       "resolution": "1920x1080",
       "displayType": "IPS",
       "refreshRate": 60,
@@ -3982,7 +3982,7 @@ const LAPTOP_DATA = {
       "dealScore": 95.3,
       "useCaseScores": {
         "gaming": 1.5,
-        "productivity": 9.0,
+        "productivity": 9,
         "contentCreation": 5.2,
         "student": 7.5,
         "portable": 8.5
@@ -3992,7 +3992,7 @@ const LAPTOP_DATA = {
           "retailerId": "bestbuy",
           "retailer": "Best Buy",
           "currentPrice": 1119.99,
-          "retailPrice": 1899.0,
+          "retailPrice": 1899,
           "url": "https://api.bestbuy.com/click/-/6568121/pdp",
           "inStock": false
         }
@@ -4008,7 +4008,7 @@ const LAPTOP_DATA = {
       "fullName": "Apple - Geek Squad Certified Refurbished MacBook Air 13-inch Laptop - M3 chip - 8GB Memory - 512GB SSD - Midnight",
       "displayName": "MacBook Air 13 (Refurb)",
       "year": 2024,
-      "screenSize": 13.0,
+      "screenSize": 13,
       "resolution": "1920x1080",
       "displayType": "IPS",
       "refreshRate": 60,
@@ -4032,7 +4032,7 @@ const LAPTOP_DATA = {
         "gaming": 1.5,
         "productivity": 7,
         "contentCreation": 4.2,
-        "student": 8.0,
+        "student": 8,
         "portable": 10
       },
       "prices": [
@@ -4040,12 +4040,12 @@ const LAPTOP_DATA = {
           "retailerId": "bestbuy",
           "retailer": "Best Buy",
           "currentPrice": 749.99,
-          "retailPrice": 999.0,
+          "retailPrice": 999,
           "url": "https://api.bestbuy.com/click/-/6598758/pdp",
           "inStock": true
         }
       ],
-      "rating": 4.0,
+      "rating": 4,
       "reviewCount": 2,
       "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6565/6565838_sd.jpg"
     },
@@ -4081,7 +4081,7 @@ const LAPTOP_DATA = {
         "gaming": 1.5,
         "productivity": 5.5,
         "contentCreation": 3.5,
-        "student": 9.0,
+        "student": 9,
         "portable": 10
       },
       "prices": [
@@ -4089,7 +4089,7 @@ const LAPTOP_DATA = {
           "retailerId": "bestbuy",
           "retailer": "Best Buy",
           "currentPrice": 599.99,
-          "retailPrice": 1299.0,
+          "retailPrice": 1299,
           "url": "https://api.bestbuy.com/click/-/6550237/pdp",
           "inStock": true
         }
@@ -4105,7 +4105,7 @@ const LAPTOP_DATA = {
       "fullName": "Geek Squad Certified Refurbished MacBook Pro 16\" Laptop - Apple M1 Max chip - 32GB Memory - 1TB SSD - Space Gray",
       "displayName": "MacBook Pro 16 (Refurb)",
       "year": 2024,
-      "screenSize": 16.0,
+      "screenSize": 16,
       "resolution": "1920x1080",
       "displayType": "IPS",
       "refreshRate": 60,
@@ -4127,7 +4127,7 @@ const LAPTOP_DATA = {
         "gaming": 1.5,
         "productivity": 8,
         "contentCreation": 5.2,
-        "student": 6.0,
+        "student": 6,
         "portable": 6
       },
       "prices": [
@@ -4135,7 +4135,7 @@ const LAPTOP_DATA = {
           "retailerId": "bestbuy",
           "retailer": "Best Buy",
           "currentPrice": 1499.99,
-          "retailPrice": 2499.0,
+          "retailPrice": 2499,
           "url": "https://api.bestbuy.com/click/-/6561786/pdp",
           "inStock": false
         }
@@ -4151,7 +4151,7 @@ const LAPTOP_DATA = {
       "fullName": "Geek Squad Certified Refurbished MacBook Pro 16\" Laptop - Apple M1 Max chip - 32GB Memory - 1TB SSD - Silver",
       "displayName": "MacBook Pro 16 (Refurb)",
       "year": 2024,
-      "screenSize": 16.0,
+      "screenSize": 16,
       "resolution": "1920x1080",
       "displayType": "IPS",
       "refreshRate": 60,
@@ -4173,7 +4173,7 @@ const LAPTOP_DATA = {
         "gaming": 1.5,
         "productivity": 8,
         "contentCreation": 5.2,
-        "student": 6.0,
+        "student": 6,
         "portable": 6
       },
       "prices": [
@@ -4181,7 +4181,7 @@ const LAPTOP_DATA = {
           "retailerId": "bestbuy",
           "retailer": "Best Buy",
           "currentPrice": 1499.99,
-          "retailPrice": 3299.0,
+          "retailPrice": 3299,
           "url": "https://api.bestbuy.com/click/-/6561790/pdp",
           "inStock": false
         }
@@ -4222,7 +4222,7 @@ const LAPTOP_DATA = {
         "gaming": 1.5,
         "productivity": 5.5,
         "contentCreation": 3.5,
-        "student": 8.0,
+        "student": 8,
         "portable": 10
       },
       "prices": [
@@ -4230,12 +4230,12 @@ const LAPTOP_DATA = {
           "retailerId": "bestbuy",
           "retailer": "Best Buy",
           "currentPrice": 649.99,
-          "retailPrice": 1499.0,
+          "retailPrice": 1499,
           "url": "https://api.bestbuy.com/click/-/6550211/pdp",
           "inStock": true
         }
       ],
-      "rating": 4.0,
+      "rating": 4,
       "reviewCount": 24,
       "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6550/6550211_sd.jpg"
     },
@@ -4246,7 +4246,7 @@ const LAPTOP_DATA = {
       "fullName": "Apple - Geek Squad Certified Refurbished MacBook Air 13-inch Laptop - M3 chip - 16GB Memory - 512GB SSD - Space Gray",
       "displayName": "MacBook Air 13 (Refurb)",
       "year": 2024,
-      "screenSize": 13.0,
+      "screenSize": 13,
       "resolution": "1920x1080",
       "displayType": "IPS",
       "refreshRate": 60,
@@ -4265,7 +4265,7 @@ const LAPTOP_DATA = {
       "fairValue": 744,
       "currentPrice": 799.99,
       "dealGrade": "C",
-      "dealScore": 93.0,
+      "dealScore": 93,
       "useCaseScores": {
         "gaming": 1.5,
         "productivity": 7.5,
@@ -4278,7 +4278,7 @@ const LAPTOP_DATA = {
           "retailerId": "bestbuy",
           "retailer": "Best Buy",
           "currentPrice": 799.99,
-          "retailPrice": 1099.0,
+          "retailPrice": 1099,
           "url": "https://api.bestbuy.com/click/-/6598759/pdp",
           "inStock": false
         }
@@ -4294,7 +4294,7 @@ const LAPTOP_DATA = {
       "fullName": "Apple - Geek Squad Certified Refurbished MacBook Air 13-inch Laptop - M3 chip - 16GB Memory - 512GB SSD - Silver",
       "displayName": "MacBook Air 13 (Refurb)",
       "year": 2024,
-      "screenSize": 13.0,
+      "screenSize": 13,
       "resolution": "1920x1080",
       "displayType": "IPS",
       "refreshRate": 60,
@@ -4313,7 +4313,7 @@ const LAPTOP_DATA = {
       "fairValue": 744,
       "currentPrice": 799.99,
       "dealGrade": "C",
-      "dealScore": 93.0,
+      "dealScore": 93,
       "useCaseScores": {
         "gaming": 1.5,
         "productivity": 7.5,
@@ -4326,7 +4326,7 @@ const LAPTOP_DATA = {
           "retailerId": "bestbuy",
           "retailer": "Best Buy",
           "currentPrice": 799.99,
-          "retailPrice": 1099.0,
+          "retailPrice": 1099,
           "url": "https://api.bestbuy.com/click/-/6598760/pdp",
           "inStock": false
         }
@@ -4342,7 +4342,7 @@ const LAPTOP_DATA = {
       "fullName": "Apple - Geek Squad Certified Refurbished MacBook Air 13-inch Laptop - M3 chip - 16GB Memory - 512GB SSD - Midnight",
       "displayName": "MacBook Air 13 (Refurb)",
       "year": 2024,
-      "screenSize": 13.0,
+      "screenSize": 13,
       "resolution": "1920x1080",
       "displayType": "IPS",
       "refreshRate": 60,
@@ -4361,7 +4361,7 @@ const LAPTOP_DATA = {
       "fairValue": 744,
       "currentPrice": 799.99,
       "dealGrade": "C",
-      "dealScore": 93.0,
+      "dealScore": 93,
       "useCaseScores": {
         "gaming": 1.5,
         "productivity": 7.5,
@@ -4374,7 +4374,7 @@ const LAPTOP_DATA = {
           "retailerId": "bestbuy",
           "retailer": "Best Buy",
           "currentPrice": 799.99,
-          "retailPrice": 1099.0,
+          "retailPrice": 1099,
           "url": "https://api.bestbuy.com/click/-/6598803/pdp",
           "inStock": true
         }
@@ -4390,7 +4390,7 @@ const LAPTOP_DATA = {
       "fullName": "ASUS - ROG Strix G18 18\" 144Hz Gaming Laptop - AMD Ryzen 9 9955HX Processor with 16GB RAM - NVIDIA GeForce RTX 5060 - 2TB SSD - Eclipse Gray",
       "displayName": "ROG Strix G18",
       "year": 2024,
-      "screenSize": 18.0,
+      "screenSize": 18,
       "resolution": "1920x1200",
       "displayType": "IPS",
       "refreshRate": 144,
@@ -4412,7 +4412,7 @@ const LAPTOP_DATA = {
       "useCaseScores": {
         "gaming": 7.5,
         "productivity": 4.5,
-        "contentCreation": 6.0,
+        "contentCreation": 6,
         "student": 4.5,
         "portable": 2
       },
@@ -4437,7 +4437,7 @@ const LAPTOP_DATA = {
       "fullName": "Apple - MacBook Air 15-inch Laptop - M3 chip Built for Apple Intelligence - 16GB Memory - 512GB SSD - Midnight",
       "displayName": "MacBook Air 15",
       "year": 2024,
-      "screenSize": 15.0,
+      "screenSize": 15,
       "resolution": "1920x1080",
       "displayType": "IPS",
       "refreshRate": 60,
@@ -4469,7 +4469,7 @@ const LAPTOP_DATA = {
           "retailerId": "bestbuy",
           "retailer": "Best Buy",
           "currentPrice": 1065.99,
-          "retailPrice": 1299.0,
+          "retailPrice": 1299,
           "url": "https://api.bestbuy.com/click/-/6565857/pdp",
           "inStock": true
         }
@@ -4485,7 +4485,7 @@ const LAPTOP_DATA = {
       "fullName": "Apple - Geek Squad Certified Refurbished MacBook Air 13-inch Laptop - M3 chip - 8GB Memory - 256GB SSD - Starlight",
       "displayName": "MacBook Air 13 (Refurb)",
       "year": 2024,
-      "screenSize": 13.0,
+      "screenSize": 13,
       "resolution": "1920x1080",
       "displayType": "IPS",
       "refreshRate": 60,
@@ -4509,7 +4509,7 @@ const LAPTOP_DATA = {
         "gaming": 1.5,
         "productivity": 7,
         "contentCreation": 4.2,
-        "student": 8.0,
+        "student": 8,
         "portable": 10
       },
       "prices": [
@@ -4517,7 +4517,7 @@ const LAPTOP_DATA = {
           "retailerId": "bestbuy",
           "retailer": "Best Buy",
           "currentPrice": 679.99,
-          "retailPrice": 849.0,
+          "retailPrice": 849,
           "url": "https://api.bestbuy.com/click/-/6598755/pdp",
           "inStock": true
         }
@@ -4533,7 +4533,7 @@ const LAPTOP_DATA = {
       "fullName": "Apple - Geek Squad Certified Refurbished MacBook Air 15\" Laptop - M2 chip - 8GB Memory - 256GB SSD - Starlight",
       "displayName": "MacBook Air 15 (Refurb)",
       "year": 2024,
-      "screenSize": 15.0,
+      "screenSize": 15,
       "resolution": "1920x1080",
       "displayType": "IPS",
       "refreshRate": 60,
@@ -4558,7 +4558,7 @@ const LAPTOP_DATA = {
         "gaming": 1.5,
         "productivity": 5.5,
         "contentCreation": 3.5,
-        "student": 7.0,
+        "student": 7,
         "portable": 6
       },
       "prices": [
@@ -4566,7 +4566,7 @@ const LAPTOP_DATA = {
           "retailerId": "bestbuy",
           "retailer": "Best Buy",
           "currentPrice": 624.99,
-          "retailPrice": 1299.0,
+          "retailPrice": 1299,
           "url": "https://api.bestbuy.com/click/-/6568679/pdp",
           "inStock": false
         }
@@ -4582,7 +4582,7 @@ const LAPTOP_DATA = {
       "fullName": "Apple - MacBook Air 15-inch Laptop - M3 chip Built for Apple Intelligence - 16GB Memory - 512GB SSD - Space Gray",
       "displayName": "MacBook Air 15",
       "year": 2024,
-      "screenSize": 15.0,
+      "screenSize": 15,
       "resolution": "1920x1080",
       "displayType": "IPS",
       "refreshRate": 60,
@@ -4614,7 +4614,7 @@ const LAPTOP_DATA = {
           "retailerId": "bestbuy",
           "retailer": "Best Buy",
           "currentPrice": 1093.99,
-          "retailPrice": 1299.0,
+          "retailPrice": 1299,
           "url": "https://api.bestbuy.com/click/-/6565854/pdp",
           "inStock": false
         }
@@ -4630,7 +4630,7 @@ const LAPTOP_DATA = {
       "fullName": "Apple - Geek Squad Certified Refurbished MacBook Air 13-inch Laptop - M3 chip - 8GB Memory - 256GB SSD - Midnight",
       "displayName": "MacBook Air 13 (Refurb)",
       "year": 2024,
-      "screenSize": 13.0,
+      "screenSize": 13,
       "resolution": "1920x1080",
       "displayType": "IPS",
       "refreshRate": 60,
@@ -4654,7 +4654,7 @@ const LAPTOP_DATA = {
         "gaming": 1.5,
         "productivity": 7,
         "contentCreation": 4.2,
-        "student": 8.0,
+        "student": 8,
         "portable": 10
       },
       "prices": [
@@ -4662,7 +4662,7 @@ const LAPTOP_DATA = {
           "retailerId": "bestbuy",
           "retailer": "Best Buy",
           "currentPrice": 689.99,
-          "retailPrice": 849.0,
+          "retailPrice": 849,
           "url": "https://api.bestbuy.com/click/-/6598757/pdp",
           "inStock": true
         }
@@ -4678,7 +4678,7 @@ const LAPTOP_DATA = {
       "fullName": "Apple - Geek Squad Certified Refurbished MacBook Pro 16\" Laptop - M2 Pro chip - 16GB Memory - 512GB SSD - Space Gray",
       "displayName": "MacBook Pro 16 (Refurb)",
       "year": 2024,
-      "screenSize": 16.0,
+      "screenSize": 16,
       "resolution": "1920x1080",
       "displayType": "IPS",
       "refreshRate": 60,
@@ -4703,7 +4703,7 @@ const LAPTOP_DATA = {
         "gaming": 1.5,
         "productivity": 7.5,
         "contentCreation": 4.5,
-        "student": 6.0,
+        "student": 6,
         "portable": 6
       },
       "prices": [
@@ -4711,12 +4711,12 @@ const LAPTOP_DATA = {
           "retailerId": "bestbuy",
           "retailer": "Best Buy",
           "currentPrice": 1199.99,
-          "retailPrice": 2499.0,
+          "retailPrice": 2499,
           "url": "https://api.bestbuy.com/click/-/6550202/pdp",
           "inStock": true
         }
       ],
-      "rating": 5.0,
+      "rating": 5,
       "reviewCount": 3,
       "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6455/6455357_sd.jpg"
     },
@@ -4727,7 +4727,7 @@ const LAPTOP_DATA = {
       "fullName": "Apple - Geek Squad Certified Refurbished MacBook Pro 14\" Laptop - M3 Pro chip - 18GB Memory - 14-core GPU - 512GB SSD - Silver",
       "displayName": "MacBook Pro 14 (Refurb)",
       "year": 2024,
-      "screenSize": 14.0,
+      "screenSize": 14,
       "resolution": "1920x1080",
       "displayType": "IPS",
       "refreshRate": 60,
@@ -4747,7 +4747,7 @@ const LAPTOP_DATA = {
       "dealScore": 88.9,
       "useCaseScores": {
         "gaming": 1.5,
-        "productivity": 9.0,
+        "productivity": 9,
         "contentCreation": 5.2,
         "student": 7.5,
         "portable": 8.5
@@ -4757,7 +4757,7 @@ const LAPTOP_DATA = {
           "retailerId": "bestbuy",
           "retailer": "Best Buy",
           "currentPrice": 1199.99,
-          "retailPrice": 1899.0,
+          "retailPrice": 1899,
           "url": "https://api.bestbuy.com/click/-/6568120/pdp",
           "inStock": true
         }
@@ -4773,7 +4773,7 @@ const LAPTOP_DATA = {
       "fullName": "Apple - Geek Squad Certified Refurbished MacBook Air 13-inch Laptop - M3 chip - 16GB Memory - 512GB SSD - Starlight",
       "displayName": "MacBook Air 13 (Refurb)",
       "year": 2024,
-      "screenSize": 13.0,
+      "screenSize": 13,
       "resolution": "1920x1080",
       "displayType": "IPS",
       "refreshRate": 60,
@@ -4805,12 +4805,12 @@ const LAPTOP_DATA = {
           "retailerId": "bestbuy",
           "retailer": "Best Buy",
           "currentPrice": 849.99,
-          "retailPrice": 1099.0,
+          "retailPrice": 1099,
           "url": "https://api.bestbuy.com/click/-/6598761/pdp",
           "inStock": true
         }
       ],
-      "rating": 4.0,
+      "rating": 4,
       "reviewCount": 4,
       "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6565/6565841_sd.jpg"
     },
@@ -4821,7 +4821,7 @@ const LAPTOP_DATA = {
       "fullName": "Apple - MacBook Air 15-inch Laptop - M3 chip Built for Apple Intelligence - 8GB Memory - 256GB SSD - Midnight",
       "displayName": "MacBook Air 15",
       "year": 2024,
-      "screenSize": 15.0,
+      "screenSize": 15,
       "resolution": "1920x1080",
       "displayType": "IPS",
       "refreshRate": 60,
@@ -4838,22 +4838,22 @@ const LAPTOP_DATA = {
         "fireStrikeGraphics": 7921
       },
       "fairValue": 873,
-      "currentPrice": 999.0,
+      "currentPrice": 999,
       "dealGrade": "C",
       "dealScore": 87.4,
       "useCaseScores": {
         "gaming": 1.5,
         "productivity": 7,
         "contentCreation": 4.2,
-        "student": 6.0,
+        "student": 6,
         "portable": 6
       },
       "prices": [
         {
           "retailerId": "bestbuy",
           "retailer": "Best Buy",
-          "currentPrice": 999.0,
-          "retailPrice": 999.0,
+          "currentPrice": 999,
+          "retailPrice": 999,
           "url": "https://api.bestbuy.com/click/-/6565851/pdp",
           "inStock": true
         }
@@ -4869,7 +4869,7 @@ const LAPTOP_DATA = {
       "fullName": "Apple - Geek Squad Certified Refurbished MacBook Air 15\" Laptop - M2 chip - 8GB Memory - 256GB SSD - Midnight",
       "displayName": "MacBook Air 15 (Refurb)",
       "year": 2024,
-      "screenSize": 15.0,
+      "screenSize": 15,
       "resolution": "1920x1080",
       "displayType": "IPS",
       "refreshRate": 60,
@@ -4894,7 +4894,7 @@ const LAPTOP_DATA = {
         "gaming": 1.5,
         "productivity": 5.5,
         "contentCreation": 3.5,
-        "student": 7.0,
+        "student": 7,
         "portable": 6
       },
       "prices": [
@@ -4902,7 +4902,7 @@ const LAPTOP_DATA = {
           "retailerId": "bestbuy",
           "retailer": "Best Buy",
           "currentPrice": 649.99,
-          "retailPrice": 1299.0,
+          "retailPrice": 1299,
           "url": "https://api.bestbuy.com/click/-/6568686/pdp",
           "inStock": true
         }
@@ -4918,7 +4918,7 @@ const LAPTOP_DATA = {
       "fullName": "Apple - Geek Squad Certified Refurbished MacBook Air 15\" Laptop - M2 chip - 8GB Memory - 256GB SSD - Silver",
       "displayName": "MacBook Air 15 (Refurb)",
       "year": 2024,
-      "screenSize": 15.0,
+      "screenSize": 15,
       "resolution": "1920x1080",
       "displayType": "IPS",
       "refreshRate": 60,
@@ -4943,7 +4943,7 @@ const LAPTOP_DATA = {
         "gaming": 1.5,
         "productivity": 5.5,
         "contentCreation": 3.5,
-        "student": 7.0,
+        "student": 7,
         "portable": 6
       },
       "prices": [
@@ -4951,7 +4951,7 @@ const LAPTOP_DATA = {
           "retailerId": "bestbuy",
           "retailer": "Best Buy",
           "currentPrice": 659.99,
-          "retailPrice": 1299.0,
+          "retailPrice": 1299,
           "url": "https://api.bestbuy.com/click/-/6568683/pdp",
           "inStock": true
         }
@@ -4967,7 +4967,7 @@ const LAPTOP_DATA = {
       "fullName": "Apple - Geek Squad Certified Refurbished MacBook Air 15\" Laptop - M2 chip - 8GB Memory - 256GB SSD - Space Gray",
       "displayName": "MacBook Air 15 (Refurb)",
       "year": 2024,
-      "screenSize": 15.0,
+      "screenSize": 15,
       "resolution": "1920x1080",
       "displayType": "IPS",
       "refreshRate": 60,
@@ -4992,7 +4992,7 @@ const LAPTOP_DATA = {
         "gaming": 1.5,
         "productivity": 5.5,
         "contentCreation": 3.5,
-        "student": 7.0,
+        "student": 7,
         "portable": 6
       },
       "prices": [
@@ -5000,7 +5000,7 @@ const LAPTOP_DATA = {
           "retailerId": "bestbuy",
           "retailer": "Best Buy",
           "currentPrice": 669.99,
-          "retailPrice": 1299.0,
+          "retailPrice": 1299,
           "url": "https://api.bestbuy.com/click/-/6568678/pdp",
           "inStock": true
         }
@@ -5013,10 +5013,10 @@ const LAPTOP_DATA = {
       "id": "bestbuy-6576720",
       "brand": "Dell",
       "model": "I7445-7326BLU-PUS",
-      "fullName": "Dell - Inspiron 14 -\u00a014\" 2K 2-in-1 Touchscreen Laptop - AMD Ryzen 7 8840HS 2023 - 16GB Memory - 1TB Storage - Midnight Blue",
+      "fullName": "Dell - Inspiron 14 - 14\" 2K 2-in-1 Touchscreen Laptop - AMD Ryzen 7 8840HS 2023 - 16GB Memory - 1TB Storage - Midnight Blue",
       "displayName": "Inspiron 14",
       "year": 2024,
-      "screenSize": 14.0,
+      "screenSize": 14,
       "resolution": "1920x1080",
       "displayType": "IPS",
       "refreshRate": 60,
@@ -5062,7 +5062,7 @@ const LAPTOP_DATA = {
       "fullName": "Apple - Geek Squad Certified Refurbished MacBook Pro 14\" Laptop - M3 Pro chip - 18GB Memory - 18-core GPU - 1TB SSD - Silver",
       "displayName": "MacBook Pro 14 (Refurb)",
       "year": 2024,
-      "screenSize": 14.0,
+      "screenSize": 14,
       "resolution": "1920x1080",
       "displayType": "IPS",
       "refreshRate": 60,
@@ -5082,7 +5082,7 @@ const LAPTOP_DATA = {
       "dealScore": 82.7,
       "useCaseScores": {
         "gaming": 1.5,
-        "productivity": 9.0,
+        "productivity": 9,
         "contentCreation": 5.2,
         "student": 7.5,
         "portable": 8.5
@@ -5092,12 +5092,12 @@ const LAPTOP_DATA = {
           "retailerId": "bestbuy",
           "retailer": "Best Buy",
           "currentPrice": 1349.99,
-          "retailPrice": 2299.0,
+          "retailPrice": 2299,
           "url": "https://api.bestbuy.com/click/-/6568097/pdp",
           "inStock": false
         }
       ],
-      "rating": 4.0,
+      "rating": 4,
       "reviewCount": 20,
       "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/99daa77b-7914-4e6e-b7b3-e4a301761efb.jpg"
     },
@@ -5105,10 +5105,10 @@ const LAPTOP_DATA = {
       "id": "bestbuy-6576719",
       "brand": "Dell",
       "model": "I7445-5333BLU-PUS",
-      "fullName": "Dell - Inspiron 14 - 14\"\u00a02K 2-in-1 Touchscreen Laptop - AMD Ryzen 5 8640HS 2023 - 8GB Memory - 512GB Storage - Midnight Blue",
+      "fullName": "Dell - Inspiron 14 - 14\" 2K 2-in-1 Touchscreen Laptop - AMD Ryzen 5 8640HS 2023 - 8GB Memory - 512GB Storage - Midnight Blue",
       "displayName": "Inspiron 14",
       "year": 2024,
-      "screenSize": 14.0,
+      "screenSize": 14,
       "resolution": "1920x1080",
       "displayType": "IPS",
       "refreshRate": 60,
@@ -5130,7 +5130,7 @@ const LAPTOP_DATA = {
         "gaming": 1.5,
         "productivity": 7,
         "contentCreation": 4.2,
-        "student": 8.0,
+        "student": 8,
         "portable": 7.5
       },
       "prices": [
@@ -5154,7 +5154,7 @@ const LAPTOP_DATA = {
       "fullName": "Apple - Geek Squad Certified Refurbished MacBook Pro 16\" Laptop - M2 Pro chip - 16GB Memory - 512GB SSD - Silver",
       "displayName": "MacBook Pro 16 (Refurb)",
       "year": 2024,
-      "screenSize": 16.0,
+      "screenSize": 16,
       "resolution": "1920x1080",
       "displayType": "IPS",
       "refreshRate": 60,
@@ -5179,7 +5179,7 @@ const LAPTOP_DATA = {
         "gaming": 1.5,
         "productivity": 7.5,
         "contentCreation": 4.5,
-        "student": 6.0,
+        "student": 6,
         "portable": 6
       },
       "prices": [
@@ -5187,12 +5187,12 @@ const LAPTOP_DATA = {
           "retailerId": "bestbuy",
           "retailer": "Best Buy",
           "currentPrice": 1299.99,
-          "retailPrice": 2499.0,
+          "retailPrice": 2499,
           "url": "https://api.bestbuy.com/click/-/6550203/pdp",
           "inStock": true
         }
       ],
-      "rating": 5.0,
+      "rating": 5,
       "reviewCount": 3,
       "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6455/6455360_sd.jpg"
     },
@@ -5203,7 +5203,7 @@ const LAPTOP_DATA = {
       "fullName": "Dell - 14\" Refurbished 1920 x 1080 FHD - Intel 8th Gen Core i7-8665U with 32GB RAM - Intel UHD Graphics 620 - 512GB SSD - Black",
       "displayName": "14 (Refurb)",
       "year": 2024,
-      "screenSize": 14.0,
+      "screenSize": 14,
       "resolution": "3840x2160",
       "displayType": "IPS",
       "refreshRate": 60,
@@ -5228,7 +5228,7 @@ const LAPTOP_DATA = {
         "gaming": 1.5,
         "productivity": 5,
         "contentCreation": 3.8,
-        "student": 8.0,
+        "student": 8,
         "portable": 7.5
       },
       "prices": [
@@ -5252,7 +5252,7 @@ const LAPTOP_DATA = {
       "fullName": "Apple - MacBook Air 15\" Laptop - M2 chip Built for Apple Intelligence - 8GB Memory - 256GB SSD - Starlight",
       "displayName": "MacBook Air 15",
       "year": 2024,
-      "screenSize": 15.0,
+      "screenSize": 15,
       "resolution": "1920x1080",
       "displayType": "IPS",
       "refreshRate": 60,
@@ -5270,27 +5270,27 @@ const LAPTOP_DATA = {
         "gaming1080pAvgFps": 16
       },
       "fairValue": 873,
-      "currentPrice": 1069.0,
+      "currentPrice": 1069,
       "dealGrade": "D",
       "dealScore": 81.7,
       "useCaseScores": {
         "gaming": 1.5,
         "productivity": 5.5,
         "contentCreation": 3.5,
-        "student": 6.0,
+        "student": 6,
         "portable": 6
       },
       "prices": [
         {
           "retailerId": "bestbuy",
           "retailer": "Best Buy",
-          "currentPrice": 1069.0,
-          "retailPrice": 1299.0,
+          "currentPrice": 1069,
+          "retailPrice": 1299,
           "url": "https://api.bestbuy.com/click/-/6534483/pdp",
           "inStock": true
         }
       ],
-      "rating": 5.0,
+      "rating": 5,
       "reviewCount": 2,
       "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6534/6534600_sd.jpg"
     },
@@ -5301,7 +5301,7 @@ const LAPTOP_DATA = {
       "fullName": "Apple - Geek Squad Certified Refurbished MacBook Pro 16\" Laptop - M2 Max chip - 32GB Memory - 1TB SSD - Space Gray",
       "displayName": "MacBook Pro 16 (Refurb)",
       "year": 2024,
-      "screenSize": 16.0,
+      "screenSize": 16,
       "resolution": "1920x1080",
       "displayType": "IPS",
       "refreshRate": 60,
@@ -5326,7 +5326,7 @@ const LAPTOP_DATA = {
         "gaming": 1.5,
         "productivity": 8,
         "contentCreation": 5.2,
-        "student": 6.0,
+        "student": 6,
         "portable": 6
       },
       "prices": [
@@ -5334,12 +5334,12 @@ const LAPTOP_DATA = {
           "retailerId": "bestbuy",
           "retailer": "Best Buy",
           "currentPrice": 1999.99,
-          "retailPrice": 3499.0,
+          "retailPrice": 3499,
           "url": "https://api.bestbuy.com/click/-/6550201/pdp",
           "inStock": false
         }
       ],
-      "rating": 5.0,
+      "rating": 5,
       "reviewCount": 1,
       "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6550/6550201_sd.jpg"
     },
@@ -5350,7 +5350,7 @@ const LAPTOP_DATA = {
       "fullName": "Apple - Geek Squad Certified Refurbished MacBook Pro 16\" Laptop - M2 Max chip - 32GB Memory - 1TB SSD - Silver",
       "displayName": "MacBook Pro 16 (Refurb)",
       "year": 2024,
-      "screenSize": 16.0,
+      "screenSize": 16,
       "resolution": "1920x1080",
       "displayType": "IPS",
       "refreshRate": 60,
@@ -5375,7 +5375,7 @@ const LAPTOP_DATA = {
         "gaming": 1.5,
         "productivity": 8,
         "contentCreation": 5.2,
-        "student": 6.0,
+        "student": 6,
         "portable": 6
       },
       "prices": [
@@ -5383,12 +5383,12 @@ const LAPTOP_DATA = {
           "retailerId": "bestbuy",
           "retailer": "Best Buy",
           "currentPrice": 1999.99,
-          "retailPrice": 3499.0,
+          "retailPrice": 3499,
           "url": "https://api.bestbuy.com/click/-/6550206/pdp",
           "inStock": false
         }
       ],
-      "rating": 5.0,
+      "rating": 5,
       "reviewCount": 1,
       "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6455/6455368_sd.jpg"
     },
@@ -5424,7 +5424,7 @@ const LAPTOP_DATA = {
         "gaming": 1.5,
         "productivity": 5.5,
         "contentCreation": 3.5,
-        "student": 8.0,
+        "student": 8,
         "portable": 10
       },
       "prices": [
@@ -5432,12 +5432,12 @@ const LAPTOP_DATA = {
           "retailerId": "bestbuy",
           "retailer": "Best Buy",
           "currentPrice": 749.99,
-          "retailPrice": 1499.0,
+          "retailPrice": 1499,
           "url": "https://api.bestbuy.com/click/-/6550245/pdp",
           "inStock": true
         }
       ],
-      "rating": 4.0,
+      "rating": 4,
       "reviewCount": 24,
       "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6550/6550245_sd.jpg"
     },
@@ -5448,7 +5448,7 @@ const LAPTOP_DATA = {
       "fullName": "Apple - Geek Squad Certified Refurbished MacBook Air 15\" Laptop - M2 chip - 8GB Memory - 512GB SSD - Silver",
       "displayName": "MacBook Air 15 (Refurb)",
       "year": 2024,
-      "screenSize": 15.0,
+      "screenSize": 15,
       "resolution": "1920x1080",
       "displayType": "IPS",
       "refreshRate": 60,
@@ -5473,7 +5473,7 @@ const LAPTOP_DATA = {
         "gaming": 1.5,
         "productivity": 5.5,
         "contentCreation": 3.5,
-        "student": 7.0,
+        "student": 7,
         "portable": 6
       },
       "prices": [
@@ -5481,7 +5481,7 @@ const LAPTOP_DATA = {
           "retailerId": "bestbuy",
           "retailer": "Best Buy",
           "currentPrice": 749.99,
-          "retailPrice": 1499.0,
+          "retailPrice": 1499,
           "url": "https://api.bestbuy.com/click/-/6568677/pdp",
           "inStock": true
         }
@@ -5497,7 +5497,7 @@ const LAPTOP_DATA = {
       "fullName": "Apple - Geek Squad Certified Refurbished MacBook Air 15\" Laptop - M2 chip - 8GB Memory - 512GB SSD - Space Gray",
       "displayName": "MacBook Air 15 (Refurb)",
       "year": 2024,
-      "screenSize": 15.0,
+      "screenSize": 15,
       "resolution": "1920x1080",
       "displayType": "IPS",
       "refreshRate": 60,
@@ -5522,7 +5522,7 @@ const LAPTOP_DATA = {
         "gaming": 1.5,
         "productivity": 5.5,
         "contentCreation": 3.5,
-        "student": 7.0,
+        "student": 7,
         "portable": 6
       },
       "prices": [
@@ -5530,7 +5530,7 @@ const LAPTOP_DATA = {
           "retailerId": "bestbuy",
           "retailer": "Best Buy",
           "currentPrice": 749.99,
-          "retailPrice": 1499.0,
+          "retailPrice": 1499,
           "url": "https://api.bestbuy.com/click/-/6568680/pdp",
           "inStock": true
         }
@@ -5546,7 +5546,7 @@ const LAPTOP_DATA = {
       "fullName": "Apple - Geek Squad Certified Refurbished MacBook Air 15\" Laptop - M2 chip - 8GB Memory - 512GB SSD - Starlight",
       "displayName": "MacBook Air 15 (Refurb)",
       "year": 2024,
-      "screenSize": 15.0,
+      "screenSize": 15,
       "resolution": "1920x1080",
       "displayType": "IPS",
       "refreshRate": 60,
@@ -5571,7 +5571,7 @@ const LAPTOP_DATA = {
         "gaming": 1.5,
         "productivity": 5.5,
         "contentCreation": 3.5,
-        "student": 7.0,
+        "student": 7,
         "portable": 6
       },
       "prices": [
@@ -5579,7 +5579,7 @@ const LAPTOP_DATA = {
           "retailerId": "bestbuy",
           "retailer": "Best Buy",
           "currentPrice": 749.99,
-          "retailPrice": 1499.0,
+          "retailPrice": 1499,
           "url": "https://api.bestbuy.com/click/-/6568681/pdp",
           "inStock": false
         }
@@ -5595,7 +5595,7 @@ const LAPTOP_DATA = {
       "fullName": "Apple - Geek Squad Certified Refurbished MacBook Air 15\" Laptop - M2 chip - 8GB Memory - 512GB SSD - Midnight",
       "displayName": "MacBook Air 15 (Refurb)",
       "year": 2024,
-      "screenSize": 15.0,
+      "screenSize": 15,
       "resolution": "1920x1080",
       "displayType": "IPS",
       "refreshRate": 60,
@@ -5620,7 +5620,7 @@ const LAPTOP_DATA = {
         "gaming": 1.5,
         "productivity": 5.5,
         "contentCreation": 3.5,
-        "student": 7.0,
+        "student": 7,
         "portable": 6
       },
       "prices": [
@@ -5628,7 +5628,7 @@ const LAPTOP_DATA = {
           "retailerId": "bestbuy",
           "retailer": "Best Buy",
           "currentPrice": 749.99,
-          "retailPrice": 1499.0,
+          "retailPrice": 1499,
           "url": "https://api.bestbuy.com/click/-/6568685/pdp",
           "inStock": true
         }
@@ -5668,8 +5668,8 @@ const LAPTOP_DATA = {
       "useCaseScores": {
         "gaming": 3,
         "productivity": 7,
-        "contentCreation": 5.0,
-        "student": 7.0,
+        "contentCreation": 5,
+        "student": 7,
         "portable": 5
       },
       "prices": [
@@ -5693,7 +5693,7 @@ const LAPTOP_DATA = {
       "fullName": "Apple - Geek Squad Certified Refurbished MacBook Air 13-inch Laptop - M3 chip - 8GB Memory - 512GB SSD - Space Gray",
       "displayName": "MacBook Air 13 (Refurb)",
       "year": 2024,
-      "screenSize": 13.0,
+      "screenSize": 13,
       "resolution": "1920x1080",
       "displayType": "IPS",
       "refreshRate": 60,
@@ -5717,7 +5717,7 @@ const LAPTOP_DATA = {
         "gaming": 1.5,
         "productivity": 7,
         "contentCreation": 4.2,
-        "student": 8.0,
+        "student": 8,
         "portable": 10
       },
       "prices": [
@@ -5725,12 +5725,12 @@ const LAPTOP_DATA = {
           "retailerId": "bestbuy",
           "retailer": "Best Buy",
           "currentPrice": 879.99,
-          "retailPrice": 999.0,
+          "retailPrice": 999,
           "url": "https://api.bestbuy.com/click/-/6598743/pdp",
           "inStock": true
         }
       ],
-      "rating": 4.0,
+      "rating": 4,
       "reviewCount": 2,
       "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6565/6565831_sd.jpg"
     },
@@ -5741,7 +5741,7 @@ const LAPTOP_DATA = {
       "fullName": "Apple - Geek Squad Certified Refurbished MacBook Pro 16\" Laptop - M2 Pro chip - 16GB Memory - 1TB SSD - Space Gray",
       "displayName": "MacBook Pro 16 (Refurb)",
       "year": 2024,
-      "screenSize": 16.0,
+      "screenSize": 16,
       "resolution": "1920x1080",
       "displayType": "IPS",
       "refreshRate": 60,
@@ -5766,7 +5766,7 @@ const LAPTOP_DATA = {
         "gaming": 1.5,
         "productivity": 7.5,
         "contentCreation": 4.5,
-        "student": 6.0,
+        "student": 6,
         "portable": 6
       },
       "prices": [
@@ -5774,7 +5774,7 @@ const LAPTOP_DATA = {
           "retailerId": "bestbuy",
           "retailer": "Best Buy",
           "currentPrice": 1399.99,
-          "retailPrice": 2699.0,
+          "retailPrice": 2699,
           "url": "https://api.bestbuy.com/click/-/6550200/pdp",
           "inStock": true
         }
@@ -5790,7 +5790,7 @@ const LAPTOP_DATA = {
       "fullName": "Apple - Geek Squad Certified Refurbished MacBook Air 13-inch Laptop - M3 chip - 8GB Memory - 512GB SSD - Silver",
       "displayName": "MacBook Air 13 (Refurb)",
       "year": 2024,
-      "screenSize": 13.0,
+      "screenSize": 13,
       "resolution": "1920x1080",
       "displayType": "IPS",
       "refreshRate": 60,
@@ -5809,12 +5809,12 @@ const LAPTOP_DATA = {
       "fairValue": 711,
       "currentPrice": 899.99,
       "dealGrade": "D",
-      "dealScore": 79.0,
+      "dealScore": 79,
       "useCaseScores": {
         "gaming": 1.5,
         "productivity": 7,
         "contentCreation": 4.2,
-        "student": 8.0,
+        "student": 8,
         "portable": 10
       },
       "prices": [
@@ -5822,12 +5822,12 @@ const LAPTOP_DATA = {
           "retailerId": "bestbuy",
           "retailer": "Best Buy",
           "currentPrice": 899.99,
-          "retailPrice": 999.0,
+          "retailPrice": 999,
           "url": "https://api.bestbuy.com/click/-/6598745/pdp",
           "inStock": true
         }
       ],
-      "rating": 4.0,
+      "rating": 4,
       "reviewCount": 2,
       "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6565/6565833_sd.jpg"
     },
@@ -5838,7 +5838,7 @@ const LAPTOP_DATA = {
       "fullName": "Apple - Geek Squad Certified Refurbished MacBook Air 13-inch Laptop - M3 chip - 8GB Memory - 512GB SSD - Starlight",
       "displayName": "MacBook Air 13 (Refurb)",
       "year": 2024,
-      "screenSize": 13.0,
+      "screenSize": 13,
       "resolution": "1920x1080",
       "displayType": "IPS",
       "refreshRate": 60,
@@ -5857,12 +5857,12 @@ const LAPTOP_DATA = {
       "fairValue": 711,
       "currentPrice": 899.99,
       "dealGrade": "D",
-      "dealScore": 79.0,
+      "dealScore": 79,
       "useCaseScores": {
         "gaming": 1.5,
         "productivity": 7,
         "contentCreation": 4.2,
-        "student": 8.0,
+        "student": 8,
         "portable": 10
       },
       "prices": [
@@ -5870,12 +5870,12 @@ const LAPTOP_DATA = {
           "retailerId": "bestbuy",
           "retailer": "Best Buy",
           "currentPrice": 899.99,
-          "retailPrice": 999.0,
+          "retailPrice": 999,
           "url": "https://api.bestbuy.com/click/-/6598756/pdp",
           "inStock": true
         }
       ],
-      "rating": 4.0,
+      "rating": 4,
       "reviewCount": 2,
       "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6565/6565836_sd.jpg"
     },
@@ -5886,7 +5886,7 @@ const LAPTOP_DATA = {
       "fullName": "MSI - Vector A18 HX AI 18\" 240Hz QHD+ Gaming Laptop - AMD R9-9955HX - GeForce RTX 5080 - 32GB Memory - 1TBSSD - Cosmo Gray",
       "displayName": "Vector A18 HX AI 18",
       "year": 2024,
-      "screenSize": 18.0,
+      "screenSize": 18,
       "resolution": "3024x1964",
       "displayType": "IPS",
       "refreshRate": 240,
@@ -5904,12 +5904,12 @@ const LAPTOP_DATA = {
       "fairValue": 2212,
       "currentPrice": 2799.99,
       "dealGrade": "D",
-      "dealScore": 79.0,
+      "dealScore": 79,
       "useCaseScores": {
         "gaming": 7.5,
         "productivity": 5,
         "contentCreation": 6.8,
-        "student": 3.0,
+        "student": 3,
         "portable": 2
       },
       "prices": [
@@ -5922,7 +5922,7 @@ const LAPTOP_DATA = {
           "inStock": true
         }
       ],
-      "rating": 3.0,
+      "rating": 3,
       "reviewCount": 2,
       "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/f02cdf53-2f8b-4eb0-b066-b42a1c679149.png"
     },
@@ -5933,7 +5933,7 @@ const LAPTOP_DATA = {
       "fullName": "Apple - MacBook Pro 14\" Laptop - M3 chip Built for Apple Intelligence - 8GB Memory - 10-core GPU - 512GB SSD - Silver",
       "displayName": "MacBook Pro 14",
       "year": 2024,
-      "screenSize": 14.0,
+      "screenSize": 14,
       "resolution": "1920x1080",
       "displayType": "IPS",
       "refreshRate": 60,
@@ -5950,22 +5950,22 @@ const LAPTOP_DATA = {
         "fireStrikeGraphics": 7921
       },
       "fairValue": 936,
-      "currentPrice": 1189.0,
+      "currentPrice": 1189,
       "dealGrade": "D",
       "dealScore": 78.7,
       "useCaseScores": {
         "gaming": 1.5,
         "productivity": 7,
         "contentCreation": 4.2,
-        "student": 7.0,
+        "student": 7,
         "portable": 8.5
       },
       "prices": [
         {
           "retailerId": "bestbuy",
           "retailer": "Best Buy",
-          "currentPrice": 1189.0,
-          "retailPrice": 1399.0,
+          "currentPrice": 1189,
+          "retailPrice": 1399,
           "url": "https://api.bestbuy.com/click/-/6534485/pdp",
           "inStock": false
         }
@@ -5981,7 +5981,7 @@ const LAPTOP_DATA = {
       "fullName": "Apple - MacBook Pro 14\" Laptop - M3 chip Built for Apple Intelligence - 8GB Memory - 10-core GPU - 512GB SSD - Space Gray",
       "displayName": "MacBook Pro 14",
       "year": 2024,
-      "screenSize": 14.0,
+      "screenSize": 14,
       "resolution": "1920x1080",
       "displayType": "IPS",
       "refreshRate": 60,
@@ -5998,22 +5998,22 @@ const LAPTOP_DATA = {
         "fireStrikeGraphics": 7921
       },
       "fairValue": 936,
-      "currentPrice": 1189.0,
+      "currentPrice": 1189,
       "dealGrade": "D",
       "dealScore": 78.7,
       "useCaseScores": {
         "gaming": 1.5,
         "productivity": 7,
         "contentCreation": 4.2,
-        "student": 7.0,
+        "student": 7,
         "portable": 8.5
       },
       "prices": [
         {
           "retailerId": "bestbuy",
           "retailer": "Best Buy",
-          "currentPrice": 1189.0,
-          "retailPrice": 1399.0,
+          "currentPrice": 1189,
+          "retailPrice": 1399,
           "url": "https://api.bestbuy.com/click/-/6534486/pdp",
           "inStock": false
         }
@@ -6029,7 +6029,7 @@ const LAPTOP_DATA = {
       "fullName": "Apple - Geek Squad Certified Refurbished MacBook Pro 14\" Laptop - M3 Pro chip - 18GB Memory - 18-core GPU - 1TB SSD - Space Black",
       "displayName": "MacBook Pro 14 (Refurb)",
       "year": 2024,
-      "screenSize": 14.0,
+      "screenSize": 14,
       "resolution": "1920x1080",
       "displayType": "IPS",
       "refreshRate": 60,
@@ -6049,7 +6049,7 @@ const LAPTOP_DATA = {
       "dealScore": 78.7,
       "useCaseScores": {
         "gaming": 1.5,
-        "productivity": 9.0,
+        "productivity": 9,
         "contentCreation": 5.2,
         "student": 7.5,
         "portable": 8.5
@@ -6059,12 +6059,12 @@ const LAPTOP_DATA = {
           "retailerId": "bestbuy",
           "retailer": "Best Buy",
           "currentPrice": 1419.99,
-          "retailPrice": 2299.0,
+          "retailPrice": 2299,
           "url": "https://api.bestbuy.com/click/-/6568098/pdp",
           "inStock": true
         }
       ],
-      "rating": 4.0,
+      "rating": 4,
       "reviewCount": 20,
       "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/4ea9fd6a-4eb9-452c-bbd6-77d0d2ae7acd.jpg"
     },
@@ -6075,7 +6075,7 @@ const LAPTOP_DATA = {
       "fullName": "Apple - MacBook Pro 16\" Laptop - M2 Pro chip - 16GB Memory - 512GB SSD - Space Gray",
       "displayName": "MacBook Pro 16",
       "year": 2024,
-      "screenSize": 16.0,
+      "screenSize": 16,
       "resolution": "1920x1080",
       "displayType": "IPS",
       "refreshRate": 60,
@@ -6093,7 +6093,7 @@ const LAPTOP_DATA = {
         "gaming1080pAvgFps": 16
       },
       "fairValue": 1642,
-      "currentPrice": 2099.0,
+      "currentPrice": 2099,
       "dealGrade": "D",
       "dealScore": 78.2,
       "useCaseScores": {
@@ -6107,13 +6107,13 @@ const LAPTOP_DATA = {
         {
           "retailerId": "bestbuy",
           "retailer": "Best Buy",
-          "currentPrice": 2099.0,
-          "retailPrice": 2499.0,
+          "currentPrice": 2099,
+          "retailPrice": 2499,
           "url": "https://api.bestbuy.com/click/-/6530623/pdp",
           "inStock": true
         }
       ],
-      "rating": 5.0,
+      "rating": 5,
       "reviewCount": 3,
       "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6455/6455357_sd.jpg"
     },
@@ -6170,7 +6170,7 @@ const LAPTOP_DATA = {
       "fullName": "Apple - Geek Squad Certified Refurbished MacBook Pro 14\" Laptop-M3 Max chip - 36GB Memory - 30-core GPU - 1TB SSD (Latest Model) - Space Black",
       "displayName": "MacBook Pro 14 (Refurb)",
       "year": 2024,
-      "screenSize": 14.0,
+      "screenSize": 14,
       "resolution": "1920x1080",
       "displayType": "IPS",
       "refreshRate": 60,
@@ -6192,7 +6192,7 @@ const LAPTOP_DATA = {
         "gaming": 1.5,
         "productivity": 10,
         "contentCreation": 6.2,
-        "student": 6.0,
+        "student": 6,
         "portable": 8.5
       },
       "prices": [
@@ -6200,7 +6200,7 @@ const LAPTOP_DATA = {
           "retailerId": "bestbuy",
           "retailer": "Best Buy",
           "currentPrice": 2299.99,
-          "retailPrice": 3099.0,
+          "retailPrice": 3099,
           "url": "https://api.bestbuy.com/click/-/6568095/pdp",
           "inStock": false
         }
@@ -6216,7 +6216,7 @@ const LAPTOP_DATA = {
       "fullName": "Apple - Geek Squad Certified Refurbished MacBook Air 15\" Laptop - M2 chip - 16GB Memory - 1TB SSD - Midnight",
       "displayName": "MacBook Air 15 (Refurb)",
       "year": 2024,
-      "screenSize": 15.0,
+      "screenSize": 15,
       "resolution": "1920x1080",
       "displayType": "IPS",
       "refreshRate": 60,
@@ -6239,7 +6239,7 @@ const LAPTOP_DATA = {
       "dealScore": 77.2,
       "useCaseScores": {
         "gaming": 1.5,
-        "productivity": 6.0,
+        "productivity": 6,
         "contentCreation": 3.8,
         "student": 6.5,
         "portable": 6
@@ -6249,7 +6249,7 @@ const LAPTOP_DATA = {
           "retailerId": "bestbuy",
           "retailer": "Best Buy",
           "currentPrice": 949.99,
-          "retailPrice": 1899.0,
+          "retailPrice": 1899,
           "url": "https://api.bestbuy.com/click/-/6584275/pdp",
           "inStock": true
         }
@@ -6265,7 +6265,7 @@ const LAPTOP_DATA = {
       "fullName": "Apple - Geek Squad Certified Refurbished MacBook Pro 14\" Laptop - M3 chip - 8GB Memory - 10-core GPU - 512GB SSD - Space Gray",
       "displayName": "MacBook Pro 14 (Refurb)",
       "year": 2024,
-      "screenSize": 14.0,
+      "screenSize": 14,
       "resolution": "1920x1080",
       "displayType": "IPS",
       "refreshRate": 60,
@@ -6284,12 +6284,12 @@ const LAPTOP_DATA = {
       "fairValue": 608,
       "currentPrice": 799.99,
       "dealGrade": "D",
-      "dealScore": 76.0,
+      "dealScore": 76,
       "useCaseScores": {
         "gaming": 1.5,
         "productivity": 7,
         "contentCreation": 4.2,
-        "student": 8.0,
+        "student": 8,
         "portable": 8.5
       },
       "prices": [
@@ -6297,7 +6297,7 @@ const LAPTOP_DATA = {
           "retailerId": "bestbuy",
           "retailer": "Best Buy",
           "currentPrice": 799.99,
-          "retailPrice": 1399.0,
+          "retailPrice": 1399,
           "url": "https://api.bestbuy.com/click/-/6567950/pdp",
           "inStock": false
         }
@@ -6313,7 +6313,7 @@ const LAPTOP_DATA = {
       "fullName": "Apple - MacBook Air 15-inch Laptop - M3 chip Built for Apple Intelligence - 16GB Memory - 512GB SSD - Starlight",
       "displayName": "MacBook Air 15",
       "year": 2024,
-      "screenSize": 15.0,
+      "screenSize": 15,
       "resolution": "1920x1080",
       "displayType": "IPS",
       "refreshRate": 60,
@@ -6330,7 +6330,7 @@ const LAPTOP_DATA = {
         "fireStrikeGraphics": 7921
       },
       "fairValue": 982,
-      "currentPrice": 1299.0,
+      "currentPrice": 1299,
       "dealGrade": "D",
       "dealScore": 75.6,
       "useCaseScores": {
@@ -6344,8 +6344,8 @@ const LAPTOP_DATA = {
         {
           "retailerId": "bestbuy",
           "retailer": "Best Buy",
-          "currentPrice": 1299.0,
-          "retailPrice": 1299.0,
+          "currentPrice": 1299,
+          "retailPrice": 1299,
           "url": "https://api.bestbuy.com/click/-/6565856/pdp",
           "inStock": true
         }
@@ -6361,7 +6361,7 @@ const LAPTOP_DATA = {
       "fullName": "Apple - Geek Squad Certified Refurbished MacBook Pro 16\" Laptop - M2 Pro chip - 16GB Memory - 1TB SSD - Silver",
       "displayName": "MacBook Pro 16 (Refurb)",
       "year": 2024,
-      "screenSize": 16.0,
+      "screenSize": 16,
       "resolution": "1920x1080",
       "displayType": "IPS",
       "refreshRate": 60,
@@ -6386,7 +6386,7 @@ const LAPTOP_DATA = {
         "gaming": 1.5,
         "productivity": 7.5,
         "contentCreation": 4.5,
-        "student": 6.0,
+        "student": 6,
         "portable": 6
       },
       "prices": [
@@ -6394,7 +6394,7 @@ const LAPTOP_DATA = {
           "retailerId": "bestbuy",
           "retailer": "Best Buy",
           "currentPrice": 1499.99,
-          "retailPrice": 2699.0,
+          "retailPrice": 2699,
           "url": "https://api.bestbuy.com/click/-/6550205/pdp",
           "inStock": true
         }
@@ -6459,7 +6459,7 @@ const LAPTOP_DATA = {
       "fullName": "Apple - Geek Squad Certified Refurbished MacBook Pro 14\" Laptop - M3 chip - 8GB Memory - 10-core GPU - 512GB SSD - Silver",
       "displayName": "MacBook Pro 14 (Refurb)",
       "year": 2024,
-      "screenSize": 14.0,
+      "screenSize": 14,
       "resolution": "1920x1080",
       "displayType": "IPS",
       "refreshRate": 60,
@@ -6483,7 +6483,7 @@ const LAPTOP_DATA = {
         "gaming": 1.5,
         "productivity": 7,
         "contentCreation": 4.2,
-        "student": 8.0,
+        "student": 8,
         "portable": 8.5
       },
       "prices": [
@@ -6491,7 +6491,7 @@ const LAPTOP_DATA = {
           "retailerId": "bestbuy",
           "retailer": "Best Buy",
           "currentPrice": 819.99,
-          "retailPrice": 1399.0,
+          "retailPrice": 1399,
           "url": "https://api.bestbuy.com/click/-/6567948/pdp",
           "inStock": true
         }
@@ -6507,7 +6507,7 @@ const LAPTOP_DATA = {
       "fullName": "Apple - Geek Squad Certified Refurbished MacBook Pro 16\" Laptop - M3 Max chip - 36GB Memory - 30-core GPU - 1TB SSD - Space Black",
       "displayName": "MacBook Pro 16 (Refurb)",
       "year": 2024,
-      "screenSize": 16.0,
+      "screenSize": 16,
       "resolution": "1920x1080",
       "displayType": "IPS",
       "refreshRate": 60,
@@ -6524,7 +6524,7 @@ const LAPTOP_DATA = {
       "fairValue": 1776,
       "currentPrice": 2399.99,
       "dealGrade": "F",
-      "dealScore": 74.0,
+      "dealScore": 74,
       "useCaseScores": {
         "gaming": 1.5,
         "productivity": 10,
@@ -6537,12 +6537,12 @@ const LAPTOP_DATA = {
           "retailerId": "bestbuy",
           "retailer": "Best Buy",
           "currentPrice": 2399.99,
-          "retailPrice": 3399.0,
+          "retailPrice": 3399,
           "url": "https://api.bestbuy.com/click/-/6567942/pdp",
           "inStock": true
         }
       ],
-      "rating": 5.0,
+      "rating": 5,
       "reviewCount": 4,
       "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/88c47c37-a649-4341-892b-9b8d587abfbe.jpg"
     },
@@ -6553,7 +6553,7 @@ const LAPTOP_DATA = {
       "fullName": "Apple - Geek Squad Certified Refurbished MacBook Pro 16\" Laptop - M3 Pro chip - 18GB Memory - 18-core GPU - 512GB SSD - Silver",
       "displayName": "MacBook Pro 16 (Refurb)",
       "year": 2024,
-      "screenSize": 16.0,
+      "screenSize": 16,
       "resolution": "1920x1080",
       "displayType": "IPS",
       "refreshRate": 60,
@@ -6573,9 +6573,9 @@ const LAPTOP_DATA = {
       "dealScore": 73.6,
       "useCaseScores": {
         "gaming": 1.5,
-        "productivity": 9.0,
+        "productivity": 9,
         "contentCreation": 5.2,
-        "student": 6.0,
+        "student": 6,
         "portable": 6
       },
       "prices": [
@@ -6583,7 +6583,7 @@ const LAPTOP_DATA = {
           "retailerId": "bestbuy",
           "retailer": "Best Buy",
           "currentPrice": 1449.99,
-          "retailPrice": 2399.0,
+          "retailPrice": 2399,
           "url": "https://api.bestbuy.com/click/-/6568119/pdp",
           "inStock": false
         }
@@ -6599,7 +6599,7 @@ const LAPTOP_DATA = {
       "fullName": "Apple - Geek Squad Certified Refurbished MacBook Air 15\" Laptop - M2 chip - 16GB Memory - 1TB SSD - Space Gray",
       "displayName": "MacBook Air 15 (Refurb)",
       "year": 2024,
-      "screenSize": 15.0,
+      "screenSize": 15,
       "resolution": "1920x1080",
       "displayType": "IPS",
       "refreshRate": 60,
@@ -6622,7 +6622,7 @@ const LAPTOP_DATA = {
       "dealScore": 73.3,
       "useCaseScores": {
         "gaming": 1.5,
-        "productivity": 6.0,
+        "productivity": 6,
         "contentCreation": 3.8,
         "student": 6.5,
         "portable": 6
@@ -6632,7 +6632,7 @@ const LAPTOP_DATA = {
           "retailerId": "bestbuy",
           "retailer": "Best Buy",
           "currentPrice": 999.99,
-          "retailPrice": 1899.0,
+          "retailPrice": 1899,
           "url": "https://api.bestbuy.com/click/-/6583986/pdp",
           "inStock": true
         }
@@ -6648,7 +6648,7 @@ const LAPTOP_DATA = {
       "fullName": "Apple - Geek Squad Certified Refurbished MacBook Pro 16\" Laptop - M3 Pro chip - 36GB Memory - 18-core GPU - 512GB SSD - Space Black",
       "displayName": "MacBook Pro 16 (Refurb)",
       "year": 2024,
-      "screenSize": 16.0,
+      "screenSize": 16,
       "resolution": "1920x1080",
       "displayType": "IPS",
       "refreshRate": 60,
@@ -6669,8 +6669,8 @@ const LAPTOP_DATA = {
       "useCaseScores": {
         "gaming": 1.5,
         "productivity": 9.5,
-        "contentCreation": 6.0,
-        "student": 6.0,
+        "contentCreation": 6,
+        "student": 6,
         "portable": 6
       },
       "prices": [
@@ -6678,7 +6678,7 @@ const LAPTOP_DATA = {
           "retailerId": "bestbuy",
           "retailer": "Best Buy",
           "currentPrice": 1599.99,
-          "retailPrice": 2799.0,
+          "retailPrice": 2799,
           "url": "https://api.bestbuy.com/click/-/6568094/pdp",
           "inStock": false
         }
@@ -6694,7 +6694,7 @@ const LAPTOP_DATA = {
       "fullName": "Apple - Geek Squad Certified Refurbished MacBook Air 15\" Laptop - M2 chip - 16GB Memory - 512GB SSD - Midnight",
       "displayName": "MacBook Air 15 (Refurb)",
       "year": 2024,
-      "screenSize": 15.0,
+      "screenSize": 15,
       "resolution": "1920x1080",
       "displayType": "IPS",
       "refreshRate": 60,
@@ -6717,7 +6717,7 @@ const LAPTOP_DATA = {
       "dealScore": 72.5,
       "useCaseScores": {
         "gaming": 1.5,
-        "productivity": 6.0,
+        "productivity": 6,
         "contentCreation": 3.8,
         "student": 7.5,
         "portable": 6
@@ -6727,7 +6727,7 @@ const LAPTOP_DATA = {
           "retailerId": "bestbuy",
           "retailer": "Best Buy",
           "currentPrice": 879.99,
-          "retailPrice": 1699.0,
+          "retailPrice": 1699,
           "url": "https://api.bestbuy.com/click/-/6566246/pdp",
           "inStock": true
         }
@@ -6743,7 +6743,7 @@ const LAPTOP_DATA = {
       "fullName": "Apple - Geek Squad Certified Refurbished MacBook Pro 16\" Laptop - M3 Pro chip - 18GB Memory - 18-core GPU - 512GB SSD - Space Black",
       "displayName": "MacBook Pro 16 (Refurb)",
       "year": 2024,
-      "screenSize": 16.0,
+      "screenSize": 16,
       "resolution": "1920x1080",
       "displayType": "IPS",
       "refreshRate": 60,
@@ -6763,9 +6763,9 @@ const LAPTOP_DATA = {
       "dealScore": 71.1,
       "useCaseScores": {
         "gaming": 1.5,
-        "productivity": 9.0,
+        "productivity": 9,
         "contentCreation": 5.2,
-        "student": 6.0,
+        "student": 6,
         "portable": 6
       },
       "prices": [
@@ -6773,7 +6773,7 @@ const LAPTOP_DATA = {
           "retailerId": "bestbuy",
           "retailer": "Best Buy",
           "currentPrice": 1499.99,
-          "retailPrice": 2399.0,
+          "retailPrice": 2399,
           "url": "https://api.bestbuy.com/click/-/6568113/pdp",
           "inStock": true
         }
@@ -6789,7 +6789,7 @@ const LAPTOP_DATA = {
       "fullName": "Apple - Geek Squad Certified Refurbished MacBook Pro 16\" Laptop - M3 Max chip - 48GB Memory - 40-core GPU - 1TB SSD - Space Black",
       "displayName": "MacBook Pro 16 (Refurb)",
       "year": 2024,
-      "screenSize": 16.0,
+      "screenSize": 16,
       "resolution": "1920x1080",
       "displayType": "IPS",
       "refreshRate": 60,
@@ -6806,7 +6806,7 @@ const LAPTOP_DATA = {
       "fairValue": 1776,
       "currentPrice": 2499.99,
       "dealGrade": "F",
-      "dealScore": 71.0,
+      "dealScore": 71,
       "useCaseScores": {
         "gaming": 1.5,
         "productivity": 10,
@@ -6819,12 +6819,12 @@ const LAPTOP_DATA = {
           "retailerId": "bestbuy",
           "retailer": "Best Buy",
           "currentPrice": 2499.99,
-          "retailPrice": 3899.0,
+          "retailPrice": 3899,
           "url": "https://api.bestbuy.com/click/-/6568131/pdp",
           "inStock": false
         }
       ],
-      "rating": 1.0,
+      "rating": 1,
       "reviewCount": 2,
       "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/2b945262-f8b2-40c2-bfbb-3c09bd633d03.jpg"
     },
@@ -6835,7 +6835,7 @@ const LAPTOP_DATA = {
       "fullName": "Apple - MacBook Air 15\" Laptop - M2 chip Built for Apple Intelligence - 16GB Memory - 1TB SSD - Space Gray",
       "displayName": "MacBook Air 15",
       "year": 2024,
-      "screenSize": 15.0,
+      "screenSize": 15,
       "resolution": "1920x1080",
       "displayType": "IPS",
       "refreshRate": 60,
@@ -6858,7 +6858,7 @@ const LAPTOP_DATA = {
       "dealScore": 69.8,
       "useCaseScores": {
         "gaming": 1.5,
-        "productivity": 6.0,
+        "productivity": 6,
         "contentCreation": 3.8,
         "student": 6.5,
         "portable": 6
@@ -6868,7 +6868,7 @@ const LAPTOP_DATA = {
           "retailerId": "bestbuy",
           "retailer": "Best Buy",
           "currentPrice": 1614.99,
-          "retailPrice": 1899.0,
+          "retailPrice": 1899,
           "url": "https://api.bestbuy.com/click/-/6382777/pdp",
           "inStock": false
         }
@@ -6884,7 +6884,7 @@ const LAPTOP_DATA = {
       "fullName": "HP - 840 G6 14\" Refurbished 1920x1080 FHD - Intel 8th Gen Core i7-8665U - Intel UHD Graphics 620 with 16GB and 512GB - SSD - Silver",
       "displayName": "840 G6 14 (Refurb)",
       "year": 2024,
-      "screenSize": 14.0,
+      "screenSize": 14,
       "resolution": "3840x2160",
       "displayType": "IPS",
       "refreshRate": 60,
@@ -6933,7 +6933,7 @@ const LAPTOP_DATA = {
       "fullName": "Apple - Geek Squad Certified Refurbished MacBook Pro 14\" Laptop - M3 Max chip - 36GB Memory - 30-core GPU - 1TB SSD - Silver",
       "displayName": "MacBook Pro 14 (Refurb)",
       "year": 2024,
-      "screenSize": 14.0,
+      "screenSize": 14,
       "resolution": "1920x1080",
       "displayType": "IPS",
       "refreshRate": 60,
@@ -6955,7 +6955,7 @@ const LAPTOP_DATA = {
         "gaming": 1.5,
         "productivity": 10,
         "contentCreation": 6.2,
-        "student": 6.0,
+        "student": 6,
         "portable": 8.5
       },
       "prices": [
@@ -6963,7 +6963,7 @@ const LAPTOP_DATA = {
           "retailerId": "bestbuy",
           "retailer": "Best Buy",
           "currentPrice": 2599.99,
-          "retailPrice": 3099.0,
+          "retailPrice": 3099,
           "url": "https://api.bestbuy.com/click/-/6568096/pdp",
           "inStock": true
         }
@@ -7025,7 +7025,7 @@ const LAPTOP_DATA = {
       "fullName": "Lenovo - ThinkBook 14 G7 14\" Laptop -AMD Ryzen 5 with 8GB Memory - 256GB SSD - Arctic Gray",
       "displayName": "ThinkBook 14",
       "year": 2024,
-      "screenSize": 14.0,
+      "screenSize": 14,
       "resolution": "1920x1080",
       "displayType": "IPS",
       "refreshRate": 60,
@@ -7068,7 +7068,7 @@ const LAPTOP_DATA = {
       "fullName": "Apple - Geek Squad Certified Refurbished MacBook Air 15-inch Laptop - M3 chip - 8GB Memory - 512GB SSD - Midnight",
       "displayName": "MacBook Air 15 (Refurb)",
       "year": 2024,
-      "screenSize": 15.0,
+      "screenSize": 15,
       "resolution": "1920x1080",
       "displayType": "IPS",
       "refreshRate": 60,
@@ -7092,7 +7092,7 @@ const LAPTOP_DATA = {
         "gaming": 1.5,
         "productivity": 7,
         "contentCreation": 4.2,
-        "student": 7.0,
+        "student": 7,
         "portable": 6
       },
       "prices": [
@@ -7100,12 +7100,12 @@ const LAPTOP_DATA = {
           "retailerId": "bestbuy",
           "retailer": "Best Buy",
           "currentPrice": 899.99,
-          "retailPrice": 1199.0,
+          "retailPrice": 1199,
           "url": "https://api.bestbuy.com/click/-/6598923/pdp",
           "inStock": true
         }
       ],
-      "rating": 5.0,
+      "rating": 5,
       "reviewCount": 3,
       "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6565/6565853_sd.jpg"
     },
@@ -7139,7 +7139,7 @@ const LAPTOP_DATA = {
       "dealScore": 67.2,
       "useCaseScores": {
         "gaming": 1.5,
-        "productivity": 6.0,
+        "productivity": 6,
         "contentCreation": 3.8,
         "student": 7.5,
         "portable": 10
@@ -7149,7 +7149,7 @@ const LAPTOP_DATA = {
           "retailerId": "bestbuy",
           "retailer": "Best Buy",
           "currentPrice": 949.99,
-          "retailPrice": 1699.0,
+          "retailPrice": 1699,
           "url": "https://api.bestbuy.com/click/-/6550250/pdp",
           "inStock": true
         }
@@ -7165,7 +7165,7 @@ const LAPTOP_DATA = {
       "fullName": "Apple - Geek Squad Certified Refurbished MacBook Air 15-inch Laptop - M3 chip - 16GB Memory - 512GB SSD - Midnight",
       "displayName": "MacBook Air 15 (Refurb)",
       "year": 2024,
-      "screenSize": 15.0,
+      "screenSize": 15,
       "resolution": "1920x1080",
       "displayType": "IPS",
       "refreshRate": 60,
@@ -7197,7 +7197,7 @@ const LAPTOP_DATA = {
           "retailerId": "bestbuy",
           "retailer": "Best Buy",
           "currentPrice": 949.99,
-          "retailPrice": 1299.0,
+          "retailPrice": 1299,
           "url": "https://api.bestbuy.com/click/-/6598927/pdp",
           "inStock": true
         }
@@ -7213,7 +7213,7 @@ const LAPTOP_DATA = {
       "fullName": "Apple - Geek Squad Certified Refurbished MacBook Pro 16\" Laptop - M3 Pro chip - 36GB Memory - 18-core GPU - 512GB SSD - Silver",
       "displayName": "MacBook Pro 16 (Refurb)",
       "year": 2024,
-      "screenSize": 16.0,
+      "screenSize": 16,
       "resolution": "1920x1080",
       "displayType": "IPS",
       "refreshRate": 60,
@@ -7234,8 +7234,8 @@ const LAPTOP_DATA = {
       "useCaseScores": {
         "gaming": 1.5,
         "productivity": 9.5,
-        "contentCreation": 6.0,
-        "student": 6.0,
+        "contentCreation": 6,
+        "student": 6,
         "portable": 6
       },
       "prices": [
@@ -7243,7 +7243,7 @@ const LAPTOP_DATA = {
           "retailerId": "bestbuy",
           "retailer": "Best Buy",
           "currentPrice": 1729.99,
-          "retailPrice": 2799.0,
+          "retailPrice": 2799,
           "url": "https://api.bestbuy.com/click/-/6568093/pdp",
           "inStock": false
         }
@@ -7259,7 +7259,7 @@ const LAPTOP_DATA = {
       "fullName": "Apple - Geek Squad Certified Refurbished MacBook Air 15-inch Laptop - M3 chip - 8GB Memory - 256GB SSD - Midnight",
       "displayName": "MacBook Air 15 (Refurb)",
       "year": 2024,
-      "screenSize": 15.0,
+      "screenSize": 15,
       "resolution": "1920x1080",
       "displayType": "IPS",
       "refreshRate": 60,
@@ -7283,7 +7283,7 @@ const LAPTOP_DATA = {
         "gaming": 1.5,
         "productivity": 7,
         "contentCreation": 4.2,
-        "student": 7.0,
+        "student": 7,
         "portable": 6
       },
       "prices": [
@@ -7291,7 +7291,7 @@ const LAPTOP_DATA = {
           "retailerId": "bestbuy",
           "retailer": "Best Buy",
           "currentPrice": 849.99,
-          "retailPrice": 999.0,
+          "retailPrice": 999,
           "url": "https://api.bestbuy.com/click/-/6598900/pdp",
           "inStock": true
         }
@@ -7307,7 +7307,7 @@ const LAPTOP_DATA = {
       "fullName": "Apple - Geek Squad Certified Refurbished MacBook Pro 14\" Laptop - M3 chip - 8GB Memory - 10-core GPU - 1TB SSD - Space Gray",
       "displayName": "MacBook Pro 14 (Refurb)",
       "year": 2024,
-      "screenSize": 14.0,
+      "screenSize": 14,
       "resolution": "1920x1080",
       "displayType": "IPS",
       "refreshRate": 60,
@@ -7331,7 +7331,7 @@ const LAPTOP_DATA = {
         "gaming": 1.5,
         "productivity": 7,
         "contentCreation": 4.2,
-        "student": 7.0,
+        "student": 7,
         "portable": 8.5
       },
       "prices": [
@@ -7339,12 +7339,12 @@ const LAPTOP_DATA = {
           "retailerId": "bestbuy",
           "retailer": "Best Buy",
           "currentPrice": 999.99,
-          "retailPrice": 1599.0,
+          "retailPrice": 1599,
           "url": "https://api.bestbuy.com/click/-/6567954/pdp",
           "inStock": false
         }
       ],
-      "rating": 5.0,
+      "rating": 5,
       "reviewCount": 3,
       "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/c7c807a1-1948-42f2-bc1f-b612242c341d.jpg"
     },
@@ -7355,7 +7355,7 @@ const LAPTOP_DATA = {
       "fullName": "Apple - Geek Squad Certified Refurbished MacBook Air 15-inch Laptop - M3 chip - 8GB Memory - 512GB SSD - Starlight",
       "displayName": "MacBook Air 15 (Refurb)",
       "year": 2024,
-      "screenSize": 15.0,
+      "screenSize": 15,
       "resolution": "1920x1080",
       "displayType": "IPS",
       "refreshRate": 60,
@@ -7374,12 +7374,12 @@ const LAPTOP_DATA = {
       "fairValue": 608,
       "currentPrice": 949.99,
       "dealGrade": "F",
-      "dealScore": 64.0,
+      "dealScore": 64,
       "useCaseScores": {
         "gaming": 1.5,
         "productivity": 7,
         "contentCreation": 4.2,
-        "student": 6.0,
+        "student": 6,
         "portable": 6
       },
       "prices": [
@@ -7387,12 +7387,12 @@ const LAPTOP_DATA = {
           "retailerId": "bestbuy",
           "retailer": "Best Buy",
           "currentPrice": 949.99,
-          "retailPrice": 1199.0,
+          "retailPrice": 1199,
           "url": "https://api.bestbuy.com/click/-/6598899/pdp",
           "inStock": true
         }
       ],
-      "rating": 5.0,
+      "rating": 5,
       "reviewCount": 3,
       "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6565/6565850_sd.jpg"
     },
@@ -7403,7 +7403,7 @@ const LAPTOP_DATA = {
       "fullName": "Apple - Geek Squad Certified Refurbished MacBook Air 15-inch Laptop - M3 chip - 16GB Memory - 512GB SSD - Space Gray",
       "displayName": "MacBook Air 15 (Refurb)",
       "year": 2024,
-      "screenSize": 15.0,
+      "screenSize": 15,
       "resolution": "1920x1080",
       "displayType": "IPS",
       "refreshRate": 60,
@@ -7435,12 +7435,12 @@ const LAPTOP_DATA = {
           "retailerId": "bestbuy",
           "retailer": "Best Buy",
           "currentPrice": 999.99,
-          "retailPrice": 1299.0,
+          "retailPrice": 1299,
           "url": "https://api.bestbuy.com/click/-/6598924/pdp",
           "inStock": true
         }
       ],
-      "rating": 4.0,
+      "rating": 4,
       "reviewCount": 4,
       "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6565/6565854_sd.jpg"
     },
@@ -7451,7 +7451,7 @@ const LAPTOP_DATA = {
       "fullName": "Apple - Geek Squad Certified Refurbished MacBook Air 15-inch Laptop - M3 chip - 16GB Memory - 512GB SSD - Silver",
       "displayName": "MacBook Air 15 (Refurb)",
       "year": 2024,
-      "screenSize": 15.0,
+      "screenSize": 15,
       "resolution": "1920x1080",
       "displayType": "IPS",
       "refreshRate": 60,
@@ -7483,12 +7483,12 @@ const LAPTOP_DATA = {
           "retailerId": "bestbuy",
           "retailer": "Best Buy",
           "currentPrice": 999.99,
-          "retailPrice": 1299.0,
+          "retailPrice": 1299,
           "url": "https://api.bestbuy.com/click/-/6598925/pdp",
           "inStock": true
         }
       ],
-      "rating": 4.0,
+      "rating": 4,
       "reviewCount": 4,
       "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6565/6565855_sd.jpg"
     },
@@ -7499,7 +7499,7 @@ const LAPTOP_DATA = {
       "fullName": "Apple - Geek Squad Certified Refurbished MacBook Air 15-inch Laptop - M3 chip - 8GB Memory - 256GB SSD - Space Gray",
       "displayName": "MacBook Air 15 (Refurb)",
       "year": 2024,
-      "screenSize": 15.0,
+      "screenSize": 15,
       "resolution": "1920x1080",
       "displayType": "IPS",
       "refreshRate": 60,
@@ -7518,12 +7518,12 @@ const LAPTOP_DATA = {
       "fairValue": 567,
       "currentPrice": 899.99,
       "dealGrade": "F",
-      "dealScore": 63.0,
+      "dealScore": 63,
       "useCaseScores": {
         "gaming": 1.5,
         "productivity": 7,
         "contentCreation": 4.2,
-        "student": 7.0,
+        "student": 7,
         "portable": 6
       },
       "prices": [
@@ -7531,7 +7531,7 @@ const LAPTOP_DATA = {
           "retailerId": "bestbuy",
           "retailer": "Best Buy",
           "currentPrice": 899.99,
-          "retailPrice": 999.0,
+          "retailPrice": 999,
           "url": "https://api.bestbuy.com/click/-/6598805/pdp",
           "inStock": true
         }
@@ -7547,7 +7547,7 @@ const LAPTOP_DATA = {
       "fullName": "Apple - Geek Squad Certified Refurbished MacBook Air 15-inch Laptop - M3 chip - 8GB Memory - 256GB SSD - Silver",
       "displayName": "MacBook Air 15 (Refurb)",
       "year": 2024,
-      "screenSize": 15.0,
+      "screenSize": 15,
       "resolution": "1920x1080",
       "displayType": "IPS",
       "refreshRate": 60,
@@ -7566,12 +7566,12 @@ const LAPTOP_DATA = {
       "fairValue": 567,
       "currentPrice": 899.99,
       "dealGrade": "F",
-      "dealScore": 63.0,
+      "dealScore": 63,
       "useCaseScores": {
         "gaming": 1.5,
         "productivity": 7,
         "contentCreation": 4.2,
-        "student": 7.0,
+        "student": 7,
         "portable": 6
       },
       "prices": [
@@ -7579,7 +7579,7 @@ const LAPTOP_DATA = {
           "retailerId": "bestbuy",
           "retailer": "Best Buy",
           "currentPrice": 899.99,
-          "retailPrice": 999.0,
+          "retailPrice": 999,
           "url": "https://api.bestbuy.com/click/-/6598896/pdp",
           "inStock": true
         }
@@ -7595,7 +7595,7 @@ const LAPTOP_DATA = {
       "fullName": "Apple - Geek Squad Certified Refurbished MacBook Air 15-inch Laptop - M3 chip - 8GB Memory - 256GB SSD - Starlight",
       "displayName": "MacBook Air 15 (Refurb)",
       "year": 2024,
-      "screenSize": 15.0,
+      "screenSize": 15,
       "resolution": "1920x1080",
       "displayType": "IPS",
       "refreshRate": 60,
@@ -7614,12 +7614,12 @@ const LAPTOP_DATA = {
       "fairValue": 567,
       "currentPrice": 899.99,
       "dealGrade": "F",
-      "dealScore": 63.0,
+      "dealScore": 63,
       "useCaseScores": {
         "gaming": 1.5,
         "productivity": 7,
         "contentCreation": 4.2,
-        "student": 7.0,
+        "student": 7,
         "portable": 6
       },
       "prices": [
@@ -7627,7 +7627,7 @@ const LAPTOP_DATA = {
           "retailerId": "bestbuy",
           "retailer": "Best Buy",
           "currentPrice": 899.99,
-          "retailPrice": 999.0,
+          "retailPrice": 999,
           "url": "https://api.bestbuy.com/click/-/6598898/pdp",
           "inStock": true
         }
@@ -7643,7 +7643,7 @@ const LAPTOP_DATA = {
       "fullName": "HP - 14\" Refurbished 1920 x 1080 FHD - Intel 11th Gen Core i5-1145G7 with 32GB RAM - Intel Iris Xe Graphics - 1TB SSD - Silver",
       "displayName": "14 (Refurb)",
       "year": 2024,
-      "screenSize": 14.0,
+      "screenSize": 14,
       "resolution": "1920x1080",
       "displayType": "IPS",
       "refreshRate": 60,
@@ -7668,7 +7668,7 @@ const LAPTOP_DATA = {
         "gaming": 1.5,
         "productivity": 5,
         "contentCreation": 3.8,
-        "student": 8.0,
+        "student": 8,
         "portable": 7.5
       },
       "prices": [
@@ -7681,58 +7681,9 @@ const LAPTOP_DATA = {
           "inStock": true
         }
       ],
-      "rating": 5.0,
+      "rating": 5,
       "reviewCount": 2,
       "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/5451e062-76ff-4ae5-88f6-2048618ed27b.jpg"
-    },
-    {
-      "id": "bestbuy-6531211",
-      "brand": "Metra",
-      "model": "830 G7",
-      "fullName": "Metra - 830 G7 13.3\" Refurbished 1920x1080 FHD - Intel 10th Gen Core i7-10610U - Intel UHD Graphics 620 with 32GB and 1TB - SSD - Silver",
-      "displayName": "830 G7 13 (Refurb)",
-      "year": 2024,
-      "screenSize": 13.3,
-      "resolution": "3840x2160",
-      "displayType": "IPS",
-      "refreshRate": 60,
-      "cpu": "Intel Core 7-10610U",
-      "cpuBrand": "Intel",
-      "gpu": "Intel Uhd Graphics 620",
-      "gpuBrand": "Intel",
-      "ram": 0,
-      "storage": "1TB SSD",
-      "benchmarks": {
-        "cinebenchR23Single": 1207,
-        "cinebenchR23Multi": 4048,
-        "timeSpyGraphics": 380,
-        "fireStrikeGraphics": 1168,
-        "gaming1080pAvgFps": 11
-      },
-      "fairValue": 414,
-      "currentPrice": 673.86,
-      "dealGrade": "F",
-      "dealScore": 61.4,
-      "useCaseScores": {
-        "gaming": 1.5,
-        "productivity": 4,
-        "contentCreation": 2.8,
-        "student": 7.5,
-        "portable": 9
-      },
-      "prices": [
-        {
-          "retailerId": "bestbuy",
-          "retailer": "Best Buy",
-          "currentPrice": 673.86,
-          "retailPrice": 673.86,
-          "url": "https://api.bestbuy.com/click/-/6531211/pdp",
-          "inStock": true
-        }
-      ],
-      "rating": 4.5,
-      "reviewCount": 127,
-      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/e968c4c1-2f70-4af3-a82a-b4fcd6d13571.jpg"
     },
     {
       "id": "bestbuy-6550253",
@@ -7764,7 +7715,7 @@ const LAPTOP_DATA = {
       "dealScore": 61.1,
       "useCaseScores": {
         "gaming": 1.5,
-        "productivity": 6.0,
+        "productivity": 6,
         "contentCreation": 3.8,
         "student": 7.5,
         "portable": 10
@@ -7774,12 +7725,12 @@ const LAPTOP_DATA = {
           "retailerId": "bestbuy",
           "retailer": "Best Buy",
           "currentPrice": 1199.99,
-          "retailPrice": 1899.0,
+          "retailPrice": 1899,
           "url": "https://api.bestbuy.com/click/-/6550253/pdp",
           "inStock": true
         }
       ],
-      "rating": 5.0,
+      "rating": 5,
       "reviewCount": 1,
       "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6550/6550253_sd.jpg"
     },
@@ -7836,7 +7787,7 @@ const LAPTOP_DATA = {
       "fullName": "Apple - Geek Squad Certified Refurbished MacBook Pro 14\" Laptop - M3 chip - 8GB Memory - 10-core GPU - 1TB SSD - Silver",
       "displayName": "MacBook Pro 14 (Refurb)",
       "year": 2024,
-      "screenSize": 14.0,
+      "screenSize": 14,
       "resolution": "1920x1080",
       "displayType": "IPS",
       "refreshRate": 60,
@@ -7860,7 +7811,7 @@ const LAPTOP_DATA = {
         "gaming": 1.5,
         "productivity": 7,
         "contentCreation": 4.2,
-        "student": 7.0,
+        "student": 7,
         "portable": 8.5
       },
       "prices": [
@@ -7868,12 +7819,12 @@ const LAPTOP_DATA = {
           "retailerId": "bestbuy",
           "retailer": "Best Buy",
           "currentPrice": 1099.99,
-          "retailPrice": 1599.0,
+          "retailPrice": 1599,
           "url": "https://api.bestbuy.com/click/-/6567952/pdp",
           "inStock": true
         }
       ],
-      "rating": 5.0,
+      "rating": 5,
       "reviewCount": 3,
       "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/41e3e6e1-4b5d-488d-8318-e5a5457c3276.jpg"
     },
@@ -7881,10 +7832,10 @@ const LAPTOP_DATA = {
       "id": "bestbuy-6586756",
       "brand": "Lenovo",
       "model": "21MV000AUS",
-      "fullName": "Lenovo - ThinkBook 14 G7\u00a014\" Touch-Screen Laptop - AMD Ryzen 7 with 16GB Memory - 512GB SSD - Arctic Gray",
+      "fullName": "Lenovo - ThinkBook 14 G7 14\" Touch-Screen Laptop - AMD Ryzen 7 with 16GB Memory - 512GB SSD - Arctic Gray",
       "displayName": "ThinkBook 14",
       "year": 2024,
-      "screenSize": 14.0,
+      "screenSize": 14,
       "resolution": "1920x1080",
       "displayType": "IPS",
       "refreshRate": 60,
@@ -7902,8 +7853,8 @@ const LAPTOP_DATA = {
       "useCaseScores": {
         "gaming": 1.5,
         "productivity": 4.5,
-        "contentCreation": 3.0,
-        "student": 7.0,
+        "contentCreation": 3,
+        "student": 7,
         "portable": 7.5
       },
       "prices": [
@@ -7916,7 +7867,7 @@ const LAPTOP_DATA = {
           "inStock": true
         }
       ],
-      "rating": 5.0,
+      "rating": 5,
       "reviewCount": 1,
       "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6586/6586756_sd.jpg"
     },
@@ -7927,7 +7878,7 @@ const LAPTOP_DATA = {
       "fullName": "Apple - Geek Squad Certified Refurbished MacBook Air 15-inch Laptop - M3 chip - 16GB Memory - 512GB SSD - Starlight",
       "displayName": "MacBook Air 15 (Refurb)",
       "year": 2024,
-      "screenSize": 15.0,
+      "screenSize": 15,
       "resolution": "1920x1080",
       "displayType": "IPS",
       "refreshRate": 60,
@@ -7946,7 +7897,7 @@ const LAPTOP_DATA = {
       "fairValue": 638,
       "currentPrice": 1099.99,
       "dealGrade": "F",
-      "dealScore": 58.0,
+      "dealScore": 58,
       "useCaseScores": {
         "gaming": 1.5,
         "productivity": 7.5,
@@ -7959,7 +7910,7 @@ const LAPTOP_DATA = {
           "retailerId": "bestbuy",
           "retailer": "Best Buy",
           "currentPrice": 1099.99,
-          "retailPrice": 1299.0,
+          "retailPrice": 1299,
           "url": "https://api.bestbuy.com/click/-/6598926/pdp",
           "inStock": true
         }
@@ -7975,7 +7926,7 @@ const LAPTOP_DATA = {
       "fullName": "Lenovo - ThinkBook 14 G7 14\" Touch-Screen Laptop - AMD Ryzen 5 with 16GB Memory - 512GB SSD - Arctic Gray",
       "displayName": "ThinkBook 14",
       "year": 2024,
-      "screenSize": 14.0,
+      "screenSize": 14,
       "resolution": "1920x1080",
       "displayType": "IPS",
       "refreshRate": 60,
@@ -7993,8 +7944,8 @@ const LAPTOP_DATA = {
       "useCaseScores": {
         "gaming": 1.5,
         "productivity": 4.5,
-        "contentCreation": 3.0,
-        "student": 7.0,
+        "contentCreation": 3,
+        "student": 7,
         "portable": 7.5
       },
       "prices": [
@@ -8007,7 +7958,7 @@ const LAPTOP_DATA = {
           "inStock": true
         }
       ],
-      "rating": 3.0,
+      "rating": 3,
       "reviewCount": 2,
       "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6586/6586760_sd.jpg"
     },
@@ -8018,7 +7969,7 @@ const LAPTOP_DATA = {
       "fullName": "Apple - Geek Squad Certified Refurbished MacBook Pro 16\" Laptop - M3 Max chip - 36GB Memory - 30-core GPU - 1TB SSD - Silver",
       "displayName": "MacBook Pro 16 (Refurb)",
       "year": 2024,
-      "screenSize": 16.0,
+      "screenSize": 16,
       "resolution": "1920x1080",
       "displayType": "IPS",
       "refreshRate": 60,
@@ -8048,12 +7999,12 @@ const LAPTOP_DATA = {
           "retailerId": "bestbuy",
           "retailer": "Best Buy",
           "currentPrice": 3149.99,
-          "retailPrice": 3399.0,
+          "retailPrice": 3399,
           "url": "https://api.bestbuy.com/click/-/6567944/pdp",
           "inStock": true
         }
       ],
-      "rating": 5.0,
+      "rating": 5,
       "reviewCount": 4,
       "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/aa133c22-5cd6-4ba4-b972-524cac243374.jpg"
     },
@@ -8064,7 +8015,7 @@ const LAPTOP_DATA = {
       "fullName": "Apple - Geek Squad Certified Refurbished MacBook Air 15-inch Laptop - M3 chip - 8GB Memory - 512GB SSD - Space Gray",
       "displayName": "MacBook Air 15 (Refurb)",
       "year": 2024,
-      "screenSize": 15.0,
+      "screenSize": 15,
       "resolution": "1920x1080",
       "displayType": "IPS",
       "refreshRate": 60,
@@ -8088,7 +8039,7 @@ const LAPTOP_DATA = {
         "gaming": 1.5,
         "productivity": 7,
         "contentCreation": 4.2,
-        "student": 6.0,
+        "student": 6,
         "portable": 6
       },
       "prices": [
@@ -8096,12 +8047,12 @@ const LAPTOP_DATA = {
           "retailerId": "bestbuy",
           "retailer": "Best Buy",
           "currentPrice": 1099.99,
-          "retailPrice": 1199.0,
+          "retailPrice": 1199,
           "url": "https://api.bestbuy.com/click/-/6598808/pdp",
           "inStock": true
         }
       ],
-      "rating": 5.0,
+      "rating": 5,
       "reviewCount": 3,
       "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6565/6565845_sd.jpg"
     },
@@ -8112,7 +8063,7 @@ const LAPTOP_DATA = {
       "fullName": "Apple - Geek Squad Certified Refurbished MacBook Air 15-inch Laptop - M3 chip - 8GB Memory - 512GB SSD - Silver",
       "displayName": "MacBook Air 15 (Refurb)",
       "year": 2024,
-      "screenSize": 15.0,
+      "screenSize": 15,
       "resolution": "1920x1080",
       "displayType": "IPS",
       "refreshRate": 60,
@@ -8136,7 +8087,7 @@ const LAPTOP_DATA = {
         "gaming": 1.5,
         "productivity": 7,
         "contentCreation": 4.2,
-        "student": 6.0,
+        "student": 6,
         "portable": 6
       },
       "prices": [
@@ -8144,12 +8095,12 @@ const LAPTOP_DATA = {
           "retailerId": "bestbuy",
           "retailer": "Best Buy",
           "currentPrice": 1099.99,
-          "retailPrice": 1199.0,
+          "retailPrice": 1199,
           "url": "https://api.bestbuy.com/click/-/6598897/pdp",
           "inStock": true
         }
       ],
-      "rating": 5.0,
+      "rating": 5,
       "reviewCount": 3,
       "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6565/6565847_sd.jpg"
     },
@@ -8160,7 +8111,7 @@ const LAPTOP_DATA = {
       "fullName": "HP - 840 G6 14\" Refurbished 1920x1080 FHD - Intel 8th Gen Core i7-8665U - Intel UHD Graphics 620 with 32GB and 1TB - SSD - Silver",
       "displayName": "840 G6 14 (Refurb)",
       "year": 2024,
-      "screenSize": 14.0,
+      "screenSize": 14,
       "resolution": "3840x2160",
       "displayType": "IPS",
       "refreshRate": 60,
@@ -8209,7 +8160,7 @@ const LAPTOP_DATA = {
       "fullName": "Apple - Geek Squad Certified Refurbished MacBook Air 15\" Laptop - M2 chip - 16GB Memory - 1TB SSD - Midnight",
       "displayName": "MacBook Air 15 (Refurb)",
       "year": 2024,
-      "screenSize": 15.0,
+      "screenSize": 15,
       "resolution": "1920x1080",
       "displayType": "IPS",
       "refreshRate": 60,
@@ -8232,7 +8183,7 @@ const LAPTOP_DATA = {
       "dealScore": 54.3,
       "useCaseScores": {
         "gaming": 1.5,
-        "productivity": 6.0,
+        "productivity": 6,
         "contentCreation": 3.8,
         "student": 6.5,
         "portable": 6
@@ -8242,7 +8193,7 @@ const LAPTOP_DATA = {
           "retailerId": "bestbuy",
           "retailer": "Best Buy",
           "currentPrice": 1349.99,
-          "retailPrice": 1899.0,
+          "retailPrice": 1899,
           "url": "https://api.bestbuy.com/click/-/6566248/pdp",
           "inStock": true
         }
@@ -8304,7 +8255,7 @@ const LAPTOP_DATA = {
       "fullName": "Apple - Geek Squad Certified Refurbished MacBook Pro 14-inch Laptop M3 chip - 16GB Memory - 1TB SSD - Space Gray",
       "displayName": "MacBook Pro 14 (Refurb)",
       "year": 2024,
-      "screenSize": 14.0,
+      "screenSize": 14,
       "resolution": "1920x1080",
       "displayType": "IPS",
       "refreshRate": 60,
@@ -8336,12 +8287,12 @@ const LAPTOP_DATA = {
           "retailerId": "bestbuy",
           "retailer": "Best Buy",
           "currentPrice": 1449.99,
-          "retailPrice": 1699.0,
+          "retailPrice": 1699,
           "url": "https://api.bestbuy.com/click/-/6598928/pdp",
           "inStock": true
         }
       ],
-      "rating": 5.0,
+      "rating": 5,
       "reviewCount": 1,
       "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6565/6565897_sd.jpg"
     },
@@ -8444,7 +8395,7 @@ const LAPTOP_DATA = {
       "fullName": "Apple - Geek Squad Certified Refurbished MacBook Air 15\" Laptop - M2 chip - 16GB Memory - 1TB SSD - Starlight",
       "displayName": "MacBook Air 15 (Refurb)",
       "year": 2024,
-      "screenSize": 15.0,
+      "screenSize": 15,
       "resolution": "1920x1080",
       "displayType": "IPS",
       "refreshRate": 60,
@@ -8467,7 +8418,7 @@ const LAPTOP_DATA = {
       "dealScore": 48.9,
       "useCaseScores": {
         "gaming": 1.5,
-        "productivity": 6.0,
+        "productivity": 6,
         "contentCreation": 3.8,
         "student": 6.5,
         "portable": 6
@@ -8477,7 +8428,7 @@ const LAPTOP_DATA = {
           "retailerId": "bestbuy",
           "retailer": "Best Buy",
           "currentPrice": 1499.99,
-          "retailPrice": 1899.0,
+          "retailPrice": 1899,
           "url": "https://api.bestbuy.com/click/-/6583991/pdp",
           "inStock": true
         }
@@ -8512,7 +8463,7 @@ const LAPTOP_DATA = {
         "gaming": 1.5,
         "productivity": 5,
         "contentCreation": 3.8,
-        "student": 6.0,
+        "student": 6,
         "portable": 5
       },
       "prices": [
@@ -8525,7 +8476,7 @@ const LAPTOP_DATA = {
           "inStock": false
         }
       ],
-      "rating": 5.0,
+      "rating": 5,
       "reviewCount": 1,
       "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/24900513-4ed7-4ce8-a00a-d539f0d540a5.jpg"
     },
@@ -8555,7 +8506,7 @@ const LAPTOP_DATA = {
         "gaming": 1.5,
         "productivity": 5,
         "contentCreation": 3.8,
-        "student": 7.0,
+        "student": 7,
         "portable": 5
       },
       "prices": [
@@ -8601,7 +8552,7 @@ const LAPTOP_DATA = {
         "gaming": 1.5,
         "productivity": 5,
         "contentCreation": 3.8,
-        "student": 6.0,
+        "student": 6,
         "portable": 5
       },
       "prices": [
@@ -8614,7 +8565,7 @@ const LAPTOP_DATA = {
           "inStock": false
         }
       ],
-      "rating": 5.0,
+      "rating": 5,
       "reviewCount": 2,
       "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/e3666897-edeb-4b62-a3fc-f20739df06ae.jpg"
     },
@@ -8625,7 +8576,7 @@ const LAPTOP_DATA = {
       "fullName": "Apple - Geek Squad Certified Refurbished MacBook Pro 16\" Laptop - M3 Max chip - 48GB Memory - 40-core GPU - 1TB SSD - Silver",
       "displayName": "MacBook Pro 16 (Refurb)",
       "year": 2024,
-      "screenSize": 16.0,
+      "screenSize": 16,
       "resolution": "1920x1080",
       "displayType": "IPS",
       "refreshRate": 60,
@@ -8655,12 +8606,12 @@ const LAPTOP_DATA = {
           "retailerId": "bestbuy",
           "retailer": "Best Buy",
           "currentPrice": 3799.99,
-          "retailPrice": 3899.0,
+          "retailPrice": 3899,
           "url": "https://api.bestbuy.com/click/-/6568125/pdp",
           "inStock": true
         }
       ],
-      "rating": 1.0,
+      "rating": 1,
       "reviewCount": 2,
       "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/9325f86d-9bc4-4eca-b564-36949db0170f.jpg"
     },
@@ -8690,7 +8641,7 @@ const LAPTOP_DATA = {
         "gaming": 1.5,
         "productivity": 5,
         "contentCreation": 3.8,
-        "student": 6.0,
+        "student": 6,
         "portable": 5
       },
       "prices": [
@@ -8777,7 +8728,7 @@ const LAPTOP_DATA = {
       "fairValue": 503,
       "currentPrice": 1094.32,
       "dealGrade": "F",
-      "dealScore": 46.0,
+      "dealScore": 46,
       "useCaseScores": {
         "gaming": 1.5,
         "productivity": 5,
@@ -8795,7 +8746,7 @@ const LAPTOP_DATA = {
           "inStock": false
         }
       ],
-      "rating": 3.0,
+      "rating": 3,
       "reviewCount": 2,
       "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/508aac47-cd5a-4e5c-bdae-efb315da81b2.jpg"
     },
@@ -8820,12 +8771,12 @@ const LAPTOP_DATA = {
       "fairValue": 487,
       "currentPrice": 1105.68,
       "dealGrade": "F",
-      "dealScore": 44.0,
+      "dealScore": 44,
       "useCaseScores": {
         "gaming": 1.5,
         "productivity": 5,
         "contentCreation": 3.8,
-        "student": 6.0,
+        "student": 6,
         "portable": 5
       },
       "prices": [
@@ -8849,7 +8800,7 @@ const LAPTOP_DATA = {
       "fullName": "Dell - 14\" Refurbished 1920x1080 FHD - Intel 11th Gen Core i7-1185G7 - Intel Iris Xe Graphics with 32GB and 1TB - SSD - Black",
       "displayName": "14 (Refurb)",
       "year": 2024,
-      "screenSize": 14.0,
+      "screenSize": 14,
       "resolution": "1920x1080",
       "displayType": "IPS",
       "refreshRate": 60,
@@ -8887,7 +8838,7 @@ const LAPTOP_DATA = {
           "inStock": true
         }
       ],
-      "rating": 3.0,
+      "rating": 3,
       "reviewCount": 2,
       "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/9542c943-febe-4a8c-b339-7a1f6f62e188.jpg"
     },
@@ -8920,7 +8871,7 @@ const LAPTOP_DATA = {
         "gaming": 1.5,
         "productivity": 5,
         "contentCreation": 3.8,
-        "student": 6.0,
+        "student": 6,
         "portable": 5
       },
       "prices": [
@@ -8967,7 +8918,7 @@ const LAPTOP_DATA = {
       "dealScore": 43.1,
       "useCaseScores": {
         "gaming": 1.5,
-        "productivity": 6.0,
+        "productivity": 6,
         "contentCreation": 3.8,
         "student": 7.5,
         "portable": 10
@@ -8977,12 +8928,12 @@ const LAPTOP_DATA = {
           "retailerId": "bestbuy",
           "retailer": "Best Buy",
           "currentPrice": 1699.99,
-          "retailPrice": 2099.0,
+          "retailPrice": 2099,
           "url": "https://api.bestbuy.com/click/-/6584277/pdp",
           "inStock": true
         }
       ],
-      "rating": 5.0,
+      "rating": 5,
       "reviewCount": 1,
       "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6584/6584277_sd.jpg"
     },
@@ -9016,7 +8967,7 @@ const LAPTOP_DATA = {
       "dealScore": 43.1,
       "useCaseScores": {
         "gaming": 1.5,
-        "productivity": 6.0,
+        "productivity": 6,
         "contentCreation": 3.8,
         "student": 7.5,
         "portable": 10
@@ -9026,12 +8977,12 @@ const LAPTOP_DATA = {
           "retailerId": "bestbuy",
           "retailer": "Best Buy",
           "currentPrice": 1699.99,
-          "retailPrice": 2099.0,
+          "retailPrice": 2099,
           "url": "https://api.bestbuy.com/click/-/6584279/pdp",
           "inStock": true
         }
       ],
-      "rating": 5.0,
+      "rating": 5,
       "reviewCount": 1,
       "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6584/6584279_sd.jpg"
     },
@@ -9042,7 +8993,7 @@ const LAPTOP_DATA = {
       "fullName": "Dell - 14\" Refurbished 1920x1080 FHD - Intel 11th Gen Core i7-1185G7 - Intel Iris Xe Graphics with 32GB and 2TB - SSD - Black",
       "displayName": "14 (Refurb)",
       "year": 2024,
-      "screenSize": 14.0,
+      "screenSize": 14,
       "resolution": "1920x1080",
       "displayType": "IPS",
       "refreshRate": 60,
@@ -9134,10 +9085,10 @@ const LAPTOP_DATA = {
       "id": "bestbuy-6457117",
       "brand": "LG",
       "model": "GSRF 16Z90P-K.AAB8U1",
-      "fullName": "LG - gram 16\u201d WQXGA Laptop \u2013 Intel Evo Platform Core i7 \u2013 16GB RAM \u2013 1TB NVMe Solid State Drive - Black",
-      "displayName": "gram 16\u201d",
+      "fullName": "LG - gram 16” WQXGA Laptop – Intel Evo Platform Core i7 – 16GB RAM – 1TB NVMe Solid State Drive - Black",
+      "displayName": "gram 16”",
       "year": 2024,
-      "screenSize": 16.0,
+      "screenSize": 16,
       "resolution": "1920x1080",
       "displayType": "IPS",
       "refreshRate": 60,
@@ -9161,7 +9112,7 @@ const LAPTOP_DATA = {
       "useCaseScores": {
         "gaming": 1.5,
         "productivity": 4.5,
-        "contentCreation": 3.0,
+        "contentCreation": 3,
         "student": 5.5,
         "portable": 5
       },
@@ -9181,3 +9132,4 @@ const LAPTOP_DATA = {
     }
   ]
 };
+
