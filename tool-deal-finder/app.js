@@ -46,16 +46,23 @@ function card(t){
        <div class="tv-card-retailer">at ${TOOL_DATA.retailers[p.retailerId]?.name||p.retailerId} · checked ${String(p.lastChecked).slice(0,10)}</div>`
     : `<div class="tv-card-retailer">Price being verified — check retailer</div>`;
   const dsTxt = ds==null?"":`<span class="deal-score ${ds>=0?"positive":"negative"}">${ds>=0?"":"+"}${Math.abs(ds*100).toFixed(1)}% ${ds>=0?"below":"above"} fair value (${ToolUtils.fmt(t.fairValue)})</span>`;
+  const brandLine = t.platformName.toLowerCase().startsWith(t.brand.toLowerCase())
+    ? t.platformName
+    : `${t.brand} · ${t.platformName}`;
+  const buyLink = (p && p.url)
+    ? `<a class="tool-buy-link" href="${p.url}" target="_blank" rel="noopener">View at ${TOOL_DATA.retailers[p.retailerId]?.name||p.retailerId} →</a>`
+    : "";
   return `<article class="tv-card" data-id="${t.id}">
+    ${t.image ? `<div class="tv-card-image tool-card-image"><img src="${t.image}" alt="${t.fullName}" loading="lazy"></div>` : ""}
     <div class="tv-card-content">
-      <div class="tv-card-brand">${t.brand} · ${t.platformName}</div>
+      <div class="tv-card-brand">${brandLine}</div>
       <h3 class="tv-card-title">${t.fullName}</h3>
       <div class="tv-card-specs">${Object.entries(t.specs||{}).slice(0,3).map(([k,v2])=>`<span class="tv-card-spec">${v2===true?k:v2}</span>`).join("")}</div>
       <div class="kit-math">${km}</div>
       <div class="tv-card-pricing"><div class="tv-card-price-grade-row">
         <div class="price-section">${priceBlock}</div>
         <div class="grade-section"><span class="deal-badge ${v.cls}"><span class="grade">${v.text}</span><span class="grade-subtitle">${v.subtitle}</span></span></div>
-      </div><div class="tv-card-deal-row">${dsTxt}</div></div>
+      </div><div class="tv-card-deal-row">${dsTxt}</div>${buyLink}</div>
     </div></article>`;
 }
 function render(){

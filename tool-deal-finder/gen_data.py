@@ -79,6 +79,38 @@ C = [
  ("makita-xag04z","Makita","XAG04Z","18V LXT Brushless 4-1/2in Grinder (Bare)","makita18v","grinder",130,[],0,0,
   {"rpm":"8500","brushless":True},{"diy":6.5,"remodel":7.5,"auto":7.5,"electrical":5.0,"yard":0,"pro":8.8},149.00,None,False,False,"homedepot",""),
 ]
+
+# Product page URLs + CDN images, browser-collected 2026-07-04 (overnight pass).
+# Plain retailer URLs — the Sovrn site JS monetizes outbound clicks client-side.
+MEDIA = {
+ "dewalt-dcf850b": ("https://www.homedepot.com/p/DEWALT-ATOMIC-20V-MAX-Cordless-Brushless-Compact-1-4-in-Impact-Driver-Tool-Only-DCF850B/316627328",
+   "https://images.thdstatic.com/productImages/3fbaa197-52a0-45f1-b4dc-8a3a8e814a23/svn/dewalt-impact-drivers-dcf850b-64_600.jpg"),
+ "milwaukee-2953-20": ("https://www.homedepot.com/p/Milwaukee-M18-FUEL-18V-Lithium-Ion-Brushless-Cordless-1-4-in-Hex-Impact-Driver-Tool-Only-2953-20/320326875",
+   "https://images.thdstatic.com/productImages/4b8d2df9-00a4-4068-b769-5d75368fd1cf/svn/milwaukee-impact-drivers-2953-20-64_600.jpg"),
+ "milwaukee-3697-22": ("https://www.homedepot.com/p/Milwaukee-M18-FUEL-18V-Lithium-Ion-Brushless-Cordless-Hammer-Drill-and-Impact-Driver-Combo-Kit-2-Tool-with-2-Batteries-3697-22/320326787",
+   "https://images.thdstatic.com/productImages/53650d0a-9387-4588-adff-25e704ce7c7c/svn/milwaukee-power-tool-combo-kits-3697-22-64_600.jpg"),
+ "ryobi-psbdd02k2": ("https://www.homedepot.com/p/RYOBI-ONE-HP-18V-Brushless-Cordless-Compact-1-2in-Drill-Driver-Kit-with-2-Compact-Batteries-and-Charger-PSBDD02K2/327697338",
+   "https://images.thdstatic.com/productImages/96d5c7bd-3d25-45b7-9ca3-7e93532548fa/svn/ryobi-power-drills-psbdd02k2-64_600.jpg"),
+ "makita-xfd131": ("https://www.homedepot.com/p/Makita-18V-LXT-Lithium-Ion-Brushless-Cordless-1-2-in-Driver-Drill-Kit-3-0Ah-XFD131/305926995",
+   "https://images.thdstatic.com/productImages/b6c06ffa-960a-4e93-b874-8a2d7985364d/svn/makita-power-drills-xfd131-64_600.jpg"),
+ "milwaukee-2962-20": ("https://www.homedepot.com/p/Milwaukee-M18-FUEL-Gen-2-18V-Lithium-Ion-Brushless-Cordless-Mid-Torque-1-2-in-Impact-Wrench-w-Friction-Ring-Tool-Only-2962-20/313511878",
+   "https://images.thdstatic.com/productImages/9c7469c9-6d06-4313-b8c6-dbf40e7ce75e/svn/milwaukee-impact-wrenches-2962-20-64_600.jpg"),
+ "ego-lm2135sp": ("https://www.amazon.com/dp/B0857KWHHC?tag=tvschool-20",
+   "https://m.media-amazon.com/images/I/71+DP8NYPeL._AC_SX679_.jpg"),
+ "ryobi-pbp005": ("https://www.homedepot.com/p/RYOBI-ONE-18V-4-0-Ah-Lithium-Ion-Battery-PBP005/315039438",
+   "https://images.thdstatic.com/productImages/b0b3568d-f440-45c3-b1ca-44c023241cb4/svn/ryobi-outdoor-power-batteries-chargers-pbp005-64_600.jpg"),
+ "milwaukee-48-11-1850": ("https://www.homedepot.com/p/Milwaukee-M18-18-Volt-5-0-Ah-Lithium-Ion-XC-Extended-Capacity-Battery-Pack-48-11-1850/205620421",
+   "https://images.thdstatic.com/productImages/6c9940dc-2c35-4a5d-b5bb-b47a87a09ab5/svn/milwaukee-power-tool-batteries-48-11-1850-64_600.jpg"),
+ "milwaukee-48-11-2450": ("https://www.homedepot.com/p/Milwaukee-M12-12-Volt-Lithium-Ion-XC-High-Output-5-0-Ah-Battery-Pack-48-11-2450/320268545",
+   "https://images.thdstatic.com/productImages/9dd6affe-c9bc-4a32-a203-25b3ffb0e391/svn/milwaukee-power-tool-batteries-48-11-2450-64_600.jpg"),
+ "dewalt-dcb205": ("https://www.homedepot.com/p/DEWALT-20V-MAX-Premium-Lithium-Ion-5-0Ah-Battery-Pack-DCB205/205227130",
+   "https://images.thdstatic.com/productImages/da6fe409-aea7-4eb1-9ebe-974686a61b35/svn/dewalt-power-tool-batteries-dcb205-64_600.jpg"),
+ "makita-bl1850b": ("https://www.homedepot.com/p/Makita-18V-LXT-Lithium-Ion-High-Capacity-Battery-Pack-5-0Ah-with-Fuel-Gauge-BL1850B/206607848",
+   "https://images.thdstatic.com/productImages/fcc08ee4-1397-4cc1-b22e-a03c84535db3/svn/makita-power-tool-batteries-bl1850b-64_600.jpg"),
+ "ego-ba2800t": ("https://www.amazon.com/dp/B07YKY61RF?tag=tvschool-20",
+   "https://m.media-amazon.com/images/I/61ApHxx7X2L._AC_SX679_.jpg"),
+}
+
 def battery_value(platform, ah):
     return BV.get((platform, ah), 0)
 tools=[]
@@ -93,9 +125,11 @@ for (tid,brand,model,name,plat,ttype,bare,bats,chg,case,specs,uc,price,rp,sale,v
                 "chargerValue":chg,"caseValue":case},
       "fairValue":round(fv,2),"specs":specs,"useCaseScores":uc,
       "modelNote":note,"valueModel":"v0-decomposition-2026-07-03",
+      "image": MEDIA.get(tid, ("", ""))[1],
       "prices":[{"retailerId":retailer,"currentPrice":price,"retailPrice":rp,"onSale":sale,
                  "inStock":verified,"staleHidden":(not verified),
-                 "lastChecked":NOW if verified else "","url":"","originalUrl":""}],
+                 "lastChecked":NOW if verified else "",
+                 "url":MEDIA.get(tid, ("", ""))[0],"originalUrl":MEDIA.get(tid, ("", ""))[0]}],
       "priceHistory":[{"date":"2026-07-03","price":price}] if verified else []
     }
     tools.append(entry)
