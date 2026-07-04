@@ -1982,3 +1982,41 @@ body {
     justify-content: center;
   }
 }
+
+/* ===== Editorial Theme v1 (July 2026) =====
+   Ported from the tv-deals.netlify.app design study: warm editorial palette,
+   serif display type, generous whitespace — while keeping the image-forward
+   card grid and grade system. Appended as an override layer; delete this
+   block to revert. */
+:root {
+  --primary-color: #b5432a;        /* rust replaces blue */
+  --primary-hover: #98351f;
+  --bg-color: #faf6ef;             /* warm cream */
+  --card-bg: #ffffff;
+  --text-primary: #211d17;         /* warm ink */
+  --text-secondary: #6b6357;
+  --border-color: #e7e0d4;
+  --success-color: #2e7d43;
+  --success-bg: #e7f2e5;
+  --danger-color: #b5432a;
+  --danger-bg: #f7e5df;
+  --shadow-sm: 0 1px 2px 0 rgb(60 45 20 / 0.06);
+  --shadow-md: 0 4px 10px -2px rgb(60 45 20 / 0.10);
+}
+body { background: var(--bg-color); color: var(--text-primary); }
+h1, h2, h3.tv-card-title, .deal-of-day-title, .section-title {
+  font-family: Georgia, 'Iowan Old Style', 'Times New Roman', serif;
+  letter-spacing: -0.01em;
+}
+h1 { font-weight: 700; }
+.site-header, .header-content { background: var(--bg-color); }
+.stats-bar { background: #211d17; color: #faf6ef; }
+.stats-bar a { color: #e8b64c; }
+.disclosure-banner { background: #f3ead7; color: #6b5a33; }
+.tv-card { border: 1px solid var(--border-color); box-shadow: var(--shadow-sm); }
+.tv-card:hover { box-shadow: var(--shadow-md); }
+.filter-chip { border-color: var(--border-color); background: #fff; }
+.filter-chip.active { background: #211d17; border-color: #211d17; color: #faf6ef; }
+.deal-of-day-card { background: #211d17; }
+.eyebrow, .tv-card-brand { text-transform: uppercase; letter-spacing: 0.08em; font-size: 11px; color: var(--primary-color); }
+/* ===== end Editorial Theme v1 ===== */
