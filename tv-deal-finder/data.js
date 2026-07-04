@@ -9,7 +9,7 @@
  */
 
 const TV_DATA = {
-  "lastUpdated": "2026-07-04T19:11:07Z",
+  "lastUpdated": "2026-07-04T19:15:54Z",
   "retailers": {
     "bestbuy": {
       "id": "bestbuy",
@@ -283,15 +283,15 @@ const TV_DATA = {
         },
         {
           "retailerId": "amazon",
-          "currentPrice": 749.8,
+          "currentPrice": 889.95,
           "retailPrice": null,
-          "url": "https://www.amazon.com/dp/B0GCBJDML3?tag=tvschool-20",
-          "originalUrl": "https://www.amazon.com/dp/B0GCBJDML3",
-          "sku": "B0GCBJDML3",
-          "asin": "B0GCBJDML3",
-          "inStock": false,
+          "url": "https://www.amazon.com/dp/B0FLYPMZNJ?tag=tvschool-20",
+          "originalUrl": "https://www.amazon.com/dp/B0FLYPMZNJ",
+          "sku": "B0FLYPMZNJ",
+          "asin": "B0FLYPMZNJ",
+          "inStock": true,
           "onSale": false,
-          "lastChecked": "2026-07-04T15:15:16Z"
+          "lastChecked": "2026-07-04T19:15:54Z"
         }
       ],
       "priceHistory": [

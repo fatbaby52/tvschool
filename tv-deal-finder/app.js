@@ -21,6 +21,17 @@ const AppState = {
   sortBy: 'dealScore'
 };
 
+// Retail marketing sizes: data stores 64/74/84 for panels sold as 65"/75"/85"
+const DISPLAY_SIZE_MAP = { 64: 65, 74: 75, 84: 85 };
+function displaySize(size) { return DISPLAY_SIZE_MAP[size] || size; }
+
+// Only show a price when it has been recently verified and is in stock;
+// getBestPrice() falls back to stale entries, so guard display with this.
+function hasVerifiedPrice(tv) {
+  const p = TVDataUtils.getBestPrice(tv);
+  return !!(p && p.inStock);
+}
+
 // Generate Deal of the Day writeup
 function generateDealWriteup(tv, dealScore, bestPrice) {
   const savingsPct = Math.abs(dealScore * 100).toFixed(0);
@@ -35,7 +46,7 @@ function generateDealWriteup(tv, dealScore, bestPrice) {
   const panelDesc = panelDescriptions[tv.panelType] || 'advanced display technology';
 
   // Build writeup
-  let writeup = `The ${tv.brand} ${tv.model} ${tv.size}" is currently priced ${savingsPct}% below our projected value`;
+  let writeup = `The ${tv.brand} ${tv.model} ${displaySize(tv.size)}" is currently priced ${savingsPct}% below our projected value`;
 
   if (bestPrice.retailPrice > bestPrice.currentPrice) {
     const retailSavings = Math.round((1 - bestPrice.currentPrice / bestPrice.retailPrice) * 100);
@@ -66,7 +77,7 @@ function renderDealOfDay() {
   if (!container) return;
 
   // Get the best deal (exclude super-big TVs since we can't accurately project their value)
-  const eligibleTvs = AppState.tvs.filter(tv => !isSuperBigTV(tv));
+  const eligibleTvs = AppState.tvs.filter(tv => !isSuperBigTV(tv) && hasVerifiedPrice(tv));
   const sortedByDeal = TVDataUtils.sortByDealScore(eligibleTvs);
   const bestDeal = sortedByDeal[0];
   if (!bestDeal) return;
@@ -87,7 +98,7 @@ function renderDealOfDay() {
             <img src="${bestDeal.image}" alt="${bestDeal.fullName}">
           </div>
           <div>
-            <div class="deal-of-day-title">${bestDeal.brand} ${bestDeal.model} ${bestDeal.size}"</div>
+            <div class="deal-of-day-title">${bestDeal.brand} ${bestDeal.model} ${displaySize(bestDeal.size)}"</div>
             <div class="deal-of-day-subtitle">${bestDeal.panelType} • ${bestDeal.resolution} • ${getQualityTier(bestDeal.rtingsScore).label}</div>
           </div>
         </div>
@@ -470,6 +481,7 @@ function applyFilters() {
 
   // Deal score filter
   filtered = filtered.filter(tv => {
+    if (!hasVerifiedPrice(tv)) return !isFinite(AppState.filters.minDealScore);
     const dealScore = TVDataUtils.calculateDealScore(tv);
     return dealScore >= AppState.filters.minDealScore;
   });
@@ -478,6 +490,10 @@ function applyFilters() {
   filtered = filtered.filter(tv => {
     const bestPrice = TVDataUtils.getBestPrice(tv);
     if (!bestPrice) return false;
+    if (!bestPrice.inStock) {
+      // Unverified price: only keep when the user hasn't narrowed by price
+      return AppState.filters.minPrice <= 0 && !((AppState.filters.maxPrice || Infinity) < Infinity);
+    }
     const price = bestPrice.currentPrice;
     return price >= AppState.filters.minPrice &&
            price <= (AppState.filters.maxPrice || Infinity);
@@ -537,6 +553,11 @@ function applyFilters() {
     filtered = [...filtered].sort((a, b) => b.rtingsScore - a.rtingsScore);
   } else if (AppState.sortBy === 'size') {
     filtered = [...filtered].sort((a, b) => b.size - a.size);
+  }
+
+  // TVs awaiting price verification sort after verified ones on price/deal sorts
+  if (['dealScore', 'priceLow', 'priceHigh'].includes(AppState.sortBy)) {
+    filtered = [...filtered.filter(hasVerifiedPrice), ...filtered.filter(tv => !hasVerifiedPrice(tv))];
   }
 
   AppState.filteredTvs = filtered;
@@ -680,6 +701,7 @@ function renderTVCard(tv) {
   if (!bestPrice) return '';
 
   const superBig = isSuperBigTV(tv);
+  const priceVerified = !!bestPrice.inStock;
   const dealScore = TVDataUtils.calculateDealScore(tv);
   const verdict = superBig
     ? { text: "?", subtitle: "Limited Data", class: "verdict-na" }
@@ -698,7 +720,7 @@ function renderTVCard(tv) {
     ? `<span class="deal-score na">
         <span class="projected-tooltip">No projection<span class="tooltip-content">We don't have enough market data for TVs 100" and larger to make accurate price projections.</span></span>
        </span>`
-    : `<span class="deal-score ${dealScoreClass}">${dealScoreFormatted} vs <span class="projected-tooltip">projected<span class="tooltip-content">Our projected price is calculated based on screen size, panel technology (OLED, Mini LED, etc.), and RTINGS review scores.</span></span></span>
+    : `${priceVerified ? `<span class="deal-score ${dealScoreClass}">${dealScoreFormatted} vs <span class="projected-tooltip">projected<span class="tooltip-content">Our projected price is calculated based on screen size, panel technology (OLED, Mini LED, etc.), and RTINGS review scores.</span></span></span>` : ''}
        <div class="price-labeled projected">
          <span class="price-label">Projected</span>
          <span class="projected-value">${TVDataUtils.formatPrice(tv.fairValue)}</span>
@@ -716,7 +738,7 @@ function renderTVCard(tv) {
       </div>
       <div class="tv-card-content">
         <div class="tv-card-brand">${tv.brand}</div>
-        <h3 class="tv-card-title">${tv.model} ${tv.size}"</h3>
+        <h3 class="tv-card-title">${tv.model} ${displaySize(tv.size)}"</h3>
         <div class="tv-card-specs">
           <span class="tv-card-spec">
             ${renderQualityStars(tv.rtingsScore)}
@@ -730,9 +752,9 @@ function renderTVCard(tv) {
             <div class="price-section">
               <div class="price-labeled">
                 <span class="price-label">Sale Price</span>
-                <span class="tv-card-price">${TVDataUtils.formatPrice(bestPrice.currentPrice)}</span>
+                <span class="tv-card-price">${priceVerified ? TVDataUtils.formatPrice(bestPrice.currentPrice) : '<span class="price-verifying">Being verified</span>'}</span>
               </div>
-              ${bestPrice.retailPrice > bestPrice.currentPrice
+              ${priceVerified && bestPrice.retailPrice > bestPrice.currentPrice
                 ? `<div class="price-labeled msrp">
                     <span class="price-label">MSRP</span>
                     <span class="tv-card-retail">${TVDataUtils.formatPrice(bestPrice.retailPrice)}</span>
@@ -740,13 +762,18 @@ function renderTVCard(tv) {
                 : ''}
             </div>
             <div class="grade-section">
-              <span class="deal-badge ${verdict.class}" title="${gradeTooltip}">
+              ${priceVerified
+                ? `<span class="deal-badge ${verdict.class}" title="${gradeTooltip}">
                 <span class="grade">${verdict.text}</span>
                 <span class="grade-subtitle">${verdict.subtitle}</span>
-              </span>
+              </span>`
+                : `<span class="deal-badge verdict-na" title="We hide prices we couldn't re-verify recently. This TV is awaiting a fresh price check.">
+                <span class="grade">&hellip;</span>
+                <span class="grade-subtitle">Verifying</span>
+              </span>`}
             </div>
           </div>
-          <div class="tv-card-retailer">at ${retailer?.name || 'Unknown'}</div>
+          <div class="tv-card-retailer">${priceVerified ? `at ${retailer?.name || 'Unknown'}` : 'Price check in progress'}</div>
           <div class="tv-card-deal-row">
             ${projectedSection}
           </div>
@@ -770,6 +797,7 @@ function updateStats() {
 
   // Count great deals
   const greatDeals = AppState.filteredTvs.filter(tv => {
+    if (!hasVerifiedPrice(tv)) return false;
     const dealScore = TVDataUtils.calculateDealScore(tv);
     return dealScore >= 0.25;
   }).length;

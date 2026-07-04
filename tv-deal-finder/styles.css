@@ -1753,3 +1753,22 @@ h1 { font-weight: 700; }
 .deal-of-day-card { background: #211d17; }
 .eyebrow, .tv-card-brand { text-transform: uppercase; letter-spacing: 0.08em; font-size: 11px; color: var(--primary-color); }
 /* ===== end Editorial Theme v1 ===== */
+
+
+/* Editorial Theme — price verification states (added 2026-07-04 overnight pass) */
+.price-verifying {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text-muted, #777);
+  font-style: italic;
+}
+.price-verifying-note {
+  padding: 14px 16px;
+  border: 1px dashed var(--border-color, #ccc);
+  border-radius: 8px;
+  color: var(--text-muted, #666);
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin: 8px 0;
+}
+.deal-badge.verdict-na .grade { letter-spacing: 2px; }

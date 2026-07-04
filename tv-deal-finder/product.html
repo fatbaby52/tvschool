@@ -546,6 +546,18 @@
       }
     }
   </style>
+  <!-- Sovrn Commerce (site-wide link monetization) -->
+  <script type="text/javascript">
+    var vglnk = {key: '8385bed416f9d04124c9e2a38846b0fb'};
+    (function(d, t) {
+      var s = d.createElement(t);
+      s.type = 'text/javascript';
+      s.async = true;
+      s.src = '//cdn.viglink.com/api/vglnk.js';
+      var r = d.getElementsByTagName(t)[0];
+      r.parentNode.insertBefore(s, r);
+    }(document, 'script'));
+  </script>
 </head>
 <body>
   <!-- Header -->
@@ -709,7 +721,7 @@
           ${relatedTvs.map(related => {
             const relatedPrice = TVDataUtils.getBestPrice(related);
             return `<a href="product.html?id=${related.id}" class="related-size-link">
-              ${related.size}" <span class="related-size-price">${TVDataUtils.formatPrice(relatedPrice?.currentPrice || 0)}</span>
+              ${displaySize(related.size)}" <span class="related-size-price">${TVDataUtils.formatPrice(relatedPrice?.currentPrice || 0)}</span>
             </a>`;
           }).join('')}
         </div>
@@ -727,13 +739,20 @@
       return { text: 'F', subtitle: 'Not Recommended', class: 'verdict-f' };
     }
 
+    // Retail marketing sizes: data stores 64/74/84 for panels sold as 65"/75"/85"
+    const DISPLAY_SIZE_MAP = { 64: 65, 74: 75, 84: 85 };
+    function displaySize(size) { return DISPLAY_SIZE_MAP[size] || size; }
+
     // Render buy buttons for all retailers
     function renderBuyButtons(tv) {
       if (!tv.prices || tv.prices.length === 0) return '';
 
       // Get all in-stock prices, sorted by price (lowest first)
       const inStockPrices = tv.prices.filter(p => p.inStock);
-      const pricesToShow = (inStockPrices.length > 0 ? inStockPrices : tv.prices)
+      if (inStockPrices.length === 0) {
+        return `<div class="price-verifying-note">We're re-verifying current prices for this TV and hide prices we can't confirm. Check back soon.</div>`;
+      }
+      const pricesToShow = inStockPrices
         .sort((a, b) => a.currentPrice - b.currentPrice);
 
       // Retailer colors for button styling
@@ -1041,12 +1060,12 @@
       // Update meta description
       const metaDesc = document.querySelector('meta[name="description"]');
       if (metaDesc) {
-        metaDesc.content = `${tv.fullName} - Currently ${TVDataUtils.formatPrice(bestPrice?.currentPrice)} at ${retailer?.name}. Grade: ${verdict.text} (${verdict.subtitle}). ${tv.panelType} panel, ${tv.size}" screen.`;
+        metaDesc.content = `${tv.fullName} - Currently ${TVDataUtils.formatPrice(bestPrice?.currentPrice)} at ${retailer?.name}. Grade: ${verdict.text} (${verdict.subtitle}). ${tv.panelType} panel, ${displaySize(tv.size)}" screen.`;
       }
 
       // Update Open Graph tags
       document.querySelector('meta[property="og:title"]')?.setAttribute('content', `${tv.fullName} - ${verdict.subtitle}`);
-      document.querySelector('meta[property="og:description"]')?.setAttribute('content', `${verdict.text} grade deal at ${TVDataUtils.formatPrice(bestPrice?.currentPrice)}. ${tv.panelType} ${tv.size}" TV.`);
+      document.querySelector('meta[property="og:description"]')?.setAttribute('content', `${verdict.text} grade deal at ${TVDataUtils.formatPrice(bestPrice?.currentPrice)}. ${tv.panelType} ${displaySize(tv.size)}" TV.`);
       document.querySelector('meta[property="og:image"]')?.setAttribute('content', tv.image);
 
       // Add Product structured data
@@ -1096,7 +1115,7 @@
 
             <div class="product-badges">
               <span class="badge badge-panel">${tv.panelType}</span>
-              <span class="badge badge-size">${tv.size}" Screen</span>
+              <span class="badge badge-size">${displaySize(tv.size)}" Screen</span>
               <span class="badge badge-quality">${getQualityTier(tv.rtingsScore).stars} ${getQualityTier(tv.rtingsScore).label}</span>
             </div>
 
