@@ -2020,3 +2020,22 @@ h1 { font-weight: 700; }
 .deal-of-day-card { background: #211d17; }
 .eyebrow, .tv-card-brand { text-transform: uppercase; letter-spacing: 0.08em; font-size: 11px; color: var(--primary-color); }
 /* ===== end Editorial Theme v1 ===== */
+
+/* ===== Deals Academy unified nav (2026-07-04) ===== */
+.da-nav { background: var(--bg-color, #faf6ef); border-bottom: 1px solid var(--border-color, #e7e0d4); }
+.da-nav-inner { max-width: 1200px; margin: 0 auto; padding: 0 20px; height: 54px; display: flex; align-items: center; gap: 28px; }
+.da-brand { font-family: Georgia, 'Iowan Old Style', 'Times New Roman', serif; font-weight: 700; font-size: 19px; color: var(--text-primary, #211d17); text-decoration: none; letter-spacing: -0.01em; white-space: nowrap; }
+.da-links { display: flex; align-items: center; gap: 4px; height: 100%; }
+.da-link { display: flex; align-items: center; height: 100%; padding: 0 12px; font-size: 13px; text-transform: uppercase; letter-spacing: 0.08em; color: var(--text-secondary, #6b6357); text-decoration: none; border-bottom: 2px solid transparent; }
+.da-link:hover { color: var(--text-primary, #211d17); }
+.da-link.da-active { color: var(--text-primary, #211d17); border-bottom-color: #e8b64c; font-weight: 600; }
+.da-nav-meta { margin-left: auto; display: flex; gap: 18px; }
+.da-nav-meta a { font-size: 13px; color: var(--text-secondary, #6b6357); text-decoration: none; }
+.da-nav-meta a:hover { color: var(--text-primary, #211d17); text-decoration: underline; }
+.affiliate-banner, .disclosure-banner { font-size: 12.5px; padding: 6px 16px; }
+@media (max-width: 640px) {
+  .da-nav-inner { gap: 12px; padding: 0 12px; }
+  .da-brand { font-size: 16px; }
+  .da-link { padding: 0 8px; }
+  .da-nav-meta { display: none; }
+}
