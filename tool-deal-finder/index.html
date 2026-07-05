@@ -16,6 +16,16 @@
 .tool-buy-link{display:inline-block;margin-top:8px;font-weight:600;font-size:14px;color:#0a5c36;text-decoration:none}
 .tool-buy-link:hover{text-decoration:underline}
 .platform-hero{margin:14px 0}
+.filter-group{margin:14px 0}
+.filter-group h2{font-size:15px;margin:0 0 8px}
+.brushless-row{display:flex;align-items:center;gap:8px;margin:10px 0;font-size:14px}
+.model-qa{background:#fff7e6;border:1px solid #f0d68a;border-radius:8px;padding:10px 12px;margin:10px 0;font-size:13px;color:#5a4a1a}
+.model-flag-txt{color:#a8420a;font-weight:700}
+.model-badge{font-size:11px;margin:4px 0;padding:3px 6px;border-radius:4px;display:inline-block}
+.model-ok{background:#e7f6ec;color:#0a5c36}
+.model-flag{background:#fdecea;color:#a8420a;font-weight:600}
+.model-skip{background:#eee;color:#777}
+
 </style>
   <!-- Sovrn Commerce (site-wide link monetization) -->
   <script type="text/javascript">
@@ -47,11 +57,21 @@
   </nav>
 <div class="disclosure-banner">We may earn a commission when you buy through links on our site. <a href="../tv-deal-finder/disclosure.html">Learn more</a></div>
 <div class="stats-bar"><span id="tool-count">0 tools</span></div>
+<div id="model-qa" class="model-qa" style="display:none"></div>
 <main class="container">
   <section class="platform-hero">
     <h1>What battery platform are you on?</h1>
     <div id="platform-filters" class="filter-chips"></div>
     <label class="own-batteries-row"><input type="checkbox" id="own-batteries"> I already own batteries on my platform — grade kits accordingly</label>
+  </section>
+  <section class="filter-group">
+    <h2>Brand</h2>
+    <div id="brand-filters" class="filter-chips"></div>
+  </section>
+  <section class="filter-group">
+    <h2>Tool type</h2>
+    <div id="type-filters" class="filter-chips"></div>
+    <label class="brushless-row"><input type="checkbox" id="brushless-toggle"> Brushless only</label>
   </section>
   <section>
     <h2>What kind of work?</h2>
@@ -71,6 +91,6 @@
   <p>Fair values are computed by decomposing kits into parts (tool + batteries + charger) using our street-value tables. <a href="methodology.html">Methodology</a> · <a href="../tv-deal-finder/privacy.html">Privacy</a></p>
 </footer>
 <script src="data.js?v=2"></script>
-<script src="app.js?v=1"></script>
+<script src="app.js?v=2"></script>
 </body>
 </html>
