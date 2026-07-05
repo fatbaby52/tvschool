@@ -18,6 +18,9 @@ const TOOL_DATA = {
     },
     "lowes": {
       "name": "Lowe's"
+    },
+    "harborfreight": {
+      "name": "Harbor Freight"
     }
   },
   "platforms": {
@@ -28,7 +31,9 @@ const TOOL_DATA = {
     "ryobi18v": "Ryobi 18V ONE+",
     "ridgid18v": "Ridgid 18V",
     "ego56v": "EGO 56V",
-    "metabohpt36v": "Metabo HPT MultiVolt"
+    "metabohpt36v": "Metabo HPT MultiVolt",
+    "bauer20v": "Bauer 20V",
+    "hercules20v": "Hercules 20V"
   },
   "batteryValueTable": {
     "dewalt20v|5.0": 119,
@@ -45,7 +50,11 @@ const TOOL_DATA = {
     "ridgid18v|4.0": 79,
     "ego56v|5.0": 249,
     "ego56v|2.5": 149,
-    "metabohpt36v|4.0": 99
+    "metabohpt36v|4.0": 99,
+    "bauer20v|5.0": 45,
+    "bauer20v|2.0": 18,
+    "hercules20v|5.0": 70,
+    "hercules20v|2.0": 35
   },
   "tools": [
     {
@@ -1542,6 +1551,440 @@ const TOOL_DATA = {
         }
       ],
       "priceHistory": []
+    },
+    {
+      "id": "bauer-3sp-iw",
+      "brand": "Bauer",
+      "model": "BAUER-3SIW",
+      "fullName": "Bauer 20V Brushless 1/2in 3-Speed Impact Wrench (Tool Only)",
+      "platform": "bauer20v",
+      "platformName": "Bauer 20V",
+      "toolType": "impact_wrench",
+      "config": {
+        "bareToolValue": 50,
+        "batteries": [],
+        "chargerValue": 0,
+        "caseValue": 0
+      },
+      "fairValue": 50,
+      "specs": {
+        "torque": "450 ft-lbs",
+        "brushless": true
+      },
+      "useCaseScores": {
+        "diy": 5.5,
+        "remodel": 6.0,
+        "auto": 8.8,
+        "electrical": 4.0,
+        "yard": 0,
+        "pro": 6.5
+      },
+      "modelNote": "HF item# TBD; price verified 2026-07-05",
+      "valueModel": "v0-decomposition-2026-07-03",
+      "image": "",
+      "prices": [
+        {
+          "retailerId": "harborfreight",
+          "currentPrice": 49.99,
+          "retailPrice": null,
+          "onSale": false,
+          "inStock": true,
+          "staleHidden": false,
+          "lastChecked": "2026-07-03T22:45:00Z",
+          "url": "",
+          "originalUrl": ""
+        }
+      ],
+      "priceHistory": [
+        {
+          "date": "2026-07-03",
+          "price": 49.99
+        }
+      ]
+    },
+    {
+      "id": "bauer-ht-iw",
+      "brand": "Bauer",
+      "model": "BAUER-HTIW",
+      "fullName": "Bauer 20V Brushless 1/2in High-Torque Impact Wrench Kit (5.0Ah)",
+      "platform": "bauer20v",
+      "platformName": "Bauer 20V",
+      "toolType": "impact_wrench",
+      "config": {
+        "bareToolValue": 100,
+        "batteries": [
+          {
+            "ah": "5.0",
+            "qty": 1,
+            "unitValue": 45
+          }
+        ],
+        "chargerValue": 10,
+        "caseValue": 0
+      },
+      "fairValue": 155,
+      "specs": {
+        "torque": "1200 ft-lbs",
+        "brushless": true
+      },
+      "useCaseScores": {
+        "diy": 5.5,
+        "remodel": 6.0,
+        "auto": 9.0,
+        "electrical": 4.0,
+        "yard": 0,
+        "pro": 7.0
+      },
+      "modelNote": "kit w/ 5.0Ah+charger; HF item# TBD; verified 2026-07-05",
+      "valueModel": "v0-decomposition-2026-07-03",
+      "image": "",
+      "prices": [
+        {
+          "retailerId": "harborfreight",
+          "currentPrice": 159.99,
+          "retailPrice": null,
+          "onSale": false,
+          "inStock": true,
+          "staleHidden": false,
+          "lastChecked": "2026-07-03T22:45:00Z",
+          "url": "",
+          "originalUrl": ""
+        }
+      ],
+      "priceHistory": [
+        {
+          "date": "2026-07-03",
+          "price": 159.99
+        }
+      ]
+    },
+    {
+      "id": "bauer-drill",
+      "brand": "Bauer",
+      "model": "BAUER-DD12",
+      "fullName": "Bauer 20V Cordless 1/2in Drill/Driver Kit (2.0Ah)",
+      "platform": "bauer20v",
+      "platformName": "Bauer 20V",
+      "toolType": "drill",
+      "config": {
+        "bareToolValue": 32,
+        "batteries": [
+          {
+            "ah": "2.0",
+            "qty": 1,
+            "unitValue": 18
+          }
+        ],
+        "chargerValue": 10,
+        "caseValue": 0
+      },
+      "fairValue": 60,
+      "specs": {
+        "brushless": false
+      },
+      "useCaseScores": {
+        "diy": 7.5,
+        "remodel": 6.0,
+        "auto": 4.0,
+        "electrical": 6.0,
+        "yard": 0,
+        "pro": 4.5
+      },
+      "modelNote": "non-brushless kit; HF item# TBD; verified 2026-07-05",
+      "valueModel": "v0-decomposition-2026-07-03",
+      "image": "",
+      "prices": [
+        {
+          "retailerId": "harborfreight",
+          "currentPrice": 54.99,
+          "retailPrice": null,
+          "onSale": false,
+          "inStock": true,
+          "staleHidden": false,
+          "lastChecked": "2026-07-03T22:45:00Z",
+          "url": "",
+          "originalUrl": ""
+        }
+      ],
+      "priceHistory": [
+        {
+          "date": "2026-07-03",
+          "price": 54.99
+        }
+      ]
+    },
+    {
+      "id": "bauer-blower",
+      "brand": "Bauer",
+      "model": "BAUER-JFB",
+      "fullName": "Bauer 20V Cordless 96 MPH Jet Fan Blower Kit (5.0Ah)",
+      "platform": "bauer20v",
+      "platformName": "Bauer 20V",
+      "toolType": "blower",
+      "config": {
+        "bareToolValue": 45,
+        "batteries": [
+          {
+            "ah": "5.0",
+            "qty": 1,
+            "unitValue": 45
+          }
+        ],
+        "chargerValue": 10,
+        "caseValue": 0
+      },
+      "fairValue": 100,
+      "specs": {
+        "cfm": "338"
+      },
+      "useCaseScores": {
+        "diy": 7.0,
+        "remodel": 0,
+        "auto": 0,
+        "electrical": 0,
+        "yard": 8.5,
+        "pro": 5.0
+      },
+      "modelNote": "kit; HF item# TBD; verified 2026-07-05",
+      "valueModel": "v0-decomposition-2026-07-03",
+      "image": "",
+      "prices": [
+        {
+          "retailerId": "harborfreight",
+          "currentPrice": 99.99,
+          "retailPrice": null,
+          "onSale": false,
+          "inStock": true,
+          "staleHidden": false,
+          "lastChecked": "2026-07-03T22:45:00Z",
+          "url": "",
+          "originalUrl": ""
+        }
+      ],
+      "priceHistory": [
+        {
+          "date": "2026-07-03",
+          "price": 99.99
+        }
+      ]
+    },
+    {
+      "id": "hercules-compact-iw",
+      "brand": "Hercules",
+      "model": "HERC-CIW",
+      "fullName": "Hercules 20V Brushless 1/2in Compact 4-Mode Impact Wrench (Tool Only)",
+      "platform": "hercules20v",
+      "platformName": "Hercules 20V",
+      "toolType": "impact_wrench",
+      "config": {
+        "bareToolValue": 70,
+        "batteries": [],
+        "chargerValue": 0,
+        "caseValue": 0
+      },
+      "fairValue": 70,
+      "specs": {
+        "torque": "330 ft-lbs",
+        "brushless": true
+      },
+      "useCaseScores": {
+        "diy": 6.0,
+        "remodel": 6.5,
+        "auto": 9.0,
+        "electrical": 5.0,
+        "yard": 0,
+        "pro": 7.5
+      },
+      "modelNote": "HF item# TBD; price verified 2026-07-05",
+      "valueModel": "v0-decomposition-2026-07-03",
+      "image": "",
+      "prices": [
+        {
+          "retailerId": "harborfreight",
+          "currentPrice": 69.99,
+          "retailPrice": null,
+          "onSale": false,
+          "inStock": true,
+          "staleHidden": false,
+          "lastChecked": "2026-07-03T22:45:00Z",
+          "url": "",
+          "originalUrl": ""
+        }
+      ],
+      "priceHistory": [
+        {
+          "date": "2026-07-03",
+          "price": 69.99
+        }
+      ]
+    },
+    {
+      "id": "hercules-ultra-iw",
+      "brand": "Hercules",
+      "model": "HERC-UTIW",
+      "fullName": "Hercules 20V Brushless 1/2in Ultra-Torque Impact Wrench Kit (5.0Ah)",
+      "platform": "hercules20v",
+      "platformName": "Hercules 20V",
+      "toolType": "impact_wrench",
+      "config": {
+        "bareToolValue": 150,
+        "batteries": [
+          {
+            "ah": "5.0",
+            "qty": 1,
+            "unitValue": 70
+          }
+        ],
+        "chargerValue": 20,
+        "caseValue": 0
+      },
+      "fairValue": 240,
+      "specs": {
+        "torque": "1100 ft-lbs",
+        "brushless": true
+      },
+      "useCaseScores": {
+        "diy": 5.5,
+        "remodel": 6.0,
+        "auto": 9.3,
+        "electrical": 4.0,
+        "yard": 0,
+        "pro": 8.5
+      },
+      "modelNote": "kit w/ 5.0Ah+charger; HF item# TBD; verified 2026-07-05",
+      "valueModel": "v0-decomposition-2026-07-03",
+      "image": "",
+      "prices": [
+        {
+          "retailerId": "harborfreight",
+          "currentPrice": 249.99,
+          "retailPrice": null,
+          "onSale": false,
+          "inStock": true,
+          "staleHidden": false,
+          "lastChecked": "2026-07-03T22:45:00Z",
+          "url": "",
+          "originalUrl": ""
+        }
+      ],
+      "priceHistory": [
+        {
+          "date": "2026-07-03",
+          "price": 249.99
+        }
+      ]
+    },
+    {
+      "id": "hercules-impact-driver",
+      "brand": "Hercules",
+      "model": "HERC-CID",
+      "fullName": "Hercules 20V Brushless 1/4in Compact 3-Speed Impact Driver Kit (2.0Ah)",
+      "platform": "hercules20v",
+      "platformName": "Hercules 20V",
+      "toolType": "impact_driver",
+      "config": {
+        "bareToolValue": 52,
+        "batteries": [
+          {
+            "ah": "2.0",
+            "qty": 1,
+            "unitValue": 35
+          }
+        ],
+        "chargerValue": 20,
+        "caseValue": 0
+      },
+      "fairValue": 107,
+      "specs": {
+        "torque": "1900 in-lbs",
+        "brushless": true
+      },
+      "useCaseScores": {
+        "diy": 8.0,
+        "remodel": 8.5,
+        "auto": 7.0,
+        "electrical": 8.0,
+        "yard": 0,
+        "pro": 8.5
+      },
+      "modelNote": "kit w/ 2.0Ah+charger; HF item# TBD; verified 2026-07-05",
+      "valueModel": "v0-decomposition-2026-07-03",
+      "image": "",
+      "prices": [
+        {
+          "retailerId": "harborfreight",
+          "currentPrice": 97.99,
+          "retailPrice": null,
+          "onSale": false,
+          "inStock": true,
+          "staleHidden": false,
+          "lastChecked": "2026-07-03T22:45:00Z",
+          "url": "",
+          "originalUrl": ""
+        }
+      ],
+      "priceHistory": [
+        {
+          "date": "2026-07-03",
+          "price": 97.99
+        }
+      ]
+    },
+    {
+      "id": "hercules-drill",
+      "brand": "Hercules",
+      "model": "HERC-DD12",
+      "fullName": "Hercules 20V Brushless 1/2in Drill/Driver Kit w/ Side Handle (2.0Ah)",
+      "platform": "hercules20v",
+      "platformName": "Hercules 20V",
+      "toolType": "drill",
+      "config": {
+        "bareToolValue": 55,
+        "batteries": [
+          {
+            "ah": "2.0",
+            "qty": 1,
+            "unitValue": 35
+          }
+        ],
+        "chargerValue": 20,
+        "caseValue": 0
+      },
+      "fairValue": 110,
+      "specs": {
+        "torque": "600 in-lbs",
+        "brushless": true
+      },
+      "useCaseScores": {
+        "diy": 8.2,
+        "remodel": 8.4,
+        "auto": 6.0,
+        "electrical": 7.5,
+        "yard": 0,
+        "pro": 8.5
+      },
+      "modelNote": "kit w/ 2.0Ah+charger; HF item# TBD; verified 2026-07-05",
+      "valueModel": "v0-decomposition-2026-07-03",
+      "image": "",
+      "prices": [
+        {
+          "retailerId": "harborfreight",
+          "currentPrice": 97.99,
+          "retailPrice": null,
+          "onSale": false,
+          "inStock": true,
+          "staleHidden": false,
+          "lastChecked": "2026-07-03T22:45:00Z",
+          "url": "",
+          "originalUrl": ""
+        }
+      ],
+      "priceHistory": [
+        {
+          "date": "2026-07-03",
+          "price": 97.99
+        }
+      ]
     }
   ]
 };

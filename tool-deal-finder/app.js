@@ -23,20 +23,46 @@ const ToolUtils = {
    it does NOT drive grades. Surfaced behind ?qa=1 for Alex to spot where hand-set
    bare values disagree with the model (usually a missing spec dimension). */
 const MODEL = {
-  version: "v1-2026-07-05",
+  version: "v2-2026-07-05",
   threshold: 0.20,
   brushedFactor: 0.78,             // discount ONLY when specs.brushless === false
   base: { impact_driver:150, drill:160, circular_saw:175, recip_saw:170, grinder:130,
           impact_wrench:240, blower:190, mower:280, trimmer:180 },
+  // sub-type base overrides within a tool type (compact vs full-size wrench; driver/hammer/premium drill)
+  subBase: { impact_wrench:{compact:150,mid:240,high:300}, drill:{driver:150,hammer:185,premium:215} },
   brandFactor: { "DeWalt":1.0, "Milwaukee":1.05, "Makita":1.0, "Metabo HPT":0.95,
-                 "Ryobi":0.62, "Ridgid":0.72, "EGO":1.0, "Bauer":0.45, "Festool":1.6 },
+                 "Ryobi":0.62, "Ridgid":0.72, "EGO":1.0,
+                 "Hercules":0.42, "Bauer":0.28, "Festool":1.6 },
   skip: new Set(["battery","combo_kit","specialty"]),
+  _ftlbs(t){ const m=String(t.specs?.torque||"").match(/([\d.]+)\s*ft-lbs/); return m?parseFloat(m[1]):null; },
+  subType(t){
+    const n=(t.fullName||"").toLowerCase(), tt=t.toolType;
+    if(tt==="impact_wrench"){ const ft=this._ftlbs(t);
+      if(/stubby|compact|3\/8/.test(n) || (ft&&ft<400)) return "compact";
+      if(/high-torque|high torque/.test(n) || (ft&&ft>=700)) return "high";
+      return "mid"; }
+    if(tt==="drill"){
+      if(/xgt|40v|flexvolt|60v/.test(n)) return "premium";
+      if(/hammer/.test(n)) return "hammer";
+      return "driver"; }
+    return null;
+  },
+  specAdjust(t){   // spec input: torque-relative nudge within impact-wrench sub-type
+    if(t.toolType==="impact_wrench"){ const ft=this._ftlbs(t), st=this.subType(t);
+      const ref={compact:250,mid:600,high:1000}[st];
+      if(ft&&ref) return Math.max(0.88,Math.min(1.12,Math.pow(ft/ref,0.25))); }
+    return 1.0;
+  },
   expectedBare(t){
     const tt=t.toolType;
-    if(this.skip.has(tt) || !(tt in this.base)) return null;
+    if(this.skip.has(tt)) return null;
+    const st=this.subType(t);
+    let base = st ? (this.subBase[tt]||{})[st] : undefined;
+    if(base==null) base=this.base[tt];
+    if(base==null) return null;
     const bl=t.specs?.brushless;
     const f = bl===false ? this.brushedFactor : 1.0;
-    return Math.round(this.base[tt]*(this.brandFactor[t.brand]??1.0)*f);
+    return Math.round(base*(this.brandFactor[t.brand]??1.0)*f*this.specAdjust(t));
   },
   crossCheck(t){
     const exp=this.expectedBare(t); const hs=t.config?.bareToolValue;

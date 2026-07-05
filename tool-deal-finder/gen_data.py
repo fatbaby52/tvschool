@@ -8,12 +8,15 @@ BV = {
  ("ryobi18v","4.0"): 69, ("ryobi18v","2.0"): 39,
  ("ridgid18v","4.0"): 79, ("ego56v","5.0"): 249, ("ego56v","2.5"): 149,
  ("metabohpt36v","4.0"): 99,
+ ("bauer20v","5.0"): 45, ("bauer20v","2.0"): 18,
+ ("hercules20v","5.0"): 70, ("hercules20v","2.0"): 35,
 }
-CHARGER = {"dewalt20v":30,"m18":30,"m12":25,"makita18v":30,"ryobi18v":20,"ridgid18v":25,"ego56v":60,"metabohpt36v":30}
+CHARGER = {"dewalt20v":30,"m18":30,"m12":25,"makita18v":30,"ryobi18v":20,"ridgid18v":25,"ego56v":60,"metabohpt36v":30,"bauer20v":10,"hercules20v":20}
 PLATFORMS = {
  "dewalt20v":"DeWalt 20V MAX","m18":"Milwaukee M18","m12":"Milwaukee M12",
  "makita18v":"Makita 18V LXT","ryobi18v":"Ryobi 18V ONE+","ridgid18v":"Ridgid 18V",
- "ego56v":"EGO 56V","metabohpt36v":"Metabo HPT MultiVolt"}
+ "ego56v":"EGO 56V","metabohpt36v":"Metabo HPT MultiVolt",
+ "bauer20v":"Bauer 20V","hercules20v":"Hercules 20V"}
 # id, brand, model, name, platform, type, bare_value, batteries[(ah,qty)], charger, case, specs, usecases, price, retailPrice, onSale, verified, retailer, note
 C = [
  # --- verified 7/3 ---
@@ -78,6 +81,23 @@ C = [
   {"rpm":"10400","brushless":True},{"diy":8.0,"remodel":6.8,"auto":7.0,"electrical":5.0,"yard":0,"pro":5.0},89.00,None,False,False,"homedepot",""),
  ("makita-xag04z","Makita","XAG04Z","18V LXT Brushless 4-1/2in Grinder (Bare)","makita18v","grinder",130,[],0,0,
   {"rpm":"8500","brushless":True},{"diy":6.5,"remodel":7.5,"auto":7.5,"electrical":5.0,"yard":0,"pro":8.8},149.00,None,False,False,"homedepot",""),
+ # --- Harbor Freight seed (Bauer + Hercules); names/prices browser-verified 2026-07-05; HF item#s + product URLs TBD ---
+ ("bauer-3sp-iw","Bauer","BAUER-3SIW","20V Brushless 1/2in 3-Speed Impact Wrench (Tool Only)","bauer20v","impact_wrench",50,[],0,0,
+  {"torque":"450 ft-lbs","brushless":True},{"diy":5.5,"remodel":6.0,"auto":8.8,"electrical":4.0,"yard":0,"pro":6.5},49.99,None,False,True,"harborfreight","HF item# TBD; price verified 2026-07-05"),
+ ("bauer-ht-iw","Bauer","BAUER-HTIW","20V Brushless 1/2in High-Torque Impact Wrench Kit (5.0Ah)","bauer20v","impact_wrench",100,[("5.0",1)],10,0,
+  {"torque":"1200 ft-lbs","brushless":True},{"diy":5.5,"remodel":6.0,"auto":9.0,"electrical":4.0,"yard":0,"pro":7.0},159.99,None,False,True,"harborfreight","kit w/ 5.0Ah+charger; HF item# TBD; verified 2026-07-05"),
+ ("bauer-drill","Bauer","BAUER-DD12","20V Cordless 1/2in Drill/Driver Kit (2.0Ah)","bauer20v","drill",32,[("2.0",1)],10,0,
+  {"brushless":False},{"diy":7.5,"remodel":6.0,"auto":4.0,"electrical":6.0,"yard":0,"pro":4.5},54.99,None,False,True,"harborfreight","non-brushless kit; HF item# TBD; verified 2026-07-05"),
+ ("bauer-blower","Bauer","BAUER-JFB","20V Cordless 96 MPH Jet Fan Blower Kit (5.0Ah)","bauer20v","blower",45,[("5.0",1)],10,0,
+  {"cfm":"338"},{"diy":7.0,"remodel":0,"auto":0,"electrical":0,"yard":8.5,"pro":5.0},99.99,None,False,True,"harborfreight","kit; HF item# TBD; verified 2026-07-05"),
+ ("hercules-compact-iw","Hercules","HERC-CIW","20V Brushless 1/2in Compact 4-Mode Impact Wrench (Tool Only)","hercules20v","impact_wrench",70,[],0,0,
+  {"torque":"330 ft-lbs","brushless":True},{"diy":6.0,"remodel":6.5,"auto":9.0,"electrical":5.0,"yard":0,"pro":7.5},69.99,None,False,True,"harborfreight","HF item# TBD; price verified 2026-07-05"),
+ ("hercules-ultra-iw","Hercules","HERC-UTIW","20V Brushless 1/2in Ultra-Torque Impact Wrench Kit (5.0Ah)","hercules20v","impact_wrench",150,[("5.0",1)],20,0,
+  {"torque":"1100 ft-lbs","brushless":True},{"diy":5.5,"remodel":6.0,"auto":9.3,"electrical":4.0,"yard":0,"pro":8.5},249.99,None,False,True,"harborfreight","kit w/ 5.0Ah+charger; HF item# TBD; verified 2026-07-05"),
+ ("hercules-impact-driver","Hercules","HERC-CID","20V Brushless 1/4in Compact 3-Speed Impact Driver Kit (2.0Ah)","hercules20v","impact_driver",52,[("2.0",1)],20,0,
+  {"torque":"1900 in-lbs","brushless":True},{"diy":8.0,"remodel":8.5,"auto":7.0,"electrical":8.0,"yard":0,"pro":8.5},97.99,None,False,True,"harborfreight","kit w/ 2.0Ah+charger; HF item# TBD; verified 2026-07-05"),
+ ("hercules-drill","Hercules","HERC-DD12","20V Brushless 1/2in Drill/Driver Kit w/ Side Handle (2.0Ah)","hercules20v","drill",55,[("2.0",1)],20,0,
+  {"torque":"600 in-lbs","brushless":True},{"diy":8.2,"remodel":8.4,"auto":6.0,"electrical":7.5,"yard":0,"pro":8.5},97.99,None,False,True,"harborfreight","kit w/ 2.0Ah+charger; HF item# TBD; verified 2026-07-05"),
 ]
 
 # Product page URLs + CDN images, browser-collected 2026-07-04 (overnight pass).
@@ -134,7 +154,7 @@ for (tid,brand,model,name,plat,ttype,bare,bats,chg,case,specs,uc,price,rp,sale,v
     }
     tools.append(entry)
 data={"lastUpdated":NOW,
- "retailers":{"homedepot":{"name":"The Home Depot"},"amazon":{"name":"Amazon"},"acmetools":{"name":"Acme Tools"},"lowes":{"name":"Lowe's"}},
+ "retailers":{"homedepot":{"name":"The Home Depot"},"amazon":{"name":"Amazon"},"acmetools":{"name":"Acme Tools"},"lowes":{"name":"Lowe's"},"harborfreight":{"name":"Harbor Freight"}},
  "platforms":PLATFORMS,
  "batteryValueTable":{f"{k[0]}|{k[1]}":v for k,v in BV.items()},
  "tools":tools}
