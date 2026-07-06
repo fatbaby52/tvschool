@@ -1555,7 +1555,7 @@ const TOOL_DATA = {
     {
       "id": "bauer-3sp-iw",
       "brand": "Bauer",
-      "model": "BAUER-3SIW",
+      "model": "58637",
       "fullName": "Bauer 20V Brushless 1/2in 3-Speed Impact Wrench (Tool Only)",
       "platform": "bauer20v",
       "platformName": "Bauer 20V",
@@ -1579,9 +1579,9 @@ const TOOL_DATA = {
         "yard": 0,
         "pro": 6.5
       },
-      "modelNote": "HF item# TBD; price verified 2026-07-05",
+      "modelNote": "price verified 2026-07-05",
       "valueModel": "v0-decomposition-2026-07-03",
-      "image": "",
+      "image": "https://www.harborfreight.com/media/catalog/product/cache/c7f358f04aec81e7c5e0be4c56edf041/5/8/58637_W7.jpg",
       "prices": [
         {
           "retailerId": "harborfreight",
@@ -1591,8 +1591,8 @@ const TOOL_DATA = {
           "inStock": true,
           "staleHidden": false,
           "lastChecked": "2026-07-03T22:45:00Z",
-          "url": "",
-          "originalUrl": ""
+          "url": "https://www.harborfreight.com/20v-brushless-cordless-12-in-3-speed-impact-wrench-tool-only-58637.html",
+          "originalUrl": "https://www.harborfreight.com/20v-brushless-cordless-12-in-3-speed-impact-wrench-tool-only-58637.html"
         }
       ],
       "priceHistory": [
@@ -1605,7 +1605,7 @@ const TOOL_DATA = {
     {
       "id": "bauer-ht-iw",
       "brand": "Bauer",
-      "model": "BAUER-HTIW",
+      "model": "73222",
       "fullName": "Bauer 20V Brushless 1/2in High-Torque Impact Wrench Kit (5.0Ah)",
       "platform": "bauer20v",
       "platformName": "Bauer 20V",
@@ -1635,9 +1635,9 @@ const TOOL_DATA = {
         "yard": 0,
         "pro": 7.0
       },
-      "modelNote": "kit w/ 5.0Ah+charger; HF item# TBD; verified 2026-07-05",
+      "modelNote": "kit w/ 5.0Ah+charger; verified 2026-07-05",
       "valueModel": "v0-decomposition-2026-07-03",
-      "image": "",
+      "image": "https://www.harborfreight.com/media/catalog/product/cache/c7f358f04aec81e7c5e0be4c56edf041/7/3/73222_W7.jpg",
       "prices": [
         {
           "retailerId": "harborfreight",
@@ -1647,8 +1647,8 @@ const TOOL_DATA = {
           "inStock": true,
           "staleHidden": false,
           "lastChecked": "2026-07-03T22:45:00Z",
-          "url": "",
-          "originalUrl": ""
+          "url": "https://www.harborfreight.com/20v-brushless-cordless-12-in-high-torque-impact-wrench-kit-with-5-ah-battery-and-charger-73222.html",
+          "originalUrl": "https://www.harborfreight.com/20v-brushless-cordless-12-in-high-torque-impact-wrench-kit-with-5-ah-battery-and-charger-73222.html"
         }
       ],
       "priceHistory": [
@@ -1661,7 +1661,7 @@ const TOOL_DATA = {
     {
       "id": "bauer-drill",
       "brand": "Bauer",
-      "model": "BAUER-DD12",
+      "model": "73216",
       "fullName": "Bauer 20V Cordless 1/2in Drill/Driver Kit (2.0Ah)",
       "platform": "bauer20v",
       "platformName": "Bauer 20V",
@@ -1690,9 +1690,9 @@ const TOOL_DATA = {
         "yard": 0,
         "pro": 4.5
       },
-      "modelNote": "non-brushless kit; HF item# TBD; verified 2026-07-05",
+      "modelNote": "non-brushless kit; verified 2026-07-05",
       "valueModel": "v0-decomposition-2026-07-03",
-      "image": "",
+      "image": "https://www.harborfreight.com/media/catalog/product/cache/c7f358f04aec81e7c5e0be4c56edf041/7/3/73216_W7.jpg",
       "prices": [
         {
           "retailerId": "harborfreight",
@@ -1702,8 +1702,8 @@ const TOOL_DATA = {
           "inStock": true,
           "staleHidden": false,
           "lastChecked": "2026-07-03T22:45:00Z",
-          "url": "",
-          "originalUrl": ""
+          "url": "https://www.harborfreight.com/20v-cordless-12-in-drilldriver-kit-with-2-ah-battery-and-charger-73216.html",
+          "originalUrl": "https://www.harborfreight.com/20v-cordless-12-in-drilldriver-kit-with-2-ah-battery-and-charger-73216.html"
         }
       ],
       "priceHistory": [
@@ -1716,7 +1716,7 @@ const TOOL_DATA = {
     {
       "id": "bauer-blower",
       "brand": "Bauer",
-      "model": "BAUER-JFB",
+      "model": "71379",
       "fullName": "Bauer 20V Cordless 96 MPH Jet Fan Blower Kit (5.0Ah)",
       "platform": "bauer20v",
       "platformName": "Bauer 20V",
@@ -1745,9 +1745,9 @@ const TOOL_DATA = {
         "yard": 8.5,
         "pro": 5.0
       },
-      "modelNote": "kit; HF item# TBD; verified 2026-07-05",
+      "modelNote": "kit; verified 2026-07-05",
       "valueModel": "v0-decomposition-2026-07-03",
-      "image": "",
+      "image": "https://www.harborfreight.com/media/catalog/product/cache/c7f358f04aec81e7c5e0be4c56edf041/7/1/71379_W7.jpg",
       "prices": [
         {
           "retailerId": "harborfreight",
@@ -1757,8 +1757,8 @@ const TOOL_DATA = {
           "inStock": true,
           "staleHidden": false,
           "lastChecked": "2026-07-03T22:45:00Z",
-          "url": "",
-          "originalUrl": ""
+          "url": "https://www.harborfreight.com/20v-cordless-96-mph338-cfm-jet-fan-blower-kit-71379.html",
+          "originalUrl": "https://www.harborfreight.com/20v-cordless-96-mph338-cfm-jet-fan-blower-kit-71379.html"
         }
       ],
       "priceHistory": [
@@ -1771,7 +1771,7 @@ const TOOL_DATA = {
     {
       "id": "hercules-compact-iw",
       "brand": "Hercules",
-      "model": "HERC-CIW",
+      "model": "59427",
       "fullName": "Hercules 20V Brushless 1/2in Compact 4-Mode Impact Wrench (Tool Only)",
       "platform": "hercules20v",
       "platformName": "Hercules 20V",
@@ -1795,9 +1795,9 @@ const TOOL_DATA = {
         "yard": 0,
         "pro": 7.5
       },
-      "modelNote": "HF item# TBD; price verified 2026-07-05",
+      "modelNote": "price verified 2026-07-05",
       "valueModel": "v0-decomposition-2026-07-03",
-      "image": "",
+      "image": "https://www.harborfreight.com/media/catalog/product/cache/c7f358f04aec81e7c5e0be4c56edf041/5/9/59427_W7.jpg",
       "prices": [
         {
           "retailerId": "harborfreight",
@@ -1807,8 +1807,8 @@ const TOOL_DATA = {
           "inStock": true,
           "staleHidden": false,
           "lastChecked": "2026-07-03T22:45:00Z",
-          "url": "",
-          "originalUrl": ""
+          "url": "https://www.harborfreight.com/20v-brushless-cordless-12-in-compact-4-mode-impact-wrench-with-friction-ring-tool-only-59427.html",
+          "originalUrl": "https://www.harborfreight.com/20v-brushless-cordless-12-in-compact-4-mode-impact-wrench-with-friction-ring-tool-only-59427.html"
         }
       ],
       "priceHistory": [
@@ -1821,7 +1821,7 @@ const TOOL_DATA = {
     {
       "id": "hercules-ultra-iw",
       "brand": "Hercules",
-      "model": "HERC-UTIW",
+      "model": "70954",
       "fullName": "Hercules 20V Brushless 1/2in Ultra-Torque Impact Wrench Kit (5.0Ah)",
       "platform": "hercules20v",
       "platformName": "Hercules 20V",
@@ -1851,9 +1851,9 @@ const TOOL_DATA = {
         "yard": 0,
         "pro": 8.5
       },
-      "modelNote": "kit w/ 5.0Ah+charger; HF item# TBD; verified 2026-07-05",
+      "modelNote": "kit w/ 5.0Ah+charger; verified 2026-07-05",
       "valueModel": "v0-decomposition-2026-07-03",
-      "image": "",
+      "image": "https://www.harborfreight.com/media/catalog/product/cache/c7f358f04aec81e7c5e0be4c56edf041/7/0/70954_W7.jpg",
       "prices": [
         {
           "retailerId": "harborfreight",
@@ -1863,8 +1863,8 @@ const TOOL_DATA = {
           "inStock": true,
           "staleHidden": false,
           "lastChecked": "2026-07-03T22:45:00Z",
-          "url": "",
-          "originalUrl": ""
+          "url": "https://www.harborfreight.com/20v-brushless-cordless-12-in-ultra-torque-impact-wrench-kit-with-5-ah-battery-and-charger-70954.html",
+          "originalUrl": "https://www.harborfreight.com/20v-brushless-cordless-12-in-ultra-torque-impact-wrench-kit-with-5-ah-battery-and-charger-70954.html"
         }
       ],
       "priceHistory": [
@@ -1877,7 +1877,7 @@ const TOOL_DATA = {
     {
       "id": "hercules-impact-driver",
       "brand": "Hercules",
-      "model": "HERC-CID",
+      "model": "70068",
       "fullName": "Hercules 20V Brushless 1/4in Compact 3-Speed Impact Driver Kit (2.0Ah)",
       "platform": "hercules20v",
       "platformName": "Hercules 20V",
@@ -1907,9 +1907,9 @@ const TOOL_DATA = {
         "yard": 0,
         "pro": 8.5
       },
-      "modelNote": "kit w/ 2.0Ah+charger; HF item# TBD; verified 2026-07-05",
+      "modelNote": "kit w/ 2.0Ah+charger; verified 2026-07-05",
       "valueModel": "v0-decomposition-2026-07-03",
-      "image": "",
+      "image": "https://www.harborfreight.com/media/catalog/product/cache/c7f358f04aec81e7c5e0be4c56edf041/7/0/70068_W7.jpg",
       "prices": [
         {
           "retailerId": "harborfreight",
@@ -1919,8 +1919,8 @@ const TOOL_DATA = {
           "inStock": true,
           "staleHidden": false,
           "lastChecked": "2026-07-03T22:45:00Z",
-          "url": "",
-          "originalUrl": ""
+          "url": "https://www.harborfreight.com/20v-brushless-cordless-14-in-compact-3-speed-impact-driver-kit-with-2-ah-battery-and-charger-70068.html",
+          "originalUrl": "https://www.harborfreight.com/20v-brushless-cordless-14-in-compact-3-speed-impact-driver-kit-with-2-ah-battery-and-charger-70068.html"
         }
       ],
       "priceHistory": [
@@ -1933,7 +1933,7 @@ const TOOL_DATA = {
     {
       "id": "hercules-drill",
       "brand": "Hercules",
-      "model": "HERC-DD12",
+      "model": "70067",
       "fullName": "Hercules 20V Brushless 1/2in Drill/Driver Kit w/ Side Handle (2.0Ah)",
       "platform": "hercules20v",
       "platformName": "Hercules 20V",
@@ -1963,9 +1963,9 @@ const TOOL_DATA = {
         "yard": 0,
         "pro": 8.5
       },
-      "modelNote": "kit w/ 2.0Ah+charger; HF item# TBD; verified 2026-07-05",
+      "modelNote": "kit w/ 2.0Ah+charger; verified 2026-07-05",
       "valueModel": "v0-decomposition-2026-07-03",
-      "image": "",
+      "image": "https://www.harborfreight.com/media/catalog/product/cache/c7f358f04aec81e7c5e0be4c56edf041/7/0/70067_W6.jpg",
       "prices": [
         {
           "retailerId": "harborfreight",
@@ -1975,8 +1975,8 @@ const TOOL_DATA = {
           "inStock": true,
           "staleHidden": false,
           "lastChecked": "2026-07-03T22:45:00Z",
-          "url": "",
-          "originalUrl": ""
+          "url": "https://www.harborfreight.com/20v-brushless-cordless-12-in-drilldriver-kit-with-side-handle-2-ah-battery-and-charger-70067.html",
+          "originalUrl": "https://www.harborfreight.com/20v-brushless-cordless-12-in-drilldriver-kit-with-side-handle-2-ah-battery-and-charger-70067.html"
         }
       ],
       "priceHistory": [
