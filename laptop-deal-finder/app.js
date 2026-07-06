@@ -124,7 +124,7 @@ const LaptopDataUtils = {
   // 0.35 means 35% below fair value, 0 means at fair value, negative means overpriced
   getVerdict(dealScore) {
     if (dealScore >= 0.35) return { text: 'A', subtitle: 'Great Deal', class: 'verdict-a' };
-    if (dealScore > 0) return { text: 'B', subtitle: 'Good Deal', class: 'verdict-b' };
+    if (dealScore >= 0) return { text: 'B', subtitle: 'Good Deal', class: 'verdict-b' };
     if (dealScore >= -0.15) return { text: 'C', subtitle: 'Fair Price', class: 'verdict-c' };
     if (dealScore >= -0.35) return { text: 'D', subtitle: 'Overpriced', class: 'verdict-d' };
     return { text: 'F', subtitle: 'Bad Deal', class: 'verdict-f' };
@@ -302,8 +302,8 @@ function renderQuickScores(laptop) {
 function getGradeTooltip(grade) {
   const tooltips = {
     'A': 'Great Deal - This laptop is priced 25%+ below our performance-based value. Exceptional value.',
-    'B': 'Good Deal - This laptop is priced 10-25% below our performance-based value. Solid value.',
-    'C': 'Fair Price - This laptop is priced within 10% of our performance-based value.',
+    'B': 'Good Deal - This laptop is priced at or below our performance-based value (up to 25% below). Solid value.',
+    'C': 'Fair Price - This laptop is priced up to 10% above our performance-based value.',
     'D': 'Not Recommended - This laptop is priced 10-25% above our performance-based value.',
     'F': 'Not Recommended - This laptop is priced 25%+ above our performance-based value.'
   };
