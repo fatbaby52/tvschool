@@ -663,8 +663,8 @@ function isSuperBigTV(tv) {
 function getGradeTooltip(grade) {
   const tooltips = {
     'A': 'Great Deal - This TV is priced 25%+ below our predicted value. Exceptional value that rarely comes around.',
-    'B': 'Good Deal - This TV is priced 10-25% below our predicted value. Solid value worth considering.',
-    'C': 'Fair Price - This TV is priced within 10% of our predicted value. You are paying about what it is worth.',
+    'B': 'Good Deal - This TV is priced at or below our predicted value (up to 25% below). Solid value worth considering.',
+    'C': 'Fair Price - This TV is priced up to 10% above our predicted value. You are paying about what it is worth.',
     'D': 'Not Recommended - This TV is priced 10-25% above our predicted value. Consider waiting for a sale.',
     'F': 'Not Recommended - This TV is priced 25%+ above our predicted value. You are paying a significant premium.',
     '?': 'Limited Data - We do not have enough market data for TVs this size to make accurate price projections.'

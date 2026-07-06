@@ -6451,7 +6451,7 @@ const TVDataUtils = {
    */
   getVerdict(dealScore) {
     if (dealScore >= 0.25) return { text: "A", subtitle: "Great Deal", class: "verdict-a" };
-    if (dealScore >= 0.10) return { text: "B", subtitle: "Good Deal", class: "verdict-b" };
+    if (dealScore >= 0) return { text: "B", subtitle: "Good Deal", class: "verdict-b" };
     if (dealScore >= -0.10) return { text: "C", subtitle: "Fair Price", class: "verdict-c" };
     if (dealScore >= -0.25) return { text: "D", subtitle: "Not Recommended", class: "verdict-d" };
     return { text: "F", subtitle: "Not Recommended", class: "verdict-f" };

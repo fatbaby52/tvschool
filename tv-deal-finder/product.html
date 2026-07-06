@@ -658,8 +658,8 @@
     function getGradeTooltip(grade) {
       const tooltips = {
         'A': 'Great Deal - This TV is priced 25%+ below our predicted value based on specs, brand, and historical pricing patterns.',
-        'B': 'Good Deal - This TV is priced 10-25% below our predicted value. A solid purchase.',
-        'C': 'Fair Price - This TV is priced within 10% of our predicted value. Not a steal, but not overpriced.',
+        'B': 'Good Deal - This TV is priced at or below our predicted value (up to 25% below). A solid purchase.',
+        'C': 'Fair Price - This TV is priced up to 10% above our predicted value. Not a steal, but not overpriced.',
         'D': 'Not Recommended - This TV is priced 10-25% above our predicted value. Consider waiting for a sale.',
         'F': 'Not Recommended - This TV is priced 25%+ above our predicted value. We recommend waiting for a better deal.',
         '?': 'Limited Data - We do not have enough market data for TVs this size to calculate an accurate projected value.'
@@ -740,7 +740,7 @@
       if (!fairValue || fairValue <= 0) return { text: '?', subtitle: 'Unknown', class: 'verdict-unknown' };
       const dealScore = (fairValue - price) / fairValue;
       if (dealScore >= 0.25) return { text: 'A', subtitle: 'Great Deal', class: 'verdict-a' };
-      if (dealScore >= 0.10) return { text: 'B', subtitle: 'Good Deal', class: 'verdict-b' };
+      if (dealScore >= 0) return { text: 'B', subtitle: 'Good Deal', class: 'verdict-b' };
       if (dealScore >= -0.10) return { text: 'C', subtitle: 'Fair Price', class: 'verdict-c' };
       if (dealScore >= -0.25) return { text: 'D', subtitle: 'Not Recommended', class: 'verdict-d' };
       return { text: 'F', subtitle: 'Not Recommended', class: 'verdict-f' };
