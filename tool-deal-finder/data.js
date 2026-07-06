@@ -1590,14 +1590,14 @@ const TOOL_DATA = {
           "onSale": false,
           "inStock": true,
           "staleHidden": false,
-          "lastChecked": "2026-07-03T22:45:00Z",
+          "lastChecked": "2026-07-05T18:00:00Z",
           "url": "https://www.harborfreight.com/20v-brushless-cordless-12-in-3-speed-impact-wrench-tool-only-58637.html",
           "originalUrl": "https://www.harborfreight.com/20v-brushless-cordless-12-in-3-speed-impact-wrench-tool-only-58637.html"
         }
       ],
       "priceHistory": [
         {
-          "date": "2026-07-03",
+          "date": "2026-07-05",
           "price": 49.99
         }
       ]
@@ -1646,14 +1646,14 @@ const TOOL_DATA = {
           "onSale": false,
           "inStock": true,
           "staleHidden": false,
-          "lastChecked": "2026-07-03T22:45:00Z",
+          "lastChecked": "2026-07-05T18:00:00Z",
           "url": "https://www.harborfreight.com/20v-brushless-cordless-12-in-high-torque-impact-wrench-kit-with-5-ah-battery-and-charger-73222.html",
           "originalUrl": "https://www.harborfreight.com/20v-brushless-cordless-12-in-high-torque-impact-wrench-kit-with-5-ah-battery-and-charger-73222.html"
         }
       ],
       "priceHistory": [
         {
-          "date": "2026-07-03",
+          "date": "2026-07-05",
           "price": 159.99
         }
       ]
@@ -1701,14 +1701,14 @@ const TOOL_DATA = {
           "onSale": false,
           "inStock": true,
           "staleHidden": false,
-          "lastChecked": "2026-07-03T22:45:00Z",
+          "lastChecked": "2026-07-05T18:00:00Z",
           "url": "https://www.harborfreight.com/20v-cordless-12-in-drilldriver-kit-with-2-ah-battery-and-charger-73216.html",
           "originalUrl": "https://www.harborfreight.com/20v-cordless-12-in-drilldriver-kit-with-2-ah-battery-and-charger-73216.html"
         }
       ],
       "priceHistory": [
         {
-          "date": "2026-07-03",
+          "date": "2026-07-05",
           "price": 54.99
         }
       ]
@@ -1756,14 +1756,14 @@ const TOOL_DATA = {
           "onSale": false,
           "inStock": true,
           "staleHidden": false,
-          "lastChecked": "2026-07-03T22:45:00Z",
+          "lastChecked": "2026-07-05T18:00:00Z",
           "url": "https://www.harborfreight.com/20v-cordless-96-mph338-cfm-jet-fan-blower-kit-71379.html",
           "originalUrl": "https://www.harborfreight.com/20v-cordless-96-mph338-cfm-jet-fan-blower-kit-71379.html"
         }
       ],
       "priceHistory": [
         {
-          "date": "2026-07-03",
+          "date": "2026-07-05",
           "price": 99.99
         }
       ]
@@ -1806,14 +1806,14 @@ const TOOL_DATA = {
           "onSale": false,
           "inStock": true,
           "staleHidden": false,
-          "lastChecked": "2026-07-03T22:45:00Z",
+          "lastChecked": "2026-07-05T18:00:00Z",
           "url": "https://www.harborfreight.com/20v-brushless-cordless-12-in-compact-4-mode-impact-wrench-with-friction-ring-tool-only-59427.html",
           "originalUrl": "https://www.harborfreight.com/20v-brushless-cordless-12-in-compact-4-mode-impact-wrench-with-friction-ring-tool-only-59427.html"
         }
       ],
       "priceHistory": [
         {
-          "date": "2026-07-03",
+          "date": "2026-07-05",
           "price": 69.99
         }
       ]
@@ -1862,14 +1862,14 @@ const TOOL_DATA = {
           "onSale": false,
           "inStock": true,
           "staleHidden": false,
-          "lastChecked": "2026-07-03T22:45:00Z",
+          "lastChecked": "2026-07-05T18:00:00Z",
           "url": "https://www.harborfreight.com/20v-brushless-cordless-12-in-ultra-torque-impact-wrench-kit-with-5-ah-battery-and-charger-70954.html",
           "originalUrl": "https://www.harborfreight.com/20v-brushless-cordless-12-in-ultra-torque-impact-wrench-kit-with-5-ah-battery-and-charger-70954.html"
         }
       ],
       "priceHistory": [
         {
-          "date": "2026-07-03",
+          "date": "2026-07-05",
           "price": 249.99
         }
       ]
@@ -1918,14 +1918,14 @@ const TOOL_DATA = {
           "onSale": false,
           "inStock": true,
           "staleHidden": false,
-          "lastChecked": "2026-07-03T22:45:00Z",
+          "lastChecked": "2026-07-05T18:00:00Z",
           "url": "https://www.harborfreight.com/20v-brushless-cordless-14-in-compact-3-speed-impact-driver-kit-with-2-ah-battery-and-charger-70068.html",
           "originalUrl": "https://www.harborfreight.com/20v-brushless-cordless-14-in-compact-3-speed-impact-driver-kit-with-2-ah-battery-and-charger-70068.html"
         }
       ],
       "priceHistory": [
         {
-          "date": "2026-07-03",
+          "date": "2026-07-05",
           "price": 97.99
         }
       ]
@@ -1974,14 +1974,14 @@ const TOOL_DATA = {
           "onSale": false,
           "inStock": true,
           "staleHidden": false,
-          "lastChecked": "2026-07-03T22:45:00Z",
+          "lastChecked": "2026-07-05T18:00:00Z",
           "url": "https://www.harborfreight.com/20v-brushless-cordless-12-in-drilldriver-kit-with-side-handle-2-ah-battery-and-charger-70067.html",
           "originalUrl": "https://www.harborfreight.com/20v-brushless-cordless-12-in-drilldriver-kit-with-side-handle-2-ah-battery-and-charger-70067.html"
         }
       ],
       "priceHistory": [
         {
-          "date": "2026-07-03",
+          "date": "2026-07-05",
           "price": 97.99
         }
       ]

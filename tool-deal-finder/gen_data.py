@@ -1,5 +1,16 @@
 import json
 NOW = "2026-07-03T22:45:00Z"
+# Per-entry verified-date overrides (checked on a different date than the pipeline NOW).
+VERIFIED_ON = {
+  "bauer-3sp-iw": "2026-07-05T18:00:00Z",
+  "bauer-ht-iw": "2026-07-05T18:00:00Z",
+  "bauer-drill": "2026-07-05T18:00:00Z",
+  "bauer-blower": "2026-07-05T18:00:00Z",
+  "hercules-compact-iw": "2026-07-05T18:00:00Z",
+  "hercules-ultra-iw": "2026-07-05T18:00:00Z",
+  "hercules-impact-driver": "2026-07-05T18:00:00Z",
+  "hercules-drill": "2026-07-05T18:00:00Z",
+}
 # Battery street VALUE table (v0: anchored on 7/3/2026 verified prices, promo-adjusted)
 BV = {
  ("dewalt20v","5.0"): 119, ("dewalt20v","4.0c"): 99, ("dewalt20v","2.0"): 59,
@@ -164,9 +175,9 @@ for (tid,brand,model,name,plat,ttype,bare,bats,chg,case,specs,uc,price,rp,sale,v
       "image": MEDIA.get(tid, ("", ""))[1],
       "prices":[{"retailerId":retailer,"currentPrice":price,"retailPrice":rp,"onSale":sale,
                  "inStock":verified,"staleHidden":(not verified),
-                 "lastChecked":NOW if verified else "",
+                 "lastChecked":(VERIFIED_ON.get(tid,NOW) if verified else ""),
                  "url":MEDIA.get(tid, ("", ""))[0],"originalUrl":MEDIA.get(tid, ("", ""))[0]}],
-      "priceHistory":[{"date":"2026-07-03","price":price}] if verified else []
+      "priceHistory":[{"date":VERIFIED_ON.get(tid,NOW)[:10],"price":price}] if verified else []
     }
     tools.append(entry)
 data={"lastUpdated":NOW,
