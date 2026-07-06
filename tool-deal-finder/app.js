@@ -4,7 +4,7 @@ const ToolUtils = {
   dealScore(t){ const p=this.bestPrice(t); if(!p||!t.fairValue) return null; return (t.fairValue-p.currentPrice)/t.fairValue; },
   verdict(ds){ if(ds==null) return {text:"…",subtitle:"Verifying price",cls:"verdict-na"};
     if(ds>=0.25) return {text:"A",subtitle:"Great Deal",cls:"verdict-a"};
-    if(ds>=0.10) return {text:"B",subtitle:"Good Deal",cls:"verdict-b"};
+    if(ds>=0) return {text:"B",subtitle:"Good Deal",cls:"verdict-b"};
     if(ds>=-0.10) return {text:"C",subtitle:"Fair Price",cls:"verdict-c"};
     if(ds>=-0.25) return {text:"D",subtitle:"Not Recommended",cls:"verdict-d"};
     return {text:"F",subtitle:"Not Recommended",cls:"verdict-f"}; },
