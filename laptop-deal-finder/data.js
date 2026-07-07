@@ -146,7 +146,7 @@ const LAPTOP_DATA = {
           "retailPrice": 1474.99,
           "url": "https://api.bestbuy.com/click/-/6623881/pdp",
           "inStock": true,
-          "lastChecked": "2026-07-07T04:59:37Z",
+          "lastChecked": "2026-07-07T19:13:38Z",
           "onSale": true
         }
       ],
@@ -302,11 +302,11 @@ const LAPTOP_DATA = {
           "retailerId": "bestbuy",
           "retailer": "Best Buy",
           "currentPrice": 1174.99,
-          "retailPrice": 1099.99,
+          "retailPrice": 1939.99,
           "url": "https://api.bestbuy.com/click/-/6617094/pdp",
           "inStock": true,
-          "lastChecked": "2026-07-07T04:59:37Z",
-          "onSale": false
+          "lastChecked": "2026-07-07T19:13:38Z",
+          "onSale": true
         }
       ],
       "rating": 4.6,
@@ -341,9 +341,9 @@ const LAPTOP_DATA = {
         "cinebenchR23Multi": 12370
       },
       "fairValue": 1037,
-      "currentPrice": 599.99,
-      "dealGrade": "A",
-      "dealScore": 172.8,
+      "currentPrice": 759.99,
+      "dealGrade": "B",
+      "dealScore": 26.7,
       "useCaseScores": {
         "gaming": 1.5,
         "productivity": 7.5,
@@ -355,17 +355,23 @@ const LAPTOP_DATA = {
         {
           "retailerId": "bestbuy",
           "retailer": "Best Buy",
-          "currentPrice": 599.99,
-          "retailPrice": 2499,
+          "currentPrice": 759.99,
+          "retailPrice": 2499.0,
           "url": "https://api.bestbuy.com/click/-/6561785/pdp",
-          "inStock": false,
-          "staleHidden": true,
-          "lastChecked": "2026-07-07T03:40:00Z"
+          "inStock": true,
+          "lastChecked": "2026-07-07T19:13:38Z",
+          "onSale": true
         }
       ],
       "rating": 3.6,
       "reviewCount": 48,
-      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6561/6561785_sd.jpg"
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6561/6561785_sd.jpg",
+      "priceHistory": [
+        {
+          "date": "2026-07-07",
+          "price": 759.99
+        }
+      ]
     },
     {
       "id": "bestbuy-6643727",
@@ -509,8 +515,8 @@ const LAPTOP_DATA = {
           "retailPrice": 699.0,
           "url": "https://api.bestbuy.com/click/-/6489687/pdp",
           "inStock": true,
-          "lastChecked": "2026-07-07T04:59:37Z",
-          "onSale": false
+          "lastChecked": "2026-07-07T19:13:38Z",
+          "onSale": true
         }
       ],
       "rating": 4.4,
@@ -615,8 +621,8 @@ const LAPTOP_DATA = {
           "retailPrice": 1199.99,
           "url": "https://api.bestbuy.com/click/-/6646505/pdp",
           "inStock": true,
-          "lastChecked": "2026-07-07T04:59:37Z",
-          "onSale": true
+          "lastChecked": "2026-07-07T19:13:38Z",
+          "onSale": false
         }
       ],
       "rating": 4.7,
@@ -721,8 +727,8 @@ const LAPTOP_DATA = {
           "retailPrice": 999.99,
           "url": "https://api.bestbuy.com/click/-/6621164/pdp",
           "inStock": true,
-          "lastChecked": "2026-07-07T04:59:37Z",
-          "onSale": false
+          "lastChecked": "2026-07-07T19:13:38Z",
+          "onSale": true
         }
       ],
       "rating": 4.5,
@@ -823,8 +829,8 @@ const LAPTOP_DATA = {
           "retailPrice": 1249.99,
           "url": "https://api.bestbuy.com/click/-/6489690/pdp",
           "inStock": true,
-          "lastChecked": "2026-07-07T04:59:37Z",
-          "onSale": false
+          "lastChecked": "2026-07-07T19:13:38Z",
+          "onSale": true
         }
       ],
       "rating": 4.2,
@@ -9379,5 +9385,5 @@ const LAPTOP_DATA = {
       "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6450/6450459_sd.jpg"
     }
   ],
-  "lastUpdated": "2026-07-07T04:59:37Z"
+  "lastUpdated": "2026-07-07T19:13:38Z"
 };
