@@ -248,6 +248,20 @@ function getQualityTier(score) {
   return { tier: 1, label: 'Below Average' };
 }
 
+// Neutral inline placeholder — via.placeholder.com is defunct, so a broken
+// product image must fall back to something that cannot itself 404.
+const IMG_FALLBACK = 'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0MDAiIGhlaWdodD0iMjUwIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZWNlN2RlIi8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE2IiBmaWxsPSIjOGE4MTc1IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkb21pbmFudC1iYXNlbGluZT0ibWlkZGxlIj5JbWFnZSB1bmF2YWlsYWJsZTwvdGV4dD48L3N2Zz4=';
+
+// Display name without a duplicated brand prefix ("HP" + "HP OMEN" -> "OMEN").
+function laptopDisplayName(laptop) {
+  let name = (laptop.displayName || laptop.model || '').trim();
+  const brand = (laptop.brand || '').trim();
+  if (brand && name.toLowerCase().startsWith(brand.toLowerCase() + ' ')) {
+    name = name.slice(brand.length + 1);
+  }
+  return name || laptop.model;
+}
+
 // Render quality stars
 function renderQualityStars(score) {
   const { tier, label } = getQualityTier(score);
@@ -397,13 +411,13 @@ function renderLaptopCard(laptop) {
   return `
     <article class="tv-card" data-laptop-id="${laptop.id}">
       <div class="tv-card-image">
-        <img src="${laptop.image || 'https://via.placeholder.com/400x250?text=Laptop'}" alt="${laptop.fullName}" loading="lazy"
-             onerror="this.src='https://via.placeholder.com/400x250?text=Laptop'">
+        <img src="${laptop.image || IMG_FALLBACK}" alt="${laptop.fullName}" loading="lazy"
+             onerror="this.onerror=null;this.src=IMG_FALLBACK">
         <span class="panel-badge">${laptop.displayType || 'LCD'}</span>
       </div>
       <div class="tv-card-content">
         <div class="tv-card-brand">${laptop.brand}</div>
-        <h3 class="tv-card-title">${laptop.displayName || laptop.model} ${laptop.screenSize}"</h3>
+        <h3 class="tv-card-title">${laptopDisplayName(laptop)} ${laptop.screenSize}"</h3>
         <div class="tv-card-model">${laptop.model}</div>
         <div class="tv-card-specs">
           ${laptop.notebookcheckScore ? `<span class="tv-card-spec">${renderQualityStars(laptop.notebookcheckScore)}</span>` : ''}
@@ -499,14 +513,15 @@ function renderDealOfDay() {
       <div class="deal-of-day-content">
         <div class="deal-of-day-header">
           <div class="deal-of-day-image">
-            <img src="${bestDeal.image || 'https://via.placeholder.com/200x150?text=Laptop'}" alt="${bestDeal.fullName}">
+            <img src="${bestDeal.image || IMG_FALLBACK}" alt="${bestDeal.fullName}"
+                 onerror="this.onerror=null;this.src=IMG_FALLBACK">
           </div>
           <div>
-            <div class="deal-of-day-title">${bestDeal.brand} ${bestDeal.model}</div>
+            <div class="deal-of-day-title">${bestDeal.brand} ${laptopDisplayName(bestDeal)}</div>
             <div class="deal-of-day-subtitle">${bestDeal.cpu} • ${bestDeal.gpu} • ${bestDeal.ram}GB RAM</div>
           </div>
         </div>
-        <p class="deal-of-day-writeup">The ${bestDeal.brand} ${bestDeal.model} is currently priced ${savingsPct}% below our performance-based value estimate. With ${bestDeal.cpu} and ${bestDeal.gpu}, this is an exceptional value for the performance you get.</p>
+        <p class="deal-of-day-writeup">The ${bestDeal.brand} ${laptopDisplayName(bestDeal)} is currently priced ${savingsPct}% below our performance-based value estimate. With ${bestDeal.cpu} and ${bestDeal.gpu}, this is an exceptional value for the performance you get.</p>
       </div>
       <div class="deal-of-day-cta">
         <div class="deal-of-day-price">${LaptopDataUtils.formatPrice(bestPrice.currentPrice)}</div>

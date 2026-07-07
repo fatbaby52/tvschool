@@ -733,7 +733,7 @@ function renderTVCard(tv) {
     <article class="tv-card" data-tv-id="${tv.id}">
       <div class="tv-card-image">
         <img src="${tv.image}" alt="${tv.fullName}" loading="lazy"
-             onerror="this.src='https://via.placeholder.com/400x250?text=TV+Image'">
+             onerror="this.onerror=null;this.src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0MDAiIGhlaWdodD0iMjUwIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZWNlN2RlIi8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE2IiBmaWxsPSIjOGE4MTc1IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkb21pbmFudC1iYXNlbGluZT0ibWlkZGxlIj5JbWFnZSB1bmF2YWlsYWJsZTwvdGV4dD48L3N2Zz4='">
         <span class="panel-badge">${tv.panelType}</span>
       </div>
       <div class="tv-card-content">
