@@ -105,11 +105,14 @@ const LaptopDataUtils = {
   // Get best price for a laptop
   getBestPrice(laptop) {
     if (!laptop.prices || laptop.prices.length === 0) return null;
-    const inStock = laptop.prices.filter(p => p.inStock);
-    const available = inStock.length > 0 ? inStock : laptop.prices;
-    return available.reduce((best, current) =>
-      current.currentPrice < best.currentPrice ? current : best
-    );
+    const verified = laptop.prices.filter(p => p.inStock && p.lastChecked && !p.staleHidden);
+    if (verified.length > 0) {
+      return verified.reduce((best, current) =>
+        current.currentPrice < best.currentPrice ? current : best
+      );
+    }
+    const visible = laptop.prices.filter(p => !p.staleHidden);
+    return visible[0] || laptop.prices[0];
   },
 
   // Calculate deal score (positive = good deal)
@@ -262,6 +265,15 @@ function laptopDisplayName(laptop) {
   return name || laptop.model;
 }
 
+// Only display a price that has been verified (lastChecked set, in stock, not
+// hidden as stale). The catalog shipped with no timestamps at all, so without
+// this guard every laptop showed a catalog-era price as current — the same P0
+// the TV finder fixed on 7/4.
+function hasVerifiedPrice(laptop) {
+  const p = LaptopDataUtils.getBestPrice(laptop);
+  return !!(p && p.inStock && p.lastChecked && !p.staleHidden);
+}
+
 // Render quality stars
 function renderQualityStars(score) {
   const { tier, label } = getQualityTier(score);
@@ -383,6 +395,7 @@ function renderLaptopCard(laptop) {
   const displayScorePct = (displayScore * 100).toFixed(1);
   const dealScoreFormatted = displayScore <= 0 ? `${displayScorePct}%` : `+${displayScorePct}%`;
   const dealScoreClass = displayScore <= 0 ? 'positive' : 'negative';
+  const priceVerified = hasVerifiedPrice(laptop);
 
   const gradeTooltip = getGradeTooltip(verdict.text);
 
@@ -434,9 +447,9 @@ function renderLaptopCard(laptop) {
             <div class="price-section">
               <div class="price-labeled">
                 <span class="price-label">Sale Price</span>
-                <span class="tv-card-price">${LaptopDataUtils.formatPrice(bestPrice.currentPrice)}</span>
+                <span class="tv-card-price">${priceVerified ? LaptopDataUtils.formatPrice(bestPrice.currentPrice) : '<span class="price-verifying">Being verified</span>'}</span>
               </div>
-              ${bestPrice.retailPrice > bestPrice.currentPrice
+              ${priceVerified && bestPrice.retailPrice > bestPrice.currentPrice
                 ? `<div class="price-labeled msrp">
                     <span class="price-label">MSRP</span>
                     <span class="tv-card-retail">${LaptopDataUtils.formatPrice(bestPrice.retailPrice)}</span>
@@ -444,20 +457,25 @@ function renderLaptopCard(laptop) {
                 : ''}
             </div>
             <div class="grade-section">
-              <span class="deal-badge ${verdict.class}" title="${gradeTooltip}">
+              ${priceVerified
+                ? `<span class="deal-badge ${verdict.class}" title="${gradeTooltip}">
                 <span class="grade">${verdict.text}</span>
                 <span class="grade-subtitle">${verdict.subtitle}</span>
-              </span>
+              </span>`
+                : `<span class="deal-badge verdict-na" title="We hide prices we couldn't re-verify recently. This laptop is awaiting a fresh price check.">
+                <span class="grade">&hellip;</span>
+                <span class="grade-subtitle">Verifying</span>
+              </span>`}
             </div>
           </div>
-          <div class="tv-card-retailer">at ${retailer?.name || 'Unknown'}</div>
+          ${priceVerified ? `<div class="tv-card-retailer">at ${retailer?.name || 'Unknown'}</div>
           <div class="tv-card-deal-row">
             <span class="deal-score ${dealScoreClass}">${dealScoreFormatted} vs <span class="projected-tooltip">projected<span class="tooltip-content">Our projected price is calculated based on CPU/GPU benchmarks, RAM, storage, display quality, and build quality.</span></span></span>
             <div class="price-labeled projected">
               <span class="price-label">Projected</span>
               <span class="projected-value">${LaptopDataUtils.formatPrice(laptop.fairValue)}</span>
             </div>
-          </div>
+          </div>` : `<div class="tv-card-retailer">Awaiting price verification</div>`}
         </div>
       </div>
     </article>
@@ -497,9 +515,10 @@ function renderDealOfDay() {
   const container = document.getElementById('deal-of-day');
   if (!container) return;
 
-  const sortedByDeal = LaptopDataUtils.sortByDealScore(AppState.laptops);
+  // Deal of the Day only ever features a verified price
+  const sortedByDeal = LaptopDataUtils.sortByDealScore(AppState.laptops.filter(hasVerifiedPrice));
   const bestDeal = sortedByDeal[0];
-  if (!bestDeal) return;
+  if (!bestDeal) { container.style.display = 'none'; return; }
 
   const bestPrice = LaptopDataUtils.getBestPrice(bestDeal);
   const dealScore = LaptopDataUtils.calculateDealScore(bestDeal);
@@ -959,6 +978,10 @@ function applyFilters() {
   filtered = filtered.filter(laptop => {
     const bestPrice = LaptopDataUtils.getBestPrice(laptop);
     if (!bestPrice) return false;
+    if (!hasVerifiedPrice(laptop)) {
+      // Unverified price: only keep when the user hasn't narrowed by price
+      return AppState.filters.minPrice <= 0 && !((AppState.filters.maxPrice || Infinity) < Infinity);
+    }
     return bestPrice.currentPrice >= AppState.filters.minPrice &&
            bestPrice.currentPrice <= (AppState.filters.maxPrice || Infinity);
   });
@@ -1001,6 +1024,11 @@ function applyFilters() {
     });
   }
 
+  // Laptops awaiting price verification sort after verified ones on price/deal sorts
+  if (['dealScore', 'priceLow', 'priceHigh'].includes(AppState.sortBy)) {
+    filtered = [...filtered.filter(hasVerifiedPrice), ...filtered.filter(l => !hasVerifiedPrice(l))];
+  }
+
   AppState.filteredLaptops = filtered;
   renderLaptopGrid();
   updateStats();
@@ -1019,6 +1047,7 @@ function updateStats() {
   }
 
   const greatDeals = AppState.filteredLaptops.filter(laptop => {
+    if (!hasVerifiedPrice(laptop)) return false;
     const dealScore = LaptopDataUtils.calculateDealScore(laptop);
     return dealScore >= 0.35;  // A-grade threshold
   }).length;

@@ -408,17 +408,20 @@
     </div>
   </footer>
 
-  <script src="data.js?v=6"></script>
+  <script src="data.js?v=7"></script>
   <script>
     // Laptop data utilities
     const LaptopDataUtils = {
       getBestPrice(laptop) {
         if (!laptop.prices || laptop.prices.length === 0) return null;
-        const inStock = laptop.prices.filter(p => p.inStock);
-        const available = inStock.length > 0 ? inStock : laptop.prices;
-        return available.reduce((best, current) =>
-          current.currentPrice < best.currentPrice ? current : best
-        );
+        const verified = laptop.prices.filter(p => p.inStock && p.lastChecked && !p.staleHidden);
+        if (verified.length > 0) {
+          return verified.reduce((best, current) =>
+            current.currentPrice < best.currentPrice ? current : best
+          );
+        }
+        const visible = laptop.prices.filter(p => !p.staleHidden);
+        return visible[0] || laptop.prices[0];
       },
 
       calculateDealScore(laptop) {
@@ -604,10 +607,20 @@
       `;
     }
 
+    // Only link to a purchase when the price is verified (lastChecked set,
+    // in stock, not stale-hidden) — mirrors the TV finder standard.
+    function hasVerifiedPrice(laptop) {
+      const p = LaptopDataUtils.getBestPrice(laptop);
+      return !!(p && p.inStock && p.lastChecked && !p.staleHidden);
+    }
+
     // Render buy button
     function renderBuyButton(laptop) {
       const bestPrice = LaptopDataUtils.getBestPrice(laptop);
       if (!bestPrice) return '';
+      if (!hasVerifiedPrice(laptop)) {
+        return `<div class="affiliate-note">This price is being re-verified &mdash; check back soon.</div>`;
+      }
 
       const retailer = LaptopDataUtils.getRetailer(bestPrice.retailerId);
       const grade = LaptopDataUtils.getVerdict(LaptopDataUtils.calculateDealScore(laptop));
@@ -634,14 +647,19 @@
       const verdict = LaptopDataUtils.getVerdict(dealScore);
       const retailer = LaptopDataUtils.getRetailer(bestPrice?.retailerId);
       const quality = getQualityTier(laptop.notebookcheckScore || 80);
+      const priceVerified = hasVerifiedPrice(laptop);
 
       // Update page title
-      document.title = `${laptop.fullName} - ${verdict.subtitle} | Laptop School`;
+      document.title = priceVerified
+        ? `${laptop.fullName} - ${verdict.subtitle} | Laptop School`
+        : `${laptop.fullName} | Laptop School`;
 
       // Update meta description
       const metaDesc = document.querySelector('meta[name="description"]');
       if (metaDesc) {
-        metaDesc.content = `${laptop.fullName} - Currently ${LaptopDataUtils.formatPrice(bestPrice?.currentPrice)} at ${retailer?.name}. Grade: ${verdict.text} (${verdict.subtitle}). ${laptop.cpu}, ${laptop.gpu}.`;
+        metaDesc.content = priceVerified
+          ? `${laptop.fullName} - Currently ${LaptopDataUtils.formatPrice(bestPrice?.currentPrice)} at ${retailer?.name}. Grade: ${verdict.text} (${verdict.subtitle}). ${laptop.cpu}, ${laptop.gpu}.`
+          : `${laptop.fullName} - ${laptop.cpu}, ${laptop.gpu}. Price being verified.`;
       }
 
       document.getElementById('product-content').innerHTML = `
@@ -663,25 +681,27 @@
 
             <div class="price-section">
               <div class="price-main-group">
-                <span class="price-main">${LaptopDataUtils.formatPrice(bestPrice?.currentPrice || 0)}</span>
-                ${bestPrice?.retailPrice > bestPrice?.currentPrice
+                <span class="price-main">${priceVerified ? LaptopDataUtils.formatPrice(bestPrice?.currentPrice || 0) : '<span class="price-verifying">Being verified</span>'}</span>
+                ${priceVerified && bestPrice?.retailPrice > bestPrice?.currentPrice
                   ? `<span class="price-retail">${LaptopDataUtils.formatPrice(bestPrice.retailPrice)}</span>`
                   : ''}
               </div>
               <div class="price-meta">
-                at ${retailer?.name || 'Unknown'} &bull; ${bestPrice?.inStock ? 'In Stock' : 'Out of Stock'}
+                ${priceVerified
+                  ? `at ${retailer?.name || 'Unknown'} &bull; ${bestPrice?.inStock ? 'In Stock' : 'Out of Stock'}`
+                  : 'We hide prices we couldn\'t re-verify recently. This laptop is awaiting a fresh price check.'}
               </div>
               <div class="deal-info">
                 <div>
                   <div style="font-size: 0.75rem; color: var(--text-secondary);">Projected Price</div>
                   <div style="font-weight: 600;">${LaptopDataUtils.formatPrice(laptop.fairValue)}</div>
                 </div>
-                <div>
+                ${priceVerified ? `<div>
                   <div style="font-size: 0.75rem; color: var(--text-secondary);">Deal Score</div>
                   <div style="font-weight: 600; color: ${dealScore >= 0 ? 'var(--success-color)' : 'var(--danger-color)'};">
                     ${LaptopDataUtils.formatDealScore(dealScore)}
                   </div>
-                </div>
+                </div>` : ''}
               </div>
               ${renderBuyButton(laptop)}
             </div>

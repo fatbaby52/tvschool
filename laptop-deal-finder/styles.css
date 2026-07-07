@@ -2039,3 +2039,21 @@ h1 { font-weight: 700; }
   .da-link { padding: 0 8px; }
   .da-nav-meta { display: none; }
 }
+
+/* Editorial Theme — price verification states (ported from TV finder, 2026-07-06) */
+.price-verifying {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text-muted, #777);
+  font-style: italic;
+}
+.price-verifying-note {
+  padding: 14px 16px;
+  border: 1px dashed var(--border-color, #ccc);
+  border-radius: 8px;
+  color: var(--text-muted, #666);
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin: 8px 0;
+}
+.deal-badge.verdict-na .grade { letter-spacing: 2px; }
