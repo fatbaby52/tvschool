@@ -9,7 +9,7 @@
  */
 
 const TV_DATA = {
-  "lastUpdated": "2026-07-04T19:40:40Z",
+  "lastUpdated": "2026-07-07T02:18:30Z",
   "retailers": {
     "bestbuy": {
       "id": "bestbuy",
@@ -289,9 +289,10 @@ const TV_DATA = {
           "originalUrl": "https://www.amazon.com/dp/B0FLYPMZNJ",
           "sku": "B0FLYPMZNJ",
           "asin": "B0FLYPMZNJ",
-          "inStock": true,
+          "inStock": false,
           "onSale": false,
-          "lastChecked": "2026-07-04T19:15:54Z"
+          "lastChecked": "2026-07-06T15:16:00Z",
+          "staleHidden": true
         }
       ],
       "priceHistory": [
@@ -867,9 +868,10 @@ const TV_DATA = {
           "originalUrl": "https://www.amazon.com/dp/B0DYQF1Q3Z",
           "sku": "B0DYQF1Q3Z",
           "asin": "B0DYQF1Q3Z",
-          "inStock": true,
+          "inStock": false,
           "onSale": false,
-          "lastChecked": "2026-07-04T15:15:16Z"
+          "lastChecked": "2026-07-06T15:16:00Z",
+          "staleHidden": true
         }
       ],
       "priceHistory": [
@@ -950,9 +952,10 @@ const TV_DATA = {
           "originalUrl": "https://www.amazon.com/dp/B0DYQM4BDB",
           "sku": "B0DYQM4BDB",
           "asin": "B0DYQM4BDB",
-          "inStock": true,
+          "inStock": false,
           "onSale": false,
-          "lastChecked": "2026-07-04T15:15:16Z"
+          "lastChecked": "2026-07-06T15:16:00Z",
+          "staleHidden": true
         }
       ],
       "priceHistory": [
@@ -1033,9 +1036,10 @@ const TV_DATA = {
           "originalUrl": "https://www.amazon.com/dp/B0DYQFW6TR",
           "sku": "B0DYQFW6TR",
           "asin": "B0DYQFW6TR",
-          "inStock": true,
+          "inStock": false,
           "onSale": false,
-          "lastChecked": "2026-07-04T19:40:40Z"
+          "lastChecked": "2026-07-06T15:16:00Z",
+          "staleHidden": true
         }
       ],
       "priceHistory": [
@@ -1302,15 +1306,15 @@ const TV_DATA = {
         },
         {
           "retailerId": "amazon",
-          "currentPrice": 1416.0,
-          "retailPrice": 1699.0,
+          "currentPrice": 1899.96,
+          "retailPrice": 1699,
           "url": "https://www.amazon.com/dp/B0DYQGRHX3?tag=tvschool-20",
           "originalUrl": "https://www.amazon.com/dp/B0DYQGRHX3",
           "sku": "B0DYQGRHX3",
           "asin": "B0DYQGRHX3",
           "inStock": true,
           "onSale": true,
-          "lastChecked": "2026-07-04T19:40:40Z"
+          "lastChecked": "2026-07-06T15:16:00Z"
         }
       ],
       "priceHistory": [
@@ -1323,6 +1327,10 @@ const TV_DATA = {
           "date": "2026-01-23",
           "retailerId": "bestbuy",
           "price": 899.99
+        },
+        {
+          "date": "2026-07-07",
+          "price": 1899.96
         }
       ],
       "useCaseScores": {
@@ -1376,7 +1384,7 @@ const TV_DATA = {
         },
         {
           "retailerId": "amazon",
-          "currentPrice": 1918.99,
+          "currentPrice": 2299,
           "retailPrice": null,
           "url": "https://www.amazon.com/dp/B0DYQR8R98?tag=tvschool-20",
           "originalUrl": "https://www.amazon.com/dp/B0DYQR8R98",
@@ -1384,7 +1392,7 @@ const TV_DATA = {
           "asin": "B0DYQR8R98",
           "inStock": true,
           "onSale": false,
-          "lastChecked": "2026-07-04T19:40:40Z"
+          "lastChecked": "2026-07-06T15:16:00Z"
         }
       ],
       "priceHistory": [
@@ -1392,6 +1400,10 @@ const TV_DATA = {
           "date": "2026-01-22",
           "retailerId": "bestbuy",
           "price": 2299.99
+        },
+        {
+          "date": "2026-07-07",
+          "price": 2299
         }
       ],
       "useCaseScores": {
@@ -3469,9 +3481,10 @@ const TV_DATA = {
           "originalUrl": "https://www.amazon.com/dp/B0DXN7PBFC",
           "sku": "B0DXN7PBFC",
           "asin": "B0DXN7PBFC",
-          "inStock": true,
+          "inStock": false,
           "onSale": true,
-          "lastChecked": "2026-07-04T19:40:40Z"
+          "lastChecked": "2026-07-06T15:16:00Z",
+          "staleHidden": true
         }
       ],
       "priceHistory": [
@@ -3532,7 +3545,7 @@ const TV_DATA = {
         },
         {
           "retailerId": "amazon",
-          "currentPrice": 1197.99,
+          "currentPrice": 1208.33,
           "retailPrice": 1697.99,
           "url": "https://www.amazon.com/dp/B0DXMJGQWC?tag=tvschool-20",
           "originalUrl": "https://www.amazon.com/dp/B0DXMJGQWC",
@@ -3540,7 +3553,7 @@ const TV_DATA = {
           "asin": "B0DXMJGQWC",
           "inStock": true,
           "onSale": true,
-          "lastChecked": "2026-07-04T15:15:16Z"
+          "lastChecked": "2026-07-06T15:16:00Z"
         }
       ],
       "priceHistory": [
@@ -3557,6 +3570,10 @@ const TV_DATA = {
         {
           "date": "2026-07-04",
           "price": 1197.99
+        },
+        {
+          "date": "2026-07-07",
+          "price": 1208.33
         }
       ],
       "useCaseScores": {
@@ -3604,18 +3621,18 @@ const TV_DATA = {
       "prices": [
         {
           "retailerId": "bestbuy",
-          "currentPrice": 1799.99,
+          "currentPrice": 1999.99,
           "retailPrice": 3499.99,
           "url": "https://www.bestbuy.com/site/6613462.p",
           "sku": "6613462",
           "inStock": true,
-          "lastChecked": "2026-07-04T19:11:07Z",
+          "lastChecked": "2026-07-07T02:18:30Z",
           "originalUrl": "https://www.bestbuy.com/site/6613462.p",
           "onSale": true
         },
         {
           "retailerId": "amazon",
-          "currentPrice": 1797.99,
+          "currentPrice": 1897.99,
           "retailPrice": 2497.99,
           "url": "https://www.amazon.com/dp/B0DXN1QNFW?tag=tvschool-20",
           "originalUrl": "https://www.amazon.com/dp/B0DXN1QNFW",
@@ -3623,7 +3640,7 @@ const TV_DATA = {
           "asin": "B0DXN1QNFW",
           "inStock": true,
           "onSale": true,
-          "lastChecked": "2026-07-04T19:40:40Z"
+          "lastChecked": "2026-07-06T15:16:00Z"
         }
       ],
       "priceHistory": [
@@ -3635,6 +3652,10 @@ const TV_DATA = {
         {
           "date": "2026-07-04",
           "price": 1799.99
+        },
+        {
+          "date": "2026-07-07",
+          "price": 1897.99
         }
       ],
       "useCaseScores": {
@@ -3828,9 +3849,10 @@ const TV_DATA = {
           "originalUrl": "https://www.amazon.com/dp/B0DXMJFJ7W",
           "sku": "B0DXMJFJ7W",
           "asin": "B0DXMJFJ7W",
-          "inStock": true,
+          "inStock": false,
           "onSale": false,
-          "lastChecked": "2026-07-04T19:40:40Z"
+          "lastChecked": "2026-07-06T15:16:00Z",
+          "staleHidden": true
         }
       ],
       "priceHistory": [
@@ -4160,7 +4182,7 @@ const TV_DATA = {
         },
         {
           "retailerId": "amazon",
-          "currentPrice": 1598,
+          "currentPrice": 1599.99,
           "retailPrice": null,
           "url": "https://www.amazon.com/dp/B0CVQ6YLH7?tag=tvschool-20",
           "originalUrl": "https://www.amazon.com/dp/B0CVQ6YLH7",
@@ -4168,7 +4190,7 @@ const TV_DATA = {
           "asin": "B0CVQ6YLH7",
           "inStock": true,
           "onSale": false,
-          "lastChecked": "2026-07-04T15:15:16Z"
+          "lastChecked": "2026-07-06T15:16:00Z"
         }
       ],
       "priceHistory": [
@@ -4185,6 +4207,10 @@ const TV_DATA = {
         {
           "date": "2026-07-04",
           "price": 1598
+        },
+        {
+          "date": "2026-07-07",
+          "price": 1599.99
         }
       ],
       "useCaseScores": {
@@ -4308,7 +4334,7 @@ const TV_DATA = {
         },
         {
           "retailerId": "amazon",
-          "currentPrice": 2298.0,
+          "currentPrice": 2298,
           "retailPrice": null,
           "url": "https://www.amazon.com/dp/B0DYK995S3?tag=tvschool-20",
           "originalUrl": "https://www.amazon.com/dp/B0DYK995S3",
@@ -4316,7 +4342,7 @@ const TV_DATA = {
           "asin": "B0DYK995S3",
           "inStock": true,
           "onSale": false,
-          "lastChecked": "2026-07-04T19:40:40Z"
+          "lastChecked": "2026-07-06T15:16:00Z"
         }
       ],
       "priceHistory": [
@@ -4329,6 +4355,10 @@ const TV_DATA = {
           "date": "2026-01-23",
           "retailerId": "bestbuy",
           "price": 1999.99
+        },
+        {
+          "date": "2026-07-07",
+          "price": 2298
         }
       ],
       "useCaseScores": {
@@ -4442,15 +4472,16 @@ const TV_DATA = {
         },
         {
           "retailerId": "amazon",
-          "currentPrice": 1998.0,
+          "currentPrice": 1998,
           "retailPrice": null,
           "url": "https://www.amazon.com/dp/B0CVQB2D6C?tag=tvschool-20",
           "originalUrl": "https://www.amazon.com/dp/B0CVQB2D6C",
           "sku": "B0CVQB2D6C",
           "asin": "B0CVQB2D6C",
-          "inStock": true,
+          "inStock": false,
           "onSale": false,
-          "lastChecked": "2026-07-04T19:40:40Z"
+          "lastChecked": "2026-07-06T15:16:00Z",
+          "staleHidden": true
         }
       ],
       "priceHistory": [
@@ -5004,10 +5035,11 @@ const TV_DATA = {
           "retailPrice": 599.99,
           "url": "https://www.bestbuy.com/site/6538137.p",
           "sku": "6538137",
-          "inStock": true,
+          "inStock": false,
           "lastChecked": "2026-07-04T19:11:07Z",
           "originalUrl": "https://www.bestbuy.com/site/6538137.p",
-          "onSale": false
+          "onSale": false,
+          "staleHidden": true
         }
       ],
       "priceHistory": [
@@ -5134,12 +5166,12 @@ const TV_DATA = {
       "prices": [
         {
           "retailerId": "bestbuy",
-          "currentPrice": 349.99,
+          "currentPrice": 399.99,
           "retailPrice": 699.99,
           "url": "https://www.bestbuy.com/site/6625835.p",
           "sku": "6625835",
           "inStock": true,
-          "lastChecked": "2026-07-04T19:11:07Z",
+          "lastChecked": "2026-07-07T02:18:30Z",
           "originalUrl": "https://www.bestbuy.com/site/6625835.p",
           "onSale": false
         }
@@ -5153,6 +5185,10 @@ const TV_DATA = {
         {
           "date": "2026-07-04",
           "price": 349.99
+        },
+        {
+          "date": "2026-07-07",
+          "price": 399.99
         }
       ],
       "useCaseScores": {
@@ -5202,7 +5238,7 @@ const TV_DATA = {
           "url": "https://www.bestbuy.com/site/6625874.p",
           "sku": "6625874",
           "inStock": true,
-          "lastChecked": "2026-07-04T19:11:07Z",
+          "lastChecked": "2026-07-07T02:18:30Z",
           "originalUrl": "https://www.bestbuy.com/site/6625874.p",
           "onSale": true
         }
@@ -5220,6 +5256,10 @@ const TV_DATA = {
         },
         {
           "date": "2026-07-04",
+          "price": 449.99
+        },
+        {
+          "date": "2026-07-07",
           "price": 449.99
         }
       ],
@@ -5270,9 +5310,9 @@ const TV_DATA = {
           "url": "https://www.bestbuy.com/site/6625834.p",
           "sku": "6625834",
           "inStock": true,
-          "lastChecked": "2026-07-04T19:11:07Z",
+          "lastChecked": "2026-07-07T02:18:30Z",
           "originalUrl": "https://www.bestbuy.com/site/6625834.p",
-          "onSale": true
+          "onSale": false
         }
       ],
       "priceHistory": [
@@ -5288,6 +5328,10 @@ const TV_DATA = {
         },
         {
           "date": "2026-07-04",
+          "price": 599.99
+        },
+        {
+          "date": "2026-07-07",
           "price": 599.99
         }
       ],
@@ -5338,7 +5382,7 @@ const TV_DATA = {
           "url": "https://www.bestbuy.com/site/6643446.p",
           "sku": "6643446",
           "inStock": true,
-          "lastChecked": "2026-07-04T19:11:07Z",
+          "lastChecked": "2026-07-07T02:18:30Z",
           "originalUrl": "https://www.bestbuy.com/site/6643446.p",
           "onSale": true
         }
@@ -5356,6 +5400,10 @@ const TV_DATA = {
         },
         {
           "date": "2026-07-04",
+          "price": 849.99
+        },
+        {
+          "date": "2026-07-07",
           "price": 849.99
         }
       ],
@@ -5485,7 +5533,7 @@ const TV_DATA = {
           "asin": "B0DVX8WJ7S",
           "inStock": true,
           "onSale": true,
-          "lastChecked": "2026-07-04T15:15:16Z"
+          "lastChecked": "2026-07-06T15:16:00Z"
         }
       ],
       "priceHistory": [
@@ -5496,6 +5544,10 @@ const TV_DATA = {
         },
         {
           "date": "2026-07-04",
+          "price": 749.99
+        },
+        {
+          "date": "2026-07-07",
           "price": 749.99
         }
       ],
@@ -5542,14 +5594,14 @@ const TV_DATA = {
       "prices": [
         {
           "retailerId": "bestbuy",
-          "currentPrice": 999.99,
+          "currentPrice": 1299.99,
           "retailPrice": 1299.99,
           "url": "https://www.bestbuy.com/site/6621474.p",
           "sku": "6621474",
-          "inStock": false,
-          "lastChecked": "2026-07-04T19:11:07Z",
+          "inStock": true,
+          "lastChecked": "2026-07-07T02:18:30Z",
           "originalUrl": "https://www.bestbuy.com/site/6621474.p",
-          "onSale": true
+          "onSale": false
         }
       ],
       "priceHistory": [
@@ -5562,6 +5614,10 @@ const TV_DATA = {
           "date": "2026-01-23",
           "retailerId": "bestbuy",
           "price": 1198.99
+        },
+        {
+          "date": "2026-07-07",
+          "price": 1299.99
         }
       ],
       "useCaseScores": {
@@ -5612,9 +5668,9 @@ const TV_DATA = {
           "url": "https://www.bestbuy.com/site/6621467.p",
           "sku": "6621467",
           "inStock": true,
-          "lastChecked": "2026-07-04T19:11:07Z",
+          "lastChecked": "2026-07-07T02:18:30Z",
           "originalUrl": "https://www.bestbuy.com/site/6621467.p",
-          "onSale": true
+          "onSale": false
         }
       ],
       "priceHistory": [
@@ -5630,6 +5686,10 @@ const TV_DATA = {
         },
         {
           "date": "2026-07-04",
+          "price": 1499.99
+        },
+        {
+          "date": "2026-07-07",
           "price": 1499.99
         }
       ],
@@ -5681,9 +5741,9 @@ const TV_DATA = {
           "url": "https://www.bestbuy.com/site/6621472.p",
           "sku": "6621472",
           "inStock": true,
-          "lastChecked": "2026-07-04T19:11:07Z",
+          "lastChecked": "2026-07-07T02:18:30Z",
           "originalUrl": "https://www.bestbuy.com/site/6621472.p",
-          "onSale": true
+          "onSale": false
         },
         {
           "retailerId": "amazon",
@@ -5695,7 +5755,7 @@ const TV_DATA = {
           "asin": "B0DVWW66H7",
           "inStock": true,
           "onSale": true,
-          "lastChecked": "2026-07-04T19:40:40Z"
+          "lastChecked": "2026-07-06T15:16:00Z"
         }
       ],
       "priceHistory": [
@@ -5711,6 +5771,10 @@ const TV_DATA = {
         },
         {
           "date": "2026-07-04",
+          "price": 1897.99
+        },
+        {
+          "date": "2026-07-07",
           "price": 1897.99
         }
       ],
@@ -6166,7 +6230,7 @@ const TV_DATA = {
           "asin": "B0F53CZ4WT",
           "inStock": true,
           "onSale": true,
-          "lastChecked": "2026-07-04T15:15:16Z"
+          "lastChecked": "2026-07-06T15:16:00Z"
         }
       ],
       "priceHistory": [
@@ -6182,6 +6246,10 @@ const TV_DATA = {
         },
         {
           "date": "2026-07-04",
+          "price": 997.99
+        },
+        {
+          "date": "2026-07-07",
           "price": 997.99
         }
       ],
@@ -6246,7 +6314,7 @@ const TV_DATA = {
           "asin": "B0F53HDFBR",
           "inStock": true,
           "onSale": true,
-          "lastChecked": "2026-07-04T15:15:16Z"
+          "lastChecked": "2026-07-06T15:16:00Z"
         }
       ],
       "priceHistory": [
@@ -6257,6 +6325,10 @@ const TV_DATA = {
         },
         {
           "date": "2026-07-04",
+          "price": 1397.99
+        },
+        {
+          "date": "2026-07-07",
           "price": 1397.99
         }
       ],
