@@ -1068,11 +1068,11 @@ function init() {
     AppState.laptops = LAPTOP_DATA.laptops || [];
   }
 
-  // Filter out laptops that are out of stock everywhere
-  AppState.laptops = AppState.laptops.filter(laptop => {
-    if (!laptop.prices || laptop.prices.length === 0) return false;
-    return laptop.prices.some(p => p.inStock);
-  });
+  // Keep laptops without a live price browsable — they render as "Being
+  // verified" (TV finder behavior). Only drop entries with no price data at all.
+  AppState.laptops = AppState.laptops.filter(laptop =>
+    laptop.prices && laptop.prices.length > 0
+  );
 
   // Use pre-calculated fair values from data.js (only calculate if missing)
   AppState.laptops.forEach(laptop => {
