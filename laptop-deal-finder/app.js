@@ -1081,7 +1081,8 @@ function init() {
     }
   });
 
-  AppState.filteredLaptops = LaptopDataUtils.sortByDealScore(AppState.laptops);
+  const initialSorted = LaptopDataUtils.sortByDealScore(AppState.laptops);
+  AppState.filteredLaptops = [...initialSorted.filter(hasVerifiedPrice), ...initialSorted.filter(l => !hasVerifiedPrice(l))];
 
   initializeFilters();
   initializeAISearch();
