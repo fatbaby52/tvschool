@@ -2,18 +2,18 @@ import json
 NOW = "2026-07-03T22:45:00Z"
 # Per-entry verified-date overrides (checked on a different date than the pipeline NOW).
 VERIFIED_ON = {
-  # 2026-07-06 daily run: 11 HD/Amazon SKUs re-verified by browser, all prices unchanged
-  "dewalt-dcf850b": "2026-07-06T15:16:00Z",
-  "milwaukee-2953-20": "2026-07-06T15:16:00Z",
-  "milwaukee-3697-22": "2026-07-06T15:16:00Z",
-  "ryobi-psbdd02k2": "2026-07-06T15:16:00Z",
-  "makita-xfd131": "2026-07-06T15:16:00Z",
-  "milwaukee-2962-20": "2026-07-06T15:16:00Z",
-  "ryobi-pbp005": "2026-07-06T15:16:00Z",
-  "milwaukee-48-11-1850": "2026-07-06T15:16:00Z",
-  "milwaukee-48-11-2450": "2026-07-06T15:16:00Z",
-  "dewalt-dcb205": "2026-07-06T15:16:00Z",
-  "makita-bl1850b": "2026-07-06T15:16:00Z",
+  # 2026-07-08 daily run: 11 HD/Amazon SKUs re-verified by browser (JSON-LD), all prices unchanged & in stock
+  "dewalt-dcf850b": "2026-07-08T15:45:00Z",
+  "milwaukee-2953-20": "2026-07-08T15:45:00Z",
+  "milwaukee-3697-22": "2026-07-08T15:45:00Z",
+  "ryobi-psbdd02k2": "2026-07-08T15:45:00Z",
+  "makita-xfd131": "2026-07-08T15:45:00Z",
+  "milwaukee-2962-20": "2026-07-08T15:45:00Z",
+  "ryobi-pbp005": "2026-07-08T15:45:00Z",
+  "milwaukee-48-11-1850": "2026-07-08T15:45:00Z",
+  "milwaukee-48-11-2450": "2026-07-08T15:45:00Z",
+  "dewalt-dcb205": "2026-07-08T15:45:00Z",
+  "makita-bl1850b": "2026-07-08T15:45:00Z",
   "bauer-3sp-iw": "2026-07-05T18:00:00Z",
   "bauer-ht-iw": "2026-07-05T18:00:00Z",
   "bauer-drill": "2026-07-05T18:00:00Z",
