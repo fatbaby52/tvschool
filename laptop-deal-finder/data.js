@@ -146,8 +146,8 @@ const LAPTOP_DATA = {
           "retailPrice": 1474.99,
           "url": "https://api.bestbuy.com/click/-/6623881/pdp",
           "inStock": true,
-          "lastChecked": "2026-07-07T19:13:38Z",
-          "onSale": true
+          "lastChecked": "2026-07-08T15:47:13Z",
+          "onSale": false
         }
       ],
       "rating": 4.6,
@@ -156,6 +156,10 @@ const LAPTOP_DATA = {
       "priceHistory": [
         {
           "date": "2026-07-07",
+          "price": 949.99
+        },
+        {
+          "date": "2026-07-08",
           "price": 949.99
         }
       ]
@@ -187,7 +191,7 @@ const LAPTOP_DATA = {
       "fairValue": 1732,
       "currentPrice": 959.99,
       "dealGrade": "A",
-      "dealScore": 180.4,
+      "dealScore": 44.6,
       "useCaseScores": {
         "gaming": 5.5,
         "productivity": 9.5,
@@ -202,14 +206,20 @@ const LAPTOP_DATA = {
           "currentPrice": 959.99,
           "retailPrice": 1199.99,
           "url": "https://api.bestbuy.com/click/-/6576659/pdp",
-          "inStock": false,
-          "staleHidden": true,
-          "lastChecked": "2026-07-07T03:40:00Z"
+          "inStock": true,
+          "lastChecked": "2026-07-08T15:47:13Z",
+          "onSale": false
         }
       ],
       "rating": 4.3,
       "reviewCount": 416,
-      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6576/6576659_sd.jpg"
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6576/6576659_sd.jpg",
+      "priceHistory": [
+        {
+          "date": "2026-07-08",
+          "price": 959.99
+        }
+      ]
     },
     {
       "id": "bestbuy-6632144",
@@ -305,8 +315,8 @@ const LAPTOP_DATA = {
           "retailPrice": 1939.99,
           "url": "https://api.bestbuy.com/click/-/6617094/pdp",
           "inStock": true,
-          "lastChecked": "2026-07-07T19:13:38Z",
-          "onSale": true
+          "lastChecked": "2026-07-08T15:47:13Z",
+          "onSale": false
         }
       ],
       "rating": 4.6,
@@ -315,6 +325,10 @@ const LAPTOP_DATA = {
       "priceHistory": [
         {
           "date": "2026-07-07",
+          "price": 1174.99
+        },
+        {
+          "date": "2026-07-08",
           "price": 1174.99
         }
       ]
@@ -359,8 +373,8 @@ const LAPTOP_DATA = {
           "retailPrice": 2499.0,
           "url": "https://api.bestbuy.com/click/-/6561785/pdp",
           "inStock": true,
-          "lastChecked": "2026-07-07T19:13:38Z",
-          "onSale": true
+          "lastChecked": "2026-07-08T15:47:13Z",
+          "onSale": false
         }
       ],
       "rating": 3.6,
@@ -369,6 +383,10 @@ const LAPTOP_DATA = {
       "priceHistory": [
         {
           "date": "2026-07-07",
+          "price": 759.99
+        },
+        {
+          "date": "2026-07-08",
           "price": 759.99
         }
       ]
@@ -515,8 +533,8 @@ const LAPTOP_DATA = {
           "retailPrice": 699.0,
           "url": "https://api.bestbuy.com/click/-/6489687/pdp",
           "inStock": true,
-          "lastChecked": "2026-07-07T19:13:38Z",
-          "onSale": true
+          "lastChecked": "2026-07-08T15:47:13Z",
+          "onSale": false
         }
       ],
       "rating": 4.4,
@@ -525,6 +543,10 @@ const LAPTOP_DATA = {
       "priceHistory": [
         {
           "date": "2026-07-07",
+          "price": 469.99
+        },
+        {
+          "date": "2026-07-08",
           "price": 469.99
         }
       ]
@@ -621,7 +643,7 @@ const LAPTOP_DATA = {
           "retailPrice": 1199.99,
           "url": "https://api.bestbuy.com/click/-/6646505/pdp",
           "inStock": true,
-          "lastChecked": "2026-07-07T19:13:38Z",
+          "lastChecked": "2026-07-08T15:47:13Z",
           "onSale": false
         }
       ],
@@ -631,6 +653,10 @@ const LAPTOP_DATA = {
       "priceHistory": [
         {
           "date": "2026-07-07",
+          "price": 1049.99
+        },
+        {
+          "date": "2026-07-08",
           "price": 1049.99
         }
       ]
@@ -727,8 +753,8 @@ const LAPTOP_DATA = {
           "retailPrice": 999.99,
           "url": "https://api.bestbuy.com/click/-/6621164/pdp",
           "inStock": true,
-          "lastChecked": "2026-07-07T19:13:38Z",
-          "onSale": true
+          "lastChecked": "2026-07-08T15:47:13Z",
+          "onSale": false
         }
       ],
       "rating": 4.5,
@@ -737,6 +763,10 @@ const LAPTOP_DATA = {
       "priceHistory": [
         {
           "date": "2026-07-07",
+          "price": 749.99
+        },
+        {
+          "date": "2026-07-08",
           "price": 749.99
         }
       ]
@@ -829,8 +859,8 @@ const LAPTOP_DATA = {
           "retailPrice": 1249.99,
           "url": "https://api.bestbuy.com/click/-/6489690/pdp",
           "inStock": true,
-          "lastChecked": "2026-07-07T19:13:38Z",
-          "onSale": true
+          "lastChecked": "2026-07-08T15:47:13Z",
+          "onSale": false
         }
       ],
       "rating": 4.2,
@@ -839,6 +869,10 @@ const LAPTOP_DATA = {
       "priceHistory": [
         {
           "date": "2026-07-07",
+          "price": 549.99
+        },
+        {
+          "date": "2026-07-08",
           "price": 549.99
         }
       ]
@@ -9385,5 +9419,5 @@ const LAPTOP_DATA = {
       "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6450/6450459_sd.jpg"
     }
   ],
-  "lastUpdated": "2026-07-07T19:13:38Z"
+  "lastUpdated": "2026-07-08T15:47:13Z"
 };
