@@ -9,7 +9,7 @@
  */
 
 const TV_DATA = {
-  "lastUpdated": "2026-07-11T15:34:11Z",
+  "lastUpdated": "2026-07-12T15:34:16Z",
   "retailers": {
     "bestbuy": {
       "id": "bestbuy",
@@ -291,7 +291,7 @@ const TV_DATA = {
           "asin": "B0FLYPMZNJ",
           "inStock": false,
           "onSale": false,
-          "lastChecked": "2026-07-11T15:30:00Z",
+          "lastChecked": "2026-07-12T15:30:00Z",
           "staleHidden": true
         }
       ],
@@ -870,7 +870,7 @@ const TV_DATA = {
           "asin": "B0DYQF1Q3Z",
           "inStock": false,
           "onSale": false,
-          "lastChecked": "2026-07-11T15:30:00Z",
+          "lastChecked": "2026-07-12T15:30:00Z",
           "staleHidden": true
         }
       ],
@@ -962,7 +962,7 @@ const TV_DATA = {
           "asin": "B0DYQM4BDB",
           "inStock": false,
           "onSale": false,
-          "lastChecked": "2026-07-11T15:30:00Z",
+          "lastChecked": "2026-07-12T15:30:00Z",
           "staleHidden": true
         }
       ],
@@ -1050,7 +1050,7 @@ const TV_DATA = {
           "asin": "B0DYQFW6TR",
           "inStock": true,
           "onSale": false,
-          "lastChecked": "2026-07-11T15:30:00Z"
+          "lastChecked": "2026-07-12T15:30:00Z"
         }
       ],
       "priceHistory": [
@@ -1341,7 +1341,7 @@ const TV_DATA = {
           "asin": "B0DYQGRHX3",
           "inStock": false,
           "onSale": true,
-          "lastChecked": "2026-07-11T15:30:00Z",
+          "lastChecked": "2026-07-12T15:30:00Z",
           "staleHidden": true
         }
       ],
@@ -1428,7 +1428,7 @@ const TV_DATA = {
           "asin": "B0DYQR8R98",
           "inStock": false,
           "onSale": false,
-          "lastChecked": "2026-07-11T15:30:00Z",
+          "lastChecked": "2026-07-12T15:30:00Z",
           "staleHidden": true
         }
       ],
@@ -3536,7 +3536,7 @@ const TV_DATA = {
           "asin": "B0DXN7PBFC",
           "inStock": false,
           "onSale": true,
-          "lastChecked": "2026-07-11T15:30:00Z",
+          "lastChecked": "2026-07-12T15:30:00Z",
           "staleHidden": true
         }
       ],
@@ -3606,7 +3606,7 @@ const TV_DATA = {
           "asin": "B0DXMJGQWC",
           "inStock": false,
           "onSale": true,
-          "lastChecked": "2026-07-11T15:30:00Z",
+          "lastChecked": "2026-07-12T15:30:00Z",
           "staleHidden": true
         }
       ],
@@ -3698,7 +3698,7 @@ const TV_DATA = {
           "asin": "B0DXN1QNFW",
           "inStock": false,
           "onSale": true,
-          "lastChecked": "2026-07-11T15:30:00Z",
+          "lastChecked": "2026-07-12T15:30:00Z",
           "staleHidden": true
         }
       ],
@@ -3926,7 +3926,7 @@ const TV_DATA = {
           "asin": "B0DXMJFJ7W",
           "inStock": false,
           "onSale": false,
-          "lastChecked": "2026-07-11T15:30:00Z",
+          "lastChecked": "2026-07-12T15:30:00Z",
           "staleHidden": true
         }
       ],
@@ -4265,7 +4265,7 @@ const TV_DATA = {
           "asin": "B0CVQ6YLH7",
           "inStock": false,
           "onSale": false,
-          "lastChecked": "2026-07-11T15:30:00Z",
+          "lastChecked": "2026-07-12T15:30:00Z",
           "staleHidden": true
         }
       ],
@@ -4418,7 +4418,7 @@ const TV_DATA = {
           "asin": "B0DYK995S3",
           "inStock": false,
           "onSale": false,
-          "lastChecked": "2026-07-11T15:30:00Z",
+          "lastChecked": "2026-07-12T15:30:00Z",
           "staleHidden": true
         }
       ],
@@ -4561,7 +4561,7 @@ const TV_DATA = {
           "asin": "B0CVQB2D6C",
           "inStock": false,
           "onSale": false,
-          "lastChecked": "2026-07-11T15:30:00Z",
+          "lastChecked": "2026-07-12T15:30:00Z",
           "staleHidden": true
         }
       ],
@@ -5686,7 +5686,7 @@ const TV_DATA = {
           "asin": "B0DVX8WJ7S",
           "inStock": false,
           "onSale": true,
-          "lastChecked": "2026-07-11T15:30:00Z",
+          "lastChecked": "2026-07-12T15:30:00Z",
           "staleHidden": true
         }
       ],
@@ -5939,9 +5939,10 @@ const TV_DATA = {
           "originalUrl": "https://www.amazon.com/dp/B0DVWW66H7",
           "sku": "B0DVWW66H7",
           "asin": "B0DVWW66H7",
-          "inStock": true,
+          "inStock": false,
           "onSale": true,
-          "lastChecked": "2026-07-11T15:30:00Z"
+          "lastChecked": "2026-07-12T15:30:00Z",
+          "staleHidden": true
         }
       ],
       "priceHistory": [
@@ -6432,7 +6433,7 @@ const TV_DATA = {
           "asin": "B0F53CZ4WT",
           "inStock": true,
           "onSale": true,
-          "lastChecked": "2026-07-11T15:30:00Z"
+          "lastChecked": "2026-07-12T15:30:00Z"
         }
       ],
       "priceHistory": [
@@ -6532,7 +6533,7 @@ const TV_DATA = {
           "asin": "B0F53HDFBR",
           "inStock": false,
           "onSale": true,
-          "lastChecked": "2026-07-11T15:30:00Z",
+          "lastChecked": "2026-07-12T15:30:00Z",
           "staleHidden": true
         }
       ],
