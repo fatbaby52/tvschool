@@ -96,14 +96,14 @@ const TOOL_DATA = {
           "onSale": true,
           "inStock": true,
           "staleHidden": false,
-          "lastChecked": "2026-07-14T15:45:00Z",
+          "lastChecked": "2026-07-15T15:45:00Z",
           "url": "https://www.homedepot.com/p/DEWALT-ATOMIC-20V-MAX-Cordless-Brushless-Compact-1-4-in-Impact-Driver-Tool-Only-DCF850B/316627328",
           "originalUrl": "https://www.homedepot.com/p/DEWALT-ATOMIC-20V-MAX-Cordless-Brushless-Compact-1-4-in-Impact-Driver-Tool-Only-DCF850B/316627328"
         }
       ],
       "priceHistory": [
         {
-          "date": "2026-07-14",
+          "date": "2026-07-15",
           "price": 129.0
         }
       ]
@@ -147,14 +147,14 @@ const TOOL_DATA = {
           "onSale": false,
           "inStock": true,
           "staleHidden": false,
-          "lastChecked": "2026-07-14T15:45:00Z",
+          "lastChecked": "2026-07-15T15:45:00Z",
           "url": "https://www.homedepot.com/p/Milwaukee-M18-FUEL-18V-Lithium-Ion-Brushless-Cordless-1-4-in-Hex-Impact-Driver-Tool-Only-2953-20/320326875",
           "originalUrl": "https://www.homedepot.com/p/Milwaukee-M18-FUEL-18V-Lithium-Ion-Brushless-Cordless-1-4-in-Hex-Impact-Driver-Tool-Only-2953-20/320326875"
         }
       ],
       "priceHistory": [
         {
-          "date": "2026-07-14",
+          "date": "2026-07-15",
           "price": 179.0
         }
       ]
@@ -203,14 +203,14 @@ const TOOL_DATA = {
           "onSale": true,
           "inStock": true,
           "staleHidden": false,
-          "lastChecked": "2026-07-14T15:45:00Z",
+          "lastChecked": "2026-07-15T15:45:00Z",
           "url": "https://www.homedepot.com/p/Milwaukee-M18-FUEL-18V-Lithium-Ion-Brushless-Cordless-Hammer-Drill-and-Impact-Driver-Combo-Kit-2-Tool-with-2-Batteries-3697-22/320326787",
           "originalUrl": "https://www.homedepot.com/p/Milwaukee-M18-FUEL-18V-Lithium-Ion-Brushless-Cordless-Hammer-Drill-and-Impact-Driver-Combo-Kit-2-Tool-with-2-Batteries-3697-22/320326787"
         }
       ],
       "priceHistory": [
         {
-          "date": "2026-07-14",
+          "date": "2026-07-15",
           "price": 349.0
         }
       ]
@@ -260,14 +260,14 @@ const TOOL_DATA = {
           "onSale": false,
           "inStock": true,
           "staleHidden": false,
-          "lastChecked": "2026-07-14T15:45:00Z",
+          "lastChecked": "2026-07-15T15:45:00Z",
           "url": "https://www.homedepot.com/p/RYOBI-ONE-HP-18V-Brushless-Cordless-Compact-1-2in-Drill-Driver-Kit-with-2-Compact-Batteries-and-Charger-PSBDD02K2/327697338",
           "originalUrl": "https://www.homedepot.com/p/RYOBI-ONE-HP-18V-Brushless-Cordless-Compact-1-2in-Drill-Driver-Kit-with-2-Compact-Batteries-and-Charger-PSBDD02K2/327697338"
         }
       ],
       "priceHistory": [
         {
-          "date": "2026-07-14",
+          "date": "2026-07-15",
           "price": 139.0
         }
       ]
@@ -317,14 +317,14 @@ const TOOL_DATA = {
           "onSale": false,
           "inStock": true,
           "staleHidden": false,
-          "lastChecked": "2026-07-14T15:45:00Z",
+          "lastChecked": "2026-07-15T15:45:00Z",
           "url": "https://www.homedepot.com/p/Makita-18V-LXT-Lithium-Ion-Brushless-Cordless-1-2-in-Driver-Drill-Kit-3-0Ah-XFD131/305926995",
           "originalUrl": "https://www.homedepot.com/p/Makita-18V-LXT-Lithium-Ion-Brushless-Cordless-1-2-in-Driver-Drill-Kit-3-0Ah-XFD131/305926995"
         }
       ],
       "priceHistory": [
         {
-          "date": "2026-07-14",
+          "date": "2026-07-15",
           "price": 179.0
         }
       ]
@@ -368,14 +368,14 @@ const TOOL_DATA = {
           "onSale": false,
           "inStock": true,
           "staleHidden": false,
-          "lastChecked": "2026-07-14T15:45:00Z",
+          "lastChecked": "2026-07-15T15:45:00Z",
           "url": "https://www.homedepot.com/p/Milwaukee-M18-FUEL-Gen-2-18V-Lithium-Ion-Brushless-Cordless-Mid-Torque-1-2-in-Impact-Wrench-w-Friction-Ring-Tool-Only-2962-20/313511878",
           "originalUrl": "https://www.homedepot.com/p/Milwaukee-M18-FUEL-Gen-2-18V-Lithium-Ion-Brushless-Cordless-Mid-Torque-1-2-in-Impact-Wrench-w-Friction-Ring-Tool-Only-2962-20/313511878"
         }
       ],
       "priceHistory": [
         {
-          "date": "2026-07-14",
+          "date": "2026-07-15",
           "price": 279.0
         }
       ]
@@ -413,26 +413,26 @@ const TOOL_DATA = {
         "yard": 9.4,
         "pro": 6.5
       },
-      "modelNote": "7.5Ah valued at 5.0 tier +$70",
+      "modelNote": "7.5Ah valued at 5.0 tier +$70; price $599->$749 verified 7/15 (1P, Sold by Amazon.com) - above fair, honest listing",
       "valueModel": "v0-decomposition-2026-07-03",
       "image": "https://m.media-amazon.com/images/I/71+DP8NYPeL._AC_SX679_.jpg",
       "prices": [
         {
           "retailerId": "amazon",
-          "currentPrice": 599.0,
+          "currentPrice": 749.0,
           "retailPrice": null,
           "onSale": false,
           "inStock": true,
           "staleHidden": false,
-          "lastChecked": "2026-07-03T22:45:00Z",
+          "lastChecked": "2026-07-15T15:45:00Z",
           "url": "https://www.amazon.com/dp/B0857KWHHC?tag=tvschool-20",
           "originalUrl": "https://www.amazon.com/dp/B0857KWHHC?tag=tvschool-20"
         }
       ],
       "priceHistory": [
         {
-          "date": "2026-07-03",
-          "price": 599.0
+          "date": "2026-07-15",
+          "price": 749.0
         }
       ]
     },
@@ -477,14 +477,14 @@ const TOOL_DATA = {
           "onSale": false,
           "inStock": true,
           "staleHidden": false,
-          "lastChecked": "2026-07-14T15:45:00Z",
+          "lastChecked": "2026-07-15T15:45:00Z",
           "url": "https://www.homedepot.com/p/RYOBI-ONE-18V-4-0-Ah-Lithium-Ion-Battery-PBP005/315039438",
           "originalUrl": "https://www.homedepot.com/p/RYOBI-ONE-18V-4-0-Ah-Lithium-Ion-Battery-PBP005/315039438"
         }
       ],
       "priceHistory": [
         {
-          "date": "2026-07-14",
+          "date": "2026-07-15",
           "price": 99.0
         }
       ]
@@ -581,14 +581,14 @@ const TOOL_DATA = {
           "onSale": true,
           "inStock": true,
           "staleHidden": false,
-          "lastChecked": "2026-07-14T15:45:00Z",
+          "lastChecked": "2026-07-15T15:45:00Z",
           "url": "https://www.homedepot.com/p/Milwaukee-M18-18-Volt-5-0-Ah-Lithium-Ion-XC-Extended-Capacity-Battery-Pack-48-11-1850/205620421",
           "originalUrl": "https://www.homedepot.com/p/Milwaukee-M18-18-Volt-5-0-Ah-Lithium-Ion-XC-Extended-Capacity-Battery-Pack-48-11-1850/205620421"
         }
       ],
       "priceHistory": [
         {
-          "date": "2026-07-14",
+          "date": "2026-07-15",
           "price": 99.0
         }
       ]
@@ -634,14 +634,14 @@ const TOOL_DATA = {
           "onSale": true,
           "inStock": true,
           "staleHidden": false,
-          "lastChecked": "2026-07-14T15:45:00Z",
+          "lastChecked": "2026-07-15T15:45:00Z",
           "url": "https://www.homedepot.com/p/Milwaukee-M12-12-Volt-Lithium-Ion-XC-High-Output-5-0-Ah-Battery-Pack-48-11-2450/320268545",
           "originalUrl": "https://www.homedepot.com/p/Milwaukee-M12-12-Volt-Lithium-Ion-XC-High-Output-5-0-Ah-Battery-Pack-48-11-2450/320268545"
         }
       ],
       "priceHistory": [
         {
-          "date": "2026-07-14",
+          "date": "2026-07-15",
           "price": 99.0
         }
       ]
@@ -687,14 +687,14 @@ const TOOL_DATA = {
           "onSale": false,
           "inStock": true,
           "staleHidden": false,
-          "lastChecked": "2026-07-14T15:45:00Z",
+          "lastChecked": "2026-07-15T15:45:00Z",
           "url": "https://www.homedepot.com/p/DEWALT-20V-MAX-Premium-Lithium-Ion-5-0Ah-Battery-Pack-DCB205/205227130",
           "originalUrl": "https://www.homedepot.com/p/DEWALT-20V-MAX-Premium-Lithium-Ion-5-0Ah-Battery-Pack-DCB205/205227130"
         }
       ],
       "priceHistory": [
         {
-          "date": "2026-07-14",
+          "date": "2026-07-15",
           "price": 169.0
         }
       ]
@@ -740,14 +740,14 @@ const TOOL_DATA = {
           "onSale": false,
           "inStock": true,
           "staleHidden": false,
-          "lastChecked": "2026-07-14T15:45:00Z",
+          "lastChecked": "2026-07-15T15:45:00Z",
           "url": "https://www.homedepot.com/p/Makita-18V-LXT-Lithium-Ion-High-Capacity-Battery-Pack-5-0Ah-with-Fuel-Gauge-BL1850B/206607848",
           "originalUrl": "https://www.homedepot.com/p/Makita-18V-LXT-Lithium-Ion-High-Capacity-Battery-Pack-5-0Ah-with-Fuel-Gauge-BL1850B/206607848"
         }
       ],
       "priceHistory": [
         {
-          "date": "2026-07-14",
+          "date": "2026-07-15",
           "price": 169.0
         }
       ]
@@ -782,7 +782,7 @@ const TOOL_DATA = {
         "yard": 8.0,
         "pro": 6.0
       },
-      "modelNote": "at list",
+      "modelNote": "2026-07-15: lost 1P buy box -> now 3P 'Jacks Small Engines' $329, no first-party offer -> hidden",
       "valueModel": "v0-decomposition-2026-07-03",
       "image": "https://m.media-amazon.com/images/I/61ApHxx7X2L._AC_SX679_.jpg",
       "prices": [
@@ -791,19 +791,14 @@ const TOOL_DATA = {
           "currentPrice": 299.0,
           "retailPrice": null,
           "onSale": false,
-          "inStock": true,
-          "staleHidden": false,
-          "lastChecked": "2026-07-03T22:45:00Z",
+          "inStock": false,
+          "staleHidden": true,
+          "lastChecked": "",
           "url": "https://www.amazon.com/dp/B07YKY61RF?tag=tvschool-20",
           "originalUrl": "https://www.amazon.com/dp/B07YKY61RF?tag=tvschool-20"
         }
       ],
-      "priceHistory": [
-        {
-          "date": "2026-07-03",
-          "price": 299.0
-        }
-      ]
+      "priceHistory": []
     },
     {
       "id": "milwaukee-2904-20",

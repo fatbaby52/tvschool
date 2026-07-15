@@ -2,18 +2,20 @@ import json
 NOW = "2026-07-03T22:45:00Z"
 # Per-entry verified-date overrides (checked on a different date than the pipeline NOW).
 VERIFIED_ON = {
-  # 2026-07-14 daily run: 11 HD SKUs re-verified by browser (JSON-LD offer price), all prices unchanged & in stock
-  "dewalt-dcf850b": "2026-07-14T15:45:00Z",
-  "milwaukee-2953-20": "2026-07-14T15:45:00Z",
-  "milwaukee-3697-22": "2026-07-14T15:45:00Z",
-  "ryobi-psbdd02k2": "2026-07-14T15:45:00Z",
-  "makita-xfd131": "2026-07-14T15:45:00Z",
-  "milwaukee-2962-20": "2026-07-14T15:45:00Z",
-  "ryobi-pbp005": "2026-07-14T15:45:00Z",
-  "milwaukee-48-11-1850": "2026-07-14T15:45:00Z",
-  "milwaukee-48-11-2450": "2026-07-14T15:45:00Z",
-  "dewalt-dcb205": "2026-07-14T15:45:00Z",
-  "makita-bl1850b": "2026-07-14T15:45:00Z",
+  # 2026-07-15 daily run: 11 HD SKUs re-verified by browser (JSON-LD offer price), all prices unchanged & in stock
+  "dewalt-dcf850b": "2026-07-15T15:45:00Z",
+  "milwaukee-2953-20": "2026-07-15T15:45:00Z",
+  "milwaukee-3697-22": "2026-07-15T15:45:00Z",
+  "ryobi-psbdd02k2": "2026-07-15T15:45:00Z",
+  "makita-xfd131": "2026-07-15T15:45:00Z",
+  "milwaukee-2962-20": "2026-07-15T15:45:00Z",
+  "ryobi-pbp005": "2026-07-15T15:45:00Z",
+  "milwaukee-48-11-1850": "2026-07-15T15:45:00Z",
+  "milwaukee-48-11-2450": "2026-07-15T15:45:00Z",
+  "dewalt-dcb205": "2026-07-15T15:45:00Z",
+  "makita-bl1850b": "2026-07-15T15:45:00Z",
+  # 2026-07-15: EGO Amazon re-verified (verified-group items). lm2135sp still 1P but price moved $599->$749.
+  "ego-lm2135sp": "2026-07-15T15:45:00Z",
   "bauer-3sp-iw": "2026-07-05T18:00:00Z",
   "bauer-ht-iw": "2026-07-05T18:00:00Z",
   "bauer-drill": "2026-07-05T18:00:00Z",
@@ -56,7 +58,7 @@ C = [
  ("milwaukee-2962-20","Milwaukee","2962-20","M18 FUEL 1/2in Mid-Torque Impact Wrench (Bare)","m18","impact_wrench",250,[],0,0,
   {"torque":"650 ft-lbs","brushless":True,"weight":"5.1 lb"},{"diy":5.5,"remodel":6.0,"auto":9.6,"electrical":4.0,"yard":0,"pro":9.0},279.00,None,False,True,"homedepot",""),
  ("ego-lm2135sp","EGO","LM2135SP","POWER+ 21in Self-Propelled Mower Kit (7.5Ah)","ego56v","mower",280,[("5.0",1)],60,0,
-  {"runtime":"60 min","selfPropelled":True},{"diy":8.8,"remodel":0,"auto":0,"electrical":0,"yard":9.4,"pro":6.5},599.00,None,False,True,"amazon","7.5Ah valued at 5.0 tier +$70"),
+  {"runtime":"60 min","selfPropelled":True},{"diy":8.8,"remodel":0,"auto":0,"electrical":0,"yard":9.4,"pro":6.5},749.00,None,False,True,"amazon","7.5Ah valued at 5.0 tier +$70; price $599->$749 verified 7/15 (1P, Sold by Amazon.com) - above fair, honest listing"),
  ("ryobi-pbp005","Ryobi","PBP005","ONE+ 18V 4.0Ah Battery","ryobi18v","battery",0,[("4.0",1)],0,0,
   {},{"diy":7.0,"remodel":5.0,"auto":5.0,"electrical":5.0,"yard":6.0,"pro":4.0},99.00,None,False,True,"homedepot","single battery at list; street value $69"),
  ("dewalt-dcd800p1","DeWalt","DCD800P1","20V MAX XR Brushless 1/2in Drill Kit (1x5.0Ah)","dewalt20v","drill",160,[("5.0",1)],30,15,
@@ -70,7 +72,7 @@ C = [
  ("makita-bl1850b","Makita","BL1850B","18V LXT 5.0Ah Battery","makita18v","battery",0,[("5.0",1)],0,0,
   {},{"diy":6.0,"remodel":7.0,"auto":6.0,"electrical":6.0,"yard":0,"pro":8.0},169.00,None,False,True,"homedepot","at list"),
  ("ego-ba2800t","EGO","BA2800T","56V 5.0Ah Battery","ego56v","battery",0,[("5.0",1)],0,0,
-  {},{"diy":5.0,"remodel":0,"auto":0,"electrical":0,"yard":8.0,"pro":6.0},299.00,None,False,True,"amazon","at list"),
+  {},{"diy":5.0,"remodel":0,"auto":0,"electrical":0,"yard":8.0,"pro":6.0},299.00,None,False,False,"amazon","2026-07-15: lost 1P buy box -> now 3P 'Jacks Small Engines' $329, no first-party offer -> hidden"),
  # --- unverified (hidden until browser-checked) ---
  ("milwaukee-2904-20","Milwaukee","2904-20","M18 FUEL 1/2in Hammer Drill (Bare)","m18","drill",165,[],0,0,
   {"torque":"1400 in-lbs","brushless":True},{"diy":7.8,"remodel":9.4,"auto":6.6,"electrical":8.0,"yard":0,"pro":9.5},199.00,None,False,False,"homedepot",""),
